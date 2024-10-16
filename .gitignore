@@ -1,0 +1,12 @@
+
+*.vsidx
+*.dll
+*.so
+*.dylib
+*.lib
+*.log
+*.cache
+*.pdb
+*.db-shm
+*.db
+*.db-wal

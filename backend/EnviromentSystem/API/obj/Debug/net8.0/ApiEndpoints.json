@@ -9,7 +9,7 @@
     "Parameters": [
       {
         "Name": "command",
-        "Type": "Core.Features.SchoolInfoFeatures.CreateSchoolInfo.CreateSchoolInfoCommand",
+        "Type": "Core.Features.SchoolInfoFeatures.Commands.CreateSchoolInfo.CreateSchoolInfoCommand",
         "IsRequired": true
       }
     ],
@@ -25,7 +25,7 @@
     "Parameters": [
       {
         "Name": "command",
-        "Type": "Core.Features.SchoolInfoFeatures.UpdateSchoolInfo.UpdateSchoolInfoCommand",
+        "Type": "Core.Features.SchoolInfoFeatures.Commands.UpdateSchoolInfo.UpdateSchoolInfoCommand",
         "IsRequired": true
       }
     ],

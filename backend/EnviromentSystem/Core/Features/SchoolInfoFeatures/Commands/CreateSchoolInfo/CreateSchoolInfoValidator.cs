@@ -1,6 +1,6 @@
 ﻿using FluentValidation;
 
-namespace Core.Features.SchoolInfoFeatures.CreateSchoolInfo
+namespace Core.Features.SchoolInfoFeatures.Commands.CreateSchoolInfo
 {
     public class CreateSchoolInfoValidator : AbstractValidator<CreateSchoolInfoCommand>
     {

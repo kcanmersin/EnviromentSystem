@@ -1,4 +1,4 @@
-﻿namespace Core.Features.SchoolInfoFeatures.DeleteSchoolInfo
+﻿namespace Core.Features.SchoolInfoFeatures.Commands.DeleteSchoolInfo
 {
     public class DeleteSchoolInfoResponse
     {

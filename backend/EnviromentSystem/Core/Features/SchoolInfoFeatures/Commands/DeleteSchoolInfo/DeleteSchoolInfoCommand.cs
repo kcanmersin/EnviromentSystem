@@ -1,7 +1,7 @@
 ﻿using MediatR;
 using System;
 
-namespace Core.Features.SchoolInfoFeatures.DeleteSchoolInfo
+namespace Core.Features.SchoolInfoFeatures.Commands.DeleteSchoolInfo
 {
     public class DeleteSchoolInfoCommand : IRequest<DeleteSchoolInfoResponse>
     {

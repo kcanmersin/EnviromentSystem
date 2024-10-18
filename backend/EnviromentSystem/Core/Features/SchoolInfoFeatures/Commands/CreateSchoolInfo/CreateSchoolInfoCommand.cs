@@ -1,6 +1,6 @@
 ﻿using MediatR;
 
-namespace Core.Features.SchoolInfoFeatures.CreateSchoolInfo
+namespace Core.Features.SchoolInfoFeatures.Commands.CreateSchoolInfo
 {
     public class CreateSchoolInfoCommand : IRequest<CreateSchoolInfoResponse>
     {

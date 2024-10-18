@@ -14,7 +14,6 @@ namespace Core.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            // Define the relationships and constraints
             modelBuilder.Entity<SchoolInfo>()
                 .HasMany(s => s.Electrics)
                 .WithOne(e => e.SchoolInfo)

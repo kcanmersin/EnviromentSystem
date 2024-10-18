@@ -1,11 +1,13 @@
-﻿namespace Core.Features.SchoolInfoFeatures.CreateSchoolInfo
+﻿using MediatR;
+using System;
+
+namespace Core.Features.SchoolInfoFeatures.Commands.UpdateSchoolInfo
 {
-    public class CreateSchoolInfoResponse
+    public class UpdateSchoolInfoCommand : IRequest<UpdateSchoolInfoResponse>
     {
         public Guid Id { get; set; }
         public int NumberOfPeople { get; set; }
         public int Year { get; set; }
         public string Month { get; set; }
-        public DateTime CreatedDate { get; set; }
     }
 }

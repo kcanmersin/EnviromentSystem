@@ -3,56 +3,128 @@
   "WorkspaceRootPath": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\contracts\\schoolinfo\\getschoolinforesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\contracts\\schoolinfo\\getschoolinforesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\extensions\\corelayerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\extensions\\corelayerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\commands\\createschoolinfo\\createschoolinfovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\commands\\createschoolinfo\\createschoolinfovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\commands\\createschoolinfo\\createschoolinforesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\commands\\createschoolinfo\\createschoolinforesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\core.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\commands\\createschoolinfo\\createschoolinfohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\commands\\createschoolinfo\\createschoolinfohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\commands\\createschoolinfo\\createschoolinfocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\commands\\createschoolinfo\\createschoolinfocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\commands\\deleteschoolinfo\\deleteschoolinfovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\commands\\deleteschoolinfo\\deleteschoolinfovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\data\\entity\\electric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\data\\entity\\electric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\data\\entity\\entitybases\\entitybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\data\\entity\\entitybases\\entitybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\data\\entity\\entitybases\\ientitybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\data\\entity\\entitybases\\ientitybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\data\\entity\\water.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\data\\entity\\water.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\data\\entity\\schoolinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\data\\entity\\schoolinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\data\\entity\\paper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\data\\entity\\paper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\queries\\getallschoolinfos\\getallschoolinfosresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\queries\\getallschoolinfos\\getallschoolinfosresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\queries\\getallschoolinfos\\getallschoolinfoshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\queries\\getallschoolinfos\\getallschoolinfoshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\queries\\getallschoolinfos\\getallschoolinfosquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\queries\\getallschoolinfos\\getallschoolinfosquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\controllers\\schoolinfocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\controllers\\schoolinfocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\contracts\\schoolinfo\\deleteschoolinforequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\contracts\\schoolinfo\\deleteschoolinforequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\contracts\\schoolinfo\\updateschoolinforequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\contracts\\schoolinfo\\updateschoolinforequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\contracts\\schoolinfo\\deleteschoolinforequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\contracts\\schoolinfo\\deleteschoolinforequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\contracts\\schoolinfo\\createschoolinforequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\contracts\\schoolinfo\\createschoolinforequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\updateschoolinfo\\updateschoolinfocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\updateschoolinfo\\updateschoolinfocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\queries\\getschoolinfo\\getschoolinfohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\queries\\getschoolinfo\\getschoolinfohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\updateschoolinfo\\updateschoolinfohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\updateschoolinfo\\updateschoolinfohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\queries\\getschoolinfo\\getschoolinfoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\queries\\getschoolinfo\\getschoolinfoquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\updateschoolinfo\\updateschoolinforesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\updateschoolinfo\\updateschoolinforesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\commands\\updateschoolinfo\\updateschoolinfocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\commands\\updateschoolinfo\\updateschoolinfocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\updateschoolinfo\\updateschoolinfovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\updateschoolinfo\\updateschoolinfovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\commands\\updateschoolinfo\\updateschoolinfohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\commands\\updateschoolinfo\\updateschoolinfohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\deleteschoolinfo\\deleteschoolinfocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\deleteschoolinfo\\deleteschoolinfocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\commands\\updateschoolinfo\\updateschoolinforesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\commands\\updateschoolinfo\\updateschoolinforesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\deleteschoolinfo\\deleteschoolinfohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\deleteschoolinfo\\deleteschoolinfohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\commands\\updateschoolinfo\\updateschoolinfovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\commands\\updateschoolinfo\\updateschoolinfovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\deleteschoolinfo\\deleteschoolinforesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\deleteschoolinfo\\deleteschoolinforesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\commands\\deleteschoolinfo\\deleteschoolinfocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\commands\\deleteschoolinfo\\deleteschoolinfocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\deleteschoolinfo\\deleteschoolinfovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\deleteschoolinfo\\deleteschoolinfovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\commands\\deleteschoolinfo\\deleteschoolinfohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\commands\\deleteschoolinfo\\deleteschoolinfohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\commands\\deleteschoolinfo\\deleteschoolinforesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\commands\\deleteschoolinfo\\deleteschoolinforesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -62,63 +134,258 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GetSchoolInfoResponse.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\SchoolInfo\\GetSchoolInfoResponse.cs",
-              "RelativeDocumentMoniker": "API\\Contracts\\SchoolInfo\\GetSchoolInfoResponse.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\SchoolInfo\\GetSchoolInfoResponse.cs",
-              "RelativeToolTip": "API\\Contracts\\SchoolInfo\\GetSchoolInfoResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAqAAAAAAAAAA==",
+              "DocumentIndex": 4,
+              "Title": "Core",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Core.csproj",
+              "RelativeDocumentMoniker": "Core\\Core.csproj",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Core.csproj",
+              "RelativeToolTip": "Core\\Core.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-10-18T10:48:43.051Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "CreateSchoolInfoCommand.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoCommand.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoCommand.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoCommand.cs",
+              "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T10:27:10.787Z",
+              "WhenOpened": "2024-10-18T10:48:00.841Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CoreLayerExtensions.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Extensions\\CoreLayerExtensions.cs",
+              "RelativeDocumentMoniker": "Core\\Extensions\\CoreLayerExtensions.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Extensions\\CoreLayerExtensions.cs",
+              "RelativeToolTip": "Core\\Extensions\\CoreLayerExtensions.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAADIAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T10:46:16Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CreateSchoolInfoHandler.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoHandler.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoHandler.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoHandler.cs",
+              "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoHandler.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAAAB4AAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T10:45:11.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "CreateSchoolInfoResponse.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoResponse.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoResponse.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoResponse.cs",
+              "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T10:45:09.83Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "CreateSchoolInfoValidator.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoValidator.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoValidator.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoValidator.cs",
+              "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T10:44:57.1Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Program.cs",
+              "RelativeDocumentMoniker": "API\\Program.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Program.cs",
+              "RelativeToolTip": "API\\Program.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T10:50:21.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Core\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Core\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T10:44:22.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DeleteSchoolInfoValidator.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\DeleteSchoolInfo\\DeleteSchoolInfoValidator.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\DeleteSchoolInfo\\DeleteSchoolInfoValidator.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\DeleteSchoolInfo\\DeleteSchoolInfoValidator.cs",
+              "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Commands\\DeleteSchoolInfo\\DeleteSchoolInfoValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T10:23:23.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "EntityBase.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\EntityBases\\EntityBase.cs",
+              "RelativeDocumentMoniker": "Core\\Data\\Entity\\EntityBases\\EntityBase.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\EntityBases\\EntityBase.cs",
+              "RelativeToolTip": "Core\\Data\\Entity\\EntityBases\\EntityBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T10:44:27.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IEntityBase.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\EntityBases\\IEntityBase.cs",
+              "RelativeDocumentMoniker": "Core\\Data\\Entity\\EntityBases\\IEntityBase.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\EntityBases\\IEntityBase.cs",
+              "RelativeToolTip": "Core\\Data\\Entity\\EntityBases\\IEntityBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T10:44:28.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "Water.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\Water.cs",
+              "RelativeDocumentMoniker": "Core\\Data\\Entity\\Water.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\Water.cs",
+              "RelativeToolTip": "Core\\Data\\Entity\\Water.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T10:44:14.829Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "SchoolInfo.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\SchoolInfo.cs",
+              "RelativeDocumentMoniker": "Core\\Data\\Entity\\SchoolInfo.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\SchoolInfo.cs",
+              "RelativeToolTip": "Core\\Data\\Entity\\SchoolInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T10:44:06.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Paper.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\Paper.cs",
+              "RelativeDocumentMoniker": "Core\\Data\\Entity\\Paper.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\Paper.cs",
+              "RelativeToolTip": "Core\\Data\\Entity\\Paper.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T10:43:46.117Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Electric.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\Electric.cs",
+              "RelativeDocumentMoniker": "Core\\Data\\Entity\\Electric.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\Electric.cs",
+              "RelativeToolTip": "Core\\Data\\Entity\\Electric.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAeAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T10:43:50.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "GetAllSchoolInfosResponse.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Queries\\GetAllSchoolInfos\\GetAllSchoolInfosResponse.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Queries\\GetAllSchoolInfos\\GetAllSchoolInfosResponse.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Queries\\GetAllSchoolInfos\\GetAllSchoolInfosResponse.cs",
+              "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Queries\\GetAllSchoolInfos\\GetAllSchoolInfosResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T10:41:18.326Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
               "Title": "SchoolInfoController.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\SchoolInfoController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\SchoolInfoController.cs",
               "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\SchoolInfoController.cs",
               "RelativeToolTip": "API\\Controllers\\SchoolInfoController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAmwEkAAABMAAAAAAAAAA==",
+              "ViewState": "AgIAACYAAAAAAAAAAAAkwDAAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T10:25:45.884Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DeleteSchoolInfoRequest.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\SchoolInfo\\DeleteSchoolInfoRequest.cs",
-              "RelativeDocumentMoniker": "API\\Contracts\\SchoolInfo\\DeleteSchoolInfoRequest.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\SchoolInfo\\DeleteSchoolInfoRequest.cs",
-              "RelativeToolTip": "API\\Contracts\\SchoolInfo\\DeleteSchoolInfoRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 17,
+              "Title": "GetAllSchoolInfosQuery.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Queries\\GetAllSchoolInfos\\GetAllSchoolInfosQuery.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Queries\\GetAllSchoolInfos\\GetAllSchoolInfosQuery.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Queries\\GetAllSchoolInfos\\GetAllSchoolInfosQuery.cs",
+              "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Queries\\GetAllSchoolInfos\\GetAllSchoolInfosQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T10:25:15.471Z",
+              "WhenOpened": "2024-10-18T10:36:26.647Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "UpdateSchoolInfoRequest.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\SchoolInfo\\UpdateSchoolInfoRequest.cs",
-              "RelativeDocumentMoniker": "API\\Contracts\\SchoolInfo\\UpdateSchoolInfoRequest.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\SchoolInfo\\UpdateSchoolInfoRequest.cs",
-              "RelativeToolTip": "API\\Contracts\\SchoolInfo\\UpdateSchoolInfoRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 16,
+              "Title": "GetAllSchoolInfosHandler.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Queries\\GetAllSchoolInfos\\GetAllSchoolInfosHandler.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Queries\\GetAllSchoolInfos\\GetAllSchoolInfosHandler.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Queries\\GetAllSchoolInfos\\GetAllSchoolInfosHandler.cs",
+              "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Queries\\GetAllSchoolInfos\\GetAllSchoolInfosHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T10:25:07.735Z",
+              "WhenOpened": "2024-10-18T10:36:34.241Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 21,
               "Title": "CreateSchoolInfoRequest.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\SchoolInfo\\CreateSchoolInfoRequest.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\SchoolInfo\\CreateSchoolInfoRequest.cs",
@@ -131,12 +398,64 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 20,
+              "Title": "DeleteSchoolInfoRequest.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\SchoolInfo\\DeleteSchoolInfoRequest.cs",
+              "RelativeDocumentMoniker": "API\\Contracts\\SchoolInfo\\DeleteSchoolInfoRequest.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\SchoolInfo\\DeleteSchoolInfoRequest.cs",
+              "RelativeToolTip": "API\\Contracts\\SchoolInfo\\DeleteSchoolInfoRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T10:25:15.471Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "UpdateSchoolInfoRequest.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\SchoolInfo\\UpdateSchoolInfoRequest.cs",
+              "RelativeDocumentMoniker": "API\\Contracts\\SchoolInfo\\UpdateSchoolInfoRequest.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\SchoolInfo\\UpdateSchoolInfoRequest.cs",
+              "RelativeToolTip": "API\\Contracts\\SchoolInfo\\UpdateSchoolInfoRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T10:25:07.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "GetSchoolInfoQuery.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Queries\\GetSchoolInfo\\GetSchoolInfoQuery.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Queries\\GetSchoolInfo\\GetSchoolInfoQuery.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Queries\\GetSchoolInfo\\GetSchoolInfoQuery.cs",
+              "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Queries\\GetSchoolInfo\\GetSchoolInfoQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T10:35:28.537Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "GetSchoolInfoHandler.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Queries\\GetSchoolInfo\\GetSchoolInfoHandler.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Queries\\GetSchoolInfo\\GetSchoolInfoHandler.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Queries\\GetSchoolInfo\\GetSchoolInfoHandler.cs",
+              "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Queries\\GetSchoolInfo\\GetSchoolInfoHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T10:35:36.093Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
               "Title": "UpdateSchoolInfoCommand.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\UpdateSchoolInfo\\UpdateSchoolInfoCommand.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\UpdateSchoolInfo\\UpdateSchoolInfoCommand.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\UpdateSchoolInfo\\UpdateSchoolInfoCommand.cs",
-              "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\UpdateSchoolInfo\\UpdateSchoolInfoCommand.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoCommand.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoCommand.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoCommand.cs",
+              "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T10:22:46.89Z",
@@ -144,12 +463,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 27,
               "Title": "UpdateSchoolInfoValidator.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\UpdateSchoolInfo\\UpdateSchoolInfoValidator.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\UpdateSchoolInfo\\UpdateSchoolInfoValidator.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\UpdateSchoolInfo\\UpdateSchoolInfoValidator.cs",
-              "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\UpdateSchoolInfo\\UpdateSchoolInfoValidator.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoValidator.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoValidator.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoValidator.cs",
+              "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T10:23:49.046Z",
@@ -157,25 +476,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "DeleteSchoolInfoValidator.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\DeleteSchoolInfo\\DeleteSchoolInfoValidator.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\DeleteSchoolInfo\\DeleteSchoolInfoValidator.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\DeleteSchoolInfo\\DeleteSchoolInfoValidator.cs",
-              "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\DeleteSchoolInfo\\DeleteSchoolInfoValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T10:23:23.054Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 25,
               "Title": "UpdateSchoolInfoHandler.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\UpdateSchoolInfo\\UpdateSchoolInfoHandler.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\UpdateSchoolInfo\\UpdateSchoolInfoHandler.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\UpdateSchoolInfo\\UpdateSchoolInfoHandler.cs",
-              "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\UpdateSchoolInfo\\UpdateSchoolInfoHandler.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoHandler.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoHandler.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoHandler.cs",
+              "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoHandler.cs",
               "ViewState": "AgIAABkAAAAAAAAAAAAIwCoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T10:22:55.847Z",
@@ -183,12 +489,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 26,
               "Title": "UpdateSchoolInfoResponse.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\UpdateSchoolInfo\\UpdateSchoolInfoResponse.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\UpdateSchoolInfo\\UpdateSchoolInfoResponse.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\UpdateSchoolInfo\\UpdateSchoolInfoResponse.cs",
-              "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\UpdateSchoolInfo\\UpdateSchoolInfoResponse.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoResponse.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoResponse.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoResponse.cs",
+              "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T10:22:52.093Z",
@@ -196,12 +502,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 30,
               "Title": "DeleteSchoolInfoResponse.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\DeleteSchoolInfo\\DeleteSchoolInfoResponse.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\DeleteSchoolInfo\\DeleteSchoolInfoResponse.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\DeleteSchoolInfo\\DeleteSchoolInfoResponse.cs",
-              "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\DeleteSchoolInfo\\DeleteSchoolInfoResponse.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\DeleteSchoolInfo\\DeleteSchoolInfoResponse.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\DeleteSchoolInfo\\DeleteSchoolInfoResponse.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\DeleteSchoolInfo\\DeleteSchoolInfoResponse.cs",
+              "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Commands\\DeleteSchoolInfo\\DeleteSchoolInfoResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T10:22:11.381Z",
@@ -209,12 +515,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 29,
               "Title": "DeleteSchoolInfoHandler.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\DeleteSchoolInfo\\DeleteSchoolInfoHandler.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\DeleteSchoolInfo\\DeleteSchoolInfoHandler.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\DeleteSchoolInfo\\DeleteSchoolInfoHandler.cs",
-              "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\DeleteSchoolInfo\\DeleteSchoolInfoHandler.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\DeleteSchoolInfo\\DeleteSchoolInfoHandler.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\DeleteSchoolInfo\\DeleteSchoolInfoHandler.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\DeleteSchoolInfo\\DeleteSchoolInfoHandler.cs",
+              "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Commands\\DeleteSchoolInfo\\DeleteSchoolInfoHandler.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAUwB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T10:21:42.659Z",
@@ -222,12 +528,12 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 28,
               "Title": "DeleteSchoolInfoCommand.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\DeleteSchoolInfo\\DeleteSchoolInfoCommand.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\DeleteSchoolInfo\\DeleteSchoolInfoCommand.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\DeleteSchoolInfo\\DeleteSchoolInfoCommand.cs",
-              "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\DeleteSchoolInfo\\DeleteSchoolInfoCommand.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\DeleteSchoolInfo\\DeleteSchoolInfoCommand.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\DeleteSchoolInfo\\DeleteSchoolInfoCommand.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\DeleteSchoolInfo\\DeleteSchoolInfoCommand.cs",
+              "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Commands\\DeleteSchoolInfo\\DeleteSchoolInfoCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T10:21:37.258Z",

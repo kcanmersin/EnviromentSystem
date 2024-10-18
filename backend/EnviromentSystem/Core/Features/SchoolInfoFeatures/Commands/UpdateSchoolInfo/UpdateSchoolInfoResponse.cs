@@ -1,4 +1,4 @@
-﻿namespace Core.Features.SchoolInfoFeatures.UpdateSchoolInfo
+﻿namespace Core.Features.SchoolInfoFeatures.Commands.UpdateSchoolInfo
 {
     public class UpdateSchoolInfoResponse
     {

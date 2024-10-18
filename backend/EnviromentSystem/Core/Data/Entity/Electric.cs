@@ -7,15 +7,14 @@ namespace Core.Data.Entity
     public class Electric : EntityBase
     {
         [Required]
-        public decimal Consumption { get; set; }  // Consumption in KW
+        public decimal Consumption { get; set; } 
 
         [Required]
-        public decimal Cost { get; set; }  // Cost of electricity
+        public decimal Cost { get; set; }  
 
         [Required]
-        public Guid SchoolInfoId { get; set; }  // Foreign key to SchoolInfo
+        public Guid SchoolInfoId { get; set; }  
 
-        // Navigation property
         [ForeignKey(nameof(SchoolInfoId))]
         public SchoolInfo SchoolInfo { get; set; }
     }

@@ -4,6 +4,7 @@ using Core.Features.SchoolInfoFeatures.Commands.CreateSchoolInfo;
 using Core.Features.SchoolInfoFeatures.Commands.UpdateSchoolInfo;
 using Core.Features.SchoolInfoFeatures.Commands.DeleteSchoolInfo;
 using Core.Features.SchoolInfoFeatures.Queries.GetSchoolInfo;
+using Core.Features.SchoolInfoFeatures.Queries.GetAllSchoolInfos;
 using Core.Features.SchoolInfoFeatures.GetAllSchoolInfos;
 
 namespace API.Controllers
@@ -22,48 +23,49 @@ namespace API.Controllers
         [HttpPost]
         public async Task<IActionResult> Create([FromBody] CreateSchoolInfoCommand command)
         {
-            var response = await _mediator.Send(command);
-            return Ok(response);
+            var result = await _mediator.Send(command);
+            if (!result.IsSuccess) return BadRequest(result.Error.Message);
+
+            return CreatedAtAction(nameof(Get), new { id = result.Value.Id }, result.Value);
         }
 
         [HttpPut]
         public async Task<IActionResult> Update([FromBody] UpdateSchoolInfoCommand command)
         {
-            var response = await _mediator.Send(command);
-            if (!response.Success) return NotFound(response.Message);
+            var result = await _mediator.Send(command);
+            if (!result.IsSuccess) return NotFound(result.Error.Message);
 
-            return Ok(response);
+            return Ok(result.Value);
         }
 
         [HttpDelete("{id:guid}")]
         public async Task<IActionResult> Delete(Guid id)
         {
             var command = new DeleteSchoolInfoCommand { Id = id };
-            var response = await _mediator.Send(command);
-            if (!response.Success) return NotFound(response.Message);
+            var result = await _mediator.Send(command);
+            if (!result.IsSuccess) return NotFound(result.Error.Message);
 
-            return Ok(response);
+            return Ok(result.Value);
         }
 
         [HttpGet("{id:guid}")]
         public async Task<IActionResult> Get(Guid id)
         {
             var query = new GetSchoolInfoQuery { Id = id };
-            var response = await _mediator.Send(query);
+            var result = await _mediator.Send(query);
 
-            if (response == null) return NotFound("SchoolInfo not found.");
+            if (result == null) return NotFound("SchoolInfo not found.");
 
-            return Ok(response);
+            return Ok(result);
         }
 
         [HttpGet]
         public async Task<IActionResult> GetAll()
         {
             var query = new GetAllSchoolInfosQuery();
-            var response = await _mediator.Send(query);
+            var result = await _mediator.Send(query);
 
-            return Ok(response);
+            return Ok(result);
         }
-
     }
 }

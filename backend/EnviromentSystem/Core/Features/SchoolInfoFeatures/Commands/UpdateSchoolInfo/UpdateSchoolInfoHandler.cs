@@ -1,11 +1,12 @@
 ﻿using MediatR;
 using Core.Data;
+using Core.Shared;
 using Microsoft.EntityFrameworkCore;
 using FluentValidation;
 
 namespace Core.Features.SchoolInfoFeatures.Commands.UpdateSchoolInfo
 {
-    public class UpdateSchoolInfoHandler : IRequestHandler<UpdateSchoolInfoCommand, UpdateSchoolInfoResponse>
+    public class UpdateSchoolInfoHandler : IRequestHandler<UpdateSchoolInfoCommand, Result<UpdateSchoolInfoResponse>>
     {
         private readonly ApplicationDbContext _context;
         private readonly IValidator<UpdateSchoolInfoCommand> _validator;
@@ -16,18 +17,20 @@ namespace Core.Features.SchoolInfoFeatures.Commands.UpdateSchoolInfo
             _validator = validator;
         }
 
-        public async Task<UpdateSchoolInfoResponse> Handle(UpdateSchoolInfoCommand request, CancellationToken cancellationToken)
+        public async Task<Result<UpdateSchoolInfoResponse>> Handle(UpdateSchoolInfoCommand request, CancellationToken cancellationToken)
         {
             var validationResult = await _validator.ValidateAsync(request, cancellationToken);
             if (!validationResult.IsValid)
             {
-                throw new ValidationException(validationResult.Errors);
+                return Result.Failure<UpdateSchoolInfoResponse>(
+                    new Error("ValidationFailed", validationResult.Errors.First().ErrorMessage)
+                );
             }
 
             var schoolInfo = await _context.SchoolInfos.FirstOrDefaultAsync(s => s.Id == request.Id, cancellationToken);
             if (schoolInfo == null)
             {
-                return new UpdateSchoolInfoResponse { Success = false, Message = "SchoolInfo not found." };
+                return Result.Failure<UpdateSchoolInfoResponse>(new Error("NotFound", "SchoolInfo not found."));
             }
 
             schoolInfo.NumberOfPeople = request.NumberOfPeople;
@@ -37,7 +40,7 @@ namespace Core.Features.SchoolInfoFeatures.Commands.UpdateSchoolInfo
 
             await _context.SaveChangesAsync(cancellationToken);
 
-            return new UpdateSchoolInfoResponse
+            var response = new UpdateSchoolInfoResponse
             {
                 Id = schoolInfo.Id,
                 NumberOfPeople = schoolInfo.NumberOfPeople,
@@ -45,6 +48,8 @@ namespace Core.Features.SchoolInfoFeatures.Commands.UpdateSchoolInfo
                 Month = schoolInfo.Month,
                 Success = true
             };
+
+            return Result.Success(response);
         }
     }
 }

@@ -1,28 +1,36 @@
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
-using System.Reflection;
 using Core.Data.Entity;
+
 namespace Core.Data
 {
-
     public class ApplicationDbContext : DbContext
     {
-        public ApplicationDbContext()
-        {
+        public DbSet<SchoolInfo> SchoolInfos { get; set; }
+        public DbSet<Electric> Electrics { get; set; }
+        public DbSet<Water> Waters { get; set; }
+        public DbSet<Paper> Papers { get; set; }
 
-        }
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
-        {
-        }
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
-        protected override void OnModelCreating(ModelBuilder builder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(builder);
-            builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+            // Define the relationships and constraints
+            modelBuilder.Entity<SchoolInfo>()
+                .HasMany(s => s.Electrics)
+                .WithOne(e => e.SchoolInfo)
+                .HasForeignKey(e => e.SchoolInfoId);
 
+            modelBuilder.Entity<SchoolInfo>()
+                .HasMany(s => s.Waters)
+                .WithOne(w => w.SchoolInfo)
+                .HasForeignKey(w => w.SchoolInfoId);
+
+            modelBuilder.Entity<SchoolInfo>()
+                .HasMany(s => s.Papers)
+                .WithOne(p => p.SchoolInfo)
+                .HasForeignKey(p => p.SchoolInfoId);
+
+            base.OnModelCreating(modelBuilder);
         }
     }
 }

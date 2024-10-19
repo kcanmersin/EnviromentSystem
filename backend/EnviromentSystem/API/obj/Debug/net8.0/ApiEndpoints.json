@@ -1,5 +1,79 @@
 [
   {
+    "ContainingType": "API.Controllers.ElectricController",
+    "Method": "Create",
+    "RelativePath": "api/Electric",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Core.Features.ElectricFeatures.Commands.CreateElectric.CreateElectricCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ElectricController",
+    "Method": "Update",
+    "RelativePath": "api/Electric",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "command",
+        "Type": "Core.Features.ElectricFeatures.Commands.UpdateElectric.UpdateElectricCommand",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ElectricController",
+    "Method": "GetAll",
+    "RelativePath": "api/Electric",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ElectricController",
+    "Method": "Delete",
+    "RelativePath": "api/Electric/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.ElectricController",
+    "Method": "Get",
+    "RelativePath": "api/Electric/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API.Controllers.SchoolInfoController",
     "Method": "Create",
     "RelativePath": "api/SchoolInfo",

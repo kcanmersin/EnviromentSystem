@@ -1,9 +1,8 @@
 ﻿using Core.Data;
+using Core.Features.ElectricFeatures.Queries.GetElectricById;
 using Core.Shared;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
-using Core.Features.ElectricFeatures.Queries.GetAllElectrics;
-using Core.Features.ElectricFeatures.Queries.GetElectricById;
 
 namespace Core.Features.ElectricFeatures.Queries.GetAllElectrics
 {
@@ -18,16 +17,22 @@ namespace Core.Features.ElectricFeatures.Queries.GetAllElectrics
 
         public async Task<Result<GetAllElectricsResponse>> Handle(GetAllElectricsQuery request, CancellationToken cancellationToken)
         {
-            var electrics = await _context.Electrics.ToListAsync(cancellationToken);
+            var electrics = await _context.Electrics
+                .Include(e => e.Building)  
+                .AsNoTracking()
+                .ToListAsync(cancellationToken);
 
             var responseItems = electrics.Select(e => new GetElectricByIdResponse
             {
                 Id = e.Id,
-                SchoolInfoId = e.SchoolInfoId,
-                Consumption = e.Consumption,
-                Cost = e.Cost,
-                //Year = e.Year,
-                //Month = e.Month,
+                BuildingId = e.BuildingId,
+                BuildingName = e.Building.Name,
+                E_MeterCode = e.Building.E_MeterCode,
+                Date = e.Date,
+                InitialMeterValue = e.InitialMeterValue,
+                FinalMeterValue = e.FinalMeterValue,
+                Usage = e.Usage,
+                KWHValue = e.KWHValue,
                 CreatedDate = e.CreatedDate
             }).ToList();
 

@@ -16,7 +16,10 @@ namespace Core.Features.ElectricFeatures.Queries.GetElectricById
 
         public async Task<Result<GetElectricByIdResponse>> Handle(GetElectricByIdQuery request, CancellationToken cancellationToken)
         {
-            var electric = await _context.Electrics.FirstOrDefaultAsync(e => e.Id == request.Id, cancellationToken);
+            var electric = await _context.Electrics
+                .Include(e => e.Building)  
+                .AsNoTracking()
+                .FirstOrDefaultAsync(e => e.Id == request.Id, cancellationToken);
 
             if (electric == null)
             {
@@ -27,11 +30,14 @@ namespace Core.Features.ElectricFeatures.Queries.GetElectricById
             var response = new GetElectricByIdResponse
             {
                 Id = electric.Id,
-                SchoolInfoId = electric.SchoolInfoId,
-                Consumption = electric.Consumption,
-                Cost = electric.Cost,
-                //Year = electric.Year,
-                //Month = electric.Month,
+                BuildingId = electric.BuildingId,
+                BuildingName = electric.Building.Name,
+                E_MeterCode = electric.Building.E_MeterCode,
+                Date = electric.Date,
+                InitialMeterValue = electric.InitialMeterValue,
+                FinalMeterValue = electric.FinalMeterValue,
+                Usage = electric.Usage,
+                KWHValue = electric.KWHValue,
                 CreatedDate = electric.CreatedDate
             };
 

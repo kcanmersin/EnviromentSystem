@@ -1,7 +1,7 @@
 ﻿using Core.Data;
 using Core.Shared;
-using MediatR;
 using FluentValidation;
+using MediatR;
 using Microsoft.EntityFrameworkCore;
 
 namespace Core.Features.ElectricFeatures.Commands.UpdateElectric
@@ -33,11 +33,12 @@ namespace Core.Features.ElectricFeatures.Commands.UpdateElectric
                     new Error("ElectricNotFound", "Electric record not found."));
             }
 
-            electric.SchoolInfoId = request.SchoolInfoId;
-            electric.Consumption = request.Consumption;
-            electric.Cost = request.Cost;
-            //electric.Year = request.Year;
-            //electric.Month = request.Month;
+            electric.BuildingId = request.BuildingId;
+            electric.Date = request.Date;
+            electric.InitialMeterValue = request.InitialMeterValue;
+            electric.FinalMeterValue = request.FinalMeterValue;
+            electric.Usage = request.Usage;
+            electric.KWHValue = request.KWHValue;
             electric.ModifiedDate = DateTime.UtcNow;
 
             await _context.SaveChangesAsync(cancellationToken);
@@ -45,11 +46,12 @@ namespace Core.Features.ElectricFeatures.Commands.UpdateElectric
             var response = new UpdateElectricResponse
             {
                 Id = electric.Id,
-                SchoolInfoId = electric.SchoolInfoId,
-                Consumption = electric.Consumption,
-                Cost = electric.Cost,
-                //Year = electric.Year,
-                //Month = electric.Month,
+                BuildingId = electric.BuildingId,
+                Date = electric.Date,
+                InitialMeterValue = electric.InitialMeterValue,
+                FinalMeterValue = electric.FinalMeterValue,
+                Usage = electric.Usage,
+                KWHValue = electric.KWHValue,
                 Success = true,
                 Message = "Electric record updated successfully."
             };

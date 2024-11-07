@@ -12,3 +12,5 @@
 *.db-wal
 *.v2
 *.bin
+backend/EnviromentSystem/en.xlsx
+machine learning/veri.xlsx

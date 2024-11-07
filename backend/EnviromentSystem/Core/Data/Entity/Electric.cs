@@ -1,4 +1,5 @@
 ﻿using Core.Data.Entity.EntityBases;
+using System;
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
@@ -7,15 +8,24 @@ namespace Core.Data.Entity
     public class Electric : EntityBase
     {
         [Required]
-        public decimal Consumption { get; set; } 
+        public DateTime Date { get; set; }
 
         [Required]
-        public decimal Cost { get; set; }  
+        public decimal InitialMeterValue { get; set; }
 
         [Required]
-        public Guid SchoolInfoId { get; set; }  
+        public decimal FinalMeterValue { get; set; }
 
-        [ForeignKey(nameof(SchoolInfoId))]
-        public SchoolInfo SchoolInfo { get; set; }
+        [Required]
+        public decimal Usage { get; set; }
+
+        [Required]
+        public decimal KWHValue { get; set; }
+
+        [Required]
+        public Guid BuildingId { get; set; } 
+
+        [ForeignKey(nameof(BuildingId))]
+        public Building Building { get; set; }
     }
 }

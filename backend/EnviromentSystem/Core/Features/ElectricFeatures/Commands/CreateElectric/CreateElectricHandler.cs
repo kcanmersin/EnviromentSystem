@@ -1,8 +1,8 @@
-﻿using Core.Data;
-using Core.Data.Entity;
+﻿using Core.Data.Entity;
+using Core.Data;
 using Core.Shared;
-using MediatR;
 using FluentValidation;
+using MediatR;
 
 namespace Core.Features.ElectricFeatures.Commands.CreateElectric
 {
@@ -28,11 +28,12 @@ namespace Core.Features.ElectricFeatures.Commands.CreateElectric
 
             var electric = new Electric
             {
-                SchoolInfoId = request.SchoolInfoId,
-                Consumption = request.Consumption,
-                Cost = request.Cost,
-                //Year = request.Year,
-                //Month = request.Month,
+                BuildingId = request.BuildingId,
+                Date = request.Date,
+                InitialMeterValue = request.InitialMeterValue,
+                FinalMeterValue = request.FinalMeterValue,
+                Usage = request.Usage,
+                KWHValue = request.KWHValue,
                 CreatedDate = DateTime.UtcNow
             };
 
@@ -42,11 +43,12 @@ namespace Core.Features.ElectricFeatures.Commands.CreateElectric
             var response = new CreateElectricResponse
             {
                 Id = electric.Id,
-                SchoolInfoId = electric.SchoolInfoId,
-                Consumption = electric.Consumption,
-                Cost = electric.Cost,
-                //Year = electric.Year,
-                //Month = electric.Month,
+                BuildingId = electric.BuildingId,
+                Date = electric.Date,
+                InitialMeterValue = electric.InitialMeterValue,
+                FinalMeterValue = electric.FinalMeterValue,
+                Usage = electric.Usage,
+                KWHValue = electric.KWHValue,
                 CreatedDate = electric.CreatedDate
             };
 

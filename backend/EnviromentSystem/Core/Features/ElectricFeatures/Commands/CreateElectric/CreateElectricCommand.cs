@@ -1,14 +1,13 @@
-﻿using Core.Shared;
+﻿using Core.Features.ElectricFeatures.Commands.CreateElectric;
+using Core.Shared;
 using MediatR;
 
-namespace Core.Features.ElectricFeatures.Commands.CreateElectric
+public class CreateElectricCommand : IRequest<Result<CreateElectricResponse>>
 {
-    public class CreateElectricCommand : IRequest<Result<CreateElectricResponse>>
-    {
-        public Guid SchoolInfoId { get; set; }
-        public decimal Consumption { get; set; }
-        public decimal Cost { get; set; }
-        public int Year { get; set; }
-        public string Month { get; set; } = string.Empty;
-    }
+    public Guid BuildingId { get; set; }
+    public decimal InitialMeterValue { get; set; }
+    public decimal FinalMeterValue { get; set; }
+    public decimal Usage { get; set; }
+    public decimal KWHValue { get; set; }
+    public DateTime Date { get; set; }
 }

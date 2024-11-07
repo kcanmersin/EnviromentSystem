@@ -12,6 +12,26 @@ namespace Core.Migrations
         protected override void Up(MigrationBuilder migrationBuilder)
         {
             migrationBuilder.CreateTable(
+                name: "Buildings",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uuid", nullable: false),
+                    Name = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
+                    E_MeterCode = table.Column<string>(type: "character varying(20)", maxLength: 20, nullable: false),
+                    CreatedBy = table.Column<string>(type: "text", nullable: true),
+                    ModifiedBy = table.Column<string>(type: "text", nullable: true),
+                    DeletedBy = table.Column<string>(type: "text", nullable: true),
+                    CreatedDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    ModifiedDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
+                    DeletedDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "boolean", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Buildings", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
                 name: "SchoolInfos",
                 columns: table => new
                 {
@@ -37,9 +57,13 @@ namespace Core.Migrations
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uuid", nullable: false),
-                    Consumption = table.Column<decimal>(type: "numeric", nullable: false),
-                    Cost = table.Column<decimal>(type: "numeric", nullable: false),
-                    SchoolInfoId = table.Column<Guid>(type: "uuid", nullable: false),
+                    Date = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    InitialMeterValue = table.Column<decimal>(type: "numeric(18,2)", nullable: false),
+                    FinalMeterValue = table.Column<decimal>(type: "numeric(18,2)", nullable: false),
+                    Usage = table.Column<decimal>(type: "numeric(18,2)", nullable: false),
+                    KWHValue = table.Column<decimal>(type: "numeric(18,2)", nullable: false),
+                    BuildingId = table.Column<Guid>(type: "uuid", nullable: false),
+                    SchoolInfoId = table.Column<Guid>(type: "uuid", nullable: true),
                     CreatedBy = table.Column<string>(type: "text", nullable: true),
                     ModifiedBy = table.Column<string>(type: "text", nullable: true),
                     DeletedBy = table.Column<string>(type: "text", nullable: true),
@@ -52,11 +76,16 @@ namespace Core.Migrations
                 {
                     table.PrimaryKey("PK_Electrics", x => x.Id);
                     table.ForeignKey(
+                        name: "FK_Electrics_Buildings_BuildingId",
+                        column: x => x.BuildingId,
+                        principalTable: "Buildings",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                    table.ForeignKey(
                         name: "FK_Electrics_SchoolInfos_SchoolInfoId",
                         column: x => x.SchoolInfoId,
                         principalTable: "SchoolInfos",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        principalColumn: "Id");
                 });
 
             migrationBuilder.CreateTable(
@@ -114,6 +143,11 @@ namespace Core.Migrations
                 });
 
             migrationBuilder.CreateIndex(
+                name: "IX_Electrics_BuildingId",
+                table: "Electrics",
+                column: "BuildingId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Electrics_SchoolInfoId",
                 table: "Electrics",
                 column: "SchoolInfoId");
@@ -140,6 +174,9 @@ namespace Core.Migrations
 
             migrationBuilder.DropTable(
                 name: "Waters");
+
+            migrationBuilder.DropTable(
+                name: "Buildings");
 
             migrationBuilder.DropTable(
                 name: "SchoolInfos");

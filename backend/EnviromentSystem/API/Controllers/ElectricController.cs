@@ -5,6 +5,7 @@ using Core.Features.ElectricFeatures.Commands.UpdateElectric;
 using Core.Features.ElectricFeatures.Commands.DeleteElectric;
 using Core.Features.ElectricFeatures.Queries.GetAllElectrics;
 using Core.Features.ElectricFeatures.Queries.GetElectricById;
+using API.Contracts.Electric;
 
 namespace API.Controllers
 {
@@ -23,26 +24,35 @@ namespace API.Controllers
         public async Task<IActionResult> Create([FromBody] CreateElectricCommand command)
         {
             var result = await _mediator.Send(command);
-            if (!result.IsSuccess) return BadRequest(result.Error.Message);
+            if (!result.IsSuccess)
+                return BadRequest(new { Error = result.Error.Message });
 
             return CreatedAtAction(nameof(Get), new { id = result.Value.Id }, result.Value);
         }
 
-        [HttpPut]
-        public async Task<IActionResult> Update([FromBody] UpdateElectricCommand command)
+        [HttpPut("{id:guid}")]
+        public async Task<IActionResult> Update(Guid id, [FromBody] UpdateElectricCommand command)
         {
+            if (id != command.Id)
+                return BadRequest(new { Error = "Mismatched ID in request URL and payload." });
+
             var result = await _mediator.Send(command);
-            if (!result.IsSuccess) return NotFound(result.Error.Message);
+            if (!result.IsSuccess)
+                return result.Error.Code == "NotFound" ? NotFound(new { Error = result.Error.Message }) : BadRequest(new { Error = result.Error.Message });
 
             return Ok(result.Value);
         }
 
         [HttpDelete("{id:guid}")]
-        public async Task<IActionResult> Delete(Guid id)
+        public async Task<IActionResult> Delete([FromRoute] Guid id, [FromBody] DeleteElectricRequest request)
         {
-            var command = new DeleteElectricCommand { Id = id };
+            if (id != request.Id)
+                return BadRequest(new { Error = "Mismatched ID in request URL and payload." });
+
+            var command = new DeleteElectricCommand { Id = request.Id };
             var result = await _mediator.Send(command);
-            if (!result.IsSuccess) return NotFound(result.Error.Message);
+            if (!result.IsSuccess)
+                return result.Error.Code == "NotFound" ? NotFound(new { Error = result.Error.Message }) : BadRequest(new { Error = result.Error.Message });
 
             return Ok(result.Value);
         }
@@ -50,12 +60,13 @@ namespace API.Controllers
         [HttpGet("{id:guid}")]
         public async Task<IActionResult> Get(Guid id)
         {
-            var query = new GetElectricByIdQuery() { Id = id };
+            var query = new GetElectricByIdQuery { Id = id };
             var result = await _mediator.Send(query);
 
-            if (result == null) return NotFound("Electric record not found.");
+            if (!result.IsSuccess)
+                return NotFound(new { Error = result.Error.Message });
 
-            return Ok(result);
+            return Ok(result.Value);
         }
 
         [HttpGet]
@@ -64,7 +75,7 @@ namespace API.Controllers
             var query = new GetAllElectricsQuery();
             var result = await _mediator.Send(query);
 
-            return Ok(result);
+            return result.IsSuccess ? Ok(result.Value) : BadRequest(new { Error = result.Error.Message });
         }
     }
 }

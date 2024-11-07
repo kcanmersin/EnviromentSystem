@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Core.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20241018100801_XX")]
+    [Migration("20241107230820_XX")]
     partial class XX
     {
         /// <inheritdoc />
@@ -25,17 +25,11 @@ namespace Core.Migrations
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
 
-            modelBuilder.Entity("Core.Data.Entity.Electric", b =>
+            modelBuilder.Entity("Core.Data.Entity.Building", b =>
                 {
                     b.Property<Guid>("Id")
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
-
-                    b.Property<decimal>("Consumption")
-                        .HasColumnType("numeric");
-
-                    b.Property<decimal>("Cost")
-                        .HasColumnType("numeric");
 
                     b.Property<string>("CreatedBy")
                         .HasColumnType("text");
@@ -49,6 +43,11 @@ namespace Core.Migrations
                     b.Property<DateTime?>("DeletedDate")
                         .HasColumnType("timestamp with time zone");
 
+                    b.Property<string>("E_MeterCode")
+                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("character varying(20)");
+
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("boolean");
 
@@ -58,14 +57,71 @@ namespace Core.Migrations
                     b.Property<DateTime?>("ModifiedDate")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<Guid>("SchoolInfoId")
-                        .HasColumnType("uuid");
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(100)
+                        .HasColumnType("character varying(100)");
 
                     b.HasKey("Id");
 
+                    b.ToTable("Buildings", (string)null);
+                });
+
+            modelBuilder.Entity("Core.Data.Entity.Electric", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("BuildingId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("DeletedBy")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime?>("DeletedDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<decimal>("FinalMeterValue")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("InitialMeterValue")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("boolean");
+
+                    b.Property<decimal>("KWHValue")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<string>("ModifiedBy")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime?>("ModifiedDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<Guid?>("SchoolInfoId")
+                        .HasColumnType("uuid");
+
+                    b.Property<decimal>("Usage")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BuildingId");
+
                     b.HasIndex("SchoolInfoId");
 
-                    b.ToTable("Electrics");
+                    b.ToTable("Electrics", (string)null);
                 });
 
             modelBuilder.Entity("Core.Data.Entity.Paper", b =>
@@ -108,7 +164,7 @@ namespace Core.Migrations
 
                     b.HasIndex("SchoolInfoId");
 
-                    b.ToTable("Papers");
+                    b.ToTable("Papers", (string)null);
                 });
 
             modelBuilder.Entity("Core.Data.Entity.SchoolInfo", b =>
@@ -151,7 +207,7 @@ namespace Core.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("SchoolInfos");
+                    b.ToTable("SchoolInfos", (string)null);
                 });
 
             modelBuilder.Entity("Core.Data.Entity.Water", b =>
@@ -194,18 +250,22 @@ namespace Core.Migrations
 
                     b.HasIndex("SchoolInfoId");
 
-                    b.ToTable("Waters");
+                    b.ToTable("Waters", (string)null);
                 });
 
             modelBuilder.Entity("Core.Data.Entity.Electric", b =>
                 {
-                    b.HasOne("Core.Data.Entity.SchoolInfo", "SchoolInfo")
+                    b.HasOne("Core.Data.Entity.Building", "Building")
                         .WithMany("Electrics")
-                        .HasForeignKey("SchoolInfoId")
+                        .HasForeignKey("BuildingId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.Navigation("SchoolInfo");
+                    b.HasOne("Core.Data.Entity.SchoolInfo", null)
+                        .WithMany("Electrics")
+                        .HasForeignKey("SchoolInfoId");
+
+                    b.Navigation("Building");
                 });
 
             modelBuilder.Entity("Core.Data.Entity.Paper", b =>
@@ -228,6 +288,11 @@ namespace Core.Migrations
                         .IsRequired();
 
                     b.Navigation("SchoolInfo");
+                });
+
+            modelBuilder.Entity("Core.Data.Entity.Building", b =>
+                {
+                    b.Navigation("Electrics");
                 });
 
             modelBuilder.Entity("Core.Data.Entity.SchoolInfo", b =>

@@ -86,6 +86,197 @@ namespace API
         public string? Summary { get; set; }
     }
 }
+﻿namespace API.Contracts.Electric
+{
+    public class CreateElectricRequest
+    {
+        public Guid SchoolInfoId { get; set; }
+        public decimal Consumption { get; set; }
+        public decimal Cost { get; set; }
+        public int Year { get; set; }
+        public string Month { get; set; } = string.Empty;
+    }
+}
+﻿namespace API.Contracts.Electric
+{
+    public class CreateElectricResponse
+    {
+        public Guid Id { get; set; }
+        public Guid SchoolInfoId { get; set; }
+        public decimal Consumption { get; set; }
+        public decimal Cost { get; set; }
+        public DateTime CreatedDate { get; set; }
+    }
+}
+﻿namespace API.Contracts.Electric
+{
+    public class UpdateElectricRequest
+    {
+        public Guid Id { get; set; }
+        public decimal Consumption { get; set; }
+        public decimal Cost { get; set; }
+        public int Year { get; set; }
+        public string Month { get; set; } = string.Empty;
+    }
+}
+﻿namespace API.Contracts.Electric
+{
+    public class UpdateElectricResponse
+    {
+    }
+}
+﻿namespace API.Contracts.SchoolInfo
+{
+    public class CreateSchoolInfoRequest
+    {
+        public int NumberOfPeople { get; set; }
+        public int Year { get; set; }
+        public string Month { get; set; }
+    }
+}
+﻿namespace API.Contracts.SchoolInfo
+{
+    public class DeleteSchoolInfoRequest
+    {
+        public Guid Id { get; set; }
+    }
+}
+﻿namespace API.Contracts.SchoolInfo
+{
+    public class UpdateSchoolInfoRequest
+    {
+        public Guid Id { get; set; }
+        public int NumberOfPeople { get; set; }
+        public int Year { get; set; }
+        public string Month { get; set; }
+    }
+}
+
+namespace API.Controllers
+{
+    [ApiController]
+    [Route("api/[controller]")]
+    public class ElectricController : ControllerBase
+    {
+        private readonly IMediator _mediator;
+
+        public ElectricController(IMediator mediator)
+        {
+            _mediator = mediator;
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create([FromBody] CreateElectricCommand command)
+        {
+            var result = await _mediator.Send(command);
+            if (!result.IsSuccess) return BadRequest(result.Error.Message);
+
+            return CreatedAtAction(nameof(Get), new { id = result.Value.Id }, result.Value);
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> Update([FromBody] UpdateElectricCommand command)
+        {
+            var result = await _mediator.Send(command);
+            if (!result.IsSuccess) return NotFound(result.Error.Message);
+
+            return Ok(result.Value);
+        }
+
+        [HttpDelete("{id:guid}")]
+        public async Task<IActionResult> Delete(Guid id)
+        {
+            var command = new DeleteElectricCommand { Id = id };
+            var result = await _mediator.Send(command);
+            if (!result.IsSuccess) return NotFound(result.Error.Message);
+
+            return Ok(result.Value);
+        }
+
+        [HttpGet("{id:guid}")]
+        public async Task<IActionResult> Get(Guid id)
+        {
+            var query = new GetElectricByIdQuery() { Id = id };
+            var result = await _mediator.Send(query);
+
+            if (result == null) return NotFound("Electric record not found.");
+
+            return Ok(result);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAll()
+        {
+            var query = new GetAllElectricsQuery();
+            var result = await _mediator.Send(query);
+
+            return Ok(result);
+        }
+    }
+}
+
+namespace API.Controllers
+{
+    [ApiController]
+    [Route("api/[controller]")]
+    public class SchoolInfoController : ControllerBase
+    {
+        private readonly IMediator _mediator;
+
+        public SchoolInfoController(IMediator mediator)
+        {
+            _mediator = mediator;
+        }
+
+        [HttpPost]
+        public async Task<IActionResult> Create([FromBody] CreateSchoolInfoCommand command)
+        {
+            var result = await _mediator.Send(command);
+            if (!result.IsSuccess) return BadRequest(result.Error.Message);
+
+            return CreatedAtAction(nameof(Get), new { id = result.Value.Id }, result.Value);
+        }
+
+        [HttpPut]
+        public async Task<IActionResult> Update([FromBody] UpdateSchoolInfoCommand command)
+        {
+            var result = await _mediator.Send(command);
+            if (!result.IsSuccess) return NotFound(result.Error.Message);
+
+            return Ok(result.Value);
+        }
+
+        [HttpDelete("{id:guid}")]
+        public async Task<IActionResult> Delete(Guid id)
+        {
+            var command = new DeleteSchoolInfoCommand { Id = id };
+            var result = await _mediator.Send(command);
+            if (!result.IsSuccess) return NotFound(result.Error.Message);
+
+            return Ok(result.Value);
+        }
+
+        [HttpGet("{id:guid}")]
+        public async Task<IActionResult> Get(Guid id)
+        {
+            var query = new GetSchoolInfoQuery { Id = id };
+            var result = await _mediator.Send(query);
+
+            if (result == null) return NotFound("SchoolInfo not found.");
+
+            return Ok(result);
+        }
+
+        [HttpGet]
+        public async Task<IActionResult> GetAll()
+        {
+            var query = new GetAllSchoolInfosQuery();
+            var result = await _mediator.Send(query);
+
+            return Ok(result);
+        }
+    }
+}
 
 namespace API.Controllers
 {
@@ -271,7 +462,7 @@ public class RequestResponseLoggingMiddleware
 [assembly: System.Reflection.AssemblyCompanyAttribute("API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+94ff359893b8604ea8c9344664999390e2c90616")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1fa47c035df411090cb56437d2e97b335ea72e0b")]
 [assembly: System.Reflection.AssemblyProductAttribute("API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
@@ -320,52 +511,145 @@ public class RequestResponseLoggingMiddleware
 // Generated by the MSBuild WriteCodeFragment class.
 
 // <auto-generated/>
-﻿namespace Core
-{
-    public class Class1
-    {
 
-    }
-}
 namespace Core.Data
 {
-
     public class ApplicationDbContext : DbContext
     {
-        public ApplicationDbContext()
-        {
+        public DbSet<Electric> Electrics { get; set; }
+        public DbSet<Water> Waters { get; set; }
+        public DbSet<Paper> Papers { get; set; }
+        public DbSet<Building> Buildings { get; set; }
 
-        }
-        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options)
-        {
-        }
+        public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
-        protected override void OnModelCreating(ModelBuilder builder)
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            base.OnModelCreating(builder);
-            builder.ApplyConfigurationsFromAssembly(Assembly.GetExecutingAssembly());
+            modelBuilder.Entity<Electric>()
+                .ToTable("Electrics")
+                .HasOne(e => e.Building)         
+                .WithMany(b => b.Electrics)     
+                .HasForeignKey(e => e.BuildingId) 
+                .OnDelete(DeleteBehavior.Cascade);
 
+            modelBuilder.Entity<Water>().ToTable("Waters");
+            modelBuilder.Entity<Paper>().ToTable("Papers");
+            modelBuilder.Entity<Building>().ToTable("Buildings"); 
+
+            base.OnModelCreating(modelBuilder);
         }
     }
 }
+
+namespace Core.Data.Entity
+{
+    public class Building : EntityBase
+    {
+        [Required, MaxLength(100)]
+        public string Name { get; set; }
+
+        public ICollection<Electric> Electrics { get; set; } = new List<Electric>();
+    }
+}
+
+namespace Core.Data.Entity
+{
+    public class Electric : EntityBase
+    {
+        [Required]
+        public DateTime Date { get; set; }
+
+        [Required, MaxLength(20)]
+        public string MeterCode { get; set; }
+
+        [Required]
+        public decimal InitialMeterValue { get; set; }
+
+        [Required]
+        public decimal FinalMeterValue { get; set; }
+
+        [Required]
+        public decimal Usage { get; set; }
+
+        [Required]
+        public decimal KWHValue { get; set; }
+
+        [Required]
+        public Guid BuildingId { get; set; } 
+
+        [ForeignKey(nameof(BuildingId))]
+        public Building Building { get; set; }
+    }
+}
+
+namespace Core.Data.Entity
+{
+    public class Paper : EntityBase
+    {
+        [Required]
+        public decimal Consumption { get; set; } 
+        [Required]
+        public decimal Cost { get; set; }  
+
+        [Required]
+        public Guid SchoolInfoId { get; set; }  
+
+        [ForeignKey(nameof(SchoolInfoId))]
+        public SchoolInfo SchoolInfo { get; set; }
+    }
+}
+
+namespace Core.Data.Entity
+{
+    public class SchoolInfo : EntityBase
+    {
+        [Required]
+        public int NumberOfPeople { get; set; } 
+
+        [Required]
+        public int Year { get; set; } 
+
+        [Required]
+        [MaxLength(15)]
+        public string Month { get; set; } 
+
+        public ICollection<Electric> Electrics { get; set; } = new List<Electric>();
+        public ICollection<Water> Waters { get; set; } = new List<Water>();
+        public ICollection<Paper> Papers { get; set; } = new List<Paper>();
+    }
+}
+
+namespace Core.Data.Entity
+{
+    public class Water : EntityBase
+    {
+        [Required]
+        public decimal Consumption { get; set; }  
+        [Required]
+        public decimal Cost { get; set; } 
+
+        [Required]
+        public Guid SchoolInfoId { get; set; } 
+
+        [ForeignKey(nameof(SchoolInfoId))]
+        public SchoolInfo SchoolInfo { get; set; }
+    }
+}
+
 namespace Core.Data.Entity.EntityBases
 {
-  public abstract class EntityBase : IEntityBase
+    public abstract class EntityBase : IEntityBase
     {
         public virtual Guid Id { get; set; } = Guid.NewGuid();
-
         public virtual string? CreatedBy { get; set; }
         public virtual string? ModifiedBy { get; set; }
         public virtual string? DeletedBy { get; set; }
-
-        public virtual DateTime CreatedDate { get; set; } = DateTime.UtcNow;          // = DateTime.Now;
+        public virtual DateTime CreatedDate { get; set; } = DateTime.UtcNow;
         public virtual DateTime? ModifiedDate { get; set; }
         public virtual DateTime? DeletedDate { get; set; }
         public virtual bool IsDeleted { get; set; } = false;
-
-
-
     }
+
 }
 
 namespace Core.Data.Entity.EntityBases
@@ -414,19 +698,10 @@ namespace Core.Extensions
     {
         public static IServiceCollection LoadCoreLayerExtension(this IServiceCollection services, IConfiguration configuration)
         {
-            // services.AddIdentity<AppUser, AppRole>(opt =>
-            //{
-            //    opt.Password.RequireNonAlphanumeric = false;
-            //    opt.Password.RequireLowercase = false;
-            //    opt.Password.RequireUppercase = false;
-            //    opt.Password.RequireDigit = false;
-            //    opt.Password.RequiredLength = 6;
-            //})
-            //.AddRoleManager<RoleManager<AppRole>>()
-            //.AddEntityFrameworkStores<ApplicationDbContext>()
-            //.AddDefaultTokenProviders();
-            // Connection string
-            var defaultConnectionString = Environment.GetEnvironmentVariable("ConnectionString__DefaultConnection") ?? configuration["ConnectionStrings:DefaultConnection"];
+            var postgresUri = Environment.GetEnvironmentVariable("Enviroment_ConnectionString")
+                              ?? configuration.GetConnectionString("DefaultConnection");
+
+            var defaultConnectionString = ConvertPostgresUriToConnectionString(postgresUri);
 
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseNpgsql(defaultConnectionString));
@@ -442,17 +717,27 @@ namespace Core.Extensions
             };
             services.AddSingleton(jwtSettings);
 
-            services.AddScoped<IJwtService, JwtService>();
+          
             services.AddMediatR(Assembly.GetExecutingAssembly());
 
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 
+
             return services;
+        }
+
+        private static string ConvertPostgresUriToConnectionString(string postgresUri)
+        {
+            var uri = new Uri(postgresUri);
+            var userInfo = uri.UserInfo.Split(':');
+            var username = userInfo[0];
+            var password = userInfo[1];
+
+            return $"Host={uri.Host};Port={uri.Port};Username={username};Password={password};Database={uri.AbsolutePath.TrimStart('/')};SSL Mode=Require;Trust Server Certificate=true";
         }
 
         public static IApplicationBuilder UseCoreLayerRecurringJobs(this IApplicationBuilder app)
         {
-
             return app;
         }
     }
@@ -495,6 +780,749 @@ namespace Core.Extensions
         }
     }
 }
+
+namespace Core.Features.ElectricFeatures.Commands.CreateElectric
+{
+    public class CreateElectricCommand : IRequest<Result<CreateElectricResponse>>
+    {
+        public Guid SchoolInfoId { get; set; }
+        public decimal Consumption { get; set; }
+        public decimal Cost { get; set; }
+        public int Year { get; set; }
+        public string Month { get; set; } = string.Empty;
+    }
+}
+
+namespace Core.Features.ElectricFeatures.Commands.CreateElectric
+{
+    public class CreateElectricHandler : IRequestHandler<CreateElectricCommand, Result<CreateElectricResponse>>
+    {
+        private readonly ApplicationDbContext _context;
+        private readonly IValidator<CreateElectricCommand> _validator;
+
+        public CreateElectricHandler(ApplicationDbContext context, IValidator<CreateElectricCommand> validator)
+        {
+            _context = context;
+            _validator = validator;
+        }
+
+        public async Task<Result<CreateElectricResponse>> Handle(CreateElectricCommand request, CancellationToken cancellationToken)
+        {
+            var validationResult = await _validator.ValidateAsync(request, cancellationToken);
+            if (!validationResult.IsValid)
+            {
+                return Result.Failure<CreateElectricResponse>(
+                    new Error("ValidationFailed", validationResult.Errors.First().ErrorMessage));
+            }
+
+            var electric = new Electric
+            {
+                SchoolInfoId = request.SchoolInfoId,
+                Consumption = request.Consumption,
+                Cost = request.Cost,
+                //Year = request.Year,
+                //Month = request.Month,
+                CreatedDate = DateTime.UtcNow
+            };
+
+            _context.Electrics.Add(electric);
+            await _context.SaveChangesAsync(cancellationToken);
+
+            var response = new CreateElectricResponse
+            {
+                Id = electric.Id,
+                SchoolInfoId = electric.SchoolInfoId,
+                Consumption = electric.Consumption,
+                Cost = electric.Cost,
+                //Year = electric.Year,
+                //Month = electric.Month,
+                CreatedDate = electric.CreatedDate
+            };
+
+            return Result.Success(response);
+        }
+    }
+}
+﻿namespace Core.Features.ElectricFeatures.Commands.CreateElectric
+{
+    public class CreateElectricResponse
+    {
+        public Guid Id { get; set; }
+        public Guid SchoolInfoId { get; set; }
+        public decimal Consumption { get; set; }
+        public decimal Cost { get; set; }
+        public int Year { get; set; }
+        public string Month { get; set; } = string.Empty;
+        public DateTime CreatedDate { get; set; }
+    }
+}
+
+namespace Core.Features.ElectricFeatures.Commands.CreateElectric
+{
+    public class CreateElectricValidator : AbstractValidator<CreateElectricCommand>
+    {
+        public CreateElectricValidator()
+        {
+            RuleFor(x => x.SchoolInfoId).NotEmpty().WithMessage("SchoolInfoId is required.");
+            RuleFor(x => x.Consumption).GreaterThan(0).WithMessage("Consumption must be greater than 0.");
+            RuleFor(x => x.Cost).GreaterThanOrEqualTo(0).WithMessage("Cost cannot be negative.");
+            RuleFor(x => x.Year).InclusiveBetween(2000, DateTime.Now.Year).WithMessage("Year must be valid.");
+            RuleFor(x => x.Month)
+                .NotEmpty()
+                .Must(BeAValidMonth).WithMessage("Month must be a valid month name.");
+        }
+
+        private bool BeAValidMonth(string month)
+        {
+            var validMonths = new[]
+            {
+                "Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran",
+                "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"
+            };
+            return validMonths.Contains(month);
+        }
+    }
+}
+
+namespace Core.Features.ElectricFeatures.Commands.DeleteElectric
+{
+    public class DeleteElectricCommand : IRequest<Result<DeleteElectricResponse>>
+    {
+        public Guid Id { get; set; }
+    }
+}
+
+namespace Core.Features.ElectricFeatures.Commands.DeleteElectric
+{
+    public class DeleteElectricHandler : IRequestHandler<DeleteElectricCommand, Result<DeleteElectricResponse>>
+    {
+        private readonly ApplicationDbContext _context;
+        private readonly IValidator<DeleteElectricCommand> _validator;
+
+        public DeleteElectricHandler(ApplicationDbContext context, IValidator<DeleteElectricCommand> validator)
+        {
+            _context = context;
+            _validator = validator;
+        }
+
+        public async Task<Result<DeleteElectricResponse>> Handle(DeleteElectricCommand request, CancellationToken cancellationToken)
+        {
+            var validationResult = await _validator.ValidateAsync(request, cancellationToken);
+            if (!validationResult.IsValid)
+            {
+                return Result.Failure<DeleteElectricResponse>(
+                    new Error("ValidationFailed", validationResult.Errors.First().ErrorMessage));
+            }
+
+            var electric = await _context.Electrics.FirstOrDefaultAsync(e => e.Id == request.Id, cancellationToken);
+
+            if (electric == null)
+            {
+                return Result.Failure<DeleteElectricResponse>(
+                    new Error("ElectricNotFound", "Electric record not found."));
+            }
+
+            _context.Electrics.Remove(electric);
+            await _context.SaveChangesAsync(cancellationToken);
+
+            return Result.Success(new DeleteElectricResponse
+            {
+                Id = electric.Id,
+                Success = true,
+                Message = "Electric record deleted successfully."
+            });
+        }
+    }
+}
+﻿namespace Core.Features.ElectricFeatures.Commands.DeleteElectric
+{
+    public class DeleteElectricResponse
+    {
+        public Guid Id { get; set; }
+        public bool Success { get; set; }
+        public string Message { get; set; } = string.Empty;
+    }
+}
+
+namespace Core.Features.ElectricFeatures.Commands.DeleteElectric
+{
+    public class DeleteElectricValidator : AbstractValidator<DeleteElectricCommand>
+    {
+        public DeleteElectricValidator()
+        {
+            RuleFor(x => x.Id)
+                .NotEmpty().WithMessage("Id cannot be empty.")
+                .NotEqual(Guid.Empty).WithMessage("Id must be a valid GUID.");
+        }
+    }
+}
+
+namespace Core.Features.ElectricFeatures.Commands.UpdateElectric
+{
+    public class UpdateElectricCommand : IRequest<Result<UpdateElectricResponse>>
+    {
+        public Guid Id { get; set; }
+        public Guid SchoolInfoId { get; set; }
+        public decimal Consumption { get; set; }
+        public decimal Cost { get; set; }
+        public int Year { get; set; }
+        public string Month { get; set; } = string.Empty;
+    }
+}
+
+namespace Core.Features.ElectricFeatures.Commands.UpdateElectric
+{
+    public class UpdateElectricHandler : IRequestHandler<UpdateElectricCommand, Result<UpdateElectricResponse>>
+    {
+        private readonly ApplicationDbContext _context;
+        private readonly IValidator<UpdateElectricCommand> _validator;
+
+        public UpdateElectricHandler(ApplicationDbContext context, IValidator<UpdateElectricCommand> validator)
+        {
+            _context = context;
+            _validator = validator;
+        }
+
+        public async Task<Result<UpdateElectricResponse>> Handle(UpdateElectricCommand request, CancellationToken cancellationToken)
+        {
+            var validationResult = await _validator.ValidateAsync(request, cancellationToken);
+            if (!validationResult.IsValid)
+            {
+                return Result.Failure<UpdateElectricResponse>(
+                    new Error("ValidationFailed", validationResult.Errors.First().ErrorMessage));
+            }
+
+            var electric = await _context.Electrics.FirstOrDefaultAsync(e => e.Id == request.Id, cancellationToken);
+            if (electric == null)
+            {
+                return Result.Failure<UpdateElectricResponse>(
+                    new Error("ElectricNotFound", "Electric record not found."));
+            }
+
+            electric.SchoolInfoId = request.SchoolInfoId;
+            electric.Consumption = request.Consumption;
+            electric.Cost = request.Cost;
+            //electric.Year = request.Year;
+            //electric.Month = request.Month;
+            electric.ModifiedDate = DateTime.UtcNow;
+
+            await _context.SaveChangesAsync(cancellationToken);
+
+            var response = new UpdateElectricResponse
+            {
+                Id = electric.Id,
+                SchoolInfoId = electric.SchoolInfoId,
+                Consumption = electric.Consumption,
+                Cost = electric.Cost,
+                //Year = electric.Year,
+                //Month = electric.Month,
+                Success = true,
+                Message = "Electric record updated successfully."
+            };
+
+            return Result.Success(response);
+        }
+    }
+}
+﻿namespace Core.Features.ElectricFeatures.Commands.UpdateElectric
+{
+    public class UpdateElectricResponse
+    {
+        public Guid Id { get; set; }
+        public Guid SchoolInfoId { get; set; }
+        public decimal Consumption { get; set; }
+        public decimal Cost { get; set; }
+        public int Year { get; set; }
+        public string Month { get; set; } = string.Empty;
+        public bool Success { get; set; }
+        public string Message { get; set; } = string.Empty;
+    }
+}
+
+namespace Core.Features.ElectricFeatures.Commands.UpdateElectric
+{
+    public class UpdateElectricValidator : AbstractValidator<UpdateElectricCommand>
+    {
+        public UpdateElectricValidator()
+        {
+            RuleFor(x => x.Id).NotEmpty().WithMessage("Id is required.");
+            RuleFor(x => x.SchoolInfoId).NotEmpty().WithMessage("SchoolInfoId is required.");
+            RuleFor(x => x.Consumption).GreaterThan(0).WithMessage("Consumption must be greater than 0.");
+            RuleFor(x => x.Cost).GreaterThanOrEqualTo(0).WithMessage("Cost cannot be negative.");
+            RuleFor(x => x.Year).InclusiveBetween(2000, DateTime.Now.Year).WithMessage("Year must be valid.");
+            RuleFor(x => x.Month)
+                .NotEmpty()
+                .Must(BeAValidMonth).WithMessage("Month must be a valid month name.");
+        }
+
+        private bool BeAValidMonth(string month)
+        {
+            var validMonths = new[]
+            {
+                "Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran",
+                "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"
+            };
+            return validMonths.Contains(month);
+        }
+    }
+}
+
+namespace Core.Features.ElectricFeatures.Queries.GetAllElectrics
+{
+    public class GetAllElectricsHandler : IRequestHandler<GetAllElectricsQuery, Result<GetAllElectricsResponse>>
+    {
+        private readonly ApplicationDbContext _context;
+
+        public GetAllElectricsHandler(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
+        public async Task<Result<GetAllElectricsResponse>> Handle(GetAllElectricsQuery request, CancellationToken cancellationToken)
+        {
+            var electrics = await _context.Electrics.ToListAsync(cancellationToken);
+
+            var responseItems = electrics.Select(e => new GetElectricByIdResponse
+            {
+                Id = e.Id,
+                SchoolInfoId = e.SchoolInfoId,
+                Consumption = e.Consumption,
+                Cost = e.Cost,
+                //Year = e.Year,
+                //Month = e.Month,
+                CreatedDate = e.CreatedDate
+            }).ToList();
+
+            return Result.Success(new GetAllElectricsResponse { Electrics = responseItems });
+        }
+    }
+}
+
+namespace Core.Features.ElectricFeatures.Queries.GetAllElectrics
+{
+    public class GetAllElectricsQuery : IRequest<Result<GetAllElectricsResponse>>
+    {
+    }
+}
+
+namespace Core.Features.ElectricFeatures.Queries.GetAllElectrics
+{
+    public class GetAllElectricsResponse
+    {
+        public List<GetElectricByIdResponse> Electrics { get; set; } = new();
+    }
+}
+
+namespace Core.Features.ElectricFeatures.Queries.GetElectricById
+{
+    public class GetElectricByIdHandler : IRequestHandler<GetElectricByIdQuery, Result<GetElectricByIdResponse>>
+    {
+        private readonly ApplicationDbContext _context;
+
+        public GetElectricByIdHandler(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
+        public async Task<Result<GetElectricByIdResponse>> Handle(GetElectricByIdQuery request, CancellationToken cancellationToken)
+        {
+            var electric = await _context.Electrics.FirstOrDefaultAsync(e => e.Id == request.Id, cancellationToken);
+
+            if (electric == null)
+            {
+                return Result.Failure<GetElectricByIdResponse>(
+                    new Error("ElectricNotFound", "Electric record not found."));
+            }
+
+            var response = new GetElectricByIdResponse
+            {
+                Id = electric.Id,
+                SchoolInfoId = electric.SchoolInfoId,
+                Consumption = electric.Consumption,
+                Cost = electric.Cost,
+                //Year = electric.Year,
+                //Month = electric.Month,
+                CreatedDate = electric.CreatedDate
+            };
+
+            return Result.Success(response);
+        }
+    }
+}
+
+namespace Core.Features.ElectricFeatures.Queries.GetElectricById
+{
+    public class GetElectricByIdQuery : IRequest<Result<GetElectricByIdResponse>>
+    {
+        public Guid Id { get; set; }
+    }
+}
+﻿namespace Core.Features.ElectricFeatures.Queries.GetElectricById
+{
+    public class GetElectricByIdResponse
+    {
+        public Guid Id { get; set; }
+        public Guid SchoolInfoId { get; set; }
+        public decimal Consumption { get; set; }
+        public decimal Cost { get; set; }
+        public int Year { get; set; }
+        public string Month { get; set; } = string.Empty;
+        public DateTime CreatedDate { get; set; }
+    }
+}
+
+namespace Core.Features.SchoolInfoFeatures.Commands.CreateSchoolInfo
+{
+    public class CreateSchoolInfoCommand : IRequest<Result<CreateSchoolInfoResponse>>
+    {
+        public int NumberOfPeople { get; set; }
+        public int Year { get; set; }
+        public string Month { get; set; } = string.Empty;
+    }
+}
+
+namespace Core.Features.SchoolInfoFeatures.Commands.CreateSchoolInfo
+{
+    public class CreateSchoolInfoHandler : IRequestHandler<CreateSchoolInfoCommand, Result<CreateSchoolInfoResponse>>
+    {
+        private readonly ApplicationDbContext _context;
+        private readonly IValidator<CreateSchoolInfoCommand> _validator;
+
+        public CreateSchoolInfoHandler(ApplicationDbContext context, IValidator<CreateSchoolInfoCommand> validator)
+        {
+            _context = context;
+            _validator = validator;
+        }
+
+        public async Task<Result<CreateSchoolInfoResponse>> Handle(CreateSchoolInfoCommand request, CancellationToken cancellationToken)
+        {
+            var validationResult = await _validator.ValidateAsync(request, cancellationToken);
+            if (!validationResult.IsValid)
+            {
+                return Result.Failure<CreateSchoolInfoResponse>(
+                    new Error("ValidationFailed", validationResult.Errors.First().ErrorMessage)
+                );
+            }
+
+            var schoolInfo = new SchoolInfo
+            {
+                NumberOfPeople = request.NumberOfPeople,
+                Year = request.Year,
+                Month = request.Month,
+                CreatedDate = DateTime.UtcNow
+            };
+
+            _context.SchoolInfos.Add(schoolInfo);
+            await _context.SaveChangesAsync(cancellationToken);
+
+            var response = new CreateSchoolInfoResponse
+            {
+                Id = schoolInfo.Id,
+                NumberOfPeople = schoolInfo.NumberOfPeople,
+                Year = schoolInfo.Year,
+                Month = schoolInfo.Month,
+                CreatedDate = schoolInfo.CreatedDate
+            };
+
+            return Result.Success(response);
+        }
+    }
+}
+﻿namespace Core.Features.SchoolInfoFeatures.Commands.CreateSchoolInfo
+{
+    public class CreateSchoolInfoResponse
+    {
+        public Guid Id { get; set; }
+        public int NumberOfPeople { get; set; }
+        public int Year { get; set; }
+        public string Month { get; set; }
+        public DateTime CreatedDate { get; set; }
+    }
+}
+
+namespace Core.Features.SchoolInfoFeatures.Commands.CreateSchoolInfo
+{
+    public class CreateSchoolInfoValidator : AbstractValidator<CreateSchoolInfoCommand>
+    {
+        public CreateSchoolInfoValidator()
+        {
+            RuleFor(x => x.NumberOfPeople).GreaterThan(0).WithMessage("Number of people must be greater than 0.");
+            RuleFor(x => x.Year).InclusiveBetween(2000, DateTime.Now.Year).WithMessage("Year must be between 2000 and the current year.");
+            RuleFor(x => x.Month)
+                .NotEmpty()
+                .Must(BeAValidMonth).WithMessage("Month must be a valid month name.");
+        }
+
+        private bool BeAValidMonth(string month)
+        {
+            var validMonths = new[]
+            {
+                "Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran",
+                "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"
+            };
+            return validMonths.Contains(month);
+        }
+    }
+}
+
+namespace Core.Features.SchoolInfoFeatures.Commands.DeleteSchoolInfo
+{
+    public class DeleteSchoolInfoCommand : IRequest<Result<DeleteSchoolInfoResponse>>
+    {
+        public Guid Id { get; set; }
+    }
+}
+
+namespace Core.Features.SchoolInfoFeatures.Commands.DeleteSchoolInfo
+{
+    public class DeleteSchoolInfoHandler : IRequestHandler<DeleteSchoolInfoCommand, Result<DeleteSchoolInfoResponse>>
+    {
+        private readonly ApplicationDbContext _context;
+        private readonly IValidator<DeleteSchoolInfoCommand> _validator;
+
+        public DeleteSchoolInfoHandler(ApplicationDbContext context, IValidator<DeleteSchoolInfoCommand> validator)
+        {
+            _context = context;
+            _validator = validator;
+        }
+
+        public async Task<Result<DeleteSchoolInfoResponse>> Handle(DeleteSchoolInfoCommand request, CancellationToken cancellationToken)
+        {
+            var validationResult = await _validator.ValidateAsync(request, cancellationToken);
+            if (!validationResult.IsValid)
+            {
+                return Result.Failure<DeleteSchoolInfoResponse>(
+                    new Error("ValidationFailed", validationResult.Errors.First().ErrorMessage)
+                );
+            }
+
+            var schoolInfo = await _context.SchoolInfos.FirstOrDefaultAsync(s => s.Id == request.Id, cancellationToken);
+            if (schoolInfo == null)
+            {
+                return Result.Failure<DeleteSchoolInfoResponse>(new Error("NotFound", "SchoolInfo not found."));
+            }
+
+            _context.SchoolInfos.Remove(schoolInfo);
+            await _context.SaveChangesAsync(cancellationToken);
+
+            return Result.Success(new DeleteSchoolInfoResponse { Id = request.Id, Success = true });
+        }
+    }
+}
+﻿namespace Core.Features.SchoolInfoFeatures.Commands.DeleteSchoolInfo
+{
+    public class DeleteSchoolInfoResponse
+    {
+        public Guid Id { get; set; }
+        public bool Success { get; set; }
+        public string Message { get; set; }
+    }
+}
+
+namespace Core.Features.SchoolInfoFeatures.Commands.DeleteSchoolInfo
+{
+    public class DeleteSchoolInfoValidator : AbstractValidator<DeleteSchoolInfoCommand>
+    {
+        public DeleteSchoolInfoValidator()
+        {
+            RuleFor(x => x.Id).NotEmpty();
+        }
+    }
+}
+
+namespace Core.Features.SchoolInfoFeatures.Commands.UpdateSchoolInfo
+{
+    public class UpdateSchoolInfoCommand : IRequest<Result<UpdateSchoolInfoResponse>>
+    {
+        public Guid Id { get; set; }
+        public int NumberOfPeople { get; set; }
+        public int Year { get; set; }
+        public string Month { get; set; } = string.Empty;
+    }
+}
+
+namespace Core.Features.SchoolInfoFeatures.Commands.UpdateSchoolInfo
+{
+    public class UpdateSchoolInfoHandler : IRequestHandler<UpdateSchoolInfoCommand, Result<UpdateSchoolInfoResponse>>
+    {
+        private readonly ApplicationDbContext _context;
+        private readonly IValidator<UpdateSchoolInfoCommand> _validator;
+
+        public UpdateSchoolInfoHandler(ApplicationDbContext context, IValidator<UpdateSchoolInfoCommand> validator)
+        {
+            _context = context;
+            _validator = validator;
+        }
+
+        public async Task<Result<UpdateSchoolInfoResponse>> Handle(UpdateSchoolInfoCommand request, CancellationToken cancellationToken)
+        {
+            var validationResult = await _validator.ValidateAsync(request, cancellationToken);
+            if (!validationResult.IsValid)
+            {
+                return Result.Failure<UpdateSchoolInfoResponse>(
+                    new Error("ValidationFailed", validationResult.Errors.First().ErrorMessage)
+                );
+            }
+
+            var schoolInfo = await _context.SchoolInfos.FirstOrDefaultAsync(s => s.Id == request.Id, cancellationToken);
+            if (schoolInfo == null)
+            {
+                return Result.Failure<UpdateSchoolInfoResponse>(new Error("NotFound", "SchoolInfo not found."));
+            }
+
+            schoolInfo.NumberOfPeople = request.NumberOfPeople;
+            schoolInfo.Year = request.Year;
+            schoolInfo.Month = request.Month;
+            schoolInfo.ModifiedDate = DateTime.UtcNow;
+
+            await _context.SaveChangesAsync(cancellationToken);
+
+            var response = new UpdateSchoolInfoResponse
+            {
+                Id = schoolInfo.Id,
+                NumberOfPeople = schoolInfo.NumberOfPeople,
+                Year = schoolInfo.Year,
+                Month = schoolInfo.Month,
+                Success = true
+            };
+
+            return Result.Success(response);
+        }
+    }
+}
+﻿namespace Core.Features.SchoolInfoFeatures.Commands.UpdateSchoolInfo
+{
+    public class UpdateSchoolInfoResponse
+    {
+        public Guid Id { get; set; }
+        public int NumberOfPeople { get; set; }
+        public int Year { get; set; }
+        public string Month { get; set; }
+        public bool Success { get; set; }
+        public string Message { get; set; }
+    }
+}
+
+namespace Core.Features.SchoolInfoFeatures.Commands.UpdateSchoolInfo
+{
+    public class UpdateSchoolInfoValidator : AbstractValidator<UpdateSchoolInfoCommand>
+    {
+        public UpdateSchoolInfoValidator()
+        {
+            RuleFor(x => x.Id).NotEmpty();
+            RuleFor(x => x.NumberOfPeople).GreaterThan(0);
+            RuleFor(x => x.Year).InclusiveBetween(2000, DateTime.UtcNow.Year);
+            RuleFor(x => x.Month).NotEmpty().MaximumLength(15);
+        }
+    }
+}
+
+namespace Core.Features.SchoolInfoFeatures.GetAllSchoolInfos
+{
+    public class GetAllSchoolInfosHandler : IRequestHandler<GetAllSchoolInfosQuery, Result<GetAllSchoolInfosResponse>>
+    {
+        private readonly ApplicationDbContext _context;
+
+        public GetAllSchoolInfosHandler(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
+        public async Task<Result<GetAllSchoolInfosResponse>> Handle(GetAllSchoolInfosQuery request, CancellationToken cancellationToken)
+        {
+            var schoolInfos = await _context.SchoolInfos
+                .AsNoTracking()
+                .ToListAsync(cancellationToken);
+
+            if (!schoolInfos.Any())
+            {
+                return Result.Failure<GetAllSchoolInfosResponse>(new Error("NotFound", "No school info records found."));
+            }
+
+            var responseItems = schoolInfos.Select(s => new GetSchoolInfoResponse
+            {
+                Id = s.Id,
+                NumberOfPeople = s.NumberOfPeople,
+                Year = s.Year,
+                Month = s.Month
+            }).ToList();
+
+            var response = new GetAllSchoolInfosResponse
+            {
+                SchoolInfos = responseItems
+            };
+
+            return Result.Success(response);
+        }
+    }
+}
+namespace Core.Features.SchoolInfoFeatures.GetAllSchoolInfos
+{
+    public class GetAllSchoolInfosQuery : IRequest<Result<GetAllSchoolInfosResponse>>
+    {
+    }
+}
+
+namespace Core.Features.SchoolInfoFeatures.Queries.GetAllSchoolInfos
+{
+    public class GetAllSchoolInfosResponse
+    {
+        public List<GetSchoolInfoResponse> SchoolInfos { get; set; } = new();
+    }
+}
+
+namespace Core.Features.SchoolInfoFeatures.Queries.GetSchoolInfo
+{
+    public class GetSchoolInfoHandler : IRequestHandler<GetSchoolInfoQuery, Result<GetSchoolInfoResponse>>
+    {
+        private readonly ApplicationDbContext _context;
+
+        public GetSchoolInfoHandler(ApplicationDbContext context)
+        {
+            _context = context;
+        }
+
+        public async Task<Result<GetSchoolInfoResponse>> Handle(GetSchoolInfoQuery request, CancellationToken cancellationToken)
+        {
+            var schoolInfo = await _context.SchoolInfos
+                .AsNoTracking()
+                .FirstOrDefaultAsync(s => s.Id == request.Id, cancellationToken);
+
+            if (schoolInfo == null)
+            {
+                return Result.Failure<GetSchoolInfoResponse>(new Error("NotFound", "SchoolInfo not found."));
+            }
+
+            var response = new GetSchoolInfoResponse
+            {
+                Id = schoolInfo.Id,
+                NumberOfPeople = schoolInfo.NumberOfPeople,
+                Year = schoolInfo.Year,
+                Month = schoolInfo.Month
+            };
+
+            return Result.Success(response);
+        }
+    }
+}
+
+namespace Core.Features.SchoolInfoFeatures.Queries.GetSchoolInfo
+{
+    public class GetSchoolInfoQuery : IRequest<Result<GetSchoolInfoResponse>>
+    {
+        public Guid Id { get; set; }
+    }
+}
+﻿namespace API.Contracts.SchoolInfo
+{
+    public class GetSchoolInfoResponse
+    {
+        public Guid Id { get; set; } 
+        public int NumberOfPeople { get; set; } 
+        public int Year { get; set; } 
+        public string Month { get; set; } 
+    }
+}
 // <autogenerated />
 [assembly: global::System.Runtime.Versioning.TargetFrameworkAttribute(".NETCoreApp,Version=v8.0", FrameworkDisplayName = ".NET 8.0")]
 //------------------------------------------------------------------------------
@@ -511,7 +1539,7 @@ namespace Core.Extensions
 [assembly: System.Reflection.AssemblyCompanyAttribute("Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+94ff359893b8604ea8c9344664999390e2c90616")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1fa47c035df411090cb56437d2e97b335ea72e0b")]
 [assembly: System.Reflection.AssemblyProductAttribute("Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -3,24 +3,72 @@
   "WorkspaceRootPath": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\electricfeatures\\queries\\getelectricbyid\\getelectricbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\electricfeatures\\queries\\getelectricbyid\\getelectricbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\data\\entity\\entitybases\\entitybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\data\\entity\\entitybases\\entitybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Migrations\\20241107230820_XX.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Core\\Migrations\\20241107230820_XX.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\data\\configuration\\electricconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\data\\configuration\\electricconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\data\\configuration\\buildingconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\data\\configuration\\buildingconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\data\\entity\\electric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\data\\entity\\electric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\data\\entity\\building.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\data\\entity\\building.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Migrations\\20241107224801_XX.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Core\\Migrations\\20241107224801_XX.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\contracts\\electric\\createelectricrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\contracts\\electric\\createelectricrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\controllers\\electriccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\controllers\\electriccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\contracts\\schoolinfo\\deleteschoolinforequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\contracts\\schoolinfo\\deleteschoolinforequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\commands\\createschoolinfo\\createschoolinfohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\commands\\createschoolinfo\\createschoolinfohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\electricfeatures\\queries\\getelectricbyid\\getelectricbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\electricfeatures\\queries\\getelectricbyid\\getelectricbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\electricfeatures\\commands\\updateelectric\\updateelectricvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\electricfeatures\\commands\\updateelectric\\updateelectricvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\controllers\\schoolinfocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\controllers\\schoolinfocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\electricfeatures\\commands\\createelectric\\createelectricvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\electricfeatures\\commands\\createelectric\\createelectricvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\contracts\\electric\\deleteelectricrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\contracts\\electric\\deleteelectricrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\contracts\\electric\\electricdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\contracts\\electric\\electricdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\contracts\\electric\\getallelectricsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\contracts\\electric\\getallelectricsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\contracts\\electric\\updateelectricresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -35,92 +83,100 @@
       "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\contracts\\electric\\createelectricresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\contracts\\electric\\createelectricrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\contracts\\electric\\createelectricrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\contracts\\electric\\getelectricbyidresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\contracts\\electric\\getelectricbyidresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\electricfeatures\\queries\\getallelectrics\\getallelectricshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\electricfeatures\\queries\\getallelectrics\\getallelectricshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\electricfeatures\\commands\\deleteelectric\\deleteelectrichandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\electricfeatures\\commands\\deleteelectric\\deleteelectrichandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\electricfeatures\\commands\\deleteelectric\\deleteelectricvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\electricfeatures\\commands\\deleteelectric\\deleteelectricvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\electricfeatures\\queries\\getallelectrics\\getallelectricsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\electricfeatures\\queries\\getallelectrics\\getallelectricsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\electricfeatures\\queries\\getallelectrics\\getallelectricsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\electricfeatures\\queries\\getallelectrics\\getallelectricsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\electricfeatures\\queries\\getelectricbyid\\getelectricbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\electricfeatures\\queries\\getelectricbyid\\getelectricbyidhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\electricfeatures\\queries\\getelectricbyid\\getelectricbyidresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\electricfeatures\\queries\\getelectricbyid\\getelectricbyidresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\electricfeatures\\commands\\deleteelectric\\deleteelectricresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\electricfeatures\\commands\\deleteelectric\\deleteelectricresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\electricfeatures\\commands\\deleteelectric\\deleteelectriccommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\electricfeatures\\commands\\deleteelectric\\deleteelectriccommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\electricfeatures\\commands\\updateelectric\\updateelectrichandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\electricfeatures\\commands\\updateelectric\\updateelectrichandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\commands\\updateschoolinfo\\updateschoolinfohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\commands\\updateschoolinfo\\updateschoolinfohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\electricfeatures\\commands\\updateelectric\\updateelectricvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\electricfeatures\\commands\\updateelectric\\updateelectricvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\electricfeatures\\queries\\getallelectrics\\getallelectricsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\electricfeatures\\queries\\getallelectrics\\getallelectricsquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\electricfeatures\\commands\\updateelectric\\updateelectricresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\electricfeatures\\commands\\updateelectric\\updateelectricresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\commands\\updateschoolinfo\\updateschoolinforesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\commands\\updateschoolinfo\\updateschoolinforesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\electricfeatures\\commands\\updateelectric\\updateelectrichandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\electricfeatures\\commands\\updateelectric\\updateelectrichandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\electricfeatures\\commands\\updateelectric\\updateelectriccommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\electricfeatures\\commands\\updateelectric\\updateelectriccommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\electricfeatures\\commands\\createelectric\\createelectriccommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\electricfeatures\\commands\\createelectric\\createelectriccommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\electricfeatures\\commands\\deleteelectric\\deleteelectrichandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\electricfeatures\\commands\\deleteelectric\\deleteelectrichandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\commands\\updateschoolinfo\\updateschoolinfocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\commands\\updateschoolinfo\\updateschoolinfocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\electricfeatures\\commands\\createelectric\\createelectricresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\electricfeatures\\commands\\createelectric\\createelectricresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\electricfeatures\\commands\\createelectric\\createelectricvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\electricfeatures\\commands\\createelectric\\createelectricvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\electricfeatures\\commands\\deleteelectric\\deleteelectriccommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\electricfeatures\\commands\\deleteelectric\\deleteelectriccommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\electricfeatures\\commands\\createelectric\\createelectrichandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\electricfeatures\\commands\\createelectric\\createelectrichandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\electricfeatures\\commands\\createelectric\\createelectricresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\electricfeatures\\commands\\createelectric\\createelectricresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\electricfeatures\\commands\\createelectric\\createelectriccommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\electricfeatures\\commands\\createelectric\\createelectriccommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\electricfeatures\\queries\\getelectricbyid\\getelectricbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\electricfeatures\\queries\\getelectricbyid\\getelectricbyidquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\electricfeatures\\queries\\getallelectrics\\getallelectricsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\electricfeatures\\queries\\getallelectrics\\getallelectricsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\electricfeatures\\commands\\deleteelectric\\deleteelectricvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\electricfeatures\\commands\\deleteelectric\\deleteelectricvalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\electricfeatures\\commands\\deleteelectric\\deleteelectricresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\electricfeatures\\commands\\deleteelectric\\deleteelectricresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\data\\entity\\schoolinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\data\\entity\\schoolinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\data\\entity\\electric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\data\\entity\\electric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\contracts\\schoolinfo\\createschoolinforequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\contracts\\schoolinfo\\createschoolinforequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\controllers\\schoolinfocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\controllers\\schoolinfocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\contracts\\schoolinfo\\deleteschoolinforequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\contracts\\schoolinfo\\deleteschoolinforequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\commands\\updateschoolinfo\\updateschoolinfohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\commands\\updateschoolinfo\\updateschoolinfohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\commands\\updateschoolinfo\\updateschoolinforesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\commands\\updateschoolinfo\\updateschoolinforesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\commands\\updateschoolinfo\\updateschoolinfocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\commands\\updateschoolinfo\\updateschoolinfocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\data\\entity\\paper.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -135,24 +191,12 @@
       "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\queries\\getschoolinfo\\getschoolinfohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\contracts\\schoolinfo\\createschoolinforequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\contracts\\schoolinfo\\createschoolinforequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\queries\\getallschoolinfos\\getallschoolinfoshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\queries\\getallschoolinfos\\getallschoolinfoshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\commands\\createschoolinfo\\createschoolinfocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\commands\\createschoolinfo\\createschoolinfocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\data\\entity\\entitybases\\entitybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\data\\entity\\entitybases\\entitybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\data\\entity\\entitybases\\ientitybase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -177,10 +221,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\commands\\deleteschoolinfo\\deleteschoolinfohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\commands\\deleteschoolinfo\\deleteschoolinfohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\commands\\createschoolinfo\\createschoolinfohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\commands\\createschoolinfo\\createschoolinfohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\shared\\result.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -238,163 +278,319 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "ElectricController.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\ElectricController.cs",
-              "RelativeDocumentMoniker": "API\\Controllers\\ElectricController.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\ElectricController.cs",
-              "RelativeToolTip": "API\\Controllers\\ElectricController.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAmwDUAAAA/AAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "20241107230820_XX.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Migrations\\20241107230820_XX.cs",
+              "RelativeDocumentMoniker": "Core\\Migrations\\20241107230820_XX.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Migrations\\20241107230820_XX.cs",
+              "RelativeToolTip": "Core\\Migrations\\20241107230820_XX.cs",
+              "ViewState": "AgIAADEAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T15:35:07.168Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UpdateElectricResponse.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\UpdateElectricResponse.cs",
-              "RelativeDocumentMoniker": "API\\Contracts\\Electric\\UpdateElectricResponse.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\UpdateElectricResponse.cs",
-              "RelativeToolTip": "API\\Contracts\\Electric\\UpdateElectricResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T15:33:59.896Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UpdateElectricRequest.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\UpdateElectricRequest.cs",
-              "RelativeDocumentMoniker": "API\\Contracts\\Electric\\UpdateElectricRequest.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\UpdateElectricRequest.cs",
-              "RelativeToolTip": "API\\Contracts\\Electric\\UpdateElectricRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T15:33:51.384Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CreateElectricResponse.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\CreateElectricResponse.cs",
-              "RelativeDocumentMoniker": "API\\Contracts\\Electric\\CreateElectricResponse.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\CreateElectricResponse.cs",
-              "RelativeToolTip": "API\\Contracts\\Electric\\CreateElectricResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T15:33:43.563Z",
+              "WhenOpened": "2024-11-07T23:08:20.99Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "SchoolInfoController.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\SchoolInfoController.cs",
-              "RelativeDocumentMoniker": "API\\Controllers\\SchoolInfoController.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\SchoolInfoController.cs",
-              "RelativeToolTip": "API\\Controllers\\SchoolInfoController.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAQwEcAAAAAAAAAAAAAAA==",
+              "Title": "ElectricConfiguration.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Configuration\\ElectricConfiguration.cs",
+              "RelativeDocumentMoniker": "Core\\Data\\Configuration\\ElectricConfiguration.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Configuration\\ElectricConfiguration.cs",
+              "RelativeToolTip": "Core\\Data\\Configuration\\ElectricConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T10:25:45.884Z",
+              "WhenOpened": "2024-11-07T23:07:17.678Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "GetElectricByIdQuery.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdQuery.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdQuery.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdQuery.cs",
-              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAlAAAAAAAAAA==",
+              "DocumentIndex": 5,
+              "Title": "BuildingConfiguration.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Configuration\\BuildingConfiguration.cs",
+              "RelativeDocumentMoniker": "Core\\Data\\Configuration\\BuildingConfiguration.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Configuration\\BuildingConfiguration.cs",
+              "RelativeToolTip": "Core\\Data\\Configuration\\BuildingConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T15:29:24.33Z",
+              "WhenOpened": "2024-11-07T23:07:01.91Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "DeleteSchoolInfoRequest.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\SchoolInfo\\DeleteSchoolInfoRequest.cs",
-              "RelativeDocumentMoniker": "API\\Contracts\\SchoolInfo\\DeleteSchoolInfoRequest.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\SchoolInfo\\DeleteSchoolInfoRequest.cs",
-              "RelativeToolTip": "API\\Contracts\\SchoolInfo\\DeleteSchoolInfoRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T10:25:15.471Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "GetElectricByIdHandler.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdHandler.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdHandler.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdHandler.cs",
-              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdHandler.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAxwCEAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T15:29:37.6Z",
+              "DocumentIndex": 1,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\appsettings.json",
+              "RelativeDocumentMoniker": "API\\appsettings.json",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\appsettings.json",
+              "RelativeToolTip": "API\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-07T22:52:50.772Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 8,
+              "Title": "20241107224801_XX.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Migrations\\20241107224801_XX.cs",
+              "RelativeDocumentMoniker": "Core\\Migrations\\20241107224801_XX.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Migrations\\20241107224801_XX.cs",
+              "RelativeToolTip": "Core\\Migrations\\20241107224801_XX.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T22:48:02.054Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Core\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Core\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA6AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T10:44:22.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "CreateElectricRequest.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\CreateElectricRequest.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\Electric\\CreateElectricRequest.cs",
               "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\CreateElectricRequest.cs",
               "RelativeToolTip": "API\\Contracts\\Electric\\CreateElectricRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-19T15:33:35.959Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 0,
+              "Title": "EntityBase.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\EntityBases\\EntityBase.cs",
+              "RelativeDocumentMoniker": "Core\\Data\\Entity\\EntityBases\\EntityBase.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\EntityBases\\EntityBase.cs",
+              "RelativeToolTip": "Core\\Data\\Entity\\EntityBases\\EntityBase.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T10:44:27.101Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "CreateSchoolInfoHandler.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoHandler.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoHandler.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoHandler.cs",
+              "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoHandler.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAlwCUAAAAVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T10:45:11.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ElectricController.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\ElectricController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\ElectricController.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\ElectricController.cs",
+              "RelativeToolTip": "API\\Controllers\\ElectricController.cs",
+              "ViewState": "AgIAABAAAAAAAAAAAAAmwCEAAABiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T15:35:07.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Building.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\Building.cs",
+              "RelativeDocumentMoniker": "Core\\Data\\Entity\\Building.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\Building.cs",
+              "RelativeToolTip": "Core\\Data\\Entity\\Building.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T22:17:57.36Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Electric.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\Electric.cs",
+              "RelativeDocumentMoniker": "Core\\Data\\Entity\\Electric.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\Electric.cs",
+              "RelativeToolTip": "Core\\Data\\Entity\\Electric.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T10:43:50.169Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "UpdateElectricValidator.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricValidator.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricValidator.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricValidator.cs",
+              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T15:17:24.129Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "CreateElectricValidator.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricValidator.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricValidator.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricValidator.cs",
+              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T15:12:06.802Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "DeleteElectricRequest.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\DeleteElectricRequest.cs",
+              "RelativeDocumentMoniker": "API\\Contracts\\Electric\\DeleteElectricRequest.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\DeleteElectricRequest.cs",
+              "RelativeToolTip": "API\\Contracts\\Electric\\DeleteElectricRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T22:36:36.859Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ElectricDto.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\ElectricDto.cs",
+              "RelativeDocumentMoniker": "API\\Contracts\\Electric\\ElectricDto.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\ElectricDto.cs",
+              "RelativeToolTip": "API\\Contracts\\Electric\\ElectricDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T22:30:44.672Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "GetAllElectricsResponse.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\GetAllElectricsResponse.cs",
+              "RelativeDocumentMoniker": "API\\Contracts\\Electric\\GetAllElectricsResponse.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\GetAllElectricsResponse.cs",
+              "RelativeToolTip": "API\\Contracts\\Electric\\GetAllElectricsResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T22:30:31.376Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "UpdateElectricResponse.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\UpdateElectricResponse.cs",
+              "RelativeDocumentMoniker": "API\\Contracts\\Electric\\UpdateElectricResponse.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\UpdateElectricResponse.cs",
+              "RelativeToolTip": "API\\Contracts\\Electric\\UpdateElectricResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T15:33:59.896Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "UpdateElectricRequest.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\UpdateElectricRequest.cs",
+              "RelativeDocumentMoniker": "API\\Contracts\\Electric\\UpdateElectricRequest.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\UpdateElectricRequest.cs",
+              "RelativeToolTip": "API\\Contracts\\Electric\\UpdateElectricRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T15:33:51.384Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "CreateElectricResponse.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\CreateElectricResponse.cs",
+              "RelativeDocumentMoniker": "API\\Contracts\\Electric\\CreateElectricResponse.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\CreateElectricResponse.cs",
+              "RelativeToolTip": "API\\Contracts\\Electric\\CreateElectricResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T15:33:43.563Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "GetElectricByIdResponse.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\GetElectricByIdResponse.cs",
+              "RelativeDocumentMoniker": "API\\Contracts\\Electric\\GetElectricByIdResponse.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\GetElectricByIdResponse.cs",
+              "RelativeToolTip": "API\\Contracts\\Electric\\GetElectricByIdResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T22:30:18.861Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
               "Title": "GetAllElectricsHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsHandler.cs",
               "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsHandler.cs",
               "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsHandler.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAAB0AAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-19T15:30:17.067Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "DeleteElectricValidator.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\DeleteElectric\\DeleteElectricValidator.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\DeleteElectric\\DeleteElectricValidator.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\DeleteElectric\\DeleteElectricValidator.cs",
-              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Commands\\DeleteElectric\\DeleteElectricValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 22,
+              "Title": "GetElectricByIdHandler.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdHandler.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdHandler.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdHandler.cs",
+              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T15:30:27.656Z",
+              "WhenOpened": "2024-10-19T15:29:37.6Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "GetAllElectricsResponse.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsResponse.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsResponse.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsResponse.cs",
-              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 23,
+              "Title": "GetElectricByIdResponse.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdResponse.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdResponse.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdResponse.cs",
+              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T15:30:08.758Z",
+              "WhenOpened": "2024-10-19T15:29:30.033Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 24,
               "Title": "GetAllElectricsQuery.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsQuery.cs",
               "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsQuery.cs",
@@ -407,46 +603,59 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "GetElectricByIdResponse.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdResponse.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdResponse.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdResponse.cs",
-              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 25,
+              "Title": "UpdateElectricResponse.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricResponse.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricResponse.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricResponse.cs",
+              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAtAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T15:29:30.033Z",
+              "WhenOpened": "2024-10-19T15:17:09.331Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 26,
+              "Title": "UpdateElectricHandler.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricHandler.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricHandler.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricHandler.cs",
+              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricHandler.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAswCUAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T15:17:32.588Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "UpdateElectricCommand.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricCommand.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricCommand.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricCommand.cs",
+              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T15:17:00.463Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
               "Title": "DeleteElectricHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\DeleteElectric\\DeleteElectricHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\DeleteElectric\\DeleteElectricHandler.cs",
               "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\DeleteElectric\\DeleteElectricHandler.cs",
               "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Commands\\DeleteElectric\\DeleteElectricHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-19T15:28:46.561Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "DeleteElectricResponse.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\DeleteElectric\\DeleteElectricResponse.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\DeleteElectric\\DeleteElectricResponse.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\DeleteElectric\\DeleteElectricResponse.cs",
-              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Commands\\DeleteElectric\\DeleteElectricResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T15:28:35.179Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 29,
               "Title": "DeleteElectricCommand.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\DeleteElectric\\DeleteElectricCommand.cs",
               "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\DeleteElectric\\DeleteElectricCommand.cs",
@@ -459,150 +668,111 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "UpdateElectricHandler.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricHandler.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricHandler.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricHandler.cs",
-              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricHandler.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAcwCcAAAAtAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T15:17:32.588Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "UpdateElectricValidator.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricValidator.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricValidator.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricValidator.cs",
-              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T15:17:24.129Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "UpdateElectricResponse.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricResponse.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricResponse.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricResponse.cs",
-              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAApAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T15:17:09.331Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "UpdateElectricCommand.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricCommand.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricCommand.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricCommand.cs",
-              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T15:17:00.463Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "CreateElectricCommand.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricCommand.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricCommand.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricCommand.cs",
-              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T15:11:36.644Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "UpdateSchoolInfoResponse.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoResponse.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoResponse.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoResponse.cs",
-              "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T10:22:52.093Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "UpdateSchoolInfoHandler.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoHandler.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoHandler.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoHandler.cs",
-              "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoHandler.cs",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T10:22:55.847Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "UpdateSchoolInfoCommand.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoCommand.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoCommand.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoCommand.cs",
-              "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T10:22:46.89Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "CreateElectricResponse.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricResponse.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricResponse.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricResponse.cs",
-              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T15:11:46.106Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "CreateElectricValidator.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricValidator.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricValidator.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricValidator.cs",
-              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T15:12:06.802Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 30,
               "Title": "CreateElectricHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricHandler.cs",
               "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricHandler.cs",
               "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricHandler.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAowDgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-19T15:12:19.643Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "CreateElectricResponse.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricResponse.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricResponse.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricResponse.cs",
+              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T15:11:46.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "CreateElectricCommand.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricCommand.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricCommand.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricCommand.cs",
+              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T15:11:36.644Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "GetElectricByIdQuery.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdQuery.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdQuery.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdQuery.cs",
+              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T15:29:24.33Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 34,
+              "Title": "GetAllElectricsResponse.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsResponse.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsResponse.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsResponse.cs",
+              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T15:30:08.758Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "DeleteElectricValidator.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\DeleteElectric\\DeleteElectricValidator.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\DeleteElectric\\DeleteElectricValidator.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\DeleteElectric\\DeleteElectricValidator.cs",
+              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Commands\\DeleteElectric\\DeleteElectricValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T15:30:27.656Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "DeleteElectricResponse.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\DeleteElectric\\DeleteElectricResponse.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\DeleteElectric\\DeleteElectricResponse.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\DeleteElectric\\DeleteElectricResponse.cs",
+              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Commands\\DeleteElectric\\DeleteElectricResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T15:28:35.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "SchoolInfo.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\SchoolInfo.cs",
+              "RelativeDocumentMoniker": "Core\\Data\\Entity\\SchoolInfo.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\SchoolInfo.cs",
+              "RelativeToolTip": "Core\\Data\\Entity\\SchoolInfo.cs",
+              "ViewState": "AgIAABQAAAAAAAAAAAAwwBcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T10:44:06.509Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
               "Title": "CreateSchoolInfoRequest.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\SchoolInfo\\CreateSchoolInfoRequest.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\SchoolInfo\\CreateSchoolInfoRequest.cs",
@@ -614,32 +784,67 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "SchoolInfo.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\SchoolInfo.cs",
-              "RelativeDocumentMoniker": "Core\\Data\\Entity\\SchoolInfo.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\SchoolInfo.cs",
-              "RelativeToolTip": "Core\\Data\\Entity\\SchoolInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAA1AAAAAAAAAA==",
+              "DocumentIndex": 40,
+              "Title": "DeleteSchoolInfoRequest.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\SchoolInfo\\DeleteSchoolInfoRequest.cs",
+              "RelativeDocumentMoniker": "API\\Contracts\\SchoolInfo\\DeleteSchoolInfoRequest.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\SchoolInfo\\DeleteSchoolInfoRequest.cs",
+              "RelativeToolTip": "API\\Contracts\\SchoolInfo\\DeleteSchoolInfoRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T10:44:06.509Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T10:25:15.471Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Core\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Core\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAtAAAAAAAAAA==",
+              "DocumentIndex": 39,
+              "Title": "SchoolInfoController.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\SchoolInfoController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\SchoolInfoController.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\SchoolInfoController.cs",
+              "RelativeToolTip": "API\\Controllers\\SchoolInfoController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAQwEcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T10:44:22.839Z"
+              "WhenOpened": "2024-10-18T10:25:45.884Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 42,
+              "Title": "UpdateSchoolInfoResponse.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoResponse.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoResponse.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoResponse.cs",
+              "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T10:22:52.093Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "UpdateSchoolInfoHandler.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoHandler.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoHandler.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoHandler.cs",
+              "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoHandler.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T10:22:55.847Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "UpdateSchoolInfoCommand.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoCommand.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoCommand.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoCommand.cs",
+              "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T10:22:46.89Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
               "Title": "GetSchoolInfoHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Queries\\GetSchoolInfo\\GetSchoolInfoHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Queries\\GetSchoolInfo\\GetSchoolInfoHandler.cs",
@@ -651,7 +856,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 45,
               "Title": "GetSchoolInfoQuery.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Queries\\GetSchoolInfo\\GetSchoolInfoQuery.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Queries\\GetSchoolInfo\\GetSchoolInfoQuery.cs",
@@ -659,25 +864,11 @@
               "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Queries\\GetSchoolInfo\\GetSchoolInfoQuery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T10:35:28.537Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T10:35:28.537Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "Electric.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\Electric.cs",
-              "RelativeDocumentMoniker": "Core\\Data\\Entity\\Electric.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\Electric.cs",
-              "RelativeToolTip": "Core\\Data\\Entity\\Electric.cs",
-              "ViewState": "AgIAAAwAAAAAAAAAAAA5wBMAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T10:43:50.169Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 44,
               "Title": "Paper.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\Paper.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Entity\\Paper.cs",
@@ -685,12 +876,11 @@
               "RelativeToolTip": "Core\\Data\\Entity\\Paper.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T10:43:46.117Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T10:43:46.117Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 47,
               "Title": "GetAllSchoolInfosHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Queries\\GetAllSchoolInfos\\GetAllSchoolInfosHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Queries\\GetAllSchoolInfos\\GetAllSchoolInfosHandler.cs",
@@ -702,7 +892,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 48,
               "Title": "CreateSchoolInfoCommand.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoCommand.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoCommand.cs",
@@ -714,19 +904,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
-              "Title": "EntityBase.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\EntityBases\\EntityBase.cs",
-              "RelativeDocumentMoniker": "Core\\Data\\Entity\\EntityBases\\EntityBase.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\EntityBases\\EntityBase.cs",
-              "RelativeToolTip": "Core\\Data\\Entity\\EntityBases\\EntityBase.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T10:44:27.101Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 49,
               "Title": "IEntityBase.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\EntityBases\\IEntityBase.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Entity\\EntityBases\\IEntityBase.cs",
@@ -738,7 +916,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 50,
               "Title": "GetAllSchoolInfosResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Queries\\GetAllSchoolInfos\\GetAllSchoolInfosResponse.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Queries\\GetAllSchoolInfos\\GetAllSchoolInfosResponse.cs",
@@ -750,7 +928,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 51,
               "Title": "GetAllSchoolInfosQuery.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Queries\\GetAllSchoolInfos\\GetAllSchoolInfosQuery.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Queries\\GetAllSchoolInfos\\GetAllSchoolInfosQuery.cs",
@@ -762,7 +940,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 52,
               "Title": "DeleteSchoolInfoCommand.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\DeleteSchoolInfo\\DeleteSchoolInfoCommand.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\DeleteSchoolInfo\\DeleteSchoolInfoCommand.cs",
@@ -774,7 +952,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 53,
               "Title": "CreateSchoolInfoValidator.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoValidator.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoValidator.cs",
@@ -786,7 +964,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 54,
               "Title": "DeleteSchoolInfoHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\DeleteSchoolInfo\\DeleteSchoolInfoHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\DeleteSchoolInfo\\DeleteSchoolInfoHandler.cs",
@@ -798,19 +976,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "CreateSchoolInfoHandler.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoHandler.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoHandler.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoHandler.cs",
-              "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T10:45:11.09Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 55,
               "Title": "Result.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Shared\\Result.cs",
               "RelativeDocumentMoniker": "Core\\Shared\\Result.cs",
@@ -822,7 +988,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 56,
               "Title": "ResultT.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Shared\\ResultT.cs",
               "RelativeDocumentMoniker": "Core\\Shared\\ResultT.cs",
@@ -834,7 +1000,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 58,
               "Title": "CoreLayerExtensions.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Extensions\\CoreLayerExtensions.cs",
               "RelativeDocumentMoniker": "Core\\Extensions\\CoreLayerExtensions.cs",
@@ -846,7 +1012,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 60,
               "Title": "DeleteSchoolInfoValidator.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\DeleteSchoolInfo\\DeleteSchoolInfoValidator.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\DeleteSchoolInfo\\DeleteSchoolInfoValidator.cs",
@@ -858,7 +1024,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 57,
               "Title": "DeleteSchoolInfoResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\DeleteSchoolInfo\\DeleteSchoolInfoResponse.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\DeleteSchoolInfo\\DeleteSchoolInfoResponse.cs",
@@ -870,7 +1036,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 59,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Program.cs",
               "RelativeDocumentMoniker": "API\\Program.cs",
@@ -882,7 +1048,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 62,
               "Title": "Core.csproj",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Core.csproj",
               "RelativeDocumentMoniker": "Core\\Core.csproj",
@@ -894,7 +1060,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 61,
               "Title": "CreateSchoolInfoResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoResponse.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoResponse.cs",
@@ -906,7 +1072,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 63,
               "Title": "Water.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\Water.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Entity\\Water.cs",
@@ -918,7 +1084,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 64,
               "Title": "UpdateSchoolInfoRequest.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\SchoolInfo\\UpdateSchoolInfoRequest.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\SchoolInfo\\UpdateSchoolInfoRequest.cs",
@@ -930,7 +1096,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 65,
               "Title": "UpdateSchoolInfoValidator.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoValidator.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoValidator.cs",

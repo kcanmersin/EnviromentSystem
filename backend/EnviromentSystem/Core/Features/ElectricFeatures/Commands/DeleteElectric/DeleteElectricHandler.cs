@@ -1,8 +1,8 @@
 ﻿using Core.Data;
 using Core.Shared;
+using FluentValidation;
 using MediatR;
 using Microsoft.EntityFrameworkCore;
-using FluentValidation;
 
 namespace Core.Features.ElectricFeatures.Commands.DeleteElectric
 {

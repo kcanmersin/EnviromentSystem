@@ -11,6 +11,7 @@ namespace Core.Data
         public DbSet<Paper> Papers { get; set; }
         public DbSet<Building> Buildings { get; set; }
         public DbSet<SchoolInfo> SchoolInfos { get; set; }
+        public DbSet<NaturalGas> NaturalGasUsages { get; set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
@@ -18,10 +19,12 @@ namespace Core.Data
         {
             modelBuilder.ApplyConfiguration(new BuildingConfiguration());
             modelBuilder.ApplyConfiguration(new ElectricConfiguration());
+            modelBuilder.ApplyConfiguration(new NaturalGasConfiguration());
 
             modelBuilder.Entity<Water>().ToTable("Waters");
             modelBuilder.Entity<Paper>().ToTable("Papers");
             modelBuilder.Entity<SchoolInfo>().ToTable("SchoolInfos");
+            modelBuilder.Entity<NaturalGas>().ToTable("NaturalGasUsages"); 
 
             base.OnModelCreating(modelBuilder);
         }

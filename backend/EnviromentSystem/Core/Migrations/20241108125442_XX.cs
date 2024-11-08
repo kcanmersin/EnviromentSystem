@@ -17,7 +17,8 @@ namespace Core.Migrations
                 {
                     Id = table.Column<Guid>(type: "uuid", nullable: false),
                     Name = table.Column<string>(type: "character varying(100)", maxLength: 100, nullable: false),
-                    E_MeterCode = table.Column<string>(type: "character varying(20)", maxLength: 20, nullable: false),
+                    E_MeterCode = table.Column<string>(type: "character varying(20)", maxLength: 20, nullable: true),
+                    G_MeterCode = table.Column<string>(type: "character varying(20)", maxLength: 20, nullable: true),
                     CreatedBy = table.Column<string>(type: "text", nullable: true),
                     ModifiedBy = table.Column<string>(type: "text", nullable: true),
                     DeletedBy = table.Column<string>(type: "text", nullable: true),
@@ -50,6 +51,36 @@ namespace Core.Migrations
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_SchoolInfos", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "NaturalGasUsages",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uuid", nullable: false),
+                    Date = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    InitialMeterValue = table.Column<decimal>(type: "numeric(18,2)", nullable: false),
+                    FinalMeterValue = table.Column<decimal>(type: "numeric(18,2)", nullable: false),
+                    Usage = table.Column<decimal>(type: "numeric(18,2)", nullable: false),
+                    SM3Value = table.Column<decimal>(type: "numeric(18,2)", nullable: false),
+                    BuildingId = table.Column<Guid>(type: "uuid", nullable: false),
+                    CreatedBy = table.Column<string>(type: "text", nullable: true),
+                    ModifiedBy = table.Column<string>(type: "text", nullable: true),
+                    DeletedBy = table.Column<string>(type: "text", nullable: true),
+                    CreatedDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    ModifiedDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
+                    DeletedDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "boolean", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_NaturalGasUsages", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_NaturalGasUsages_Buildings_BuildingId",
+                        column: x => x.BuildingId,
+                        principalTable: "Buildings",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                 });
 
             migrationBuilder.CreateTable(
@@ -153,6 +184,11 @@ namespace Core.Migrations
                 column: "SchoolInfoId");
 
             migrationBuilder.CreateIndex(
+                name: "IX_NaturalGasUsages_BuildingId",
+                table: "NaturalGasUsages",
+                column: "BuildingId");
+
+            migrationBuilder.CreateIndex(
                 name: "IX_Papers_SchoolInfoId",
                 table: "Papers",
                 column: "SchoolInfoId");
@@ -168,6 +204,9 @@ namespace Core.Migrations
         {
             migrationBuilder.DropTable(
                 name: "Electrics");
+
+            migrationBuilder.DropTable(
+                name: "NaturalGasUsages");
 
             migrationBuilder.DropTable(
                 name: "Papers");

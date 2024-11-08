@@ -1,4 +1,8 @@
-﻿using Core.Data;
+﻿using System;
+using System.Linq;
+using System.Threading;
+using System.Threading.Tasks;
+using Core.Data;
 using Core.Features.ElectricFeatures.Queries.GetElectricById;
 using Core.Shared;
 using MediatR;
@@ -17,26 +21,35 @@ namespace Core.Features.ElectricFeatures.Queries.GetAllElectrics
 
         public async Task<Result<GetAllElectricsResponse>> Handle(GetAllElectricsQuery request, CancellationToken cancellationToken)
         {
-            var electrics = await _context.Electrics
-                .Include(e => e.Building)  
-                .AsNoTracking()
+            var electricsQuery = _context.Electrics.AsQueryable();
+
+            if (request.BuildingId.HasValue)
+                electricsQuery = electricsQuery.Where(e => e.BuildingId == request.BuildingId.Value);
+
+            if (request.StartDate.HasValue)
+                electricsQuery = electricsQuery.Where(e => e.Date >= request.StartDate.Value);
+
+            if (request.EndDate.HasValue)
+                electricsQuery = electricsQuery.Where(e => e.Date <= request.EndDate.Value);
+
+            var electrics = await electricsQuery
+                .Include(e => e.Building)
+                .Select(e => new GetElectricByIdResponse
+                {
+                    Id = e.Id,
+                    BuildingId = e.BuildingId,
+                    BuildingName = e.Building.Name,
+                    Date = e.Date,
+                    E_MeterCode = e.Building.E_MeterCode,
+                    InitialMeterValue = e.InitialMeterValue,
+                    FinalMeterValue = e.FinalMeterValue,
+                    Usage = e.Usage,
+                    KWHValue = e.KWHValue,
+                    CreatedDate = e.CreatedDate
+                })
                 .ToListAsync(cancellationToken);
 
-            var responseItems = electrics.Select(e => new GetElectricByIdResponse
-            {
-                Id = e.Id,
-                BuildingId = e.BuildingId,
-                BuildingName = e.Building.Name,
-                E_MeterCode = e.Building.E_MeterCode,
-                Date = e.Date,
-                InitialMeterValue = e.InitialMeterValue,
-                FinalMeterValue = e.FinalMeterValue,
-                Usage = e.Usage,
-                KWHValue = e.KWHValue,
-                CreatedDate = e.CreatedDate
-            }).ToList();
-
-            return Result.Success(new GetAllElectricsResponse { Electrics = responseItems });
+            return Result.Success(new GetAllElectricsResponse { Electrics = electrics });
         }
     }
 }

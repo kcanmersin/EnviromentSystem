@@ -1,27 +1,28 @@
-﻿using MediatR;
-using Microsoft.AspNetCore.Mvc;
-using Core.Features.ElectricFeatures.Commands.CreateElectric;
-using Core.Features.ElectricFeatures.Commands.UpdateElectric;
-using Core.Features.ElectricFeatures.Commands.DeleteElectric;
-using Core.Features.ElectricFeatures.Queries.GetAllElectrics;
-using Core.Features.ElectricFeatures.Queries.GetElectricById;
-using API.Contracts.Electric;
+﻿using Microsoft.AspNetCore.Mvc;
+using MediatR;
+using API.Contracts.NaturalGas;
+using System.Threading.Tasks;
+using Core.Features.NaturalGasFeatures.Commands.CreateNaturalGas;
+using Core.Features.NaturalGasFeatures.Commands.DeleteNaturalGas;
+using Core.Features.NaturalGasFeatures.Commands.UpdateNaturalGas;
+using Core.Features.NaturalGasFeatures.Queries.GetAllNaturalGas;
+using Core.Features.NaturalGasFeatures.Queries.GetNaturalGasById;
 
 namespace API.Controllers
 {
     [ApiController]
     [Route("api/[controller]")]
-    public class ElectricController : ControllerBase
+    public class NaturalGasController : ControllerBase
     {
         private readonly IMediator _mediator;
 
-        public ElectricController(IMediator mediator)
+        public NaturalGasController(IMediator mediator)
         {
             _mediator = mediator;
         }
 
         [HttpPost]
-        public async Task<IActionResult> Create([FromBody] CreateElectricCommand command)
+        public async Task<IActionResult> Create([FromBody] CreateNaturalGasCommand command)
         {
             var result = await _mediator.Send(command);
             if (!result.IsSuccess)
@@ -31,7 +32,7 @@ namespace API.Controllers
         }
 
         [HttpPut("{id:guid}")]
-        public async Task<IActionResult> Update(Guid id, [FromBody] UpdateElectricCommand command)
+        public async Task<IActionResult> Update(Guid id, [FromBody] UpdateNaturalGasCommand command)
         {
             if (id != command.Id)
                 return BadRequest(new { Error = "Mismatched ID in request URL and payload." });
@@ -44,12 +45,12 @@ namespace API.Controllers
         }
 
         [HttpDelete("{id:guid}")]
-        public async Task<IActionResult> Delete([FromRoute] Guid id, [FromBody] DeleteElectricRequest request)
+        public async Task<IActionResult> Delete([FromRoute] Guid id, [FromBody] DeleteNaturalGasRequest request)
         {
             if (id != request.Id)
                 return BadRequest(new { Error = "Mismatched ID in request URL and payload." });
 
-            var command = new DeleteElectricCommand { Id = request.Id };
+            var command = new DeleteNaturalGasCommand { Id = request.Id };
             var result = await _mediator.Send(command);
             if (!result.IsSuccess)
                 return result.Error.Code == "NotFound" ? NotFound(new { Error = result.Error.Message }) : BadRequest(new { Error = result.Error.Message });
@@ -60,7 +61,7 @@ namespace API.Controllers
         [HttpGet("{id:guid}")]
         public async Task<IActionResult> Get(Guid id)
         {
-            var query = new GetElectricByIdQuery { Id = id };
+            var query = new GetNaturalGasByIdQuery { Id = id };
             var result = await _mediator.Send(query);
 
             if (!result.IsSuccess)
@@ -75,7 +76,7 @@ namespace API.Controllers
             [FromQuery] DateTime? startDate = null,
             [FromQuery] DateTime? endDate = null)
         {
-            var query = new GetAllElectricsQuery
+            var query = new GetAllNaturalGasQuery
             {
                 BuildingId = buildingId,
                 StartDate = startDate,

@@ -15,12 +15,19 @@ namespace Core.Data.Configuration
                    .HasMaxLength(100);
 
             builder.Property(b => b.E_MeterCode)
-                   .IsRequired()
+                   .HasMaxLength(20);
+
+            builder.Property(b => b.G_MeterCode)
                    .HasMaxLength(20);
 
             builder.HasMany(b => b.Electrics)
                    .WithOne(e => e.Building)
                    .HasForeignKey(e => e.BuildingId)
+                   .OnDelete(DeleteBehavior.Cascade);
+
+            builder.HasMany(b => b.NaturalGasUsages)
+                   .WithOne(g => g.Building)
+                   .HasForeignKey(g => g.BuildingId)
                    .OnDelete(DeleteBehavior.Cascade);
 
             builder.ToTable("Buildings");

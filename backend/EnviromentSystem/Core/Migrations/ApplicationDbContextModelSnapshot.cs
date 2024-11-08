@@ -41,7 +41,10 @@ namespace Core.Migrations
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("E_MeterCode")
-                        .IsRequired()
+                        .HasMaxLength(20)
+                        .HasColumnType("character varying(20)");
+
+                    b.Property<string>("G_MeterCode")
                         .HasMaxLength(20)
                         .HasColumnType("character varying(20)");
 
@@ -119,6 +122,58 @@ namespace Core.Migrations
                     b.HasIndex("SchoolInfoId");
 
                     b.ToTable("Electrics", (string)null);
+                });
+
+            modelBuilder.Entity("Core.Data.Entity.NaturalGas", b =>
+                {
+                    b.Property<Guid>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("uuid");
+
+                    b.Property<Guid>("BuildingId")
+                        .HasColumnType("uuid");
+
+                    b.Property<string>("CreatedBy")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTime>("Date")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<string>("DeletedBy")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime?>("DeletedDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<decimal>("FinalMeterValue")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("InitialMeterValue")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<bool>("IsDeleted")
+                        .HasColumnType("boolean");
+
+                    b.Property<string>("ModifiedBy")
+                        .HasColumnType("text");
+
+                    b.Property<DateTime?>("ModifiedDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<decimal>("SM3Value")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.Property<decimal>("Usage")
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("BuildingId");
+
+                    b.ToTable("NaturalGasUsages", (string)null);
                 });
 
             modelBuilder.Entity("Core.Data.Entity.Paper", b =>
@@ -265,6 +320,17 @@ namespace Core.Migrations
                     b.Navigation("Building");
                 });
 
+            modelBuilder.Entity("Core.Data.Entity.NaturalGas", b =>
+                {
+                    b.HasOne("Core.Data.Entity.Building", "Building")
+                        .WithMany("NaturalGasUsages")
+                        .HasForeignKey("BuildingId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Building");
+                });
+
             modelBuilder.Entity("Core.Data.Entity.Paper", b =>
                 {
                     b.HasOne("Core.Data.Entity.SchoolInfo", "SchoolInfo")
@@ -290,6 +356,8 @@ namespace Core.Migrations
             modelBuilder.Entity("Core.Data.Entity.Building", b =>
                 {
                     b.Navigation("Electrics");
+
+                    b.Navigation("NaturalGasUsages");
                 });
 
             modelBuilder.Entity("Core.Data.Entity.SchoolInfo", b =>

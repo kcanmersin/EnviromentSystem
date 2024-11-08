@@ -86,15 +86,29 @@ namespace API
         public string? Summary { get; set; }
     }
 }
-﻿namespace API.Contracts.Electric
+
+namespace API.Contracts.Electric
 {
     public class CreateElectricRequest
     {
-        public Guid SchoolInfoId { get; set; }
-        public decimal Consumption { get; set; }
-        public decimal Cost { get; set; }
-        public int Year { get; set; }
-        public string Month { get; set; } = string.Empty;
+        [DefaultValue("7A7252C6-4558-4B12-BF21-1D2A26C1E8E9")]
+        public Guid BuildingId { get; set; }
+
+        [DefaultValue("2022-01-31")]
+        public DateTime Date { get; set; }
+
+
+        [DefaultValue(335.395)]
+        public decimal InitialMeterValue { get; set; }
+
+        [DefaultValue(337.803)]
+        public decimal FinalMeterValue { get; set; }
+
+        [DefaultValue(2408.00)]
+        public decimal Usage { get; set; }
+
+        [DefaultValue(2408.0000000)]
+        public decimal KWHValue { get; set; }
     }
 }
 ﻿namespace API.Contracts.Electric
@@ -102,27 +116,105 @@ namespace API
     public class CreateElectricResponse
     {
         public Guid Id { get; set; }
-        public Guid SchoolInfoId { get; set; }
-        public decimal Consumption { get; set; }
-        public decimal Cost { get; set; }
+        public Guid BuildingId { get; set; }
+        public string BuildingName { get; set; }
+        public DateTime Date { get; set; }
+        public decimal InitialMeterValue { get; set; }
+        public decimal FinalMeterValue { get; set; }
+        public decimal Usage { get; set; }
+        public decimal KWHValue { get; set; }
+        public DateTime CreatedDate { get; set; }
+    }
+}
+
+namespace API.Contracts.Electric
+{
+    public class DeleteElectricRequest
+    {
+        [DefaultValue("7A7252C6-4558-4B12-BF21-1D2A26C1E8E9")]
+        public Guid Id { get; set; }
+    }
+}
+﻿namespace API.Contracts.Electric
+{
+    public class ElectricDto
+    {
+        public Guid Id { get; set; }
+        public Guid BuildingId { get; set; }
+        public string BuildingName { get; set; }
+        public DateTime Date { get; set; }
+        public string MeterCode { get; set; }
+        public decimal InitialMeterValue { get; set; }
+        public decimal FinalMeterValue { get; set; }
+        public decimal Usage { get; set; }
+        public decimal KWHValue { get; set; }
         public DateTime CreatedDate { get; set; }
     }
 }
 ﻿namespace API.Contracts.Electric
 {
-    public class UpdateElectricRequest
+    public class GetAllElectricsResponse
+    {
+        public List<ElectricDto> Electrics { get; set; } = new();
+    }
+}
+﻿namespace API.Contracts.Electric
+{
+    public class GetElectricByIdResponse
     {
         public Guid Id { get; set; }
-        public decimal Consumption { get; set; }
-        public decimal Cost { get; set; }
-        public int Year { get; set; }
-        public string Month { get; set; } = string.Empty;
+        public Guid BuildingId { get; set; }
+        public string BuildingName { get; set; }
+        public DateTime Date { get; set; }
+        public string E_MeterCode { get; set; }
+        public decimal InitialMeterValue { get; set; }
+        public decimal FinalMeterValue { get; set; }
+        public decimal Usage { get; set; }
+        public decimal KWHValue { get; set; }
+        public DateTime CreatedDate { get; set; }
+    }
+}
+
+namespace API.Contracts.Electric
+{
+    public class UpdateElectricRequest
+    {
+        [DefaultValue("7A7252C6-4558-4B12-BF21-1D2A26C1E8E9")]
+        public Guid Id { get; set; }
+
+        [DefaultValue("7A7252C6-4558-4B12-BF21-1D2A26C1E8E9")]
+        public Guid BuildingId { get; set; }
+
+        [DefaultValue("2022-01-31")]
+        public DateTime Date { get; set; }
+
+
+        [DefaultValue(335.395)]
+        public decimal InitialMeterValue { get; set; }
+
+        [DefaultValue(337.803)]
+        public decimal FinalMeterValue { get; set; }
+
+        [DefaultValue(2408.00)]
+        public decimal Usage { get; set; }
+
+        [DefaultValue(2408.0000000)]
+        public decimal KWHValue { get; set; }
     }
 }
 ﻿namespace API.Contracts.Electric
 {
     public class UpdateElectricResponse
     {
+        public Guid Id { get; set; }
+        public Guid BuildingId { get; set; }
+        public string BuildingName { get; set; }
+        public DateTime Date { get; set; }
+        public decimal InitialMeterValue { get; set; }
+        public decimal FinalMeterValue { get; set; }
+        public decimal Usage { get; set; }
+        public decimal KWHValue { get; set; }
+        public DateTime ModifiedDate { get; set; }
     }
 }
 ﻿namespace API.Contracts.SchoolInfo
@@ -169,26 +261,35 @@ namespace API.Controllers
         public async Task<IActionResult> Create([FromBody] CreateElectricCommand command)
         {
             var result = await _mediator.Send(command);
-            if (!result.IsSuccess) return BadRequest(result.Error.Message);
+            if (!result.IsSuccess)
+                return BadRequest(new { Error = result.Error.Message });
 
             return CreatedAtAction(nameof(Get), new { id = result.Value.Id }, result.Value);
         }
 
-        [HttpPut]
-        public async Task<IActionResult> Update([FromBody] UpdateElectricCommand command)
+        [HttpPut("{id:guid}")]
+        public async Task<IActionResult> Update(Guid id, [FromBody] UpdateElectricCommand command)
         {
+            if (id != command.Id)
+                return BadRequest(new { Error = "Mismatched ID in request URL and payload." });
+
             var result = await _mediator.Send(command);
-            if (!result.IsSuccess) return NotFound(result.Error.Message);
+            if (!result.IsSuccess)
+                return result.Error.Code == "NotFound" ? NotFound(new { Error = result.Error.Message }) : BadRequest(new { Error = result.Error.Message });
 
             return Ok(result.Value);
         }
 
         [HttpDelete("{id:guid}")]
-        public async Task<IActionResult> Delete(Guid id)
+        public async Task<IActionResult> Delete([FromRoute] Guid id, [FromBody] DeleteElectricRequest request)
         {
-            var command = new DeleteElectricCommand { Id = id };
+            if (id != request.Id)
+                return BadRequest(new { Error = "Mismatched ID in request URL and payload." });
+
+            var command = new DeleteElectricCommand { Id = request.Id };
             var result = await _mediator.Send(command);
-            if (!result.IsSuccess) return NotFound(result.Error.Message);
+            if (!result.IsSuccess)
+                return result.Error.Code == "NotFound" ? NotFound(new { Error = result.Error.Message }) : BadRequest(new { Error = result.Error.Message });
 
             return Ok(result.Value);
         }
@@ -196,21 +297,31 @@ namespace API.Controllers
         [HttpGet("{id:guid}")]
         public async Task<IActionResult> Get(Guid id)
         {
-            var query = new GetElectricByIdQuery() { Id = id };
+            var query = new GetElectricByIdQuery { Id = id };
             var result = await _mediator.Send(query);
 
-            if (result == null) return NotFound("Electric record not found.");
+            if (!result.IsSuccess)
+                return NotFound(new { Error = result.Error.Message });
 
-            return Ok(result);
+            return Ok(result.Value);
         }
 
         [HttpGet]
-        public async Task<IActionResult> GetAll()
+        public async Task<IActionResult> GetAll(
+            [FromQuery] Guid? buildingId = null,
+            [FromQuery] DateTime? startDate = null,
+            [FromQuery] DateTime? endDate = null)
         {
-            var query = new GetAllElectricsQuery();
+            var query = new GetAllElectricsQuery
+            {
+                BuildingId = buildingId,
+                StartDate = startDate,
+                EndDate = endDate
+            };
+
             var result = await _mediator.Send(query);
 
-            return Ok(result);
+            return result.IsSuccess ? Ok(result.Value) : BadRequest(new { Error = result.Error.Message });
         }
     }
 }
@@ -462,7 +573,7 @@ public class RequestResponseLoggingMiddleware
 [assembly: System.Reflection.AssemblyCompanyAttribute("API")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1fa47c035df411090cb56437d2e97b335ea72e0b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d58a78314c81f2eb136d866989bb2fb0ee2c678")]
 [assembly: System.Reflection.AssemblyProductAttribute("API")]
 [assembly: System.Reflection.AssemblyTitleAttribute("API")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
@@ -520,23 +631,83 @@ namespace Core.Data
         public DbSet<Water> Waters { get; set; }
         public DbSet<Paper> Papers { get; set; }
         public DbSet<Building> Buildings { get; set; }
+        public DbSet<SchoolInfo> SchoolInfos { get; set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Electric>()
-                .ToTable("Electrics")
-                .HasOne(e => e.Building)         
-                .WithMany(b => b.Electrics)     
-                .HasForeignKey(e => e.BuildingId) 
-                .OnDelete(DeleteBehavior.Cascade);
+            modelBuilder.ApplyConfiguration(new BuildingConfiguration());
+            modelBuilder.ApplyConfiguration(new ElectricConfiguration());
 
             modelBuilder.Entity<Water>().ToTable("Waters");
             modelBuilder.Entity<Paper>().ToTable("Papers");
-            modelBuilder.Entity<Building>().ToTable("Buildings"); 
+            modelBuilder.Entity<SchoolInfo>().ToTable("SchoolInfos");
 
             base.OnModelCreating(modelBuilder);
+        }
+    }
+}
+
+namespace Core.Data.Configuration
+{
+    public class BuildingConfiguration : IEntityTypeConfiguration<Building>
+    {
+        public void Configure(EntityTypeBuilder<Building> builder)
+        {
+            builder.HasKey(b => b.Id);
+
+            builder.Property(b => b.Name)
+                   .IsRequired()
+                   .HasMaxLength(100);
+
+            builder.Property(b => b.E_MeterCode)
+                   .IsRequired()
+                   .HasMaxLength(20);
+
+            builder.HasMany(b => b.Electrics)
+                   .WithOne(e => e.Building)
+                   .HasForeignKey(e => e.BuildingId)
+                   .OnDelete(DeleteBehavior.Cascade);
+
+            builder.ToTable("Buildings");
+        }
+    }
+}
+
+namespace Core.Data.Configuration
+{
+    public class ElectricConfiguration : IEntityTypeConfiguration<Electric>
+    {
+        public void Configure(EntityTypeBuilder<Electric> builder)
+        {
+            builder.HasKey(e => e.Id);
+
+            builder.Property(e => e.Date)
+                   .IsRequired();
+
+            builder.Property(e => e.InitialMeterValue)
+                   .IsRequired()
+                   .HasColumnType("decimal(18,2)");
+
+            builder.Property(e => e.FinalMeterValue)
+                   .IsRequired()
+                   .HasColumnType("decimal(18,2)");
+
+            builder.Property(e => e.Usage)
+                   .IsRequired()
+                   .HasColumnType("decimal(18,2)");
+
+            builder.Property(e => e.KWHValue)
+                   .IsRequired()
+                   .HasColumnType("decimal(18,2)");
+
+            builder.HasOne(e => e.Building)
+                   .WithMany(b => b.Electrics)
+                   .HasForeignKey(e => e.BuildingId)
+                   .OnDelete(DeleteBehavior.Cascade); 
+
+            builder.ToTable("Electrics");
         }
     }
 }
@@ -548,6 +719,9 @@ namespace Core.Data.Entity
         [Required, MaxLength(100)]
         public string Name { get; set; }
 
+        [Required, MaxLength(20)]
+        public string E_MeterCode { get; set; }
+
         public ICollection<Electric> Electrics { get; set; } = new List<Electric>();
     }
 }
@@ -558,9 +732,6 @@ namespace Core.Data.Entity
     {
         [Required]
         public DateTime Date { get; set; }
-
-        [Required, MaxLength(20)]
-        public string MeterCode { get; set; }
 
         [Required]
         public decimal InitialMeterValue { get; set; }
@@ -781,16 +952,14 @@ namespace Core.Extensions
     }
 }
 
-namespace Core.Features.ElectricFeatures.Commands.CreateElectric
+public class CreateElectricCommand : IRequest<Result<CreateElectricResponse>>
 {
-    public class CreateElectricCommand : IRequest<Result<CreateElectricResponse>>
-    {
-        public Guid SchoolInfoId { get; set; }
-        public decimal Consumption { get; set; }
-        public decimal Cost { get; set; }
-        public int Year { get; set; }
-        public string Month { get; set; } = string.Empty;
-    }
+    public Guid BuildingId { get; set; }
+    public decimal InitialMeterValue { get; set; }
+    public decimal FinalMeterValue { get; set; }
+    public decimal Usage { get; set; }
+    public decimal KWHValue { get; set; }
+    public DateTime Date { get; set; }
 }
 
 namespace Core.Features.ElectricFeatures.Commands.CreateElectric
@@ -817,11 +986,12 @@ namespace Core.Features.ElectricFeatures.Commands.CreateElectric
 
             var electric = new Electric
             {
-                SchoolInfoId = request.SchoolInfoId,
-                Consumption = request.Consumption,
-                Cost = request.Cost,
-                //Year = request.Year,
-                //Month = request.Month,
+                BuildingId = request.BuildingId,
+                Date = request.Date,
+                InitialMeterValue = request.InitialMeterValue,
+                FinalMeterValue = request.FinalMeterValue,
+                Usage = request.Usage,
+                KWHValue = request.KWHValue,
                 CreatedDate = DateTime.UtcNow
             };
 
@@ -831,11 +1001,12 @@ namespace Core.Features.ElectricFeatures.Commands.CreateElectric
             var response = new CreateElectricResponse
             {
                 Id = electric.Id,
-                SchoolInfoId = electric.SchoolInfoId,
-                Consumption = electric.Consumption,
-                Cost = electric.Cost,
-                //Year = electric.Year,
-                //Month = electric.Month,
+                BuildingId = electric.BuildingId,
+                Date = electric.Date,
+                InitialMeterValue = electric.InitialMeterValue,
+                FinalMeterValue = electric.FinalMeterValue,
+                Usage = electric.Usage,
+                KWHValue = electric.KWHValue,
                 CreatedDate = electric.CreatedDate
             };
 
@@ -848,11 +1019,12 @@ namespace Core.Features.ElectricFeatures.Commands.CreateElectric
     public class CreateElectricResponse
     {
         public Guid Id { get; set; }
-        public Guid SchoolInfoId { get; set; }
-        public decimal Consumption { get; set; }
-        public decimal Cost { get; set; }
-        public int Year { get; set; }
-        public string Month { get; set; } = string.Empty;
+        public Guid BuildingId { get; set; }
+        public DateTime Date { get; set; }
+        public decimal InitialMeterValue { get; set; }
+        public decimal FinalMeterValue { get; set; }
+        public decimal Usage { get; set; }
+        public decimal KWHValue { get; set; }
         public DateTime CreatedDate { get; set; }
     }
 }
@@ -863,23 +1035,12 @@ namespace Core.Features.ElectricFeatures.Commands.CreateElectric
     {
         public CreateElectricValidator()
         {
-            RuleFor(x => x.SchoolInfoId).NotEmpty().WithMessage("SchoolInfoId is required.");
-            RuleFor(x => x.Consumption).GreaterThan(0).WithMessage("Consumption must be greater than 0.");
-            RuleFor(x => x.Cost).GreaterThanOrEqualTo(0).WithMessage("Cost cannot be negative.");
-            RuleFor(x => x.Year).InclusiveBetween(2000, DateTime.Now.Year).WithMessage("Year must be valid.");
-            RuleFor(x => x.Month)
-                .NotEmpty()
-                .Must(BeAValidMonth).WithMessage("Month must be a valid month name.");
-        }
-
-        private bool BeAValidMonth(string month)
-        {
-            var validMonths = new[]
-            {
-                "Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran",
-                "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"
-            };
-            return validMonths.Contains(month);
+            RuleFor(x => x.BuildingId).NotEmpty().WithMessage("BuildingId is required.");
+            RuleFor(x => x.Date).NotEmpty().WithMessage("Date is required.");
+            RuleFor(x => x.InitialMeterValue).GreaterThanOrEqualTo(0).WithMessage("InitialMeterValue cannot be negative.");
+            RuleFor(x => x.FinalMeterValue).GreaterThanOrEqualTo(0).WithMessage("FinalMeterValue cannot be negative.");
+            RuleFor(x => x.Usage).GreaterThanOrEqualTo(0).WithMessage("Usage cannot be negative.");
+            RuleFor(x => x.KWHValue).GreaterThanOrEqualTo(0).WithMessage("KWHValue cannot be negative.");
         }
     }
 }
@@ -962,11 +1123,12 @@ namespace Core.Features.ElectricFeatures.Commands.UpdateElectric
     public class UpdateElectricCommand : IRequest<Result<UpdateElectricResponse>>
     {
         public Guid Id { get; set; }
-        public Guid SchoolInfoId { get; set; }
-        public decimal Consumption { get; set; }
-        public decimal Cost { get; set; }
-        public int Year { get; set; }
-        public string Month { get; set; } = string.Empty;
+        public Guid BuildingId { get; set; }
+        public DateTime Date { get; set; }
+        public decimal InitialMeterValue { get; set; }
+        public decimal FinalMeterValue { get; set; }
+        public decimal Usage { get; set; }
+        public decimal KWHValue { get; set; }
     }
 }
 
@@ -999,11 +1161,12 @@ namespace Core.Features.ElectricFeatures.Commands.UpdateElectric
                     new Error("ElectricNotFound", "Electric record not found."));
             }
 
-            electric.SchoolInfoId = request.SchoolInfoId;
-            electric.Consumption = request.Consumption;
-            electric.Cost = request.Cost;
-            //electric.Year = request.Year;
-            //electric.Month = request.Month;
+            electric.BuildingId = request.BuildingId;
+            electric.Date = request.Date;
+            electric.InitialMeterValue = request.InitialMeterValue;
+            electric.FinalMeterValue = request.FinalMeterValue;
+            electric.Usage = request.Usage;
+            electric.KWHValue = request.KWHValue;
             electric.ModifiedDate = DateTime.UtcNow;
 
             await _context.SaveChangesAsync(cancellationToken);
@@ -1011,11 +1174,12 @@ namespace Core.Features.ElectricFeatures.Commands.UpdateElectric
             var response = new UpdateElectricResponse
             {
                 Id = electric.Id,
-                SchoolInfoId = electric.SchoolInfoId,
-                Consumption = electric.Consumption,
-                Cost = electric.Cost,
-                //Year = electric.Year,
-                //Month = electric.Month,
+                BuildingId = electric.BuildingId,
+                Date = electric.Date,
+                InitialMeterValue = electric.InitialMeterValue,
+                FinalMeterValue = electric.FinalMeterValue,
+                Usage = electric.Usage,
+                KWHValue = electric.KWHValue,
                 Success = true,
                 Message = "Electric record updated successfully."
             };
@@ -1029,11 +1193,12 @@ namespace Core.Features.ElectricFeatures.Commands.UpdateElectric
     public class UpdateElectricResponse
     {
         public Guid Id { get; set; }
-        public Guid SchoolInfoId { get; set; }
-        public decimal Consumption { get; set; }
-        public decimal Cost { get; set; }
-        public int Year { get; set; }
-        public string Month { get; set; } = string.Empty;
+        public Guid BuildingId { get; set; }
+        public DateTime Date { get; set; }
+        public decimal InitialMeterValue { get; set; }
+        public decimal FinalMeterValue { get; set; }
+        public decimal Usage { get; set; }
+        public decimal KWHValue { get; set; }
         public bool Success { get; set; }
         public string Message { get; set; } = string.Empty;
     }
@@ -1046,23 +1211,12 @@ namespace Core.Features.ElectricFeatures.Commands.UpdateElectric
         public UpdateElectricValidator()
         {
             RuleFor(x => x.Id).NotEmpty().WithMessage("Id is required.");
-            RuleFor(x => x.SchoolInfoId).NotEmpty().WithMessage("SchoolInfoId is required.");
-            RuleFor(x => x.Consumption).GreaterThan(0).WithMessage("Consumption must be greater than 0.");
-            RuleFor(x => x.Cost).GreaterThanOrEqualTo(0).WithMessage("Cost cannot be negative.");
-            RuleFor(x => x.Year).InclusiveBetween(2000, DateTime.Now.Year).WithMessage("Year must be valid.");
-            RuleFor(x => x.Month)
-                .NotEmpty()
-                .Must(BeAValidMonth).WithMessage("Month must be a valid month name.");
-        }
-
-        private bool BeAValidMonth(string month)
-        {
-            var validMonths = new[]
-            {
-                "Ocak", "Şubat", "Mart", "Nisan", "Mayıs", "Haziran",
-                "Temmuz", "Ağustos", "Eylül", "Ekim", "Kasım", "Aralık"
-            };
-            return validMonths.Contains(month);
+            RuleFor(x => x.BuildingId).NotEmpty().WithMessage("BuildingId is required.");
+            RuleFor(x => x.Date).NotEmpty().WithMessage("Date is required.");
+            RuleFor(x => x.InitialMeterValue).GreaterThanOrEqualTo(0).WithMessage("InitialMeterValue cannot be negative.");
+            RuleFor(x => x.FinalMeterValue).GreaterThanOrEqualTo(0).WithMessage("FinalMeterValue cannot be negative.");
+            RuleFor(x => x.Usage).GreaterThanOrEqualTo(0).WithMessage("Usage cannot be negative.");
+            RuleFor(x => x.KWHValue).GreaterThanOrEqualTo(0).WithMessage("KWHValue cannot be negative.");
         }
     }
 }
@@ -1080,20 +1234,35 @@ namespace Core.Features.ElectricFeatures.Queries.GetAllElectrics
 
         public async Task<Result<GetAllElectricsResponse>> Handle(GetAllElectricsQuery request, CancellationToken cancellationToken)
         {
-            var electrics = await _context.Electrics.ToListAsync(cancellationToken);
+            var electricsQuery = _context.Electrics.AsQueryable();
 
-            var responseItems = electrics.Select(e => new GetElectricByIdResponse
-            {
-                Id = e.Id,
-                SchoolInfoId = e.SchoolInfoId,
-                Consumption = e.Consumption,
-                Cost = e.Cost,
-                //Year = e.Year,
-                //Month = e.Month,
-                CreatedDate = e.CreatedDate
-            }).ToList();
+            if (request.BuildingId.HasValue)
+                electricsQuery = electricsQuery.Where(e => e.BuildingId == request.BuildingId.Value);
 
-            return Result.Success(new GetAllElectricsResponse { Electrics = responseItems });
+            if (request.StartDate.HasValue)
+                electricsQuery = electricsQuery.Where(e => e.Date >= request.StartDate.Value);
+
+            if (request.EndDate.HasValue)
+                electricsQuery = electricsQuery.Where(e => e.Date <= request.EndDate.Value);
+
+            var electrics = await electricsQuery
+                .Include(e => e.Building)
+                .Select(e => new GetElectricByIdResponse
+                {
+                    Id = e.Id,
+                    BuildingId = e.BuildingId,
+                    BuildingName = e.Building.Name,
+                    Date = e.Date,
+                    E_MeterCode = e.Building.E_MeterCode,
+                    InitialMeterValue = e.InitialMeterValue,
+                    FinalMeterValue = e.FinalMeterValue,
+                    Usage = e.Usage,
+                    KWHValue = e.KWHValue,
+                    CreatedDate = e.CreatedDate
+                })
+                .ToListAsync(cancellationToken);
+
+            return Result.Success(new GetAllElectricsResponse { Electrics = electrics });
         }
     }
 }
@@ -1102,6 +1271,9 @@ namespace Core.Features.ElectricFeatures.Queries.GetAllElectrics
 {
     public class GetAllElectricsQuery : IRequest<Result<GetAllElectricsResponse>>
     {
+        public Guid? BuildingId { get; set; }
+        public DateTime? StartDate { get; set; }
+        public DateTime? EndDate { get; set; }
     }
 }
 
@@ -1126,7 +1298,10 @@ namespace Core.Features.ElectricFeatures.Queries.GetElectricById
 
         public async Task<Result<GetElectricByIdResponse>> Handle(GetElectricByIdQuery request, CancellationToken cancellationToken)
         {
-            var electric = await _context.Electrics.FirstOrDefaultAsync(e => e.Id == request.Id, cancellationToken);
+            var electric = await _context.Electrics
+                .Include(e => e.Building)  
+                .AsNoTracking()
+                .FirstOrDefaultAsync(e => e.Id == request.Id, cancellationToken);
 
             if (electric == null)
             {
@@ -1137,11 +1312,14 @@ namespace Core.Features.ElectricFeatures.Queries.GetElectricById
             var response = new GetElectricByIdResponse
             {
                 Id = electric.Id,
-                SchoolInfoId = electric.SchoolInfoId,
-                Consumption = electric.Consumption,
-                Cost = electric.Cost,
-                //Year = electric.Year,
-                //Month = electric.Month,
+                BuildingId = electric.BuildingId,
+                BuildingName = electric.Building.Name,
+                E_MeterCode = electric.Building.E_MeterCode,
+                Date = electric.Date,
+                InitialMeterValue = electric.InitialMeterValue,
+                FinalMeterValue = electric.FinalMeterValue,
+                Usage = electric.Usage,
+                KWHValue = electric.KWHValue,
                 CreatedDate = electric.CreatedDate
             };
 
@@ -1162,11 +1340,14 @@ namespace Core.Features.ElectricFeatures.Queries.GetElectricById
     public class GetElectricByIdResponse
     {
         public Guid Id { get; set; }
-        public Guid SchoolInfoId { get; set; }
-        public decimal Consumption { get; set; }
-        public decimal Cost { get; set; }
-        public int Year { get; set; }
-        public string Month { get; set; } = string.Empty;
+        public Guid BuildingId { get; set; }
+        public string BuildingName { get; set; } 
+        public DateTime Date { get; set; }
+        public string E_MeterCode { get; set; }
+        public decimal InitialMeterValue { get; set; }
+        public decimal FinalMeterValue { get; set; }
+        public decimal Usage { get; set; }
+        public decimal KWHValue { get; set; }
         public DateTime CreatedDate { get; set; }
     }
 }
@@ -1539,7 +1720,7 @@ namespace Core.Features.SchoolInfoFeatures.Queries.GetSchoolInfo
 [assembly: System.Reflection.AssemblyCompanyAttribute("Core")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1fa47c035df411090cb56437d2e97b335ea72e0b")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+4d58a78314c81f2eb136d866989bb2fb0ee2c678")]
 [assembly: System.Reflection.AssemblyProductAttribute("Core")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Core")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

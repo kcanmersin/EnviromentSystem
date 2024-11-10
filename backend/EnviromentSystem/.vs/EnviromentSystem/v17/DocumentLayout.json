@@ -3,20 +3,28 @@
   "WorkspaceRootPath": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Migrations\\20241108125442_XX.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Core\\Migrations\\20241108125442_XX.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\naturalgasfeatures\\commands\\updatenaturalgas\\updatenaturalgashandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\naturalgasfeatures\\commands\\updatenaturalgas\\updatenaturalgashandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\controllers\\electriccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\controllers\\electriccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\controllers\\naturalgascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\controllers\\naturalgascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\controllers\\schoolinfocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\controllers\\schoolinfocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\naturalgasfeatures\\commands\\updatenaturalgas\\updatenaturalgashandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\naturalgasfeatures\\commands\\updatenaturalgas\\updatenaturalgashandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\naturalgasfeatures\\queries\\getnaturalgasbyid\\getnaturalgasbyidresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -143,10 +151,6 @@
       "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\electricfeatures\\queries\\getallelectrics\\getallelectricshandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\controllers\\electriccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\controllers\\electriccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\shared\\resultt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\shared\\resultt.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -263,10 +267,6 @@
       "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\contracts\\schoolinfo\\createschoolinforequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\controllers\\schoolinfocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\controllers\\schoolinfocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\contracts\\schoolinfo\\deleteschoolinforequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\contracts\\schoolinfo\\deleteschoolinforequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -339,10 +339,6 @@
       "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\extensions\\corelayerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\commands\\deleteschoolinfo\\deleteschoolinfovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\commands\\deleteschoolinfo\\deleteschoolinfovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -365,6 +361,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\commands\\updateschoolinfo\\updateschoolinfovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\commands\\updateschoolinfo\\updateschoolinfovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Migrations\\20241108125442_XX.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:Core\\Migrations\\20241108125442_XX.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -378,33 +378,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "20241108125442_XX.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Migrations\\20241108125442_XX.cs",
-              "RelativeDocumentMoniker": "Core\\Migrations\\20241108125442_XX.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Migrations\\20241108125442_XX.cs",
-              "RelativeToolTip": "Core\\Migrations\\20241108125442_XX.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T12:54:42.259Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "GetNaturalGasByIdResponse.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\NaturalGasFeatures\\Queries\\GetNaturalGasById\\GetNaturalGasByIdResponse.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\NaturalGasFeatures\\Queries\\GetNaturalGasById\\GetNaturalGasByIdResponse.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\NaturalGasFeatures\\Queries\\GetNaturalGasById\\GetNaturalGasByIdResponse.cs",
-              "RelativeToolTip": "Core\\Features\\NaturalGasFeatures\\Queries\\GetNaturalGasById\\GetNaturalGasByIdResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T12:47:19.344Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "GetAllElectricsQuery.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsQuery.cs",
               "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsQuery.cs",
@@ -412,12 +386,11 @@
               "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsQuery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T15:29:57.627Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-19T15:29:57.627Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "GetAllElectricsResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsResponse.cs",
               "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsResponse.cs",
@@ -425,12 +398,11 @@
               "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T15:30:08.758Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-19T15:30:08.758Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "GetAllNaturalGasHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\NaturalGasFeatures\\Queries\\GetAllNaturalGas\\GetAllNaturalGasHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\NaturalGasFeatures\\Queries\\GetAllNaturalGas\\GetAllNaturalGasHandler.cs",
@@ -438,25 +410,37 @@
               "RelativeToolTip": "Core\\Features\\NaturalGasFeatures\\Queries\\GetAllNaturalGas\\GetAllNaturalGasHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T12:45:50.663Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T12:45:50.663Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "NaturalGasController.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\NaturalGasController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\NaturalGasController.cs",
               "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\NaturalGasController.cs",
               "RelativeToolTip": "API\\Controllers\\NaturalGasController.cs",
-              "ViewState": "AgIAACAAAAAAAAAAAAAmwDgAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAADwAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-08T12:49:34.163Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Program.cs",
+              "RelativeDocumentMoniker": "API\\Program.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Program.cs",
+              "RelativeToolTip": "API\\Program.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAADwv1IAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T10:50:21.053Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Core\\Data\\ApplicationDbContext.cs",
@@ -469,7 +453,57 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 0,
+              "Title": "ElectricController.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\ElectricController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\ElectricController.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\ElectricController.cs",
+              "RelativeToolTip": "API\\Controllers\\ElectricController.cs",
+              "ViewState": "AgIAAB8AAAAAAAAAAAAowFkAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-19T15:35:07.168Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "SchoolInfoController.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\SchoolInfoController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\SchoolInfoController.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\SchoolInfoController.cs",
+              "RelativeToolTip": "API\\Controllers\\SchoolInfoController.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAxwEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-18T10:25:45.884Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GetNaturalGasByIdResponse.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\NaturalGasFeatures\\Queries\\GetNaturalGasById\\GetNaturalGasByIdResponse.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\NaturalGasFeatures\\Queries\\GetNaturalGasById\\GetNaturalGasByIdResponse.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\NaturalGasFeatures\\Queries\\GetNaturalGasById\\GetNaturalGasByIdResponse.cs",
+              "RelativeToolTip": "Core\\Features\\NaturalGasFeatures\\Queries\\GetNaturalGasById\\GetNaturalGasByIdResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T12:47:19.344Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 90,
+              "Title": "20241108125442_XX.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Migrations\\20241108125442_XX.cs",
+              "RelativeDocumentMoniker": "Core\\Migrations\\20241108125442_XX.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Migrations\\20241108125442_XX.cs",
+              "RelativeToolTip": "Core\\Migrations\\20241108125442_XX.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T12:54:42.259Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "GetAllNaturalGasResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\NaturalGasFeatures\\Queries\\GetAllNaturalGas\\GetAllNaturalGasResponse.cs",
               "RelativeDocumentMoniker": "Core\\Features\\NaturalGasFeatures\\Queries\\GetAllNaturalGas\\GetAllNaturalGasResponse.cs",
@@ -477,12 +511,11 @@
               "RelativeToolTip": "Core\\Features\\NaturalGasFeatures\\Queries\\GetAllNaturalGas\\GetAllNaturalGasResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T12:46:03.62Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T12:46:03.62Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "UpdateNaturalGasHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\NaturalGasFeatures\\Commands\\UpdateNaturalGas\\UpdateNaturalGasHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\NaturalGasFeatures\\Commands\\UpdateNaturalGas\\UpdateNaturalGasHandler.cs",
@@ -490,12 +523,11 @@
               "RelativeToolTip": "Core\\Features\\NaturalGasFeatures\\Commands\\UpdateNaturalGas\\UpdateNaturalGasHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T12:47:57.322Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T12:47:57.322Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "GetAllNaturalGasQuery.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\NaturalGasFeatures\\Queries\\GetAllNaturalGas\\GetAllNaturalGasQuery.cs",
               "RelativeDocumentMoniker": "Core\\Features\\NaturalGasFeatures\\Queries\\GetAllNaturalGas\\GetAllNaturalGasQuery.cs",
@@ -503,12 +535,11 @@
               "RelativeToolTip": "Core\\Features\\NaturalGasFeatures\\Queries\\GetAllNaturalGas\\GetAllNaturalGasQuery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T12:45:39.571Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T12:45:39.571Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "GetNaturalGasByIdQuery.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\NaturalGasFeatures\\Queries\\GetNaturalGasById\\GetNaturalGasByIdQuery.cs",
               "RelativeDocumentMoniker": "Core\\Features\\NaturalGasFeatures\\Queries\\GetNaturalGasById\\GetNaturalGasByIdQuery.cs",
@@ -516,12 +547,11 @@
               "RelativeToolTip": "Core\\Features\\NaturalGasFeatures\\Queries\\GetNaturalGasById\\GetNaturalGasByIdQuery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T12:46:23.139Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T12:46:23.139Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "DeleteNaturalGasRequest.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\NaturalGas\\DeleteNaturalGasRequest.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\NaturalGas\\DeleteNaturalGasRequest.cs",
@@ -529,12 +559,11 @@
               "RelativeToolTip": "API\\Contracts\\NaturalGas\\DeleteNaturalGasRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T12:49:20.693Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T12:49:20.693Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "UpdateNaturalGasRequest.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\NaturalGas\\UpdateNaturalGasRequest.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\NaturalGas\\UpdateNaturalGasRequest.cs",
@@ -542,12 +571,11 @@
               "RelativeToolTip": "API\\Contracts\\NaturalGas\\UpdateNaturalGasRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T12:49:05.992Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T12:49:05.992Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 15,
               "Title": "CreateNaturalGasRequest.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\NaturalGas\\CreateNaturalGasRequest.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\NaturalGas\\CreateNaturalGasRequest.cs",
@@ -555,12 +583,11 @@
               "RelativeToolTip": "API\\Contracts\\NaturalGas\\CreateNaturalGasRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T12:48:45.078Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T12:48:45.078Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 16,
               "Title": "UpdateNaturalGasResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\NaturalGasFeatures\\Commands\\UpdateNaturalGas\\UpdateNaturalGasResponse.cs",
               "RelativeDocumentMoniker": "Core\\Features\\NaturalGasFeatures\\Commands\\UpdateNaturalGas\\UpdateNaturalGasResponse.cs",
@@ -568,12 +595,11 @@
               "RelativeToolTip": "Core\\Features\\NaturalGasFeatures\\Commands\\UpdateNaturalGas\\UpdateNaturalGasResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T12:48:19.645Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T12:48:19.645Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 17,
               "Title": "UpdateNaturalGasValidator.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\NaturalGasFeatures\\Commands\\UpdateNaturalGas\\UpdateNaturalGasValidator.cs",
               "RelativeDocumentMoniker": "Core\\Features\\NaturalGasFeatures\\Commands\\UpdateNaturalGas\\UpdateNaturalGasValidator.cs",
@@ -581,12 +607,11 @@
               "RelativeToolTip": "Core\\Features\\NaturalGasFeatures\\Commands\\UpdateNaturalGas\\UpdateNaturalGasValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T12:48:10.079Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T12:48:10.079Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 18,
               "Title": "UpdateNaturalGasCommand.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\NaturalGasFeatures\\Commands\\UpdateNaturalGas\\UpdateNaturalGasCommand.cs",
               "RelativeDocumentMoniker": "Core\\Features\\NaturalGasFeatures\\Commands\\UpdateNaturalGas\\UpdateNaturalGasCommand.cs",
@@ -594,12 +619,11 @@
               "RelativeToolTip": "Core\\Features\\NaturalGasFeatures\\Commands\\UpdateNaturalGas\\UpdateNaturalGasCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T12:47:47.022Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T12:47:47.022Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 19,
               "Title": "GetNaturalGasByIdHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\NaturalGasFeatures\\Queries\\GetNaturalGasById\\GetNaturalGasByIdHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\NaturalGasFeatures\\Queries\\GetNaturalGasById\\GetNaturalGasByIdHandler.cs",
@@ -607,12 +631,11 @@
               "RelativeToolTip": "Core\\Features\\NaturalGasFeatures\\Queries\\GetNaturalGasById\\GetNaturalGasByIdHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T12:46:31.472Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T12:46:31.472Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 20,
               "Title": "DeleteNaturalGasResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\NaturalGasFeatures\\Commands\\DeleteNaturalGas\\DeleteNaturalGasResponse.cs",
               "RelativeDocumentMoniker": "Core\\Features\\NaturalGasFeatures\\Commands\\DeleteNaturalGas\\DeleteNaturalGasResponse.cs",
@@ -620,12 +643,11 @@
               "RelativeToolTip": "Core\\Features\\NaturalGasFeatures\\Commands\\DeleteNaturalGas\\DeleteNaturalGasResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T12:45:05.919Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T12:45:05.919Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 21,
               "Title": "DeleteNaturalGasValidator.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\NaturalGasFeatures\\Commands\\DeleteNaturalGas\\DeleteNaturalGasValidator.cs",
               "RelativeDocumentMoniker": "Core\\Features\\NaturalGasFeatures\\Commands\\DeleteNaturalGas\\DeleteNaturalGasValidator.cs",
@@ -633,12 +655,11 @@
               "RelativeToolTip": "Core\\Features\\NaturalGasFeatures\\Commands\\DeleteNaturalGas\\DeleteNaturalGasValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T12:44:56.273Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T12:44:56.273Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 22,
               "Title": "DeleteNaturalGasHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\NaturalGasFeatures\\Commands\\DeleteNaturalGas\\DeleteNaturalGasHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\NaturalGasFeatures\\Commands\\DeleteNaturalGas\\DeleteNaturalGasHandler.cs",
@@ -646,12 +667,11 @@
               "RelativeToolTip": "Core\\Features\\NaturalGasFeatures\\Commands\\DeleteNaturalGas\\DeleteNaturalGasHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T12:44:41.252Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T12:44:41.252Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 23,
               "Title": "DeleteNaturalGasCommand.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\NaturalGasFeatures\\Commands\\DeleteNaturalGas\\DeleteNaturalGasCommand.cs",
               "RelativeDocumentMoniker": "Core\\Features\\NaturalGasFeatures\\Commands\\DeleteNaturalGas\\DeleteNaturalGasCommand.cs",
@@ -659,12 +679,11 @@
               "RelativeToolTip": "Core\\Features\\NaturalGasFeatures\\Commands\\DeleteNaturalGas\\DeleteNaturalGasCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T12:44:32.418Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T12:44:32.418Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 24,
               "Title": "CreateNaturalGasResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\NaturalGasFeatures\\Commands\\CreateNaturalGas\\CreateNaturalGasResponse.cs",
               "RelativeDocumentMoniker": "Core\\Features\\NaturalGasFeatures\\Commands\\CreateNaturalGas\\CreateNaturalGasResponse.cs",
@@ -672,12 +691,11 @@
               "RelativeToolTip": "Core\\Features\\NaturalGasFeatures\\Commands\\CreateNaturalGas\\CreateNaturalGasResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T12:44:14.305Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T12:44:14.305Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 25,
               "Title": "CreateNaturalGasValidator.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\NaturalGasFeatures\\Commands\\CreateNaturalGas\\CreateNaturalGasValidator.cs",
               "RelativeDocumentMoniker": "Core\\Features\\NaturalGasFeatures\\Commands\\CreateNaturalGas\\CreateNaturalGasValidator.cs",
@@ -685,12 +703,11 @@
               "RelativeToolTip": "Core\\Features\\NaturalGasFeatures\\Commands\\CreateNaturalGas\\CreateNaturalGasValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T12:44:03.691Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T12:44:03.691Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 26,
               "Title": "CreateNaturalGasHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\NaturalGasFeatures\\Commands\\CreateNaturalGas\\CreateNaturalGasHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\NaturalGasFeatures\\Commands\\CreateNaturalGas\\CreateNaturalGasHandler.cs",
@@ -698,12 +715,11 @@
               "RelativeToolTip": "Core\\Features\\NaturalGasFeatures\\Commands\\CreateNaturalGas\\CreateNaturalGasHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T12:43:52.291Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T12:43:52.291Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 27,
               "Title": "CreateNaturalGasCommand.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\NaturalGasFeatures\\Commands\\CreateNaturalGas\\CreateNaturalGasCommand.cs",
               "RelativeDocumentMoniker": "Core\\Features\\NaturalGasFeatures\\Commands\\CreateNaturalGas\\CreateNaturalGasCommand.cs",
@@ -711,12 +727,11 @@
               "RelativeToolTip": "Core\\Features\\NaturalGasFeatures\\Commands\\CreateNaturalGas\\CreateNaturalGasCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T12:43:34.463Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T12:43:34.463Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 31,
               "Title": "NaturalGasConfiguration.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Configuration\\NaturalGasConfiguration.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Configuration\\NaturalGasConfiguration.cs",
@@ -724,12 +739,11 @@
               "RelativeToolTip": "Core\\Data\\Configuration\\NaturalGasConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAgAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T12:37:10.184Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T12:37:10.184Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 29,
               "Title": "NaturalGas.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\NaturalGas.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Entity\\NaturalGas.cs",
@@ -737,12 +751,11 @@
               "RelativeToolTip": "Core\\Data\\Entity\\NaturalGas.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-08T12:36:36.483Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-08T12:36:36.483Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 28,
               "Title": "Building.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\Building.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Entity\\Building.cs",
@@ -750,12 +763,11 @@
               "RelativeToolTip": "Core\\Data\\Entity\\Building.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T22:17:57.36Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-07T22:17:57.36Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 30,
               "Title": "BuildingConfiguration.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Configuration\\BuildingConfiguration.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Configuration\\BuildingConfiguration.cs",
@@ -763,12 +775,11 @@
               "RelativeToolTip": "Core\\Data\\Configuration\\BuildingConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T23:07:01.91Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-07T23:07:01.91Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 32,
               "Title": "ElectricConfiguration.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Configuration\\ElectricConfiguration.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Configuration\\ElectricConfiguration.cs",
@@ -776,12 +787,11 @@
               "RelativeToolTip": "Core\\Data\\Configuration\\ElectricConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACIAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-07T23:07:17.678Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-07T23:07:17.678Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 35,
               "Title": "GetElectricByIdHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdHandler.cs",
@@ -793,7 +803,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 36,
               "Title": "GetAllElectricsHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsHandler.cs",
@@ -805,7 +815,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "ResultT.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Shared\\ResultT.cs",
               "RelativeDocumentMoniker": "Core\\Shared\\ResultT.cs",
@@ -817,7 +827,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 34,
               "Title": "GetElectricByIdQuery.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdQuery.cs",
               "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdQuery.cs",
@@ -829,7 +839,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
               "Title": "Electric.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\Electric.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Entity\\Electric.cs",
@@ -837,24 +847,11 @@
               "RelativeToolTip": "Core\\Data\\Entity\\Electric.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T10:43:50.169Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-18T10:43:50.169Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "ElectricController.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\ElectricController.cs",
-              "RelativeDocumentMoniker": "API\\Controllers\\ElectricController.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\ElectricController.cs",
-              "RelativeToolTip": "API\\Controllers\\ElectricController.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAYwFcAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-19T15:35:07.168Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "CreateSchoolInfoHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoHandler.cs",
@@ -866,7 +863,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "EntityBase.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\EntityBases\\EntityBase.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Entity\\EntityBases\\EntityBase.cs",
@@ -878,7 +875,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "CreateElectricRequest.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\CreateElectricRequest.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\Electric\\CreateElectricRequest.cs",
@@ -890,7 +887,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "20241107224801_XX.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Migrations\\20241107224801_XX.cs",
               "RelativeDocumentMoniker": "Core\\Migrations\\20241107224801_XX.cs",
@@ -902,7 +899,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\appsettings.json",
               "RelativeDocumentMoniker": "API\\appsettings.json",
@@ -914,7 +911,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "20241107230820_XX.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Migrations\\20241107230820_XX.cs",
               "RelativeDocumentMoniker": "Core\\Migrations\\20241107230820_XX.cs",
@@ -926,7 +923,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "UpdateElectricValidator.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricValidator.cs",
               "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricValidator.cs",
@@ -938,7 +935,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "CreateElectricValidator.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricValidator.cs",
               "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricValidator.cs",
@@ -950,7 +947,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "DeleteElectricRequest.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\DeleteElectricRequest.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\Electric\\DeleteElectricRequest.cs",
@@ -962,7 +959,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "ElectricDto.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\ElectricDto.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\Electric\\ElectricDto.cs",
@@ -974,7 +971,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 48,
               "Title": "GetAllElectricsResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\GetAllElectricsResponse.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\Electric\\GetAllElectricsResponse.cs",
@@ -986,7 +983,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 49,
               "Title": "UpdateElectricResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\UpdateElectricResponse.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\Electric\\UpdateElectricResponse.cs",
@@ -998,7 +995,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 50,
               "Title": "UpdateElectricRequest.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\UpdateElectricRequest.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\Electric\\UpdateElectricRequest.cs",
@@ -1010,7 +1007,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 51,
               "Title": "CreateElectricResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\CreateElectricResponse.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\Electric\\CreateElectricResponse.cs",
@@ -1022,7 +1019,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 52,
               "Title": "GetElectricByIdResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\GetElectricByIdResponse.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\Electric\\GetElectricByIdResponse.cs",
@@ -1034,7 +1031,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 53,
               "Title": "GetElectricByIdResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdResponse.cs",
               "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdResponse.cs",
@@ -1046,7 +1043,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 54,
               "Title": "UpdateElectricResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricResponse.cs",
               "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricResponse.cs",
@@ -1058,7 +1055,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 55,
               "Title": "UpdateElectricHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricHandler.cs",
@@ -1070,7 +1067,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 56,
               "Title": "UpdateElectricCommand.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricCommand.cs",
               "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricCommand.cs",
@@ -1082,7 +1079,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 57,
               "Title": "DeleteElectricHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\DeleteElectric\\DeleteElectricHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\DeleteElectric\\DeleteElectricHandler.cs",
@@ -1094,7 +1091,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 58,
               "Title": "DeleteElectricCommand.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\DeleteElectric\\DeleteElectricCommand.cs",
               "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\DeleteElectric\\DeleteElectricCommand.cs",
@@ -1106,7 +1103,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 59,
               "Title": "CreateElectricHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricHandler.cs",
@@ -1118,7 +1115,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 60,
               "Title": "CreateElectricResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricResponse.cs",
               "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricResponse.cs",
@@ -1130,7 +1127,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 61,
               "Title": "CreateElectricCommand.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricCommand.cs",
               "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricCommand.cs",
@@ -1142,7 +1139,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 62,
               "Title": "DeleteElectricValidator.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\DeleteElectric\\DeleteElectricValidator.cs",
               "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\DeleteElectric\\DeleteElectricValidator.cs",
@@ -1154,7 +1151,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 63,
               "Title": "DeleteElectricResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\DeleteElectric\\DeleteElectricResponse.cs",
               "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\DeleteElectric\\DeleteElectricResponse.cs",
@@ -1166,7 +1163,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 64,
               "Title": "SchoolInfo.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\SchoolInfo.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Entity\\SchoolInfo.cs",
@@ -1178,7 +1175,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 65,
               "Title": "CreateSchoolInfoRequest.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\SchoolInfo\\CreateSchoolInfoRequest.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\SchoolInfo\\CreateSchoolInfoRequest.cs",
@@ -1199,18 +1196,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-18T10:25:15.471Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 65,
-              "Title": "SchoolInfoController.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\SchoolInfoController.cs",
-              "RelativeDocumentMoniker": "API\\Controllers\\SchoolInfoController.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\SchoolInfoController.cs",
-              "RelativeToolTip": "API\\Controllers\\SchoolInfoController.cs",
-              "ViewState": "AgIAABcAAAAAAAAAAAAQwEcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T10:25:45.884Z"
             },
             {
               "$type": "Document",
@@ -1406,7 +1391,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 84,
               "Title": "DeleteSchoolInfoValidator.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\DeleteSchoolInfo\\DeleteSchoolInfoValidator.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\DeleteSchoolInfo\\DeleteSchoolInfoValidator.cs",
@@ -1430,19 +1415,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
-              "Title": "Program.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Program.cs",
-              "RelativeDocumentMoniker": "API\\Program.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Program.cs",
-              "RelativeToolTip": "API\\Program.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAAADcAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-18T10:50:21.053Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 87,
+              "DocumentIndex": 86,
               "Title": "Core.csproj",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Core.csproj",
               "RelativeDocumentMoniker": "Core\\Core.csproj",
@@ -1454,7 +1427,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 85,
               "Title": "CreateSchoolInfoResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoResponse.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoResponse.cs",
@@ -1466,7 +1439,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
+              "DocumentIndex": 87,
               "Title": "Water.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\Water.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Entity\\Water.cs",
@@ -1478,7 +1451,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 89,
+              "DocumentIndex": 88,
               "Title": "UpdateSchoolInfoRequest.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\SchoolInfo\\UpdateSchoolInfoRequest.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\SchoolInfo\\UpdateSchoolInfoRequest.cs",
@@ -1490,7 +1463,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 90,
+              "DocumentIndex": 89,
               "Title": "UpdateSchoolInfoValidator.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoValidator.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoValidator.cs",

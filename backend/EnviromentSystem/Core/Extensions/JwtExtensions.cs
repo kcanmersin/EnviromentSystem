@@ -11,12 +11,10 @@ namespace Core.Extensions
     {
         public static IServiceCollection AddJwtAuthentication(this IServiceCollection services, IConfiguration configuration)
         {
-            // Environment variables'dan değerleri al
             var jwtSecret = Environment.GetEnvironmentVariable("JWT_SECRET") ?? configuration["JwtSettings:Secret"];
             var jwtIssuer = Environment.GetEnvironmentVariable("JWT_ISSUER") ?? configuration["JwtSettings:Issuer"];
             var jwtAudience = Environment.GetEnvironmentVariable("JWT_AUDIENCE") ?? configuration["JwtSettings:Audience"];
 
-            // JWT ayarlarını yapılandır
             var key = Encoding.UTF8.GetBytes(jwtSecret);
 
             services.AddAuthentication(options =>

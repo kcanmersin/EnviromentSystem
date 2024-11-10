@@ -59,6 +59,7 @@ namespace API.Controllers
         }
 
         [HttpGet("{id:guid}")]
+        [ResponseCache(Duration = 300, Location = ResponseCacheLocation.Client, NoStore = false)]
         public async Task<IActionResult> Get(Guid id)
         {
             var query = new GetNaturalGasByIdQuery { Id = id };
@@ -71,6 +72,7 @@ namespace API.Controllers
         }
 
         [HttpGet]
+        [ResponseCache(Duration = 300, Location = ResponseCacheLocation.Client, NoStore = false)]
         public async Task<IActionResult> GetAll(
             [FromQuery] Guid? buildingId = null,
             [FromQuery] DateTime? startDate = null,

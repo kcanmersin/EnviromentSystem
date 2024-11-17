@@ -2,14 +2,12 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Configuration;
 using Microsoft.EntityFrameworkCore;
 using Core.Data;
-using Core.Service.JWT;
+using Core.Data.Entity.User;
 using MediatR;
 using System.Reflection;
 using FluentValidation;
-using Core.Middlewares.ExceptionHandling;
-using Microsoft.Extensions.Diagnostics.HealthChecks;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Builder;
-using Core.Features.SchoolInfoFeatures.Commands.CreateSchoolInfo;
 
 namespace Core.Extensions
 {
@@ -24,23 +22,28 @@ namespace Core.Extensions
 
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseNpgsql(defaultConnectionString));
-
-            var jwtSettings = new JwtSettings
+            services.AddJwtAuthentication(configuration);
+            services.AddIdentity<AppUser, AppRole>(options =>
             {
-                Secret = Environment.GetEnvironmentVariable("JWT_SECRET") ?? configuration["JwtSettings:Secret"],
-                Issuer = Environment.GetEnvironmentVariable("JWT_ISSUER") ?? configuration["JwtSettings:Issuer"],
-                Audience = Environment.GetEnvironmentVariable("JWT_AUDIENCE") ?? configuration["JwtSettings:Audience"],
-                ExpiryMinutes = int.TryParse(Environment.GetEnvironmentVariable("JWT_EXPIRYMINUTES"), out var expiryMinutes)
-                                ? expiryMinutes
-                                : int.Parse(configuration["JwtSettings:ExpiryMinutes"])
-            };
-            services.AddSingleton(jwtSettings);
+                options.Password.RequiredLength = 5;
+                options.Password.RequireDigit = false;
+                options.Password.RequireLowercase = false;
+                options.Password.RequireUppercase = false;
+                options.Password.RequireNonAlphanumeric = false;
 
-          
+                options.User.RequireUniqueEmail = true;
+
+                options.Lockout.MaxFailedAccessAttempts = 5;
+                options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5);
+                options.Lockout.AllowedForNewUsers = true;
+            })
+            .AddEntityFrameworkStores<ApplicationDbContext>()
+            .AddDefaultTokenProviders();
+
+ 
+
             services.AddMediatR(Assembly.GetExecutingAssembly());
-
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
-
 
             return services;
         }

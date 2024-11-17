@@ -14,23 +14,25 @@ namespace Core.Service.JWT
             _jwtSettings = jwtSettings;
         }
 
-        public string GenerateToken(string email, Guid userId)
+        public string GenerateToken(string email, Guid userId, IEnumerable<string> roles)
         {
             var securityKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_jwtSettings.Secret));
             var credentials = new SigningCredentials(securityKey, SecurityAlgorithms.HmacSha256);
 
-            var claims = new[]
+            var claims = new List<Claim>
             {
-                new Claim(System.IdentityModel.Tokens.Jwt.JwtRegisteredClaimNames.Sub, email),
-                new Claim(System.IdentityModel.Tokens.Jwt.JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
+                new Claim(JwtRegisteredClaimNames.Sub, email),
+                new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
                 new Claim(ClaimTypes.NameIdentifier, userId.ToString())
             };
+
+            claims.AddRange(roles.Select(role => new Claim(ClaimTypes.Role, role)));
 
             var token = new JwtSecurityToken(
                 issuer: _jwtSettings.Issuer,
                 audience: _jwtSettings.Audience,
                 claims: claims,
-                expires: DateTime.Now.AddMinutes(_jwtSettings.ExpiryMinutes),
+                expires: DateTime.UtcNow.AddMinutes(_jwtSettings.ExpiryMinutes),
                 signingCredentials: credentials
             );
 
@@ -39,8 +41,6 @@ namespace Core.Service.JWT
 
         public ClaimsPrincipal? ValidateToken(string token)
         {
-            Console.WriteLine($"Validating Token: {token}");
-
             var tokenHandler = new JwtSecurityTokenHandler();
             var key = Encoding.UTF8.GetBytes(_jwtSettings.Secret);
 
@@ -60,12 +60,10 @@ namespace Core.Service.JWT
 
                 return principal;
             }
-            catch (Exception ex)
+            catch
             {
-                Console.WriteLine($"Token validation failed: {ex.Message}");
                 return null;
             }
         }
-
     }
 }

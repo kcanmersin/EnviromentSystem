@@ -11,11 +11,13 @@ namespace Core.Extensions
     {
         public static IServiceCollection AddJwtAuthentication(this IServiceCollection services, IConfiguration configuration)
         {
-            var jwtSecret = Environment.GetEnvironmentVariable("JWT_SECRET") ?? configuration["JwtSettings:Secret"];
-            var jwtIssuer = Environment.GetEnvironmentVariable("JWT_ISSUER") ?? configuration["JwtSettings:Issuer"];
-            var jwtAudience = Environment.GetEnvironmentVariable("JWT_AUDIENCE") ?? configuration["JwtSettings:Audience"];
+            // Bind JwtSettings from the configuration
+            var jwtSettings = new JwtSettings();
+            configuration.GetSection("JwtSettings").Bind(jwtSettings);
+            services.AddSingleton(jwtSettings); // Register JwtSettings as a singleton
 
-            var key = Encoding.UTF8.GetBytes(jwtSecret);
+            // Add JwtBearer Authentication
+            var key = Encoding.UTF8.GetBytes(jwtSettings.Secret);
 
             services.AddAuthentication(options =>
             {
@@ -30,11 +32,14 @@ namespace Core.Extensions
                     IssuerSigningKey = new SymmetricSecurityKey(key),
                     ValidateIssuer = true,
                     ValidateAudience = true,
-                    ValidIssuer = jwtIssuer,
-                    ValidAudience = jwtAudience,
+                    ValidIssuer = jwtSettings.Issuer,
+                    ValidAudience = jwtSettings.Audience,
                     ClockSkew = TimeSpan.Zero
                 };
             });
+
+            // Register JwtService
+            services.AddSingleton<IJwtService, JwtService>();
 
             return services;
         }

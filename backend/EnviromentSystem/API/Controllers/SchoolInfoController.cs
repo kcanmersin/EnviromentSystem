@@ -4,7 +4,6 @@ using Core.Features.SchoolInfoFeatures.Commands.CreateSchoolInfo;
 using Core.Features.SchoolInfoFeatures.Commands.UpdateSchoolInfo;
 using Core.Features.SchoolInfoFeatures.Commands.DeleteSchoolInfo;
 using Core.Features.SchoolInfoFeatures.Queries.GetSchoolInfo;
-using Core.Features.SchoolInfoFeatures.Queries.GetAllSchoolInfos;
 using Core.Features.SchoolInfoFeatures.GetAllSchoolInfos;
 
 namespace API.Controllers

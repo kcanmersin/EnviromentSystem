@@ -11,12 +11,10 @@ namespace Core.Extensions
     {
         public static IServiceCollection AddJwtAuthentication(this IServiceCollection services, IConfiguration configuration)
         {
-            // Bind JwtSettings from the configuration
             var jwtSettings = new JwtSettings();
             configuration.GetSection("JwtSettings").Bind(jwtSettings);
-            services.AddSingleton(jwtSettings); // Register JwtSettings as a singleton
+            services.AddSingleton(jwtSettings);
 
-            // Add JwtBearer Authentication
             var key = Encoding.UTF8.GetBytes(jwtSettings.Secret);
 
             services.AddAuthentication(options =>

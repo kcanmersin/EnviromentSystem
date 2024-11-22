@@ -3,8 +3,72 @@
   "WorkspaceRootPath": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\extensions\\corelayerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\extensions\\corelayerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\service\\predictionservice\\predictionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\service\\predictionservice\\predictionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\controllers\\predictioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\controllers\\predictioncontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\service\\predictionservice\\ipredictionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\service\\predictionservice\\ipredictionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\controllers\\electriccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\controllers\\electriccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\contracts\\electric\\getallelectricsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\contracts\\electric\\getallelectricsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\contracts\\electric\\getelectricbyidresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\contracts\\electric\\getelectricbyidresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\data\\entity\\building.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\data\\entity\\building.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\data\\entity\\water.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\data\\entity\\water.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\data\\entity\\schoolinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\data\\entity\\schoolinfo.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\data\\entity\\naturalgas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\data\\entity\\naturalgas.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\data\\entity\\electric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\data\\entity\\electric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\controllers\\watercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\controllers\\watercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\controllers\\schoolinfocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\controllers\\schoolinfocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\contracts\\water\\getwaterbyidresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -131,40 +195,16 @@
       "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\waterfeatures\\commands\\createwater\\createwatercommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\data\\entity\\water.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\data\\entity\\water.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Migrations\\20241122185636_YY.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Core\\Migrations\\20241122185636_YY.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\data\\entity\\electric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\data\\entity\\electric.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\data\\entity\\building.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\data\\entity\\building.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\userfeatures\\register\\registerhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\userfeatures\\register\\registerhandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\controllers\\electriccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\controllers\\electriccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\controllers\\naturalgascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\controllers\\naturalgascontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\controllers\\schoolinfocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\controllers\\schoolinfocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\controllers\\usercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -211,10 +251,6 @@
       "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\extensions\\jwtextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\extensions\\corelayerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\extensions\\corelayerextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\data\\configuration\\approleconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\data\\configuration\\approleconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -241,18 +277,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Migrations\\20241117162815_XX.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Core\\Migrations\\20241117162815_XX.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\contracts\\electric\\getallelectricsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\contracts\\electric\\getallelectricsresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\contracts\\electric\\getelectricbyidresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\contracts\\electric\\getelectricbyidresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\userfeatures\\login\\loginresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -286,7 +310,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -294,85 +318,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "WaterController.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\WaterController.cs",
-              "RelativeDocumentMoniker": "API\\Controllers\\WaterController.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\WaterController.cs*",
-              "RelativeToolTip": "API\\Controllers\\WaterController.cs*",
-              "ViewState": "AgIAACcAAAAAAAAAAAAuwFgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:12:42.655Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "GetWaterByIdResponse.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Water\\GetWaterByIdResponse.cs",
-              "RelativeDocumentMoniker": "API\\Contracts\\Water\\GetWaterByIdResponse.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Water\\GetWaterByIdResponse.cs",
-              "RelativeToolTip": "API\\Contracts\\Water\\GetWaterByIdResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:12:33.283Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "GetAllWatersResponse.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Water\\GetAllWatersResponse.cs",
-              "RelativeDocumentMoniker": "API\\Contracts\\Water\\GetAllWatersResponse.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Water\\GetAllWatersResponse.cs",
-              "RelativeToolTip": "API\\Contracts\\Water\\GetAllWatersResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Title": "PredictionService.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\PredictionService\\PredictionService.cs",
+              "RelativeDocumentMoniker": "Core\\Service\\PredictionService\\PredictionService.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\PredictionService\\PredictionService.cs",
+              "RelativeToolTip": "Core\\Service\\PredictionService\\PredictionService.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAUAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:12:25.821Z",
+              "WhenOpened": "2024-11-22T21:37:09.272Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "WaterDto.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Water\\WaterDto.cs",
-              "RelativeDocumentMoniker": "API\\Contracts\\Water\\WaterDto.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Water\\WaterDto.cs",
-              "RelativeToolTip": "API\\Contracts\\Water\\WaterDto.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:12:13.373Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "DeleteWaterRequest.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Water\\DeleteWaterRequest.cs",
-              "RelativeDocumentMoniker": "API\\Contracts\\Water\\DeleteWaterRequest.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Water\\DeleteWaterRequest.cs",
-              "RelativeToolTip": "API\\Contracts\\Water\\DeleteWaterRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:12:03.544Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UpdateWaterResponse.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Water\\UpdateWaterResponse.cs",
-              "RelativeDocumentMoniker": "API\\Contracts\\Water\\UpdateWaterResponse.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Water\\UpdateWaterResponse.cs",
-              "RelativeToolTip": "API\\Contracts\\Water\\UpdateWaterResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:11:55.624Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 22,
               "Title": "UpdateWaterRequest.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Water\\UpdateWaterRequest.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\Water\\UpdateWaterRequest.cs",
@@ -385,345 +344,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CreateWaterResponse.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Water\\CreateWaterResponse.cs",
-              "RelativeDocumentMoniker": "API\\Contracts\\Water\\CreateWaterResponse.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Water\\CreateWaterResponse.cs",
-              "RelativeToolTip": "API\\Contracts\\Water\\CreateWaterResponse.cs",
+              "DocumentIndex": 21,
+              "Title": "UpdateWaterResponse.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Water\\UpdateWaterResponse.cs",
+              "RelativeDocumentMoniker": "API\\Contracts\\Water\\UpdateWaterResponse.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Water\\UpdateWaterResponse.cs",
+              "RelativeToolTip": "API\\Contracts\\Water\\UpdateWaterResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:11:38.908Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "CreateWaterRequest.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Water\\CreateWaterRequest.cs",
-              "RelativeDocumentMoniker": "API\\Contracts\\Water\\CreateWaterRequest.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Water\\CreateWaterRequest.cs",
-              "RelativeToolTip": "API\\Contracts\\Water\\CreateWaterRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:11:28.86Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "GetAllWatersQuery.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Queries\\GetAllWaters\\GetAllWatersQuery.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Queries\\GetAllWaters\\GetAllWatersQuery.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Queries\\GetAllWaters\\GetAllWatersQuery.cs",
-              "RelativeToolTip": "Core\\Features\\WaterFeatures\\Queries\\GetAllWaters\\GetAllWatersQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAuAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:05:50.273Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "GetAllWatersHandler.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Queries\\GetAllWaters\\GetAllWatersHandler.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Queries\\GetAllWaters\\GetAllWatersHandler.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Queries\\GetAllWaters\\GetAllWatersHandler.cs",
-              "RelativeToolTip": "Core\\Features\\WaterFeatures\\Queries\\GetAllWaters\\GetAllWatersHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:05:32.311Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "GetAllWatersResponse.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Queries\\GetAllWaters\\GetAllWatersResponse.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Queries\\GetAllWaters\\GetAllWatersResponse.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Queries\\GetAllWaters\\GetAllWatersResponse.cs",
-              "RelativeToolTip": "Core\\Features\\WaterFeatures\\Queries\\GetAllWaters\\GetAllWatersResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:05:42.116Z",
+              "WhenOpened": "2024-11-22T19:11:55.624Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 13,
-              "Title": "GetWaterByIdQuery.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Queries\\GetWaterById\\GetWaterByIdQuery.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Queries\\GetWaterById\\GetWaterByIdQuery.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Queries\\GetWaterById\\GetWaterByIdQuery.cs",
-              "RelativeToolTip": "Core\\Features\\WaterFeatures\\Queries\\GetWaterById\\GetWaterByIdQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:04:56.717Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "GetWaterByIdHandler.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Queries\\GetWaterById\\GetWaterByIdHandler.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Queries\\GetWaterById\\GetWaterByIdHandler.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Queries\\GetWaterById\\GetWaterByIdHandler.cs",
-              "RelativeToolTip": "Core\\Features\\WaterFeatures\\Queries\\GetWaterById\\GetWaterByIdHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:05:02.84Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "GetWaterByIdResponse.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Queries\\GetWaterById\\GetWaterByIdResponse.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Queries\\GetWaterById\\GetWaterByIdResponse.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Queries\\GetWaterById\\GetWaterByIdResponse.cs",
-              "RelativeToolTip": "Core\\Features\\WaterFeatures\\Queries\\GetWaterById\\GetWaterByIdResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:05:10.549Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "GetElectricByIdResponse.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdResponse.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdResponse.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdResponse.cs",
-              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:09:09.132Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "GetElectricByIdQuery.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdQuery.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdQuery.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdQuery.cs",
-              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:09:09.655Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "GetElectricByIdHandler.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdHandler.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdHandler.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdHandler.cs",
-              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdHandler.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAIwC8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:09:04.234Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "GetAllElectricsResponse.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsResponse.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsResponse.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsResponse.cs",
-              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:08:45.138Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "GetAllElectricsQuery.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsQuery.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsQuery.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsQuery.cs",
-              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsQuery.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:08:39.273Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "GetAllElectricsHandler.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsHandler.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsHandler.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsHandler.cs",
-              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsHandler.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAIwDcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:08:38.59Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "DeleteWaterResponse.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\DeleteWater\\DeleteWaterResponse.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Commands\\DeleteWater\\DeleteWaterResponse.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\DeleteWater\\DeleteWaterResponse.cs",
-              "RelativeToolTip": "Core\\Features\\WaterFeatures\\Commands\\DeleteWater\\DeleteWaterResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:04:21.017Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "DeleteWaterHandler.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\DeleteWater\\DeleteWaterHandler.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Commands\\DeleteWater\\DeleteWaterHandler.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\DeleteWater\\DeleteWaterHandler.cs",
-              "RelativeToolTip": "Core\\Features\\WaterFeatures\\Commands\\DeleteWater\\DeleteWaterHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:04:12.842Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "DeleteWaterCommand.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\DeleteWater\\DeleteWaterCommand.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Commands\\DeleteWater\\DeleteWaterCommand.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\DeleteWater\\DeleteWaterCommand.cs",
-              "RelativeToolTip": "Core\\Features\\WaterFeatures\\Commands\\DeleteWater\\DeleteWaterCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:04:05.229Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 24,
-              "Title": "UpdateWaterValidator.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterValidator.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterValidator.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterValidator.cs",
-              "RelativeToolTip": "Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:03:51.174Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "UpdateWaterResponse.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterResponse.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterResponse.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterResponse.cs",
-              "RelativeToolTip": "Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:03:42.305Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 26,
-              "Title": "UpdateWaterHandler.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterHandler.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterHandler.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterHandler.cs",
-              "RelativeToolTip": "Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:03:30.438Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 27,
-              "Title": "UpdateWaterCommand.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterCommand.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterCommand.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterCommand.cs",
-              "RelativeToolTip": "Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:03:04.248Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "CreateWaterValidator.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterValidator.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterValidator.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterValidator.cs",
-              "RelativeToolTip": "Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterValidator.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:02:49.985Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "CreateWaterResponse.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterResponse.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterResponse.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterResponse.cs",
-              "RelativeToolTip": "Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:02:42.278Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "CreateWaterHandler.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterHandler.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterHandler.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterHandler.cs",
-              "RelativeToolTip": "Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterHandler.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:02:32.061Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 31,
-              "Title": "CreateWaterCommand.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterCommand.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterCommand.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterCommand.cs",
-              "RelativeToolTip": "Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:02:20.575Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 34,
-              "Title": "20241122185636_YY.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Migrations\\20241122185636_YY.cs",
-              "RelativeDocumentMoniker": "Core\\Migrations\\20241122185636_YY.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Migrations\\20241122185636_YY.cs",
-              "RelativeToolTip": "Core\\Migrations\\20241122185636_YY.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T18:56:37.014Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 35,
               "Title": "Electric.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\Electric.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Entity\\Electric.cs",
@@ -736,7 +370,124 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 1,
+              "Title": "CoreLayerExtensions.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Extensions\\CoreLayerExtensions.cs",
+              "RelativeDocumentMoniker": "Core\\Extensions\\CoreLayerExtensions.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Extensions\\CoreLayerExtensions.cs",
+              "RelativeToolTip": "Core\\Extensions\\CoreLayerExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T15:46:16.606Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\appsettings.json",
+              "RelativeDocumentMoniker": "API\\appsettings.json",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\appsettings.json*",
+              "RelativeToolTip": "API\\appsettings.json*",
+              "ViewState": "AgIAABAAAAAAAAAAAAAuwDEAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-11-17T16:19:15.483Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "IPredictionService.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\PredictionService\\IPredictionService.cs",
+              "RelativeDocumentMoniker": "Core\\Service\\PredictionService\\IPredictionService.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\PredictionService\\IPredictionService.cs",
+              "RelativeToolTip": "Core\\Service\\PredictionService\\IPredictionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T21:36:55.45Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "PredictionController.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\PredictionController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\PredictionController.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\PredictionController.cs",
+              "RelativeToolTip": "API\\Controllers\\PredictionController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T21:37:27.147Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "GetAllElectricsResponse.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\GetAllElectricsResponse.cs",
+              "RelativeDocumentMoniker": "API\\Contracts\\Electric\\GetAllElectricsResponse.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\GetAllElectricsResponse.cs",
+              "RelativeToolTip": "API\\Contracts\\Electric\\GetAllElectricsResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T16:08:59.197Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "GetElectricByIdResponse.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\GetElectricByIdResponse.cs",
+              "RelativeDocumentMoniker": "API\\Contracts\\Electric\\GetElectricByIdResponse.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\GetElectricByIdResponse.cs",
+              "RelativeToolTip": "API\\Contracts\\Electric\\GetElectricByIdResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T16:08:58.484Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ElectricController.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\ElectricController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\ElectricController.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\ElectricController.cs",
+              "RelativeToolTip": "API\\Controllers\\ElectricController.cs",
+              "ViewState": "AgIAAD0AAAAAAAAAAAA0wEsAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T16:37:19.595Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Core\\Data\\ApplicationDbContext.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Core\\Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAADcAAAAAAAAAAAAgwEgAAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T15:44:46.432Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Building.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\Building.cs",
+              "RelativeDocumentMoniker": "Core\\Data\\Entity\\Building.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\Building.cs",
+              "RelativeToolTip": "Core\\Data\\Entity\\Building.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T15:45:17.214Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Water.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\Water.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Entity\\Water.cs",
@@ -749,7 +500,462 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "WaterController.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\WaterController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\WaterController.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\WaterController.cs",
+              "RelativeToolTip": "API\\Controllers\\WaterController.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAgwFoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:12:42.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "WeatherForecast.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\WeatherForecast.cs",
+              "RelativeDocumentMoniker": "API\\WeatherForecast.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\WeatherForecast.cs",
+              "RelativeToolTip": "API\\WeatherForecast.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:33:06.933Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "NaturalGas.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\NaturalGas.cs",
+              "RelativeDocumentMoniker": "Core\\Data\\Entity\\NaturalGas.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\NaturalGas.cs",
+              "RelativeToolTip": "Core\\Data\\Entity\\NaturalGas.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:38:13.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "SchoolInfo.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\SchoolInfo.cs",
+              "RelativeDocumentMoniker": "Core\\Data\\Entity\\SchoolInfo.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\SchoolInfo.cs",
+              "RelativeToolTip": "Core\\Data\\Entity\\SchoolInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:38:17.637Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "DeleteWaterRequest.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Water\\DeleteWaterRequest.cs",
+              "RelativeDocumentMoniker": "API\\Contracts\\Water\\DeleteWaterRequest.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Water\\DeleteWaterRequest.cs",
+              "RelativeToolTip": "API\\Contracts\\Water\\DeleteWaterRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:12:03.544Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "WaterDto.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Water\\WaterDto.cs",
+              "RelativeDocumentMoniker": "API\\Contracts\\Water\\WaterDto.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Water\\WaterDto.cs",
+              "RelativeToolTip": "API\\Contracts\\Water\\WaterDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:12:13.373Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "CreateWaterResponse.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Water\\CreateWaterResponse.cs",
+              "RelativeDocumentMoniker": "API\\Contracts\\Water\\CreateWaterResponse.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Water\\CreateWaterResponse.cs",
+              "RelativeToolTip": "API\\Contracts\\Water\\CreateWaterResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:11:38.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "SchoolInfoController.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\SchoolInfoController.cs",
+              "RelativeDocumentMoniker": "API\\Controllers\\SchoolInfoController.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\SchoolInfoController.cs",
+              "RelativeToolTip": "API\\Controllers\\SchoolInfoController.cs",
+              "ViewState": "AgIAAC8AAAAAAAAAAAAIwAYAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-17T16:47:03.479Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "GetAllWatersResponse.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Water\\GetAllWatersResponse.cs",
+              "RelativeDocumentMoniker": "API\\Contracts\\Water\\GetAllWatersResponse.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Water\\GetAllWatersResponse.cs",
+              "RelativeToolTip": "API\\Contracts\\Water\\GetAllWatersResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:12:25.821Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "GetWaterByIdResponse.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Water\\GetWaterByIdResponse.cs",
+              "RelativeDocumentMoniker": "API\\Contracts\\Water\\GetWaterByIdResponse.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Water\\GetWaterByIdResponse.cs",
+              "RelativeToolTip": "API\\Contracts\\Water\\GetWaterByIdResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:12:33.283Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "CreateWaterRequest.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Water\\CreateWaterRequest.cs",
+              "RelativeDocumentMoniker": "API\\Contracts\\Water\\CreateWaterRequest.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Water\\CreateWaterRequest.cs",
+              "RelativeToolTip": "API\\Contracts\\Water\\CreateWaterRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:11:28.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "GetAllWatersQuery.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Queries\\GetAllWaters\\GetAllWatersQuery.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Queries\\GetAllWaters\\GetAllWatersQuery.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Queries\\GetAllWaters\\GetAllWatersQuery.cs",
+              "RelativeToolTip": "Core\\Features\\WaterFeatures\\Queries\\GetAllWaters\\GetAllWatersQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:05:50.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "GetAllWatersHandler.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Queries\\GetAllWaters\\GetAllWatersHandler.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Queries\\GetAllWaters\\GetAllWatersHandler.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Queries\\GetAllWaters\\GetAllWatersHandler.cs",
+              "RelativeToolTip": "Core\\Features\\WaterFeatures\\Queries\\GetAllWaters\\GetAllWatersHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:05:32.311Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "GetAllWatersResponse.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Queries\\GetAllWaters\\GetAllWatersResponse.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Queries\\GetAllWaters\\GetAllWatersResponse.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Queries\\GetAllWaters\\GetAllWatersResponse.cs",
+              "RelativeToolTip": "Core\\Features\\WaterFeatures\\Queries\\GetAllWaters\\GetAllWatersResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:05:42.116Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "GetWaterByIdQuery.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Queries\\GetWaterById\\GetWaterByIdQuery.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Queries\\GetWaterById\\GetWaterByIdQuery.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Queries\\GetWaterById\\GetWaterByIdQuery.cs",
+              "RelativeToolTip": "Core\\Features\\WaterFeatures\\Queries\\GetWaterById\\GetWaterByIdQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:04:56.717Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "GetWaterByIdHandler.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Queries\\GetWaterById\\GetWaterByIdHandler.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Queries\\GetWaterById\\GetWaterByIdHandler.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Queries\\GetWaterById\\GetWaterByIdHandler.cs",
+              "RelativeToolTip": "Core\\Features\\WaterFeatures\\Queries\\GetWaterById\\GetWaterByIdHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:05:02.84Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "GetWaterByIdResponse.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Queries\\GetWaterById\\GetWaterByIdResponse.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Queries\\GetWaterById\\GetWaterByIdResponse.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Queries\\GetWaterById\\GetWaterByIdResponse.cs",
+              "RelativeToolTip": "Core\\Features\\WaterFeatures\\Queries\\GetWaterById\\GetWaterByIdResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:05:10.549Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "GetElectricByIdResponse.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdResponse.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdResponse.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdResponse.cs",
+              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:09:09.132Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "GetElectricByIdQuery.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdQuery.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdQuery.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdQuery.cs",
+              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:09:09.655Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "GetElectricByIdHandler.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdHandler.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdHandler.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdHandler.cs",
+              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdHandler.cs",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAIwC8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:09:04.234Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "GetAllElectricsResponse.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsResponse.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsResponse.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsResponse.cs",
+              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:08:45.138Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "GetAllElectricsQuery.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsQuery.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsQuery.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsQuery.cs",
+              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:08:39.273Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "GetAllElectricsHandler.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsHandler.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsHandler.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsHandler.cs",
+              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsHandler.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAIwDcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:08:38.59Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 37,
+              "Title": "DeleteWaterResponse.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\DeleteWater\\DeleteWaterResponse.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Commands\\DeleteWater\\DeleteWaterResponse.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\DeleteWater\\DeleteWaterResponse.cs",
+              "RelativeToolTip": "Core\\Features\\WaterFeatures\\Commands\\DeleteWater\\DeleteWaterResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:04:21.017Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "DeleteWaterHandler.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\DeleteWater\\DeleteWaterHandler.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Commands\\DeleteWater\\DeleteWaterHandler.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\DeleteWater\\DeleteWaterHandler.cs",
+              "RelativeToolTip": "Core\\Features\\WaterFeatures\\Commands\\DeleteWater\\DeleteWaterHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:04:12.842Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "DeleteWaterCommand.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\DeleteWater\\DeleteWaterCommand.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Commands\\DeleteWater\\DeleteWaterCommand.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\DeleteWater\\DeleteWaterCommand.cs",
+              "RelativeToolTip": "Core\\Features\\WaterFeatures\\Commands\\DeleteWater\\DeleteWaterCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:04:05.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "UpdateWaterValidator.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterValidator.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterValidator.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterValidator.cs",
+              "RelativeToolTip": "Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:03:51.174Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "UpdateWaterResponse.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterResponse.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterResponse.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterResponse.cs",
+              "RelativeToolTip": "Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:03:42.305Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "UpdateWaterHandler.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterHandler.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterHandler.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterHandler.cs",
+              "RelativeToolTip": "Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:03:30.438Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "UpdateWaterCommand.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterCommand.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterCommand.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterCommand.cs",
+              "RelativeToolTip": "Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:03:04.248Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "CreateWaterValidator.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterValidator.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterValidator.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterValidator.cs",
+              "RelativeToolTip": "Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterValidator.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:02:49.985Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "CreateWaterResponse.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterResponse.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterResponse.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterResponse.cs",
+              "RelativeToolTip": "Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterResponse.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:02:42.278Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "CreateWaterHandler.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterHandler.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterHandler.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterHandler.cs",
+              "RelativeToolTip": "Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterHandler.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:02:32.061Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "CreateWaterCommand.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterCommand.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterCommand.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterCommand.cs",
+              "RelativeToolTip": "Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:02:20.575Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
+              "Title": "20241122185636_YY.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Migrations\\20241122185636_YY.cs",
+              "RelativeDocumentMoniker": "Core\\Migrations\\20241122185636_YY.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Migrations\\20241122185636_YY.cs",
+              "RelativeToolTip": "Core\\Migrations\\20241122185636_YY.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T18:56:37.014Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
               "Title": "RegisterHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\UserFeatures\\Register\\RegisterHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\UserFeatures\\Register\\RegisterHandler.cs",
@@ -762,7 +968,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 54,
               "Title": "LoginHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\UserFeatures\\Login\\LoginHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\UserFeatures\\Login\\LoginHandler.cs",
@@ -774,33 +980,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "Building.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\Building.cs",
-              "RelativeDocumentMoniker": "Core\\Data\\Entity\\Building.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\Building.cs",
-              "RelativeToolTip": "Core\\Data\\Entity\\Building.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T15:45:17.214Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Core\\Data\\ApplicationDbContext.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Core\\Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAAywCYAAAA4AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T15:44:46.432Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 55,
               "Title": "LoginCommand.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\UserFeatures\\Login\\LoginCommand.cs",
               "RelativeDocumentMoniker": "Core\\Features\\UserFeatures\\Login\\LoginCommand.cs",
@@ -812,7 +992,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 56,
               "Title": "RegisterResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\UserFeatures\\Register\\RegisterResponse.cs",
               "RelativeDocumentMoniker": "Core\\Features\\UserFeatures\\Register\\RegisterResponse.cs",
@@ -824,31 +1004,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "ElectricController.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\ElectricController.cs",
-              "RelativeDocumentMoniker": "API\\Controllers\\ElectricController.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\ElectricController.cs",
-              "RelativeToolTip": "API\\Controllers\\ElectricController.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T16:37:19.595Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "SchoolInfoController.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\SchoolInfoController.cs",
-              "RelativeDocumentMoniker": "API\\Controllers\\SchoolInfoController.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\SchoolInfoController.cs",
-              "RelativeToolTip": "API\\Controllers\\SchoolInfoController.cs",
-              "ViewState": "AgIAAC8AAAAAAAAAAAAIwAYAAAA5AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T16:47:03.479Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 53,
               "Title": "RegisterRequest.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\User\\RegisterRequest.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\User\\RegisterRequest.cs",
@@ -860,7 +1016,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 52,
               "Title": "LoginRequest.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\User\\LoginRequest.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\User\\LoginRequest.cs",
@@ -872,7 +1028,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 50,
               "Title": "NaturalGasController.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\NaturalGasController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\NaturalGasController.cs",
@@ -884,7 +1040,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 57,
               "Title": "RegisterCommand.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\UserFeatures\\Register\\RegisterCommand.cs",
               "RelativeDocumentMoniker": "Core\\Features\\UserFeatures\\Register\\RegisterCommand.cs",
@@ -896,7 +1052,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 51,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\UserController.cs",
@@ -908,7 +1064,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 58,
               "Title": "JwtSettings.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\JWT\\JwtSettings.cs",
               "RelativeDocumentMoniker": "Core\\Service\\JWT\\JwtSettings.cs",
@@ -920,7 +1076,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 59,
               "Title": "JwtService.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\JWT\\JwtService.cs",
               "RelativeDocumentMoniker": "Core\\Service\\JWT\\JwtService.cs",
@@ -932,7 +1088,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 60,
               "Title": "IJwtService.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\JWT\\IJwtService.cs",
               "RelativeDocumentMoniker": "Core\\Service\\JWT\\IJwtService.cs",
@@ -944,7 +1100,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 61,
               "Title": "JwtExtensions.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Extensions\\JwtExtensions.cs",
               "RelativeDocumentMoniker": "Core\\Extensions\\JwtExtensions.cs",
@@ -956,19 +1112,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
-              "Title": "CoreLayerExtensions.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Extensions\\CoreLayerExtensions.cs",
-              "RelativeDocumentMoniker": "Core\\Extensions\\CoreLayerExtensions.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Extensions\\CoreLayerExtensions.cs",
-              "RelativeToolTip": "Core\\Extensions\\CoreLayerExtensions.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAjwBkAAAAhAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T15:46:16.606Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 63,
               "Title": "AppUserConfiguration.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Configuration\\AppUserConfiguration.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Configuration\\AppUserConfiguration.cs",
@@ -980,7 +1124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 65,
               "Title": "AppUser.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\User\\AppUser.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Entity\\User\\AppUser.cs",
@@ -992,7 +1136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 64,
               "Title": "AppRole.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\User\\AppRole.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Entity\\User\\AppRole.cs",
@@ -1004,7 +1148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 62,
               "Title": "AppRoleConfiguration.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Configuration\\AppRoleConfiguration.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Configuration\\AppRoleConfiguration.cs",
@@ -1016,7 +1160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 66,
               "Title": "20241117163033_XX.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Migrations\\20241117163033_XX.cs",
               "RelativeDocumentMoniker": "Core\\Migrations\\20241117163033_XX.cs",
@@ -1028,7 +1172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 74,
               "Title": "20241117163333_XX.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Migrations\\20241117163333_XX.cs",
               "RelativeDocumentMoniker": "Core\\Migrations\\20241117163333_XX.cs",
@@ -1040,7 +1184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 68,
               "Title": "20241117162815_XX.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Migrations\\20241117162815_XX.cs",
               "RelativeDocumentMoniker": "Core\\Migrations\\20241117162815_XX.cs",
@@ -1052,19 +1196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\appsettings.json",
-              "RelativeDocumentMoniker": "API\\appsettings.json",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\appsettings.json",
-              "RelativeToolTip": "API\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-17T16:19:15.483Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 67,
               "Title": "RegisterValidator.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\UserFeatures\\Register\\RegisterValidator.cs",
               "RelativeDocumentMoniker": "Core\\Features\\UserFeatures\\Register\\RegisterValidator.cs",
@@ -1076,31 +1208,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
-              "Title": "GetAllElectricsResponse.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\GetAllElectricsResponse.cs",
-              "RelativeDocumentMoniker": "API\\Contracts\\Electric\\GetAllElectricsResponse.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\GetAllElectricsResponse.cs",
-              "RelativeToolTip": "API\\Contracts\\Electric\\GetAllElectricsResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T16:08:59.197Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 62,
-              "Title": "GetElectricByIdResponse.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\GetElectricByIdResponse.cs",
-              "RelativeDocumentMoniker": "API\\Contracts\\Electric\\GetElectricByIdResponse.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\GetElectricByIdResponse.cs",
-              "RelativeToolTip": "API\\Contracts\\Electric\\GetElectricByIdResponse.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T16:08:58.484Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 69,
               "Title": "LoginResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\UserFeatures\\Login\\LoginResponse.cs",
               "RelativeDocumentMoniker": "Core\\Features\\UserFeatures\\Login\\LoginResponse.cs",
@@ -1112,7 +1220,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 71,
               "Title": "CreateElectricHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricHandler.cs",
@@ -1124,7 +1232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 70,
               "Title": "CreateElectricCommand.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricCommand.cs",
               "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricCommand.cs",
@@ -1136,7 +1244,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 72,
               "Title": "LoginValidator.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\UserFeatures\\Login\\LoginValidator.cs",
               "RelativeDocumentMoniker": "Core\\Features\\UserFeatures\\Login\\LoginValidator.cs",
@@ -1148,7 +1256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 73,
               "Title": "20241117155036_XX.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Migrations\\20241117155036_XX.cs",
               "RelativeDocumentMoniker": "Core\\Migrations\\20241117155036_XX.cs",

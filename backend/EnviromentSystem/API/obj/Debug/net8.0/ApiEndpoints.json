@@ -200,6 +200,63 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "API.Controllers.PredictionController",
+    "Method": "GetPrediction",
+    "RelativePath": "api/Prediction/predict",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "consumptionType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "buildingId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "months",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.PredictionController",
+    "Method": "TrainModel",
+    "RelativePath": "api/Prediction/train",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "consumptionType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "buildingId",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "epochs",
+        "Type": "System.Int32",
+        "IsRequired": false
+      },
+      {
+        "Name": "batchSize",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API.Controllers.SchoolInfoController",
     "Method": "Create",
     "RelativePath": "api/SchoolInfo",

@@ -8,6 +8,7 @@ using System.Reflection;
 using FluentValidation;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Builder;
+using Core.Service.PredictionService; // Replace with the actual namespace where PredictionService is located.
 
 namespace Core.Extensions
 {
@@ -20,9 +21,14 @@ namespace Core.Extensions
 
             var defaultConnectionString = ConvertPostgresUriToConnectionString(postgresUri);
 
+            // Add ApplicationDbContext
             services.AddDbContext<ApplicationDbContext>(options =>
                 options.UseNpgsql(defaultConnectionString));
+
+            // Add JWT Authentication
             services.AddJwtAuthentication(configuration);
+
+            // Add Identity
             services.AddIdentity<AppUser, AppRole>(options =>
             {
                 options.Password.RequiredLength = 5;
@@ -40,10 +46,15 @@ namespace Core.Extensions
             .AddEntityFrameworkStores<ApplicationDbContext>()
             .AddDefaultTokenProviders();
 
- 
-
+            // Add MediatR and FluentValidation
             services.AddMediatR(Assembly.GetExecutingAssembly());
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
+
+            // Add PredictionService
+            services.AddHttpClient<IPredictionService, PredictionService>(client =>
+            {
+                client.BaseAddress = new Uri(configuration["PredictionApi:BaseUrl"] ?? "http://127.0.0.1:5000/");
+            });
 
             return services;
         }

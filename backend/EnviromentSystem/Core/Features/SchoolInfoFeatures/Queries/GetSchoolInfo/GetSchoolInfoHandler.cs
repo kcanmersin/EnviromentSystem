@@ -19,6 +19,7 @@ namespace Core.Features.SchoolInfoFeatures.Queries.GetSchoolInfo
         {
             var schoolInfo = await _context.SchoolInfos
                 .AsNoTracking()
+                .Include(s => s.Vehicles)  // Include Vehicles data
                 .FirstOrDefaultAsync(s => s.Id == request.Id, cancellationToken);
 
             if (schoolInfo == null)
@@ -31,7 +32,9 @@ namespace Core.Features.SchoolInfoFeatures.Queries.GetSchoolInfo
                 Id = schoolInfo.Id,
                 NumberOfPeople = schoolInfo.NumberOfPeople,
                 Year = schoolInfo.Year,
-                Month = schoolInfo.Month
+                CarsManagedByUniversity = schoolInfo.Vehicles?.CarsManagedByUniversity ?? 0,
+                CarsEnteringUniversity = schoolInfo.Vehicles?.CarsEnteringUniversity ?? 0,
+                MotorcyclesEnteringUniversity = schoolInfo.Vehicles?.MotorcyclesEnteringUniversity ?? 0,
             };
 
             return Result.Success(response);

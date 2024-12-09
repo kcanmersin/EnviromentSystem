@@ -3,6 +3,7 @@ using System.Net.Http;
 using System.Text;
 using System.Text.Json;
 using System.Threading.Tasks;
+using Core.Service.AnomalyService;
 using Microsoft.Extensions.Configuration;
 
 namespace Core.Service.PredictionService
@@ -18,7 +19,7 @@ namespace Core.Service.PredictionService
             _baseApiUrl = configuration["PredictionApi:BaseUrl"];
         }
 
-        public async Task<string> GetAnomalyAsync(string consumptionType, string buildingId = null, float threshold = 0.05f)
+        public async Task<AnomalyResponse> GetAnomalyAsync(string consumptionType, string buildingId = null, float threshold = 0.05f)
         {
             var requestBody = new
             {
@@ -36,7 +37,20 @@ namespace Core.Service.PredictionService
                 throw new Exception($"Failed to get anomalies: {await response.Content.ReadAsStringAsync()}");
             }
 
-            return await response.Content.ReadAsStringAsync();
+            var responseContent = await response.Content.ReadAsStringAsync();
+
+            var options = new JsonSerializerOptions
+            {
+                Converters = { new AnomalyDateTimeConverter() }
+            };
+
+            var anomalyResponse = JsonSerializer.Deserialize<List<Anomaly>>(responseContent, options);
+
+            return new AnomalyResponse
+            {
+                Anomalies = anomalyResponse
+            };
         }
+
     }
 }

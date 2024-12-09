@@ -9,5 +9,8 @@ namespace Core.Features.SchoolInfoFeatures.Commands.UpdateSchoolInfo
         public int NumberOfPeople { get; set; }
         public int Year { get; set; }
         public string Month { get; set; } = string.Empty;
+        public int CarsManagedByUniversity { get; set; }
+        public int CarsEnteringUniversity { get; set; }
+        public int MotorcyclesEnteringUniversity { get; set; }
     }
 }

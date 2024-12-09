@@ -22,12 +22,13 @@ namespace Core.Features.SchoolInfoFeatures.Commands.UpdateSchoolInfo
             var validationResult = await _validator.ValidateAsync(request, cancellationToken);
             if (!validationResult.IsValid)
             {
-                return Result.Failure<UpdateSchoolInfoResponse>(
-                    new Error("ValidationFailed", validationResult.Errors.First().ErrorMessage)
-                );
+                return Result.Failure<UpdateSchoolInfoResponse>(new Error("ValidationFailed", validationResult.Errors.First().ErrorMessage));
             }
 
-            var schoolInfo = await _context.SchoolInfos.FirstOrDefaultAsync(s => s.Id == request.Id, cancellationToken);
+            var schoolInfo = await _context.SchoolInfos
+                .Include(s => s.Vehicles) // Ensure we include Vehicles in the query
+                .FirstOrDefaultAsync(s => s.Id == request.Id, cancellationToken);
+
             if (schoolInfo == null)
             {
                 return Result.Failure<UpdateSchoolInfoResponse>(new Error("NotFound", "SchoolInfo not found."));
@@ -35,8 +36,11 @@ namespace Core.Features.SchoolInfoFeatures.Commands.UpdateSchoolInfo
 
             schoolInfo.NumberOfPeople = request.NumberOfPeople;
             schoolInfo.Year = request.Year;
-            schoolInfo.Month = request.Month;
             schoolInfo.ModifiedDate = DateTime.UtcNow;
+
+            schoolInfo.Vehicles.CarsManagedByUniversity = request.CarsManagedByUniversity;
+            schoolInfo.Vehicles.CarsEnteringUniversity = request.CarsEnteringUniversity;
+            schoolInfo.Vehicles.MotorcyclesEnteringUniversity = request.MotorcyclesEnteringUniversity;
 
             await _context.SaveChangesAsync(cancellationToken);
 
@@ -45,8 +49,10 @@ namespace Core.Features.SchoolInfoFeatures.Commands.UpdateSchoolInfo
                 Id = schoolInfo.Id,
                 NumberOfPeople = schoolInfo.NumberOfPeople,
                 Year = schoolInfo.Year,
-                Month = schoolInfo.Month,
-                Success = true
+                Success = true,
+                CarsManagedByUniversity = schoolInfo.Vehicles.CarsManagedByUniversity,
+                CarsEnteringUniversity = schoolInfo.Vehicles.CarsEnteringUniversity,
+                MotorcyclesEnteringUniversity = schoolInfo.Vehicles.MotorcyclesEnteringUniversity,
             };
 
             return Result.Success(response);

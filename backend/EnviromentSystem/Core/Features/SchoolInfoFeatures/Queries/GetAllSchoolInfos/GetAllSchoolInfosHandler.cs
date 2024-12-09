@@ -20,6 +20,7 @@ namespace Core.Features.SchoolInfoFeatures.GetAllSchoolInfos
         {
             var schoolInfos = await _context.SchoolInfos
                 .AsNoTracking()
+                .Include(s => s.Vehicles)  // Include the Vehicles data
                 .ToListAsync(cancellationToken);
 
             if (!schoolInfos.Any())
@@ -32,7 +33,9 @@ namespace Core.Features.SchoolInfoFeatures.GetAllSchoolInfos
                 Id = s.Id,
                 NumberOfPeople = s.NumberOfPeople,
                 Year = s.Year,
-                Month = s.Month
+                CarsManagedByUniversity = s.Vehicles?.CarsManagedByUniversity ?? 0,
+                CarsEnteringUniversity = s.Vehicles?.CarsEnteringUniversity ?? 0,
+                MotorcyclesEnteringUniversity = s.Vehicles?.MotorcyclesEnteringUniversity ?? 0,
             }).ToList();
 
             var response = new GetAllSchoolInfosResponse

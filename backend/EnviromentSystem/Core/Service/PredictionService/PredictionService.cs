@@ -1,9 +1,7 @@
 ﻿using System;
-using System.Collections.Generic;
 using System.Net.Http;
 using System.Text;
 using System.Text.Json;
-using System.Text.Json.Serialization;
 using System.Threading.Tasks;
 using Microsoft.Extensions.Configuration;
 
@@ -20,7 +18,6 @@ namespace Core.Service.PredictionService
             _baseApiUrl = configuration["PredictionApi:BaseUrl"];
         }
 
-        // Method to train the model
         public async Task<string> TrainModelAsync(string consumptionType, string buildingId = null, int epochs = 50, int batchSize = 16)
         {
             var requestBody = new
@@ -43,8 +40,7 @@ namespace Core.Service.PredictionService
             return await response.Content.ReadAsStringAsync();
         }
 
-        // Method to get predictions from the API
-        public async Task<List<PredictionResponse>> GetPredictionAsync(string consumptionType, string buildingId = null, int months = 12)
+        public async Task<UsagePredictionResponse> GetPredictionAsync(string consumptionType, string buildingId = null, int months = 12)
         {
             var requestBody = new
             {
@@ -64,40 +60,19 @@ namespace Core.Service.PredictionService
 
             var responseContent = await response.Content.ReadAsStringAsync();
 
-            // Deserialize the response into a custom ResponseWrapper object
-            var responseWrapper = JsonSerializer.Deserialize<ResponseWrapper>(responseContent, new JsonSerializerOptions
+            var options = new JsonSerializerOptions
             {
-                Converters =
-                {
-                    new DateTimeOffsetConverter() // Use the DateTimeOffset converter here
-                }
-            });
+                Converters = { new DateTimeConverter() }
+            };
 
-            return responseWrapper?.Predictions ?? new List<PredictionResponse>();
-        }
-    }
+            var predictionResponse = JsonSerializer.Deserialize<List<UsagePrediction>>(responseContent, options);
 
-    // Custom DateTimeOffset converter class
-    public class DateTimeOffsetConverter : JsonConverter<DateTimeOffset>
-    {
-        public override DateTimeOffset Read(ref Utf8JsonReader reader, Type typeToConvert, JsonSerializerOptions options)
-        {
-            var dateString = reader.GetString();
-            return DateTimeOffset.Parse(dateString); // Direct parsing into DateTimeOffset
+            return new UsagePredictionResponse
+            {
+                Predictions = predictionResponse
+            };
         }
 
-        public override void Write(Utf8JsonWriter writer, DateTimeOffset value, JsonSerializerOptions options)
-        {
-            writer.WriteStringValue(value.ToString("yyyy-MM-dd HH:mm:sszzz")); // Custom date format
-        }
-    }
 
-    // Wrapper for the API response
-    public class ResponseWrapper
-    {
-        public string Message { get; set; }
-        public List<PredictionResponse> Predictions { get; set; }
     }
-
-    // PredictionResponse class
 }

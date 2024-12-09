@@ -58,6 +58,32 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "API.Controllers.CarbonFootprintController",
+    "Method": "GetCarbonFootprintByYear",
+    "RelativePath": "api/CarbonFootprint/{year}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "year",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "API.Controllers.CarbonFootprintController",
+    "Method": "GetCarbonFootprintForAllYears",
+    "RelativePath": "api/CarbonFootprint/all",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API.Controllers.ElectricController",
     "Method": "Create",
     "RelativePath": "api/Electric",

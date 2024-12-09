@@ -3,6 +3,7 @@ using System;
 using Core.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 
@@ -11,9 +12,11 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Core.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20241209145805_vehicleentered")]
+    partial class vehicleentered
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -261,9 +264,6 @@ namespace Core.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
-                    b.Property<Guid?>("CampusVehicleEntryId")
-                        .HasColumnType("uuid");
-
                     b.Property<string>("CreatedBy")
                         .HasColumnType("text");
 
@@ -288,13 +288,15 @@ namespace Core.Migrations
                     b.Property<int>("NumberOfPeople")
                         .HasColumnType("integer");
 
+                    b.Property<Guid>("VehiclesId")
+                        .HasColumnType("uuid");
+
                     b.Property<int>("Year")
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("CampusVehicleEntryId")
-                        .IsUnique();
+                    b.HasIndex("VehiclesId");
 
                     b.ToTable("SchoolInfos", (string)null);
                 });
@@ -330,19 +332,19 @@ namespace Core.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("ac2c246c-b3db-42d3-8daf-e41e7aa2a9ae"),
+                            Id = new Guid("e7489fd1-3651-4064-ae94-a3bba37b97ad"),
                             Name = "SUPERADMIN",
                             NormalizedName = "SUPERADMIN"
                         },
                         new
                         {
-                            Id = new Guid("baf90810-2a87-4478-8e80-9c28161172d3"),
+                            Id = new Guid("12999e3e-bc71-43a5-8c80-52a2a18f21b3"),
                             Name = "ADMIN",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = new Guid("988963dd-fe67-4ff4-b962-0e9472f23816"),
+                            Id = new Guid("e1dfa41b-dee4-4913-a4e1-776bafea8415"),
                             Name = "USER",
                             NormalizedName = "USER"
                         });
@@ -429,9 +431,9 @@ namespace Core.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("6c7e22e1-4bc2-419c-9c86-73774435f98f"),
+                            Id = new Guid("681eca24-03f6-4aed-b304-581944ce1099"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "688620d7-3b7b-4630-b562-5c28c493ae12",
+                            ConcurrencyStamp = "69fcc667-757e-49f8-b98e-092395bc792e",
                             Email = "superadmin@example.com",
                             EmailConfirmed = false,
                             IsConfirmed = true,
@@ -439,7 +441,7 @@ namespace Core.Migrations
                             Name = "SUPERADMIN",
                             NormalizedEmail = "SUPERADMIN@EXAMPLE.COM",
                             NormalizedUserName = "SUPERADMIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEBygMmmtBifRrTCaNtlbzSxJOCXpp3sQfZiT094uBNLK+aN50lzW1D2+DD2qOhOnmA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEL9+Qy4afcnXJm2cb/dnn8fHPbK2ndX31dZquWftRVKnQ9R9z1Sj/kTnYeGYE6C4jQ==",
                             PhoneNumberConfirmed = false,
                             Surname = "USER",
                             TwoFactorEnabled = false,
@@ -447,9 +449,9 @@ namespace Core.Migrations
                         },
                         new
                         {
-                            Id = new Guid("716d5945-db78-408e-8ef0-6c0cebbadc83"),
+                            Id = new Guid("16503931-3912-4d30-868a-fb0beefe59d1"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "50789197-f509-46a9-a181-8c077236c07f",
+                            ConcurrencyStamp = "31b3450e-9934-4f0e-9ce5-d0416f3dfc9c",
                             Email = "admin@example.com",
                             EmailConfirmed = false,
                             IsConfirmed = true,
@@ -457,7 +459,7 @@ namespace Core.Migrations
                             Name = "ADMIN",
                             NormalizedEmail = "ADMIN@EXAMPLE.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEPkwZEhIEW0C1p0dqa6mZj2XtCy7dT7rHAdKJdvv0aCy1duRrk/YrIXo8eJ4gnw5ZQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEC+TCOqH++x5ryL+W+G3KQXaU6w55GP5TN3cGOzimrfuG8viSZKHYmmmdQ7Ii0NuDQ==",
                             PhoneNumberConfirmed = false,
                             Surname = "USER",
                             TwoFactorEnabled = false,
@@ -465,9 +467,9 @@ namespace Core.Migrations
                         },
                         new
                         {
-                            Id = new Guid("646dc2b1-7527-414c-919c-e9c6bea2c78d"),
+                            Id = new Guid("21532e24-dd4b-4fbf-8a38-bf8677037caf"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "52cad739-530a-4ecd-883f-54c5826b8479",
+                            ConcurrencyStamp = "a8ebbdf7-741e-4e9e-879e-ff4206f65c14",
                             Email = "user@example.com",
                             EmailConfirmed = false,
                             IsConfirmed = true,
@@ -475,7 +477,7 @@ namespace Core.Migrations
                             Name = "USER",
                             NormalizedEmail = "USER@EXAMPLE.COM",
                             NormalizedUserName = "USER",
-                            PasswordHash = "AQAAAAIAAYagAAAAENTBVK5LnomMb5gmgNmpGDRotdcSW/ONIJYUTlTA2KmhJujkXS7716nR5S8iY2ceEw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEMITI7cxvYZfHDERit2bdUA+Iv424OYP95HP1w2LuGUH9rgz3NHXWlH9HLMy9KXKiw==",
                             PhoneNumberConfirmed = false,
                             Surname = "USER",
                             TwoFactorEnabled = false,
@@ -613,18 +615,18 @@ namespace Core.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = new Guid("6c7e22e1-4bc2-419c-9c86-73774435f98f"),
-                            RoleId = new Guid("ac2c246c-b3db-42d3-8daf-e41e7aa2a9ae")
+                            UserId = new Guid("681eca24-03f6-4aed-b304-581944ce1099"),
+                            RoleId = new Guid("e7489fd1-3651-4064-ae94-a3bba37b97ad")
                         },
                         new
                         {
-                            UserId = new Guid("716d5945-db78-408e-8ef0-6c0cebbadc83"),
-                            RoleId = new Guid("baf90810-2a87-4478-8e80-9c28161172d3")
+                            UserId = new Guid("16503931-3912-4d30-868a-fb0beefe59d1"),
+                            RoleId = new Guid("12999e3e-bc71-43a5-8c80-52a2a18f21b3")
                         },
                         new
                         {
-                            UserId = new Guid("646dc2b1-7527-414c-919c-e9c6bea2c78d"),
-                            RoleId = new Guid("988963dd-fe67-4ff4-b962-0e9472f23816")
+                            UserId = new Guid("21532e24-dd4b-4fbf-8a38-bf8677037caf"),
+                            RoleId = new Guid("e1dfa41b-dee4-4913-a4e1-776bafea8415")
                         });
                 });
 
@@ -683,9 +685,10 @@ namespace Core.Migrations
             modelBuilder.Entity("Core.Data.Entity.SchoolInfo", b =>
                 {
                     b.HasOne("Core.Data.Entity.CampusVehicleEntry", "Vehicles")
-                        .WithOne()
-                        .HasForeignKey("Core.Data.Entity.SchoolInfo", "CampusVehicleEntryId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .WithMany()
+                        .HasForeignKey("VehiclesId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("Vehicles");
                 });

@@ -1,9 +1,10 @@
-﻿using System.Threading.Tasks;
+﻿using Core.Service.AnomalyService;
+using System.Threading.Tasks;
 
 namespace Core.Service.PredictionService
 {
     public interface IAnomalyService
     {
-        Task<string> GetAnomalyAsync(string consumptionType, string buildingId = null, float threshold = 0.05f);
+        Task<AnomalyResponse> GetAnomalyAsync(string consumptionType, string buildingId = null, float threshold = 0.05f);
     }
 }

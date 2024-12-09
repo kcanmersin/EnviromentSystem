@@ -8,7 +8,8 @@ using System.Reflection;
 using FluentValidation;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Builder;
-using Core.Service.PredictionService; 
+using Core.Service.PredictionService;
+using Core.Features.CarbonFootprint;
 
 namespace Core.Extensions
 {
@@ -45,6 +46,10 @@ namespace Core.Extensions
             })
             .AddEntityFrameworkStores<ApplicationDbContext>()
             .AddDefaultTokenProviders();
+            //add carbonfootprintservice scoped
+            services.AddScoped<ICarbonFootprintService, CarbonFootprintService>();
+
+
 
             // Add MediatR and FluentValidation
             services.AddMediatR(Assembly.GetExecutingAssembly());

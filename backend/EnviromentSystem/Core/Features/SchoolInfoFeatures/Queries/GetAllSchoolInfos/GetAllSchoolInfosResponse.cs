@@ -5,6 +5,6 @@ namespace Core.Features.SchoolInfoFeatures.Queries.GetAllSchoolInfos
 {
     public class GetAllSchoolInfosResponse
     {
-        public List<GetSchoolInfoResponse> SchoolInfos { get; set; } = new();
+        public List<GetSchoolInfoResponse> SchoolInfos { get; set; }
     }
 }

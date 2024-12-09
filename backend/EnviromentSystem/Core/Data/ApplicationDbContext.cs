@@ -26,6 +26,11 @@ namespace Core.Data
             modelBuilder.ApplyConfiguration(new AppUserConfiguration());
             modelBuilder.ApplyConfiguration(new AppRoleConfiguration());
 
+            modelBuilder.Entity<SchoolInfo>()
+           .HasOne(s => s.Vehicles)
+           .WithOne()
+           .HasForeignKey<SchoolInfo>(s => s.CampusVehicleEntryId)
+           .OnDelete(DeleteBehavior.Cascade);
             modelBuilder.Entity<Water>().ToTable("Waters");
             modelBuilder.Entity<Paper>().ToTable("Papers");
             modelBuilder.Entity<SchoolInfo>().ToTable("SchoolInfos");

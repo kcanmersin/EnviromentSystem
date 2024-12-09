@@ -49,10 +49,15 @@
 		<PackageReference Include="Quartz.Extensions.DependencyInjection" Version="3.13.0" />
 		<PackageReference Include="Quartz.Extensions.Hosting" Version="3.13.0" />
 		<PackageReference Include="RabbitMQ.Client" Version="6.8.1" />
+		<PackageReference Include="RavenDB.Database" Version="3.5.9" />
 		<PackageReference Include="Swashbuckle.AspNetCore" Version="6.7.0" />
 		<PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.7.0" />
 		<PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.7.0" />
 		<PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.0.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Service\NewFolder\" />
   </ItemGroup>
 
 </Project>

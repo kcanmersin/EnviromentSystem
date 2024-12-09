@@ -199,3 +199,10 @@ D:\code\EnviromentSystem\backend\EnviromentSystem\API\obj\Debug\net8.0\API.pdb
 D:\code\EnviromentSystem\backend\EnviromentSystem\API\obj\Debug\net8.0\API.genruntimeconfig.cache
 D:\code\EnviromentSystem\backend\EnviromentSystem\API\obj\Debug\net8.0\ref\API.dll
 D:\code\EnviromentSystem\backend\EnviromentSystem\API\obj\Debug\net8.0\API.sourcelink.json
+D:\code\EnviromentSystem\backend\EnviromentSystem\API\bin\Debug\net8.0\Raven.Abstractions.dll
+D:\code\EnviromentSystem\backend\EnviromentSystem\API\bin\Debug\net8.0\Raven.Client.Lightweight.dll
+D:\code\EnviromentSystem\backend\EnviromentSystem\API\bin\Debug\net8.0\Sparrow.dll
+D:\code\EnviromentSystem\backend\EnviromentSystem\API\bin\Debug\net8.0\Raven.Database.dll
+D:\code\EnviromentSystem\backend\EnviromentSystem\API\bin\Debug\net8.0\System.ServiceModel.Primitives.dll
+D:\code\EnviromentSystem\backend\EnviromentSystem\API\bin\Debug\net8.0\runtimes\unix\lib\netstandard1.3\System.Private.ServiceModel.dll
+D:\code\EnviromentSystem\backend\EnviromentSystem\API\bin\Debug\net8.0\runtimes\win7\lib\netstandard1.3\System.Private.ServiceModel.dll

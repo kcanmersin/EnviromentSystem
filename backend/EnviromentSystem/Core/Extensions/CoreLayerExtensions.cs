@@ -8,7 +8,7 @@ using System.Reflection;
 using FluentValidation;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Builder;
-using Core.Service.PredictionService; // Replace with the actual namespace where PredictionService is located.
+using Core.Service.PredictionService; 
 
 namespace Core.Extensions
 {
@@ -50,11 +50,21 @@ namespace Core.Extensions
             services.AddMediatR(Assembly.GetExecutingAssembly());
             services.AddValidatorsFromAssembly(Assembly.GetExecutingAssembly());
 
+            //health check for anomaly , prediction service
+            //services.AddHealthChecks()
+            //    .AddCheck<AnomalyServiceHealthCheck>("AnomalyService");
+
             // Add PredictionService
+            services.AddHttpClient<IAnomalyService, AnomalyService>(client =>
+            {
+                client.BaseAddress = new Uri(configuration["PredictionApi:BaseUrl"] ?? "http://127.0.0.1:5000/");
+            });
+
             services.AddHttpClient<IPredictionService, PredictionService>(client =>
             {
                 client.BaseAddress = new Uri(configuration["PredictionApi:BaseUrl"] ?? "http://127.0.0.1:5000/");
             });
+
 
             return services;
         }

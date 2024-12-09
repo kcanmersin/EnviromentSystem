@@ -233,6 +233,24 @@ def get_prediction():
         return jsonify(predictions.to_dict(orient='records'))
     except Exception as e:
         return jsonify({"error": str(e)}), 500
+@app.route('/get_anomaly', methods=['POST'])
+def get_anomaly():
+    consumption_type = request.json.get('consumption_type', '').lower()
+    building_id = request.json.get('building_id')
+    threshold = float(request.json.get('threshold', 0.05)) 
+
+    if not consumption_type:
+        return jsonify({"error": "Consumption type (e.g., electric, water, naturalgas) is required"}), 400
+
+    try:
+        model = ConsumptionModel(consumption_type, building_id)
+        anomaly_df = model.detect_anomalies(threshold)
+        if anomaly_df.empty:
+            return jsonify({"message": "No anomalies detected."})
+
+        return jsonify(anomaly_df.to_dict(orient='records'))
+    except Exception as e:
+        return jsonify({"error": str(e)}), 500
 
 
 if __name__ == "__main__":

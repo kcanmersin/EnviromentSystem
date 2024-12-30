@@ -12,7 +12,6 @@ from datetime import datetime
 app = Flask(__name__)
 
 
-
 def get_db_connection():
     conn = psycopg2.connect(**DB_PARAMS)
     return conn

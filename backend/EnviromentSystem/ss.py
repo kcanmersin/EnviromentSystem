@@ -7,6 +7,8 @@ def process_files(base_output_file_name, line_limit):
     
     with open(output_file_path, 'w', encoding='utf-8') as output_file:
         for root, dirs, files in os.walk("."):
+            if "Migrations" in root.split(os.sep):
+                continue
             for file in files:
                 if file.endswith(".cs"):
                     source_path = os.path.join(root, file)
@@ -30,5 +32,5 @@ def process_files(base_output_file_name, line_limit):
 
 # Usage
 base_output_file_name = "combined_output"
-line_limit = 2200
+line_limit = 600
 process_files(base_output_file_name, line_limit)

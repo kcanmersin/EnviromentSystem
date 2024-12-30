@@ -1,0 +1,56 @@
+version: '3.9'
+
+services:
+  ai-service:
+    build:
+      context: ./AI
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000" 
+    volumes:
+      - ./AI:/app
+    env_file:
+      - ./.env
+
+  backend:
+    build:
+      context: ./backend/EnviromentSystem
+      dockerfile: Dockerfile
+    ports:
+      - "5154:5154"
+    volumes:
+      - ./backend:/src
+    env_file:
+      - ./.env
+
+  elasticsearch:
+    image: docker.elastic.co/elasticsearch/elasticsearch:6.0.1
+    volumes:
+      - ./ELK/elasticsearch/elasticsearch.yml:/usr/share/elasticsearch/config/elasticsearch.yml
+    ports:
+      - "9200:9200"
+      - "9300:9300"
+    environment:
+      ES_JAVA_OPTS: "-Xmx256m -Xms256m"
+
+  logstash:
+    image: docker.elastic.co/logstash/logstash:6.0.1
+    command: logstash -f /etc/logstash/conf.d/logstash.conf
+    volumes:
+      - ./ELK/logstash/:/etc/logstash/conf.d/
+      - ./backend/EnviromentSystem/API/Logs/:/usr/share/logstash/logs/
+    ports:
+      - "5001:5000"  # Logstash için dış port 5001, iç port 5000
+    environment:
+      LS_JAVA_OPTS: "-Xmx256m -Xms256m"
+    depends_on:
+      - elasticsearch
+
+  kibana:
+    image: docker.elastic.co/kibana/kibana:6.0.1
+    volumes:
+      - ./ELK/kibana/kibana.yml:/usr/share/kibana/config/kibana.yml
+    ports:
+      - "5601:5601"
+    depends_on:
+      - elasticsearch

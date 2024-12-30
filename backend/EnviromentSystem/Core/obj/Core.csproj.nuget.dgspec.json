@@ -13,8 +13,12 @@
         "packagesPath": "C:\\Users\\KC\\.nuget\\packages\\",
         "outputPath": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
           "C:\\Users\\KC\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,7 +26,6 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -40,24 +43,13 @@
           "enableAudit": "true",
           "auditLevel": "low",
           "auditMode": "direct"
-        }
+        },
+        "SdkAnalysisLevel": "9.0.100"
       },
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
           "dependencies": {
-            "AspNetCore.HealthChecks.Hangfire": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
-            "AspNetCore.HealthChecks.Kafka": {
-              "target": "Package",
-              "version": "[8.0.1, )"
-            },
-            "AspNetCore.HealthChecks.Network": {
-              "target": "Package",
-              "version": "[8.0.0, )"
-            },
             "AspNetCore.HealthChecks.Npgsql": {
               "target": "Package",
               "version": "[8.0.0, )"
@@ -70,10 +62,6 @@
               "target": "Package",
               "version": "[8.0.0, )"
             },
-            "Confluent.Kafka": {
-              "target": "Package",
-              "version": "[2.5.2, )"
-            },
             "FluentValidation": {
               "target": "Package",
               "version": "[11.9.2, )"
@@ -85,22 +73,6 @@
             "FluentValidation.DependencyInjectionExtensions": {
               "target": "Package",
               "version": "[11.9.2, )"
-            },
-            "Hangfire": {
-              "target": "Package",
-              "version": "[1.8.14, )"
-            },
-            "Hangfire.AspNetCore": {
-              "target": "Package",
-              "version": "[1.8.14, )"
-            },
-            "Hangfire.Core": {
-              "target": "Package",
-              "version": "[1.8.14, )"
-            },
-            "Hangfire.PostgreSql": {
-              "target": "Package",
-              "version": "[1.20.9, )"
             },
             "Mapster": {
               "target": "Package",
@@ -162,18 +134,6 @@
               "target": "Package",
               "version": "[3.13.0, )"
             },
-            "Quartz.Extensions.DependencyInjection": {
-              "target": "Package",
-              "version": "[3.13.0, )"
-            },
-            "Quartz.Extensions.Hosting": {
-              "target": "Package",
-              "version": "[3.13.0, )"
-            },
-            "RabbitMQ.Client": {
-              "target": "Package",
-              "version": "[6.8.1, )"
-            },
             "RavenDB.Database": {
               "target": "Package",
               "version": "[3.5.9, )"
@@ -211,7 +171,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.400/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.101/PortableRuntimeIdentifierGraph.json"
         }
       }
     }

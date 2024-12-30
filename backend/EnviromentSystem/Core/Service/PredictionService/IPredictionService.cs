@@ -8,7 +8,7 @@ namespace Core.Service.PredictionService
 {
     public interface IPredictionService
     {
-        Task<string> TrainModelAsync(string consumptionType, string buildingId = null, int epochs = 50, int batchSize = 16);
+        Task<string> TrainModelAsync(string consumptionType, string buildingId = null);
         Task<UsagePredictionResponse> GetPredictionAsync(string consumptionType, string buildingId = null, int months = 12);
     }
 }

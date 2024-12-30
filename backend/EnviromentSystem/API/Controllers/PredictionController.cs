@@ -17,13 +17,11 @@ namespace API.Controllers
         [HttpPost("train")]
         public async Task<IActionResult> TrainModel(
             [FromQuery] string consumptionType = "electric",
-            [FromQuery] string buildingId = null,
-            [FromQuery] int epochs = 50,
-            [FromQuery] int batchSize = 16)
+            [FromQuery] string buildingId = null)
         {
             try
             {
-                var result = await _predictionService.TrainModelAsync(consumptionType, buildingId, epochs, batchSize);
+                var result = await _predictionService.TrainModelAsync(consumptionType, buildingId);
                 return Ok(new { Message = "Model trained successfully", Details = result });
             }
             catch (Exception ex)
@@ -31,6 +29,7 @@ namespace API.Controllers
                 return BadRequest(new { Error = ex.Message });
             }
         }
+
 
         [HttpPost("predict")]
         public async Task<IActionResult> GetPrediction(

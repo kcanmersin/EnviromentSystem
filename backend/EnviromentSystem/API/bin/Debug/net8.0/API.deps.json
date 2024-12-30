@@ -13,23 +13,14 @@
           "AspNetCore.HealthChecks.NpgSql": "8.0.0",
           "AspNetCore.HealthChecks.UI": "8.0.0",
           "AspNetCore.HealthChecks.UI.Client": "8.0.0",
-          "Confluent.Kafka": "2.5.2",
           "Core": "1.0.0",
           "FluentValidation": "11.9.2",
           "FluentValidation.AspNetCore": "11.3.0",
           "FluentValidation.DependencyInjectionExtensions": "11.9.2",
-          "Hangfire": "1.8.14",
-          "Hangfire.AspNetCore": "1.8.14",
-          "Hangfire.Core": "1.8.14",
-          "Hangfire.PostgreSql": "1.20.9",
           "Mapster": "7.4.0",
           "MediatR": "11.1.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "11.1.0",
-          "Microsoft.AspNetCore.SignalR": "1.1.0",
           "Microsoft.EntityFrameworkCore.Design": "8.0.8",
-          "Quartz": "3.13.0",
-          "Quartz.Extensions.DependencyInjection": "3.13.0",
-          "Quartz.Extensions.Hosting": "3.13.0",
           "Serilog": "4.0.1",
           "Serilog.AspNetCore": "8.0.2",
           "Serilog.Enrichers.Context": "4.6.5",
@@ -41,8 +32,7 @@
           "Serilog.Sinks.File": "6.0.0",
           "Swashbuckle.AspNetCore": "6.7.0",
           "Swashbuckle.AspNetCore.Swagger": "6.7.0",
-          "Swashbuckle.AspNetCore.SwaggerGen": "6.7.0",
-          "prometheus-net.AspNetCore": "8.2.1"
+          "Swashbuckle.AspNetCore.SwaggerGen": "6.7.0"
         },
         "runtime": {
           "API.dll": {}
@@ -50,25 +40,13 @@
       },
       "AspNetCore.HealthChecks.Hangfire/8.0.0": {
         "dependencies": {
-          "Hangfire.Core": "1.8.14",
+          "Hangfire.Core": "1.8.6",
           "Microsoft.Extensions.Diagnostics.HealthChecks": "8.0.0"
         },
         "runtime": {
           "lib/netstandard2.0/HealthChecks.Hangfire.dll": {
             "assemblyVersion": "8.0.0.0",
             "fileVersion": "8.0.0.0"
-          }
-        }
-      },
-      "AspNetCore.HealthChecks.Kafka/8.0.1": {
-        "dependencies": {
-          "Confluent.Kafka": "2.5.2",
-          "Microsoft.Extensions.Diagnostics.HealthChecks": "8.0.0"
-        },
-        "runtime": {
-          "lib/net6.0/HealthChecks.Kafka.dll": {
-            "assemblyVersion": "8.0.1.0",
-            "fileVersion": "8.0.1.0"
           }
         }
       },
@@ -147,25 +125,6 @@
           }
         }
       },
-      "Confluent.Kafka/2.5.2": {
-        "dependencies": {
-          "librdkafka.redist": "2.5.0"
-        },
-        "runtime": {
-          "lib/net6.0/Confluent.Kafka.dll": {
-            "assemblyVersion": "2.5.2.0",
-            "fileVersion": "2.5.2.0"
-          }
-        }
-      },
-      "Dapper/2.0.123": {
-        "runtime": {
-          "lib/net5.0/Dapper.dll": {
-            "assemblyVersion": "2.0.0.0",
-            "fileVersion": "2.0.123.33578"
-          }
-        }
-      },
       "Elasticsearch.Net/7.17.5": {
         "dependencies": {
           "Microsoft.CSharp": "4.7.0",
@@ -219,71 +178,58 @@
           }
         }
       },
-      "Hangfire/1.8.14": {
-        "dependencies": {
-          "Hangfire.AspNetCore": "1.8.14",
-          "Hangfire.Core": "1.8.14",
-          "Hangfire.SqlServer": "1.8.14"
-        }
-      },
-      "Hangfire.AspNetCore/1.8.14": {
-        "dependencies": {
-          "Hangfire.NetCore": "1.8.14"
-        },
-        "runtime": {
-          "lib/netcoreapp3.0/Hangfire.AspNetCore.dll": {
-            "assemblyVersion": "1.8.14.0",
-            "fileVersion": "1.8.14.0"
-          }
-        }
-      },
-      "Hangfire.Core/1.8.14": {
+      "Hangfire.Core/1.8.6": {
         "dependencies": {
           "Newtonsoft.Json": "13.0.3"
         },
         "runtime": {
           "lib/netstandard2.0/Hangfire.Core.dll": {
-            "assemblyVersion": "1.8.14.0",
-            "fileVersion": "1.8.14.0"
+            "assemblyVersion": "1.8.6.0",
+            "fileVersion": "1.8.6.0"
           }
-        }
-      },
-      "Hangfire.NetCore/1.8.14": {
-        "dependencies": {
-          "Hangfire.Core": "1.8.14",
-          "Microsoft.Extensions.DependencyInjection.Abstractions": "8.0.0",
-          "Microsoft.Extensions.Hosting.Abstractions": "8.0.0",
-          "Microsoft.Extensions.Logging.Abstractions": "8.0.0"
         },
-        "runtime": {
-          "lib/netstandard2.1/Hangfire.NetCore.dll": {
-            "assemblyVersion": "1.8.14.0",
-            "fileVersion": "1.8.14.0"
-          }
-        }
-      },
-      "Hangfire.PostgreSql/1.20.9": {
-        "dependencies": {
-          "Dapper": "2.0.123",
-          "Hangfire.Core": "1.8.14",
-          "Microsoft.CSharp": "4.7.0",
-          "Npgsql": "8.0.3"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Hangfire.PostgreSql.dll": {
-            "assemblyVersion": "1.20.9.0",
-            "fileVersion": "1.20.9.0"
-          }
-        }
-      },
-      "Hangfire.SqlServer/1.8.14": {
-        "dependencies": {
-          "Hangfire.Core": "1.8.14"
-        },
-        "runtime": {
-          "lib/netstandard2.0/Hangfire.SqlServer.dll": {
-            "assemblyVersion": "1.8.14.0",
-            "fileVersion": "1.8.14.0"
+        "resources": {
+          "lib/netstandard2.0/ca/Hangfire.Core.resources.dll": {
+            "locale": "ca"
+          },
+          "lib/netstandard2.0/de/Hangfire.Core.resources.dll": {
+            "locale": "de"
+          },
+          "lib/netstandard2.0/es/Hangfire.Core.resources.dll": {
+            "locale": "es"
+          },
+          "lib/netstandard2.0/fa/Hangfire.Core.resources.dll": {
+            "locale": "fa"
+          },
+          "lib/netstandard2.0/fr/Hangfire.Core.resources.dll": {
+            "locale": "fr"
+          },
+          "lib/netstandard2.0/nb/Hangfire.Core.resources.dll": {
+            "locale": "nb"
+          },
+          "lib/netstandard2.0/nl/Hangfire.Core.resources.dll": {
+            "locale": "nl"
+          },
+          "lib/netstandard2.0/pt-BR/Hangfire.Core.resources.dll": {
+            "locale": "pt-BR"
+          },
+          "lib/netstandard2.0/pt-PT/Hangfire.Core.resources.dll": {
+            "locale": "pt-PT"
+          },
+          "lib/netstandard2.0/pt/Hangfire.Core.resources.dll": {
+            "locale": "pt"
+          },
+          "lib/netstandard2.0/sv/Hangfire.Core.resources.dll": {
+            "locale": "sv"
+          },
+          "lib/netstandard2.0/tr-TR/Hangfire.Core.resources.dll": {
+            "locale": "tr-TR"
+          },
+          "lib/netstandard2.0/zh-TW/Hangfire.Core.resources.dll": {
+            "locale": "zh-TW"
+          },
+          "lib/netstandard2.0/zh/Hangfire.Core.resources.dll": {
+            "locale": "zh"
           }
         }
       },
@@ -321,136 +267,12 @@
           "IdentityModel.OidcClient": "5.2.1",
           "System.IdentityModel.Tokens.Jwt": "8.0.1",
           "YamlDotNet": "13.3.1",
-          "prometheus-net": "8.2.1"
+          "prometheus-net": "8.0.1"
         },
         "runtime": {
           "lib/net7.0/KubernetesClient.dll": {
             "assemblyVersion": "12.1.0.0",
             "fileVersion": "12.1.1.319"
-          }
-        }
-      },
-      "librdkafka.redist/2.5.0": {
-        "runtimeTargets": {
-          "runtimes/linux-arm64/native/librdkafka.so": {
-            "rid": "linux-arm64",
-            "assetType": "native",
-            "fileVersion": "0.0.0.0"
-          },
-          "runtimes/linux-x64/native/alpine-librdkafka.so": {
-            "rid": "linux-x64",
-            "assetType": "native",
-            "fileVersion": "0.0.0.0"
-          },
-          "runtimes/linux-x64/native/centos8-librdkafka.so": {
-            "rid": "linux-x64",
-            "assetType": "native",
-            "fileVersion": "0.0.0.0"
-          },
-          "runtimes/linux-x64/native/librdkafka.so": {
-            "rid": "linux-x64",
-            "assetType": "native",
-            "fileVersion": "0.0.0.0"
-          },
-          "runtimes/osx-arm64/native/librdkafka.dylib": {
-            "rid": "osx-arm64",
-            "assetType": "native",
-            "fileVersion": "0.0.0.0"
-          },
-          "runtimes/osx-x64/native/librdkafka.dylib": {
-            "rid": "osx-x64",
-            "assetType": "native",
-            "fileVersion": "0.0.0.0"
-          },
-          "runtimes/win-x64/native/libcrypto-3-x64.dll": {
-            "rid": "win-x64",
-            "assetType": "native",
-            "fileVersion": "3.0.8.0"
-          },
-          "runtimes/win-x64/native/libcurl.dll": {
-            "rid": "win-x64",
-            "assetType": "native",
-            "fileVersion": "8.4.0.0"
-          },
-          "runtimes/win-x64/native/librdkafka.dll": {
-            "rid": "win-x64",
-            "assetType": "native",
-            "fileVersion": "0.0.0.0"
-          },
-          "runtimes/win-x64/native/librdkafkacpp.dll": {
-            "rid": "win-x64",
-            "assetType": "native",
-            "fileVersion": "0.0.0.0"
-          },
-          "runtimes/win-x64/native/libssl-3-x64.dll": {
-            "rid": "win-x64",
-            "assetType": "native",
-            "fileVersion": "3.0.8.0"
-          },
-          "runtimes/win-x64/native/msvcp140.dll": {
-            "rid": "win-x64",
-            "assetType": "native",
-            "fileVersion": "14.29.30040.0"
-          },
-          "runtimes/win-x64/native/vcruntime140.dll": {
-            "rid": "win-x64",
-            "assetType": "native",
-            "fileVersion": "14.29.30040.0"
-          },
-          "runtimes/win-x64/native/zlib1.dll": {
-            "rid": "win-x64",
-            "assetType": "native",
-            "fileVersion": "1.3.0.0"
-          },
-          "runtimes/win-x64/native/zstd.dll": {
-            "rid": "win-x64",
-            "assetType": "native",
-            "fileVersion": "1.5.5.0"
-          },
-          "runtimes/win-x86/native/libcrypto-3.dll": {
-            "rid": "win-x86",
-            "assetType": "native",
-            "fileVersion": "3.0.8.0"
-          },
-          "runtimes/win-x86/native/libcurl.dll": {
-            "rid": "win-x86",
-            "assetType": "native",
-            "fileVersion": "8.4.0.0"
-          },
-          "runtimes/win-x86/native/librdkafka.dll": {
-            "rid": "win-x86",
-            "assetType": "native",
-            "fileVersion": "0.0.0.0"
-          },
-          "runtimes/win-x86/native/librdkafkacpp.dll": {
-            "rid": "win-x86",
-            "assetType": "native",
-            "fileVersion": "0.0.0.0"
-          },
-          "runtimes/win-x86/native/libssl-3.dll": {
-            "rid": "win-x86",
-            "assetType": "native",
-            "fileVersion": "3.0.8.0"
-          },
-          "runtimes/win-x86/native/msvcp140.dll": {
-            "rid": "win-x86",
-            "assetType": "native",
-            "fileVersion": "14.29.30040.0"
-          },
-          "runtimes/win-x86/native/vcruntime140.dll": {
-            "rid": "win-x86",
-            "assetType": "native",
-            "fileVersion": "14.29.30040.0"
-          },
-          "runtimes/win-x86/native/zlib1.dll": {
-            "rid": "win-x86",
-            "assetType": "native",
-            "fileVersion": "1.3.0.0"
-          },
-          "runtimes/win-x86/native/zstd.dll": {
-            "rid": "win-x86",
-            "assetType": "native",
-            "fileVersion": "1.5.5.0"
           }
         }
       },
@@ -1290,7 +1112,7 @@
           }
         }
       },
-      "prometheus-net/8.2.1": {
+      "prometheus-net/8.0.1": {
         "dependencies": {
           "Microsoft.Extensions.Http": "8.0.0",
           "Microsoft.Extensions.ObjectPool": "7.0.0"
@@ -1298,18 +1120,7 @@
         "runtime": {
           "lib/net7.0/Prometheus.NetStandard.dll": {
             "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.2.1.0"
-          }
-        }
-      },
-      "prometheus-net.AspNetCore/8.2.1": {
-        "dependencies": {
-          "prometheus-net": "8.2.1"
-        },
-        "runtime": {
-          "lib/net6.0/Prometheus.AspNetCore.dll": {
-            "assemblyVersion": "8.0.0.0",
-            "fileVersion": "8.2.1.0"
+            "fileVersion": "8.0.1.0"
           }
         }
       },
@@ -1321,43 +1132,6 @@
           "lib/net6.0/Quartz.dll": {
             "assemblyVersion": "3.13.0.0",
             "fileVersion": "3.13.0.0"
-          }
-        }
-      },
-      "Quartz.Extensions.DependencyInjection/3.13.0": {
-        "dependencies": {
-          "Microsoft.Extensions.Configuration.Abstractions": "8.0.0",
-          "Microsoft.Extensions.Options": "8.0.2",
-          "Quartz": "3.13.0"
-        },
-        "runtime": {
-          "lib/net8.0/Quartz.Extensions.DependencyInjection.dll": {
-            "assemblyVersion": "3.13.0.0",
-            "fileVersion": "3.13.0.0"
-          }
-        }
-      },
-      "Quartz.Extensions.Hosting/3.13.0": {
-        "dependencies": {
-          "Microsoft.Extensions.Hosting.Abstractions": "8.0.0",
-          "Quartz.Extensions.DependencyInjection": "3.13.0"
-        },
-        "runtime": {
-          "lib/net8.0/Quartz.Extensions.Hosting.dll": {
-            "assemblyVersion": "3.13.0.0",
-            "fileVersion": "3.13.0.0"
-          }
-        }
-      },
-      "RabbitMQ.Client/6.8.1": {
-        "dependencies": {
-          "System.Memory": "4.5.5",
-          "System.Threading.Channels": "8.0.0"
-        },
-        "runtime": {
-          "lib/netstandard2.0/RabbitMQ.Client.dll": {
-            "assemblyVersion": "6.0.0.0",
-            "fileVersion": "6.8.1.0"
           }
         }
       },
@@ -2024,7 +1798,6 @@
           "System.Runtime": "4.3.0"
         }
       },
-      "System.Memory/4.5.5": {},
       "System.Net.Http/4.3.2": {
         "dependencies": {
           "Microsoft.NETCore.Platforms": "2.0.0",
@@ -2760,20 +2533,12 @@
       },
       "Core/1.0.0": {
         "dependencies": {
-          "AspNetCore.HealthChecks.Hangfire": "8.0.0",
-          "AspNetCore.HealthChecks.Kafka": "8.0.1",
-          "AspNetCore.HealthChecks.Network": "8.0.0",
           "AspNetCore.HealthChecks.NpgSql": "8.0.0",
           "AspNetCore.HealthChecks.UI": "8.0.0",
           "AspNetCore.HealthChecks.UI.Client": "8.0.0",
-          "Confluent.Kafka": "2.5.2",
           "FluentValidation": "11.9.2",
           "FluentValidation.AspNetCore": "11.3.0",
           "FluentValidation.DependencyInjectionExtensions": "11.9.2",
-          "Hangfire": "1.8.14",
-          "Hangfire.AspNetCore": "1.8.14",
-          "Hangfire.Core": "1.8.14",
-          "Hangfire.PostgreSql": "1.20.9",
           "Mapster": "7.4.0",
           "MediatR": "11.1.0",
           "MediatR.Extensions.Microsoft.DependencyInjection": "11.1.0",
@@ -2786,9 +2551,6 @@
           "Npgsql.EntityFrameworkCore.PostgreSQL": "8.0.4",
           "Polly": "8.4.1",
           "Quartz": "3.13.0",
-          "Quartz.Extensions.DependencyInjection": "3.13.0",
-          "Quartz.Extensions.Hosting": "3.13.0",
-          "RabbitMQ.Client": "6.8.1",
           "RavenDB.Database": "3.5.9",
           "Swashbuckle.AspNetCore": "6.7.0",
           "Swashbuckle.AspNetCore.Swagger": "6.7.0",
@@ -2816,13 +2578,6 @@
       "sha512": "sha512-H3p5NXXPq9ctF3l2QdbmdLr0JAvcwAysANAz1tc/o1pKfxkEcdx7+HnsPWwb8X7TgmQMEJt8MaMT8GeuCASjew==",
       "path": "aspnetcore.healthchecks.hangfire/8.0.0",
       "hashPath": "aspnetcore.healthchecks.hangfire.8.0.0.nupkg.sha512"
-    },
-    "AspNetCore.HealthChecks.Kafka/8.0.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-l6ebOHvOufDBlwru2x0vutbqkpOVR7xc8gLjRnK9y1a7sTh2zw8h3wj/quK3GFMpVGAXHIpMQt3fqxsLidgl9A==",
-      "path": "aspnetcore.healthchecks.kafka/8.0.1",
-      "hashPath": "aspnetcore.healthchecks.kafka.8.0.1.nupkg.sha512"
     },
     "AspNetCore.HealthChecks.Network/8.0.0": {
       "type": "package",
@@ -2866,20 +2621,6 @@
       "path": "aspnetcore.healthchecks.ui.data/8.0.0",
       "hashPath": "aspnetcore.healthchecks.ui.data.8.0.0.nupkg.sha512"
     },
-    "Confluent.Kafka/2.5.2": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-imjEYuPvCPPNwZa7PupDgzcEP0kGWjWrE+Uz5TW+kUjFEC64mGG6NnndDYgzt+a8xoaa6rsgYiKdemkUe1cVeg==",
-      "path": "confluent.kafka/2.5.2",
-      "hashPath": "confluent.kafka.2.5.2.nupkg.sha512"
-    },
-    "Dapper/2.0.123": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-RDFF4rBLLmbpi6pwkY7q/M6UXHRJEOerplDGE5jwEkP/JGJnBauAClYavNKJPW1yOTWRPIyfj4is3EaJxQXILQ==",
-      "path": "dapper/2.0.123",
-      "hashPath": "dapper.2.0.123.nupkg.sha512"
-    },
     "Elasticsearch.Net/7.17.5": {
       "type": "package",
       "serviceable": true,
@@ -2915,47 +2656,12 @@
       "path": "fractions/7.2.1",
       "hashPath": "fractions.7.2.1.nupkg.sha512"
     },
-    "Hangfire/1.8.14": {
+    "Hangfire.Core/1.8.6": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-8ve7Di0xvy0ZxCxibcDEzjVVx/H4mJiYSrc5A7Oj2Q62y5vB+Fq6k03zkFj96Xlgs5ivVSeEGfreF/NECJ7tlQ==",
-      "path": "hangfire/1.8.14",
-      "hashPath": "hangfire.1.8.14.nupkg.sha512"
-    },
-    "Hangfire.AspNetCore/1.8.14": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-aTPzKN/g9SW30QB1SLTOMuckKqTVL1YAhtEpWll4LPbPTgyeBHJTChdRhrN127fj+mqJ6P4P7+HJBhNYUFTfNw==",
-      "path": "hangfire.aspnetcore/1.8.14",
-      "hashPath": "hangfire.aspnetcore.1.8.14.nupkg.sha512"
-    },
-    "Hangfire.Core/1.8.14": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-tj/+J8/UdaxydFX6VQr5IEyBtVbAOvkQ8X8tIQKwY9zlpmK83hP4iHEQQQ26zzGUpcE1HlPc6PBUv0NgUDXS3A==",
-      "path": "hangfire.core/1.8.14",
-      "hashPath": "hangfire.core.1.8.14.nupkg.sha512"
-    },
-    "Hangfire.NetCore/1.8.14": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-fBLdsxWYFdrQuenvVHEj/z8nOXoOTqpWIl4qYoinBAUCVmp4qlxfFsY3Aq3VVbwket0wBH472aG2LAmYm6hjxw==",
-      "path": "hangfire.netcore/1.8.14",
-      "hashPath": "hangfire.netcore.1.8.14.nupkg.sha512"
-    },
-    "Hangfire.PostgreSql/1.20.9": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-lq6zWz4hn9+5i6rOkkvI2HZ9g39ZclVwb6Qgj5ROD29BAGquYqtBD/6pY2WDeCB1ZHRfLT9ps2Vmvy1V94A/DA==",
-      "path": "hangfire.postgresql/1.20.9",
-      "hashPath": "hangfire.postgresql.1.20.9.nupkg.sha512"
-    },
-    "Hangfire.SqlServer/1.8.14": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-OrsxbJD0UYanIk4E1oqwffZSWRfltYXJa89Icn+fcWmOLGyWTiAg9j5UX4MoS2RaS3WyZG8xbZzbhoRqnujo8g==",
-      "path": "hangfire.sqlserver/1.8.14",
-      "hashPath": "hangfire.sqlserver.1.8.14.nupkg.sha512"
+      "sha512": "sha512-P50VPSXyQBTOE6eISGusU+8X+ILCE+EPYX8njg4h5tGDhjf6QSuXLonuoD/NlFRh/GUtdL4g6jCKs/HQH6or2g==",
+      "path": "hangfire.core/1.8.6",
+      "hashPath": "hangfire.core.1.8.6.nupkg.sha512"
     },
     "Humanizer.Core/2.14.1": {
       "type": "package",
@@ -2984,13 +2690,6 @@
       "sha512": "sha512-Xvc6Kr/W5YUxlMDzy0R80zy+Vd66brS7fSA4COGXu8KZACKPW7+KKS7kxZBLaFYGrUcktXOHpqNNuoukSGcK6A==",
       "path": "kubernetesclient/12.1.1",
       "hashPath": "kubernetesclient.12.1.1.nupkg.sha512"
-    },
-    "librdkafka.redist/2.5.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-0YQBronD1pdiYDMsz3DoVNLO8KVJpQ+svAzHqzE4CHHU9wAr+Uc5/s77gYpcodPQjpw7E2HvUJxrvhUd0l/E0Q==",
-      "path": "librdkafka.redist/2.5.0",
-      "hashPath": "librdkafka.redist.2.5.0.nupkg.sha512"
     },
     "Mapster/7.4.0": {
       "type": "package",
@@ -3573,19 +3272,12 @@
       "path": "polly.core/8.4.1",
       "hashPath": "polly.core.8.4.1.nupkg.sha512"
     },
-    "prometheus-net/8.2.1": {
+    "prometheus-net/8.0.1": {
       "type": "package",
       "serviceable": true,
-      "sha512": "sha512-3wVgdEPOCBF752s2xps5T+VH+c9mJK8S8GKEDg49084P6JZMumTZI5Te6aJ9MQpX0sx7om6JOnBpIi7ZBmmiDQ==",
-      "path": "prometheus-net/8.2.1",
-      "hashPath": "prometheus-net.8.2.1.nupkg.sha512"
-    },
-    "prometheus-net.AspNetCore/8.2.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-/4TfTvbwIDqpaKTiWvEsjUywiHYF9zZvGZF5sK15avoDsUO/WPQbKsF8TiMaesuphdFQPK2z52P0zk6j26V0rQ==",
-      "path": "prometheus-net.aspnetcore/8.2.1",
-      "hashPath": "prometheus-net.aspnetcore.8.2.1.nupkg.sha512"
+      "sha512": "sha512-A9sOtQB2gEhujBxPKw+KcGScBiPvBmy4lYVM5OlETMj4xjVD5r/ixIg52HHg2P0lcImJTpfeWnD0/9tpQsRQTA==",
+      "path": "prometheus-net/8.0.1",
+      "hashPath": "prometheus-net.8.0.1.nupkg.sha512"
     },
     "Quartz/3.13.0": {
       "type": "package",
@@ -3593,27 +3285,6 @@
       "sha512": "sha512-ddD1CPjWcDMbKdAhzuna3Ng23Sdv1YtuHbFMdAAFw0eBEj9jnadYkDWiKGo/c7BMnbI/ruuyd370sKVgdMCkDA==",
       "path": "quartz/3.13.0",
       "hashPath": "quartz.3.13.0.nupkg.sha512"
-    },
-    "Quartz.Extensions.DependencyInjection/3.13.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-H9+hAnJI/TNKF+Po++jEzLRNXOfqpr3N0CZzVsDcS1apGQ4ELU+6OdWoNVN2l+Se4yW8HApBb3NHDQL4mf4E9A==",
-      "path": "quartz.extensions.dependencyinjection/3.13.0",
-      "hashPath": "quartz.extensions.dependencyinjection.3.13.0.nupkg.sha512"
-    },
-    "Quartz.Extensions.Hosting/3.13.0": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-IEVjySmI5Jj3kcUUe4z+DXYJK0KggtQfHymwAps7W8qsb1adg6KpAgutBNz0OdD9WKjUf2dRiOM74pVXKj0hkQ==",
-      "path": "quartz.extensions.hosting/3.13.0",
-      "hashPath": "quartz.extensions.hosting.3.13.0.nupkg.sha512"
-    },
-    "RabbitMQ.Client/6.8.1": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-jNsmGgmCNw2S/NzskeN2ijtGywtH4Sk/G6jWUTD5sY9SrC27Xz6BsLIiB8hdsfjeyWCa4j4GvCIGkpE8wrjU1Q==",
-      "path": "rabbitmq.client/6.8.1",
-      "hashPath": "rabbitmq.client.6.8.1.nupkg.sha512"
     },
     "RavenDB.Client/3.5.9": {
       "type": "package",
@@ -4118,13 +3789,6 @@
       "sha512": "sha512-In1Bmmvl/j52yPu3xgakQSI0YIckPUr870w4K5+Lak3JCCa8hl+my65lABOuKfYs4ugmZy25ScFerC4nz8+b6g==",
       "path": "system.linq.queryable/4.3.0",
       "hashPath": "system.linq.queryable.4.3.0.nupkg.sha512"
-    },
-    "System.Memory/4.5.5": {
-      "type": "package",
-      "serviceable": true,
-      "sha512": "sha512-XIWiDvKPXaTveaB7HVganDlOCRoj03l+jrwNvcge/t8vhGYKvqV+dMv6G4SAX2NoNmN0wZfVPTAlFwZcZvVOUw==",
-      "path": "system.memory/4.5.5",
-      "hashPath": "system.memory.4.5.5.nupkg.sha512"
     },
     "System.Net.Http/4.3.2": {
       "type": "package",

@@ -14,3 +14,10 @@
 *.bin
 backend/EnviromentSystem/en.xlsx
 machine learning/veri.xlsx
+backend/EnviromentSystem/migrate_water.py
+backend/EnviromentSystem/migrate_gas.py
+backend/EnviromentSystem/migrate_electric.py
+backend/EnviromentSystem/ss.py
+backend/EnviromentSystem/migrate_building.py
+backend/EnviromentSystem/Gbuilding.txt
+backend/EnviromentSystem/Ebuilding.txt

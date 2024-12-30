@@ -18,14 +18,12 @@ namespace Core.Service.PredictionService
             _baseApiUrl = configuration["PredictionApi:BaseUrl"];
         }
 
-        public async Task<string> TrainModelAsync(string consumptionType, string buildingId = null, int epochs = 50, int batchSize = 16)
+        public async Task<string> TrainModelAsync(string consumptionType, string buildingId = null)
         {
             var requestBody = new
             {
                 consumption_type = consumptionType,
                 building_id = buildingId,
-                epochs,
-                batch_size = batchSize
             };
 
             var jsonContent = new StringContent(JsonSerializer.Serialize(requestBody), Encoding.UTF8, "application/json");

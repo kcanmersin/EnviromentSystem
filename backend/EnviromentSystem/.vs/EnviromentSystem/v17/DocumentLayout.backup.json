@@ -3,16 +3,24 @@
   "WorkspaceRootPath": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\commands\\createschoolinfo\\createschoolinfohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\commands\\createschoolinfo\\createschoolinfohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\commands\\createschoolinfo\\createschoolinfocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\commands\\createschoolinfo\\createschoolinfocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\contracts\\schoolinfo\\createschoolinforequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\contracts\\schoolinfo\\createschoolinforequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\service\\carbonfootprint\\carbonfootprintservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\service\\carbonfootprint\\carbonfootprintservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\controllers\\carbonfootprintcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\controllers\\carbonfootprintcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Migrations\\20241209152956_vehicleenteredfor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Core\\Migrations\\20241209152956_vehicleenteredfor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -25,10 +33,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\data\\entity\\campusvehicleentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\data\\entity\\campusvehicleentry.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\commands\\createschoolinfo\\createschoolinfohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\commands\\createschoolinfo\\createschoolinfohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\commands\\updateschoolinfo\\updateschoolinfohandler.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -75,10 +79,6 @@
       "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\controllers\\schoolinfocontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Migrations\\20241209145805_vehicleentered.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Core\\Migrations\\20241209145805_vehicleentered.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\commands\\updateschoolinfo\\updateschoolinforesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\commands\\updateschoolinfo\\updateschoolinforesponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -113,10 +113,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\commands\\createschoolinfo\\createschoolinfovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\commands\\createschoolinfo\\createschoolinfovalidator.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\features\\schoolinfofeatures\\commands\\createschoolinfo\\createschoolinfocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\features\\schoolinfofeatures\\commands\\createschoolinfo\\createschoolinfocommand.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\api\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -485,6 +481,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\migrations\\20241122185636_yy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\migrations\\20241122185636_yy.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\migrations\\20241209152956_vehicleenteredfor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\migrations\\20241209152956_vehicleenteredfor.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\migrations\\20241209145805_vehicleentered.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\migrations\\20241209145805_vehicleentered.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -494,54 +498,60 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 3,
           "Children": [
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "SchoolInfo.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\SchoolInfo.cs",
-              "RelativeDocumentMoniker": "Core\\Data\\Entity\\SchoolInfo.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\SchoolInfo.cs",
-              "RelativeToolTip": "Core\\Data\\Entity\\SchoolInfo.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA3AAAAAAAAAA==",
+              "DocumentIndex": 2,
+              "Title": "CreateSchoolInfoRequest.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\SchoolInfo\\CreateSchoolInfoRequest.cs",
+              "RelativeDocumentMoniker": "API\\Contracts\\SchoolInfo\\CreateSchoolInfoRequest.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\SchoolInfo\\CreateSchoolInfoRequest.cs",
+              "RelativeToolTip": "API\\Contracts\\SchoolInfo\\CreateSchoolInfoRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:38:17.637Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T15:38:29.786Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "CarbonFootprintService.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\CarbonFootprint\\CarbonFootprintService.cs",
               "RelativeDocumentMoniker": "Core\\Service\\CarbonFootprint\\CarbonFootprintService.cs",
               "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\CarbonFootprint\\CarbonFootprintService.cs",
               "RelativeToolTip": "Core\\Service\\CarbonFootprint\\CarbonFootprintService.cs",
-              "ViewState": "AgIAAA4AAAAAAAAAAAArwBwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFEAAAAAAAAAAAAEwFsAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T15:03:32.143Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "20241209152956_vehicleenteredfor.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Migrations\\20241209152956_vehicleenteredfor.cs",
-              "RelativeDocumentMoniker": "Core\\Migrations\\20241209152956_vehicleenteredfor.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Migrations\\20241209152956_vehicleenteredfor.cs",
-              "RelativeToolTip": "Core\\Migrations\\20241209152956_vehicleenteredfor.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T15:29:56.48Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T15:03:32.143Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "CreateSchoolInfoCommand.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoCommand.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoCommand.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoCommand.cs",
+              "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T14:47:43.052Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CreateSchoolInfoHandler.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoHandler.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoHandler.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoHandler.cs",
+              "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoHandler.cs",
+              "ViewState": "AgIAAAoAAAAAAAAAAAAAACIAAAA/AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T14:48:13.09Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "CarbonFootprintController.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\CarbonFootprintController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\CarbonFootprintController.cs",
@@ -549,12 +559,35 @@
               "RelativeToolTip": "API\\Controllers\\CarbonFootprintController.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAA8wBAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T15:15:30.881Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T15:15:30.881Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 120,
+              "Title": "20241209152956_vehicleenteredfor.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Migrations\\20241209152956_vehicleenteredfor.cs",
+              "RelativeDocumentMoniker": "Core\\Migrations\\20241209152956_vehicleenteredfor.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Migrations\\20241209152956_vehicleenteredfor.cs",
+              "RelativeToolTip": "Core\\Migrations\\20241209152956_vehicleenteredfor.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-09T15:29:56.48Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SchoolInfo.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\SchoolInfo.cs",
+              "RelativeDocumentMoniker": "Core\\Data\\Entity\\SchoolInfo.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\SchoolInfo.cs",
+              "RelativeToolTip": "Core\\Data\\Entity\\SchoolInfo.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAA3AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-22T19:38:17.637Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "CampusVehicleEntry.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\CampusVehicleEntry.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Entity\\CampusVehicleEntry.cs",
@@ -562,12 +595,11 @@
               "RelativeToolTip": "Core\\Data\\Entity\\CampusVehicleEntry.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:37:47.772Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T14:37:47.772Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Electric.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\Electric.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Entity\\Electric.cs",
@@ -575,25 +607,11 @@
               "RelativeToolTip": "Core\\Data\\Entity\\Electric.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAIwB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T18:55:04.602Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T18:55:04.602Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "CreateSchoolInfoHandler.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoHandler.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoHandler.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoHandler.cs",
-              "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoHandler.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAADwvy0AAAAOAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:48:13.09Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "UpdateSchoolInfoHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoHandler.cs",
@@ -601,12 +619,11 @@
               "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoHandler.cs",
               "ViewState": "AgIAACMAAAAAAAAAAAAcwDcAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:51:18.677Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T14:51:18.677Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Core\\Data\\ApplicationDbContext.cs",
@@ -614,12 +631,11 @@
               "RelativeToolTip": "Core\\Data\\ApplicationDbContext.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAwwBcAAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T15:44:46.432Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T15:44:46.432Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "CoreLayerExtensions.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Extensions\\CoreLayerExtensions.cs",
               "RelativeDocumentMoniker": "Core\\Extensions\\CoreLayerExtensions.cs",
@@ -627,12 +643,11 @@
               "RelativeToolTip": "Core\\Extensions\\CoreLayerExtensions.cs",
               "ViewState": "AgIAACkAAAAAAAAAAAAQwC8AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T15:46:16.606Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T15:46:16.606Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "GetSchoolInfoHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Queries\\GetSchoolInfo\\GetSchoolInfoHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Queries\\GetSchoolInfo\\GetSchoolInfoHandler.cs",
@@ -640,12 +655,11 @@
               "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Queries\\GetSchoolInfo\\GetSchoolInfoHandler.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAA2wCUAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:52:59.25Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T14:52:59.25Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "GetAllSchoolInfosHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Queries\\GetAllSchoolInfos\\GetAllSchoolInfosHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Queries\\GetAllSchoolInfos\\GetAllSchoolInfosHandler.cs",
@@ -653,12 +667,11 @@
               "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Queries\\GetAllSchoolInfos\\GetAllSchoolInfosHandler.cs",
               "ViewState": "AgIAABIAAAAAAAAAAAA2wCYAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:52:37.937Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T14:52:37.937Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "CarbonFootprintForYearDto.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\CarbonFootprint\\CarbonFootprintForYearDto.cs",
               "RelativeDocumentMoniker": "Core\\Service\\CarbonFootprint\\CarbonFootprintForYearDto.cs",
@@ -666,12 +679,11 @@
               "RelativeToolTip": "Core\\Service\\CarbonFootprint\\CarbonFootprintForYearDto.cs",
               "ViewState": "AgIAAAgAAAAAAAAAAAAxwBAAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T15:23:22.458Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T15:23:22.458Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "CarbonFootprintForAllYearsDto.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\CarbonFootprint\\CarbonFootprintForAllYearsDto.cs",
               "RelativeDocumentMoniker": "Core\\Service\\CarbonFootprint\\CarbonFootprintForAllYearsDto.cs",
@@ -679,12 +691,11 @@
               "RelativeToolTip": "Core\\Service\\CarbonFootprint\\CarbonFootprintForAllYearsDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T15:23:44.202Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T15:23:44.202Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "ICarbonFootprintService.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\CarbonFootprint\\ICarbonFootprintService.cs",
               "RelativeDocumentMoniker": "Core\\Service\\CarbonFootprint\\ICarbonFootprintService.cs",
@@ -692,12 +703,11 @@
               "RelativeToolTip": "Core\\Service\\CarbonFootprint\\ICarbonFootprintService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T15:03:23.384Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T15:03:23.384Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "GetSchoolInfoResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Queries\\GetSchoolInfo\\GetSchoolInfoResponse.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Queries\\GetSchoolInfo\\GetSchoolInfoResponse.cs",
@@ -705,12 +715,11 @@
               "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Queries\\GetSchoolInfo\\GetSchoolInfoResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAApAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:53:05.061Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T14:53:05.061Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "GetAllSchoolInfosResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Queries\\GetAllSchoolInfos\\GetAllSchoolInfosResponse.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Queries\\GetAllSchoolInfos\\GetAllSchoolInfosResponse.cs",
@@ -718,12 +727,11 @@
               "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Queries\\GetAllSchoolInfos\\GetAllSchoolInfosResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:53:30.465Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T14:53:30.465Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 121,
               "Title": "20241209145805_vehicleentered.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Migrations\\20241209145805_vehicleentered.cs",
               "RelativeDocumentMoniker": "Core\\Migrations\\20241209145805_vehicleentered.cs",
@@ -731,8 +739,7 @@
               "RelativeToolTip": "Core\\Migrations\\20241209145805_vehicleentered.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:58:05.595Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T14:58:05.595Z"
             },
             {
               "$type": "Document",
@@ -744,8 +751,7 @@
               "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:51:21.926Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T14:51:21.926Z"
             },
             {
               "$type": "Document",
@@ -757,12 +763,11 @@
               "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Queries\\GetAllSchoolInfos\\GetAllSchoolInfosQuery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:52:40.482Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T14:52:40.482Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "SchoolInfoController.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\SchoolInfoController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\SchoolInfoController.cs",
@@ -770,8 +775,7 @@
               "RelativeToolTip": "API\\Controllers\\SchoolInfoController.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAIwAYAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T16:47:03.479Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T16:47:03.479Z"
             },
             {
               "$type": "Document",
@@ -783,8 +787,7 @@
               "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Queries\\GetSchoolInfo\\GetSchoolInfoQuery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:53:02.46Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T14:53:02.46Z"
             },
             {
               "$type": "Document",
@@ -796,8 +799,7 @@
               "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:51:25.864Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T14:51:25.864Z"
             },
             {
               "$type": "Document",
@@ -809,8 +811,7 @@
               "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:51:15.756Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T14:51:15.756Z"
             },
             {
               "$type": "Document",
@@ -822,8 +823,7 @@
               "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Commands\\DeleteSchoolInfo\\DeleteSchoolInfoHandler.cs",
               "ViewState": "AgIAABAAAAAAAAAAAAAQwBAAAAAcAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:51:04.968Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T14:51:04.968Z"
             },
             {
               "$type": "Document",
@@ -835,8 +835,7 @@
               "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Commands\\DeleteSchoolInfo\\DeleteSchoolInfoCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:51:05.903Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T14:51:05.903Z"
             },
             {
               "$type": "Document",
@@ -848,8 +847,7 @@
               "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:48:18.284Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T14:48:18.284Z"
             },
             {
               "$type": "Document",
@@ -861,25 +859,11 @@
               "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAiwBAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:48:25.383Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T14:48:25.383Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 28,
-              "Title": "CreateSchoolInfoCommand.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoCommand.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoCommand.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoCommand.cs",
-              "RelativeToolTip": "Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:47:43.052Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Program.cs",
               "RelativeDocumentMoniker": "API\\Program.cs",
@@ -887,12 +871,11 @@
               "RelativeToolTip": "API\\Program.cs",
               "ViewState": "AgIAAD8AAAAAAAAAAAAAADAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:39:05.994Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T14:39:05.994Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 30,
               "Title": "AnomalyResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\AnomalyService\\AnomalyResponse.cs",
               "RelativeDocumentMoniker": "Core\\Service\\AnomalyService\\AnomalyResponse.cs",
@@ -900,12 +883,11 @@
               "RelativeToolTip": "Core\\Service\\AnomalyService\\AnomalyResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:25:26.922Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T14:25:26.922Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 32,
               "Title": "AnomalyService.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\AnomalyService\\AnomalyService.cs",
               "RelativeDocumentMoniker": "Core\\Service\\AnomalyService\\AnomalyService.cs",
@@ -913,12 +895,11 @@
               "RelativeToolTip": "Core\\Service\\AnomalyService\\AnomalyService.cs",
               "ViewState": "AgIAACIAAAAAAAAAAAAQwAoAAAAxAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T14:42:44.592Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T14:42:44.592Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 33,
               "Title": "IAnomalyService.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\AnomalyService\\IAnomalyService.cs",
               "RelativeDocumentMoniker": "Core\\Service\\AnomalyService\\IAnomalyService.cs",
@@ -926,12 +907,11 @@
               "RelativeToolTip": "Core\\Service\\AnomalyService\\IAnomalyService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAuwAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T14:43:59.179Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T14:43:59.179Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 31,
               "Title": "AnomalyDateTimeConverter.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\AnomalyService\\AnomalyDateTimeConverter.cs",
               "RelativeDocumentMoniker": "Core\\Service\\AnomalyService\\AnomalyDateTimeConverter.cs",
@@ -939,12 +919,11 @@
               "RelativeToolTip": "Core\\Service\\AnomalyService\\AnomalyDateTimeConverter.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAAABMAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:25:41.208Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T14:25:41.208Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 29,
               "Title": "NaturalGas.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\NaturalGas.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Entity\\NaturalGas.cs",
@@ -952,12 +931,11 @@
               "RelativeToolTip": "Core\\Data\\Entity\\NaturalGas.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:38:13.172Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T19:38:13.172Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 34,
               "Title": "UsagePrediction.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\PredictionService\\UsagePrediction.cs",
               "RelativeDocumentMoniker": "Core\\Service\\PredictionService\\UsagePrediction.cs",
@@ -965,12 +943,11 @@
               "RelativeToolTip": "Core\\Service\\PredictionService\\UsagePrediction.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:19:11.454Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T14:19:11.454Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 35,
               "Title": "PredictionService.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\PredictionService\\PredictionService.cs",
               "RelativeDocumentMoniker": "Core\\Service\\PredictionService\\PredictionService.cs",
@@ -978,12 +955,11 @@
               "RelativeToolTip": "Core\\Service\\PredictionService\\PredictionService.cs",
               "ViewState": "AgIAACsAAAAAAAAAAAAiwEoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T21:37:09.272Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T21:37:09.272Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 36,
               "Title": "IPredictionService.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\PredictionService\\IPredictionService.cs",
               "RelativeDocumentMoniker": "Core\\Service\\PredictionService\\IPredictionService.cs",
@@ -991,12 +967,11 @@
               "RelativeToolTip": "Core\\Service\\PredictionService\\IPredictionService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T21:36:55.45Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T21:36:55.45Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 37,
               "Title": "DateTimeConverter.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\PredictionService\\DateTimeConverter.cs",
               "RelativeDocumentMoniker": "Core\\Service\\PredictionService\\DateTimeConverter.cs",
@@ -1004,12 +979,11 @@
               "RelativeToolTip": "Core\\Service\\PredictionService\\DateTimeConverter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:21:20.534Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T14:21:20.534Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 41,
               "Title": "GetBuildingByIdHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\BuildingFeatures\\Queries\\GetBuildingById\\GetBuildingByIdHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\BuildingFeatures\\Queries\\GetBuildingById\\GetBuildingByIdHandler.cs",
@@ -1017,12 +991,11 @@
               "RelativeToolTip": "Core\\Features\\BuildingFeatures\\Queries\\GetBuildingById\\GetBuildingByIdHandler.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAYwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T13:46:25.232Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T13:46:25.232Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 43,
               "Title": "GetAllBuildingsQuery.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\BuildingFeatures\\Queries\\GetAllBuildings\\GetAllBuildingsQuery.cs",
               "RelativeDocumentMoniker": "Core\\Features\\BuildingFeatures\\Queries\\GetAllBuildings\\GetAllBuildingsQuery.cs",
@@ -1030,12 +1003,11 @@
               "RelativeToolTip": "Core\\Features\\BuildingFeatures\\Queries\\GetAllBuildings\\GetAllBuildingsQuery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T13:46:51.618Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T13:46:51.618Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 39,
               "Title": "BuildingController.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\BuildingController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\BuildingController.cs",
@@ -1043,12 +1015,11 @@
               "RelativeToolTip": "API\\Controllers\\BuildingController.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAAABUAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T13:47:27.04Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T13:47:27.04Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 44,
               "Title": "GetBuildingByIdResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\BuildingFeatures\\Queries\\GetBuildingById\\GetBuildingByIdResponse.cs",
               "RelativeDocumentMoniker": "Core\\Features\\BuildingFeatures\\Queries\\GetBuildingById\\GetBuildingByIdResponse.cs",
@@ -1056,12 +1027,11 @@
               "RelativeToolTip": "Core\\Features\\BuildingFeatures\\Queries\\GetBuildingById\\GetBuildingByIdResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T13:46:16.404Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T13:46:16.404Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 45,
               "Title": "GetBuildingByIdQuery.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\BuildingFeatures\\Queries\\GetBuildingById\\GetBuildingByIdQuery.cs",
               "RelativeDocumentMoniker": "Core\\Features\\BuildingFeatures\\Queries\\GetBuildingById\\GetBuildingByIdQuery.cs",
@@ -1069,12 +1039,11 @@
               "RelativeToolTip": "Core\\Features\\BuildingFeatures\\Queries\\GetBuildingById\\GetBuildingByIdQuery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T13:46:05.427Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T13:46:05.427Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 38,
               "Title": "PredictionController.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\PredictionController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\PredictionController.cs",
@@ -1082,12 +1051,11 @@
               "RelativeToolTip": "API\\Controllers\\PredictionController.cs",
               "ViewState": "AgIAAAsAAAAAAAAAAAAzwBkAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T21:37:27.147Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T21:37:27.147Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 42,
               "Title": "GetAllBuildingsResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\BuildingFeatures\\Queries\\GetAllBuildings\\GetAllBuildingsResponse.cs",
               "RelativeDocumentMoniker": "Core\\Features\\BuildingFeatures\\Queries\\GetAllBuildings\\GetAllBuildingsResponse.cs",
@@ -1095,12 +1063,11 @@
               "RelativeToolTip": "Core\\Features\\BuildingFeatures\\Queries\\GetAllBuildings\\GetAllBuildingsResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T13:47:00.94Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T13:47:00.94Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 40,
               "Title": "GetAllBuildingsHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\BuildingFeatures\\Queries\\GetAllBuildings\\GetAllBuildingsHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\BuildingFeatures\\Queries\\GetAllBuildings\\GetAllBuildingsHandler.cs",
@@ -1108,12 +1075,11 @@
               "RelativeToolTip": "Core\\Features\\BuildingFeatures\\Queries\\GetAllBuildings\\GetAllBuildingsHandler.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAQwBYAAABdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T13:47:13.34Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T13:47:13.34Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 47,
               "Title": "GetAllElectricsQuery.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsQuery.cs",
               "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsQuery.cs",
@@ -1121,12 +1087,11 @@
               "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsQuery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:08:39.273Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T19:08:39.273Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 48,
               "Title": "Building.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\Building.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Entity\\Building.cs",
@@ -1134,12 +1099,11 @@
               "RelativeToolTip": "Core\\Data\\Entity\\Building.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T15:45:17.214Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T15:45:17.214Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 49,
               "Title": "GetAllElectricsResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsResponse.cs",
               "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsResponse.cs",
@@ -1147,12 +1111,11 @@
               "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:08:45.138Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T19:08:45.138Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 50,
               "Title": "GetAllElectricsHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsHandler.cs",
@@ -1160,12 +1123,11 @@
               "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Queries\\GetAllElectrics\\GetAllElectricsHandler.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAzwDcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:08:38.59Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T19:08:38.59Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 46,
               "Title": "appsettings.json",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\appsettings.json",
               "RelativeDocumentMoniker": "API\\appsettings.json",
@@ -1173,12 +1135,11 @@
               "RelativeToolTip": "API\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-11-17T16:19:15.483Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T16:19:15.483Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 51,
               "Title": "GetElectricByIdQuery.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdQuery.cs",
               "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdQuery.cs",
@@ -1186,12 +1147,11 @@
               "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdQuery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:09:09.655Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T19:09:09.655Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 52,
               "Title": "GetElectricByIdResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdResponse.cs",
               "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdResponse.cs",
@@ -1199,12 +1159,11 @@
               "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:09:09.132Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T19:09:09.132Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 53,
               "Title": "GetElectricByIdHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdHandler.cs",
@@ -1212,12 +1171,11 @@
               "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Queries\\GetElectricById\\GetElectricByIdHandler.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAwC8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:09:04.234Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T19:09:04.234Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 59,
               "Title": "CreateElectricCommand.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricCommand.cs",
               "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricCommand.cs",
@@ -1225,12 +1183,11 @@
               "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T16:07:04.412Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T16:07:04.412Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 58,
               "Title": "CreateElectricHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricHandler.cs",
@@ -1238,12 +1195,11 @@
               "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricHandler.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAYwCYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T16:07:04.191Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T16:07:04.191Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 62,
               "Title": "EntityBase.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\EntityBases\\EntityBase.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Entity\\EntityBases\\EntityBase.cs",
@@ -1251,12 +1207,11 @@
               "RelativeToolTip": "Core\\Data\\Entity\\EntityBases\\EntityBase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T12:55:58.251Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T12:55:58.251Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 63,
               "Title": "IEntityBase.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\EntityBases\\IEntityBase.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Entity\\EntityBases\\IEntityBase.cs",
@@ -1264,12 +1219,11 @@
               "RelativeToolTip": "Core\\Data\\Entity\\EntityBases\\IEntityBase.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T12:56:03.586Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T12:56:03.586Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 54,
               "Title": "GetElectricByIdResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\GetElectricByIdResponse.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\Electric\\GetElectricByIdResponse.cs",
@@ -1277,12 +1231,11 @@
               "RelativeToolTip": "API\\Contracts\\Electric\\GetElectricByIdResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T16:08:58.484Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T16:08:58.484Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 60,
               "Title": "AppUser.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\User\\AppUser.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Entity\\User\\AppUser.cs",
@@ -1290,12 +1243,11 @@
               "RelativeToolTip": "Core\\Data\\Entity\\User\\AppUser.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T15:44:11.71Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T15:44:11.71Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 61,
               "Title": "AppRole.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\User\\AppRole.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Entity\\User\\AppRole.cs",
@@ -1303,12 +1255,11 @@
               "RelativeToolTip": "Core\\Data\\Entity\\User\\AppRole.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T15:44:30.704Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T15:44:30.704Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 56,
               "Title": "CreateElectricValidator.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricValidator.cs",
               "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricValidator.cs",
@@ -1316,12 +1267,11 @@
               "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T13:25:00.413Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T13:25:00.413Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 55,
               "Title": "CreateElectricRequest.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\CreateElectricRequest.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\Electric\\CreateElectricRequest.cs",
@@ -1329,12 +1279,11 @@
               "RelativeToolTip": "API\\Contracts\\Electric\\CreateElectricRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T13:31:55.117Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T13:31:55.117Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 57,
               "Title": "CreateElectricResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricResponse.cs",
               "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricResponse.cs",
@@ -1342,12 +1291,11 @@
               "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T13:24:59.029Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T13:24:59.029Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 64,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\UserController.cs",
@@ -1355,12 +1303,11 @@
               "RelativeToolTip": "API\\Controllers\\UserController.cs",
               "ViewState": "AgIAAEUAAAAAAAAAAAAAADIAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T16:09:57.605Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T16:09:57.605Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 65,
               "Title": "AnomalyController.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\AnomalyController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\AnomalyController.cs",
@@ -1368,12 +1315,11 @@
               "RelativeToolTip": "API\\Controllers\\AnomalyController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T14:46:22.878Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-08T14:46:22.878Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 78,
+              "DocumentIndex": 77,
               "Title": "UpdateWaterResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Water\\UpdateWaterResponse.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\Water\\UpdateWaterResponse.cs",
@@ -1381,12 +1327,11 @@
               "RelativeToolTip": "API\\Contracts\\Water\\UpdateWaterResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:11:55.624Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T19:11:55.624Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 79,
+              "DocumentIndex": 78,
               "Title": "UpdateWaterRequest.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Water\\UpdateWaterRequest.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\Water\\UpdateWaterRequest.cs",
@@ -1394,12 +1339,11 @@
               "RelativeToolTip": "API\\Contracts\\Water\\UpdateWaterRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:11:47.371Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T19:11:47.371Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 67,
               "Title": "Core.csproj",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Core.csproj",
               "RelativeDocumentMoniker": "Core\\Core.csproj",
@@ -1407,12 +1351,11 @@
               "RelativeToolTip": "Core\\Core.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADcAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-25T13:30:09.696Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-25T13:30:09.696Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 66,
               "Title": "API.csproj",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\API.csproj",
               "RelativeDocumentMoniker": "API\\API.csproj",
@@ -1420,12 +1363,11 @@
               "RelativeToolTip": "API\\API.csproj",
               "ViewState": "AgIAAA0AAAAAAAAAAABBwDQAAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-25T13:30:33.978Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-25T13:30:33.978Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 69,
               "Title": "GetAllElectricsResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\GetAllElectricsResponse.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\Electric\\GetAllElectricsResponse.cs",
@@ -1433,12 +1375,11 @@
               "RelativeToolTip": "API\\Contracts\\Electric\\GetAllElectricsResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T16:08:59.197Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T16:08:59.197Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 68,
               "Title": "ElectricController.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\ElectricController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\ElectricController.cs",
@@ -1446,12 +1387,11 @@
               "RelativeToolTip": "API\\Controllers\\ElectricController.cs",
               "ViewState": "AgIAAD4AAAAAAAAAAAAIwEsAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T16:37:19.595Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T16:37:19.595Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 71,
+              "DocumentIndex": 70,
               "Title": "Water.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\Water.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Entity\\Water.cs",
@@ -1459,12 +1399,11 @@
               "RelativeToolTip": "Core\\Data\\Entity\\Water.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T18:52:55.664Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T18:52:55.664Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 73,
+              "DocumentIndex": 72,
               "Title": "WaterController.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\WaterController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\WaterController.cs",
@@ -1472,12 +1411,11 @@
               "RelativeToolTip": "API\\Controllers\\WaterController.cs",
               "ViewState": "AgIAACwAAAAAAAAAAAAgwFoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:12:42.655Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T19:12:42.655Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 72,
+              "DocumentIndex": 71,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "API\\WeatherForecast.cs",
@@ -1485,12 +1423,11 @@
               "RelativeToolTip": "API\\WeatherForecast.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:33:06.933Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T19:33:06.933Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 77,
+              "DocumentIndex": 76,
               "Title": "DeleteWaterRequest.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Water\\DeleteWaterRequest.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\Water\\DeleteWaterRequest.cs",
@@ -1498,12 +1435,11 @@
               "RelativeToolTip": "API\\Contracts\\Water\\DeleteWaterRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:12:03.544Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T19:12:03.544Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 76,
+              "DocumentIndex": 75,
               "Title": "WaterDto.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Water\\WaterDto.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\Water\\WaterDto.cs",
@@ -1511,12 +1447,11 @@
               "RelativeToolTip": "API\\Contracts\\Water\\WaterDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:12:13.373Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T19:12:13.373Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 80,
+              "DocumentIndex": 79,
               "Title": "CreateWaterResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Water\\CreateWaterResponse.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\Water\\CreateWaterResponse.cs",
@@ -1524,12 +1459,11 @@
               "RelativeToolTip": "API\\Contracts\\Water\\CreateWaterResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:11:38.908Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T19:11:38.908Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 75,
+              "DocumentIndex": 74,
               "Title": "GetAllWatersResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Water\\GetAllWatersResponse.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\Water\\GetAllWatersResponse.cs",
@@ -1537,12 +1471,11 @@
               "RelativeToolTip": "API\\Contracts\\Water\\GetAllWatersResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:12:25.821Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T19:12:25.821Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 74,
+              "DocumentIndex": 73,
               "Title": "GetWaterByIdResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Water\\GetWaterByIdResponse.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\Water\\GetWaterByIdResponse.cs",
@@ -1550,12 +1483,11 @@
               "RelativeToolTip": "API\\Contracts\\Water\\GetWaterByIdResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:12:33.283Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T19:12:33.283Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 81,
+              "DocumentIndex": 80,
               "Title": "CreateWaterRequest.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Water\\CreateWaterRequest.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\Water\\CreateWaterRequest.cs",
@@ -1563,12 +1495,11 @@
               "RelativeToolTip": "API\\Contracts\\Water\\CreateWaterRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:11:28.86Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T19:11:28.86Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 82,
+              "DocumentIndex": 81,
               "Title": "GetAllWatersQuery.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Queries\\GetAllWaters\\GetAllWatersQuery.cs",
               "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Queries\\GetAllWaters\\GetAllWatersQuery.cs",
@@ -1576,12 +1507,11 @@
               "RelativeToolTip": "Core\\Features\\WaterFeatures\\Queries\\GetAllWaters\\GetAllWatersQuery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAuAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:05:50.273Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T19:05:50.273Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 83,
+              "DocumentIndex": 82,
               "Title": "GetAllWatersHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Queries\\GetAllWaters\\GetAllWatersHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Queries\\GetAllWaters\\GetAllWatersHandler.cs",
@@ -1589,12 +1519,11 @@
               "RelativeToolTip": "Core\\Features\\WaterFeatures\\Queries\\GetAllWaters\\GetAllWatersHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:05:32.311Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T19:05:32.311Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 87,
+              "DocumentIndex": 86,
               "Title": "GetAllWatersResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Queries\\GetAllWaters\\GetAllWatersResponse.cs",
               "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Queries\\GetAllWaters\\GetAllWatersResponse.cs",
@@ -1602,12 +1531,11 @@
               "RelativeToolTip": "Core\\Features\\WaterFeatures\\Queries\\GetAllWaters\\GetAllWatersResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:05:42.116Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T19:05:42.116Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 86,
+              "DocumentIndex": 85,
               "Title": "GetWaterByIdQuery.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Queries\\GetWaterById\\GetWaterByIdQuery.cs",
               "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Queries\\GetWaterById\\GetWaterByIdQuery.cs",
@@ -1615,12 +1543,11 @@
               "RelativeToolTip": "Core\\Features\\WaterFeatures\\Queries\\GetWaterById\\GetWaterByIdQuery.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:04:56.717Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T19:04:56.717Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 85,
+              "DocumentIndex": 84,
               "Title": "GetWaterByIdHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Queries\\GetWaterById\\GetWaterByIdHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Queries\\GetWaterById\\GetWaterByIdHandler.cs",
@@ -1628,12 +1555,11 @@
               "RelativeToolTip": "Core\\Features\\WaterFeatures\\Queries\\GetWaterById\\GetWaterByIdHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:05:02.84Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T19:05:02.84Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 84,
+              "DocumentIndex": 83,
               "Title": "GetWaterByIdResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Queries\\GetWaterById\\GetWaterByIdResponse.cs",
               "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Queries\\GetWaterById\\GetWaterByIdResponse.cs",
@@ -1641,12 +1567,11 @@
               "RelativeToolTip": "Core\\Features\\WaterFeatures\\Queries\\GetWaterById\\GetWaterByIdResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:05:10.549Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T19:05:10.549Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 88,
+              "DocumentIndex": 87,
               "Title": "DeleteWaterResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\DeleteWater\\DeleteWaterResponse.cs",
               "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Commands\\DeleteWater\\DeleteWaterResponse.cs",
@@ -1654,12 +1579,11 @@
               "RelativeToolTip": "Core\\Features\\WaterFeatures\\Commands\\DeleteWater\\DeleteWaterResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:04:21.017Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T19:04:21.017Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 89,
+              "DocumentIndex": 88,
               "Title": "DeleteWaterHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\DeleteWater\\DeleteWaterHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Commands\\DeleteWater\\DeleteWaterHandler.cs",
@@ -1667,12 +1591,11 @@
               "RelativeToolTip": "Core\\Features\\WaterFeatures\\Commands\\DeleteWater\\DeleteWaterHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:04:12.842Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T19:04:12.842Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 90,
+              "DocumentIndex": 89,
               "Title": "DeleteWaterCommand.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\DeleteWater\\DeleteWaterCommand.cs",
               "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Commands\\DeleteWater\\DeleteWaterCommand.cs",
@@ -1680,12 +1603,11 @@
               "RelativeToolTip": "Core\\Features\\WaterFeatures\\Commands\\DeleteWater\\DeleteWaterCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:04:05.229Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T19:04:05.229Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 91,
+              "DocumentIndex": 90,
               "Title": "UpdateWaterValidator.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterValidator.cs",
               "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterValidator.cs",
@@ -1693,12 +1615,11 @@
               "RelativeToolTip": "Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:03:51.174Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T19:03:51.174Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 92,
+              "DocumentIndex": 91,
               "Title": "UpdateWaterResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterResponse.cs",
               "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterResponse.cs",
@@ -1706,12 +1627,11 @@
               "RelativeToolTip": "Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:03:42.305Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T19:03:42.305Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 93,
+              "DocumentIndex": 92,
               "Title": "UpdateWaterHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterHandler.cs",
@@ -1719,12 +1639,11 @@
               "RelativeToolTip": "Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:03:30.438Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T19:03:30.438Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 94,
+              "DocumentIndex": 93,
               "Title": "UpdateWaterCommand.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterCommand.cs",
               "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterCommand.cs",
@@ -1732,12 +1651,11 @@
               "RelativeToolTip": "Core\\Features\\WaterFeatures\\Commands\\UpdateWater\\UpdateWaterCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:03:04.248Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T19:03:04.248Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 95,
+              "DocumentIndex": 94,
               "Title": "CreateWaterValidator.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterValidator.cs",
               "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterValidator.cs",
@@ -1745,12 +1663,11 @@
               "RelativeToolTip": "Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:02:49.985Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T19:02:49.985Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 96,
+              "DocumentIndex": 95,
               "Title": "CreateWaterResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterResponse.cs",
               "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterResponse.cs",
@@ -1758,12 +1675,11 @@
               "RelativeToolTip": "Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:02:42.278Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T19:02:42.278Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 97,
+              "DocumentIndex": 96,
               "Title": "CreateWaterHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterHandler.cs",
@@ -1771,12 +1687,11 @@
               "RelativeToolTip": "Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAADQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:02:32.061Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T19:02:32.061Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 98,
+              "DocumentIndex": 97,
               "Title": "CreateWaterCommand.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterCommand.cs",
               "RelativeDocumentMoniker": "Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterCommand.cs",
@@ -1784,12 +1699,11 @@
               "RelativeToolTip": "Core\\Features\\WaterFeatures\\Commands\\CreateWater\\CreateWaterCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:02:20.575Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T19:02:20.575Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 120,
+              "DocumentIndex": 119,
               "Title": "20241122185636_YY.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Migrations\\20241122185636_YY.cs",
               "RelativeDocumentMoniker": "Core\\Migrations\\20241122185636_YY.cs",
@@ -1797,12 +1711,11 @@
               "RelativeToolTip": "Core\\Migrations\\20241122185636_YY.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T18:56:37.014Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T18:56:37.014Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 99,
+              "DocumentIndex": 98,
               "Title": "RegisterHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\UserFeatures\\Register\\RegisterHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\UserFeatures\\Register\\RegisterHandler.cs",
@@ -1810,12 +1723,11 @@
               "RelativeToolTip": "Core\\Features\\UserFeatures\\Register\\RegisterHandler.cs",
               "ViewState": "AgIAABMAAAAAAAAAAAAQwCsAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T16:05:09.406Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T16:05:09.406Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 103,
+              "DocumentIndex": 102,
               "Title": "LoginHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\UserFeatures\\Login\\LoginHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\UserFeatures\\Login\\LoginHandler.cs",
@@ -1823,12 +1735,11 @@
               "RelativeToolTip": "Core\\Features\\UserFeatures\\Login\\LoginHandler.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAC0AAAAnAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T16:07:45.336Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T16:07:45.336Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 104,
+              "DocumentIndex": 103,
               "Title": "LoginCommand.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\UserFeatures\\Login\\LoginCommand.cs",
               "RelativeDocumentMoniker": "Core\\Features\\UserFeatures\\Login\\LoginCommand.cs",
@@ -1836,12 +1747,11 @@
               "RelativeToolTip": "Core\\Features\\UserFeatures\\Login\\LoginCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T16:07:36.35Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T16:07:36.35Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 105,
+              "DocumentIndex": 104,
               "Title": "RegisterResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\UserFeatures\\Register\\RegisterResponse.cs",
               "RelativeDocumentMoniker": "Core\\Features\\UserFeatures\\Register\\RegisterResponse.cs",
@@ -1849,12 +1759,11 @@
               "RelativeToolTip": "Core\\Features\\UserFeatures\\Register\\RegisterResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T16:07:26.25Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T16:07:26.25Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 102,
+              "DocumentIndex": 101,
               "Title": "RegisterRequest.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\User\\RegisterRequest.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\User\\RegisterRequest.cs",
@@ -1862,12 +1771,11 @@
               "RelativeToolTip": "API\\Contracts\\User\\RegisterRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABGAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T16:08:38.929Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T16:08:38.929Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 101,
+              "DocumentIndex": 100,
               "Title": "LoginRequest.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\User\\LoginRequest.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\User\\LoginRequest.cs",
@@ -1875,12 +1783,11 @@
               "RelativeToolTip": "API\\Contracts\\User\\LoginRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T16:09:44.219Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T16:09:44.219Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 100,
+              "DocumentIndex": 99,
               "Title": "NaturalGasController.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\NaturalGasController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\NaturalGasController.cs",
@@ -1888,12 +1795,11 @@
               "RelativeToolTip": "API\\Controllers\\NaturalGasController.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T16:09:09.576Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T16:09:09.576Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 106,
+              "DocumentIndex": 105,
               "Title": "RegisterCommand.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\UserFeatures\\Register\\RegisterCommand.cs",
               "RelativeDocumentMoniker": "Core\\Features\\UserFeatures\\Register\\RegisterCommand.cs",
@@ -1901,12 +1807,11 @@
               "RelativeToolTip": "Core\\Features\\UserFeatures\\Register\\RegisterCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T16:04:48.577Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T16:04:48.577Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 107,
+              "DocumentIndex": 106,
               "Title": "JwtSettings.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\JWT\\JwtSettings.cs",
               "RelativeDocumentMoniker": "Core\\Service\\JWT\\JwtSettings.cs",
@@ -1914,12 +1819,11 @@
               "RelativeToolTip": "Core\\Service\\JWT\\JwtSettings.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T16:10:17.358Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T16:10:17.358Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 108,
+              "DocumentIndex": 107,
               "Title": "JwtService.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\JWT\\JwtService.cs",
               "RelativeDocumentMoniker": "Core\\Service\\JWT\\JwtService.cs",
@@ -1927,12 +1831,11 @@
               "RelativeToolTip": "Core\\Service\\JWT\\JwtService.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAAYwB8AAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T15:34:11.665Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T15:34:11.665Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 109,
+              "DocumentIndex": 108,
               "Title": "IJwtService.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\JWT\\IJwtService.cs",
               "RelativeDocumentMoniker": "Core\\Service\\JWT\\IJwtService.cs",
@@ -1940,12 +1843,11 @@
               "RelativeToolTip": "Core\\Service\\JWT\\IJwtService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T15:34:06.893Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T15:34:06.893Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 110,
+              "DocumentIndex": 109,
               "Title": "JwtExtensions.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Extensions\\JwtExtensions.cs",
               "RelativeDocumentMoniker": "Core\\Extensions\\JwtExtensions.cs",
@@ -1953,12 +1855,11 @@
               "RelativeToolTip": "Core\\Extensions\\JwtExtensions.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAwAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T16:11:39.878Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T16:11:39.878Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 112,
+              "DocumentIndex": 111,
               "Title": "AppUserConfiguration.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Configuration\\AppUserConfiguration.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Configuration\\AppUserConfiguration.cs",
@@ -1966,12 +1867,11 @@
               "RelativeToolTip": "Core\\Data\\Configuration\\AppUserConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T15:45:48.952Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T15:45:48.952Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 111,
+              "DocumentIndex": 110,
               "Title": "AppRoleConfiguration.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Configuration\\AppRoleConfiguration.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Configuration\\AppRoleConfiguration.cs",
@@ -1979,12 +1879,11 @@
               "RelativeToolTip": "Core\\Data\\Configuration\\AppRoleConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T15:45:58.811Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T15:45:58.811Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 113,
+              "DocumentIndex": 112,
               "Title": "20241117163033_XX.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Migrations\\20241117163033_XX.cs",
               "RelativeDocumentMoniker": "Core\\Migrations\\20241117163033_XX.cs",
@@ -1995,7 +1894,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 119,
+              "DocumentIndex": 118,
               "Title": "20241117163333_XX.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Migrations\\20241117163333_XX.cs",
               "RelativeDocumentMoniker": "Core\\Migrations\\20241117163333_XX.cs",
@@ -2003,12 +1902,11 @@
               "RelativeToolTip": "Core\\Migrations\\20241117163333_XX.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T16:33:34.032Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T16:33:34.032Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 115,
+              "DocumentIndex": 114,
               "Title": "20241117162815_XX.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Migrations\\20241117162815_XX.cs",
               "RelativeDocumentMoniker": "Core\\Migrations\\20241117162815_XX.cs",
@@ -2019,7 +1917,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 114,
+              "DocumentIndex": 113,
               "Title": "RegisterValidator.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\UserFeatures\\Register\\RegisterValidator.cs",
               "RelativeDocumentMoniker": "Core\\Features\\UserFeatures\\Register\\RegisterValidator.cs",
@@ -2027,12 +1925,11 @@
               "RelativeToolTip": "Core\\Features\\UserFeatures\\Register\\RegisterValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T16:05:37.493Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T16:05:37.493Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 116,
+              "DocumentIndex": 115,
               "Title": "LoginResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\UserFeatures\\Login\\LoginResponse.cs",
               "RelativeDocumentMoniker": "Core\\Features\\UserFeatures\\Login\\LoginResponse.cs",
@@ -2040,12 +1937,11 @@
               "RelativeToolTip": "Core\\Features\\UserFeatures\\Login\\LoginResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T16:08:00.551Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T16:08:00.551Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 117,
+              "DocumentIndex": 116,
               "Title": "LoginValidator.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\UserFeatures\\Login\\LoginValidator.cs",
               "RelativeDocumentMoniker": "Core\\Features\\UserFeatures\\Login\\LoginValidator.cs",
@@ -2053,12 +1949,11 @@
               "RelativeToolTip": "Core\\Features\\UserFeatures\\Login\\LoginValidator.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T16:05:53.507Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T16:05:53.507Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 118,
+              "DocumentIndex": 117,
               "Title": "20241117155036_XX.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Migrations\\20241117155036_XX.cs",
               "RelativeDocumentMoniker": "Core\\Migrations\\20241117155036_XX.cs",

@@ -84,6 +84,27 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "ConsumptionController",
+    "Method": "ExportConsumptionData",
+    "RelativePath": "api/Consumption/export",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "consumptionType",
+        "Type": "System.String",
+        "IsRequired": false
+      },
+      {
+        "Name": "includeGraphs",
+        "Type": "System.Boolean",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "API.Controllers.ElectricController",
     "Method": "Create",
     "RelativePath": "api/Electric",

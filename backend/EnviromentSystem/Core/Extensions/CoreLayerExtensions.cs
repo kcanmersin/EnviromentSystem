@@ -10,6 +10,7 @@ using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Builder;
 using Core.Service.PredictionService;
 using Core.Features.CarbonFootprint;
+using Core.Service.Extract;
 
 namespace Core.Extensions
 {
@@ -70,6 +71,8 @@ namespace Core.Extensions
                 client.BaseAddress = new Uri(configuration["PredictionApi:BaseUrl"] ?? "http://127.0.0.1:5000/");
             });
 
+            //add consumption service
+            services.AddScoped<IConsumptionService, ConsumptionService>();
 
             return services;
         }

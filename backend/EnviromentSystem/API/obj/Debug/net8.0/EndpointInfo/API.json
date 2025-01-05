@@ -122,6 +122,35 @@
         }
       }
     },
+    "/api/Consumption/export": {
+      "get": {
+        "tags": [
+          "Consumption"
+        ],
+        "parameters": [
+          {
+            "name": "consumptionType",
+            "in": "query",
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "includeGraphs",
+            "in": "query",
+            "schema": {
+              "type": "boolean",
+              "default": false
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Electric": {
       "post": {
         "tags": [

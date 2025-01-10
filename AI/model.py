@@ -1,18 +1,27 @@
 import os
 import pandas as pd
 import numpy as np
-from tensorflow.keras.models import Sequential, load_model
-from tensorflow.keras.layers import Dense, Dropout, LSTM, Input
-from sklearn.preprocessing import MinMaxScaler
+import random
+import logging
+import shutil
 from datetime import datetime
 from joblib import dump, load
+from sklearn.preprocessing import MinMaxScaler
+from tensorflow.keras.models import Sequential, load_model
+from tensorflow.keras.layers import Dense, Dropout, Conv1D, MaxPooling1D, Flatten, Input
+from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau
 from class_files import Electric, Water, NaturalGas, Building
 from database_connection import get_db_connection
-from tensorflow.keras.callbacks import EarlyStopping, ReduceLROnPlateau
-import logging
-import shutil  # Yeni eklenen import
+import tensorflow as tf
 
-# Logger'ı yapılandırma
+# Rastgelelik için tohum ayarlamaları (Opsiyonel, tekrarlanabilirlik için)
+SEED = 42
+np.random.seed(SEED)
+tf.random.set_seed(SEED)
+random.seed(SEED)
+os.environ['PYTHONHASHSEED'] = str(SEED)
+
+# Logger Yapılandırması
 logging.basicConfig(
     filename='app.log',
     level=logging.INFO,
@@ -21,28 +30,90 @@ logging.basicConfig(
 
 def feature_engineering(data, features_to_add):
     data = data.sort_index()
-    for feature in features_to_add:
-        if feature == 'year':
-            data['year'] = data.index.year
-        elif feature == 'month':
-            data['month'] = data.index.month
-        elif feature.startswith('lag_'):
-            lag = int(feature.split('_')[1])
-            data[feature] = data['Usage'].shift(lag)
-        elif feature.startswith('diff_'):
-            diff = int(feature.split('_')[1])
-            data[feature] = data['Usage'].diff(diff)
-        elif feature.startswith('rolling_mean_'):
-            window = int(feature.split('_')[2])
-            data[feature] = data['Usage'].rolling(window=window).mean()
+
+    # Ensure 'Usage' is float
+    if data['Usage'].dtype == 'object' or isinstance(data['Usage'].iloc[0], decimal.Decimal):
+        data['Usage'] = data['Usage'].astype(float)
+
+    # Basic features
+    if 'year' in features_to_add:
+        data['year'] = data.index.year
+
+    if 'month' in features_to_add:
+        data['month'] = data.index.month
+
+    # Time-series features
+    if 'lag_1' in features_to_add:
+        data['lag_1'] = data['Usage'].shift(1)
+    if 'lag_3' in features_to_add:
+        data['lag_3'] = data['Usage'].shift(3)
+    if 'lag_6' in features_to_add:
+        data['lag_6'] = data['Usage'].shift(6)
+
+    # Difference features
+    if 'diff_1' in features_to_add:
+        data['diff_1'] = data['Usage'].diff(1)
+    if 'diff_3' in features_to_add:
+        data['diff_3'] = data['Usage'].diff(3)
+
+    # Rolling mean
+    if 'rolling_mean_3' in features_to_add:
+        data['rolling_mean_3'] = data['Usage'].rolling(window=3).mean()
+    if 'rolling_mean_6' in features_to_add:
+        data['rolling_mean_6'] = data['Usage'].rolling(window=6).mean()
+
+    # Rolling standard deviation
+    if 'rolling_std_3' in features_to_add:
+        data['rolling_std_3'] = data['Usage'].rolling(window=3).std()
+    if 'rolling_std_6' in features_to_add:
+        data['rolling_std_6'] = data['Usage'].rolling(window=6).std()
+
+    # Rolling max and min
+    if 'rolling_max_3' in features_to_add:
+        data['rolling_max_3'] = data['Usage'].rolling(window=3).max()
+    if 'rolling_min_3' in features_to_add:
+        data['rolling_min_3'] = data['Usage'].rolling(window=3).min()
+
+    # Z-score normalization
+    if 'z_score' in features_to_add:
+        data['z_score'] = (data['Usage'] - data['Usage'].mean()) / data['Usage'].std()
+
+    # Seasonal components
+    if 'is_winter' in features_to_add:
+        data['is_winter'] = data.index.month.isin([12, 1, 2]).astype(int)
+    if 'is_summer' in features_to_add:
+        data['is_summer'] = data.index.month.isin([6, 7, 8]).astype(int)
+    if 'is_spring' in features_to_add:
+        data['is_spring'] = data.index.month.isin([3, 4, 5]).astype(int)
+    if 'is_autumn' in features_to_add:
+        data['is_autumn'] = data.index.month.isin([9, 10, 11]).astype(int)
+
+    # Trigonometric features for months
+    if 'month_sin_cos' in features_to_add:
+        months = data.index.month
+        data['month_sin'] = np.sin(2 * np.pi * months / 12)
+        data['month_cos'] = np.cos(2 * np.pi * months / 12)
+
+    # Growth rate
+    if 'growth_rate' in features_to_add:
+        data['growth_rate'] = data['Usage'].pct_change()
+
+    # Fill missing values for new columns
     for col in data.columns:
-        if 'lag' in col or 'diff' in col or 'rolling_mean' in col:
-            data[col] = data[col].bfill().ffill()
+        if 'lag' in col or 'diff' in col or 'rolling_mean' in col or 'rolling_std' in col or 'rolling_max' in col or 'rolling_min' in col:
+            data[col] = data[col].fillna(method='bfill').fillna(method='ffill')
+        elif col == 'growth_rate' or col == 'z_score':
+            data[col] = data[col].fillna(0)
         else:
-            data[col] = data[col].ffill().bfill()
+            data[col] = data[col].fillna(method='ffill').fillna(method='bfill')
+
     return data
 
+
 def create_dataset(data, target, look_back=5):
+    """
+    Denetimli öğrenme için veri seti oluşturur.
+    """
     X, Y = [], []
     for i in range(len(data) - look_back):
         X.append(data[i : i + look_back])
@@ -51,6 +122,9 @@ def create_dataset(data, target, look_back=5):
 
 class ConsumptionModel:
     def __init__(self, consumption_type, building_id=None):
+        """
+        ConsumptionModel sınıfını belirli bir tüketim türü ve bina ID'si ile başlatır.
+        """
         self.consumption_type = consumption_type.lower()
         self.building_id = building_id
         self.building_name = Building.get_name(building_id) if building_id else "all"
@@ -69,6 +143,9 @@ class ConsumptionModel:
         self.anomaly_csv = os.path.join(self.file_base_path, "anomalies.csv")
 
     def fetch_data(self):
+        """
+        Tüketim türüne ve bina ID'sine göre veriyi çeker.
+        """
         if self.consumption_type == "electric":
             return Electric.fetch_data(self.building_id)
         elif self.consumption_type == "water":
@@ -79,6 +156,9 @@ class ConsumptionModel:
             raise ValueError("Invalid consumption type. Supported types: electric, water, naturalgas")
 
     def prepare_data(self, df, fit_scaler=True):
+        """
+        Modelleme için veriyi hazırlar ve ölçeklendirir.
+        """
         if df.empty:
             raise ValueError(f"No data found for {self.consumption_type} and building ID {self.building_id}")
 
@@ -90,19 +170,28 @@ class ConsumptionModel:
         df_grouped.set_index('Date', inplace=True)
         df_grouped.drop(columns=['Year', 'Month'], inplace=True)
 
+        # Ek özellikler tanımlanıyor
+        # features_to_add = [
+        #     'year', 'month', 'lag_1', 'lag_3', 'lag_6'
+
+        # ]
         features_to_add = [
             'year', 'month', 'lag_1', 'lag_3', 'lag_6',
-            'diff_1', 'diff_3', 'rolling_mean_3', 'rolling_mean_6'
+            'diff_1', 'diff_3', 'rolling_mean_3', 'rolling_mean_6','month_sin_cos','z_score'
         ]
         df_grouped = feature_engineering(df_grouped, features_to_add)
         data = df_grouped.dropna()
+        #log data  head and id 
+        logging.info(f"Data ID: {self.building_id}")
+        logging.info(f"Data head: {data.head()}")
+        
         feature_cols = [col for col in data.columns if col != 'Usage']
 
         if isinstance(data['Usage'], list):
             data['Usage'] = np.array(data['Usage'])
 
         if fit_scaler:
-            # Scaler'ları fit et ve kaydet
+            # Ölçekleyicileri fit edip kaydet
             self.feature_scaler = MinMaxScaler(feature_range=(0, 1))
             self.target_scaler = MinMaxScaler(feature_range=(0, 1))
             scaled_features = self.feature_scaler.fit_transform(data[feature_cols].values)
@@ -111,7 +200,7 @@ class ConsumptionModel:
             dump(self.target_scaler, self.target_scaler_filename)
             logging.info(f"Scalers fitted and saved to {self.feature_scaler_filename} and {self.target_scaler_filename}")
         else:
-            # Scaler'ları yükle ve transform et
+            # Ölçekleyicileri yükleyip dönüştür
             self.feature_scaler = load(self.feature_scaler_filename)
             self.target_scaler = load(self.target_scaler_filename)
             scaled_features = self.feature_scaler.transform(data[feature_cols].values)
@@ -121,57 +210,80 @@ class ConsumptionModel:
         return scaled_features, scaled_target, feature_cols
 
     def train_electric_model(self, scaled_features, scaled_target, feature_cols, look_back=5):
+        """
+        Elektrik tüketimi için CNN modeli eğitir.
+        """
         X, Y = create_dataset(scaled_features, scaled_target, look_back)
-        X = X.reshape((X.shape[0], X.shape[1], X.shape[2]))
         model = Sequential()
         model.add(Input(shape=(look_back, X.shape[2])))
-        model.add(LSTM(50, activation='relu'))
+        model.add(Conv1D(filters=64, kernel_size=2, activation='relu'))
+        model.add(MaxPooling1D(pool_size=2))
+        model.add(Flatten())
+        model.add(Dense(50, activation='relu'))
         model.add(Dropout(0.2))
-        model.add(Dense(1, activation='linear'))
+        # Negatif tahminleri engellemek için 'softplus' (ya da 'relu') kullanabilirsiniz.
+        model.add(Dense(1, activation='softplus'))
+
         model.compile(optimizer='adam', loss='mse')
         callbacks = [
-            EarlyStopping(monitor='loss', patience=10),
+            EarlyStopping(monitor='loss', patience=10, restore_best_weights=True),
             ReduceLROnPlateau(monitor='loss', factor=0.2, patience=5, min_lr=0.0001)
         ]
-        model.fit(X, Y, epochs=100, batch_size=16, callbacks=callbacks, verbose=0)
+        model.fit(X, Y, epochs=100, batch_size=16, callbacks=callbacks, verbose=1)
+
         model.save(self.model_filename)
         logging.info(f"Electric model saved to {self.model_filename}")
 
+
+
     def train_water_model(self, scaled_features, scaled_target, feature_cols, look_back=5):
         X, Y = create_dataset(scaled_features, scaled_target, look_back)
-        X = X.reshape((X.shape[0], X.shape[1], X.shape[2]))
+
         model = Sequential()
         model.add(Input(shape=(look_back, X.shape[2])))
-        model.add(LSTM(30, activation='relu'))
+        model.add(Conv1D(filters=32, kernel_size=2, activation='relu'))
+        model.add(MaxPooling1D(pool_size=2))
+        model.add(Flatten())
+        model.add(Dense(30, activation='relu'))
         model.add(Dropout(0.3))
-        model.add(Dense(1, activation='linear'))
+        model.add(Dense(1, activation='softplus'))
+
         model.compile(optimizer='adam', loss='mse')
         callbacks = [
-            EarlyStopping(monitor='loss', patience=15),
-            ReduceLROnPlateau(monitor='loss', factor=0.2, patience=7, min_lr=0.0001)
-        ]
-        model.fit(X, Y, epochs=150, batch_size=32, callbacks=callbacks, verbose=0)
+                EarlyStopping(monitor='loss', patience=15, restore_best_weights=True),
+                ReduceLROnPlateau(monitor='loss', factor=0.2, patience=7, min_lr=0.0001)
+            ]
+        model.fit(X, Y, epochs=150, batch_size=32, callbacks=callbacks, verbose=1)
+
         model.save(self.model_filename)
         logging.info(f"Water model saved to {self.model_filename}")
 
     def train_naturalgas_model(self, scaled_features, scaled_target, feature_cols, look_back=5):
         X, Y = create_dataset(scaled_features, scaled_target, look_back)
-        X = X.reshape((X.shape[0], X.shape[1], X.shape[2]))
+
         model = Sequential()
         model.add(Input(shape=(look_back, X.shape[2])))
-        model.add(LSTM(70, activation='relu'))
+        model.add(Conv1D(filters=128, kernel_size=2, activation='relu'))
+        model.add(MaxPooling1D(pool_size=2))
+        model.add(Flatten())
+        model.add(Dense(70, activation='relu'))
         model.add(Dropout(0.4))
-        model.add(Dense(1, activation='linear'))
+        model.add(Dense(1, activation='softplus'))
+
         model.compile(optimizer='adam', loss='mse')
         callbacks = [
-            EarlyStopping(monitor='loss', patience=20),
+            EarlyStopping(monitor='loss', patience=20, restore_best_weights=True),
             ReduceLROnPlateau(monitor='loss', factor=0.2, patience=10, min_lr=0.0001)
         ]
-        model.fit(X, Y, epochs=200, batch_size=64, callbacks=callbacks, verbose=0)
+        model.fit(X, Y, epochs=200, batch_size=64, callbacks=callbacks, verbose=1)
+
         model.save(self.model_filename)
         logging.info(f"NaturalGas model saved to {self.model_filename}")
 
     def train_model(self, scaled_features, scaled_target, feature_cols, look_back=5, threshold=0.05):
+        """
+        Belirtilen tüketim türüne göre uygun modeli eğitir.
+        """
         if self.consumption_type == "electric":
             self.train_electric_model(scaled_features, scaled_target, feature_cols, look_back)
         elif self.consumption_type == "water":
@@ -181,59 +293,69 @@ class ConsumptionModel:
         else:
             raise ValueError("Invalid consumption type for training.")
         
-        # Tahminleri kaydet
         self.predict_and_save_csv(predict_months=12, look_back=look_back)
         
-        # Anomali tespitini başlat
         self.detect_anomalies(threshold)
 
     def predict_and_save_csv(self, predict_months=12, look_back=5):
+        """
+        Gelecek aylar için tüketim tahminleri yapar ve bunları CSV dosyasına kaydeder.
+        """
         if not os.path.exists(self.model_filename):
             raise FileNotFoundError(f"Model file for {self.consumption_type} not found")
         if not os.path.exists(self.feature_scaler_filename):
             raise FileNotFoundError(f"Feature scaler file for {self.consumption_type} not found")
         if not os.path.exists(self.target_scaler_filename):
             raise FileNotFoundError(f"Target scaler file for {self.consumption_type} not found")
-        
+
         df = self.fetch_data()
         if df.empty:
             raise ValueError(f"No data available for prediction for {self.consumption_type}.")
+
         scaled_features, _, feature_cols = self.prepare_data(df, fit_scaler=False)
         x_input = scaled_features[-look_back:].reshape(1, look_back, len(feature_cols))
         trained_model = load_model(self.model_filename)
         predictions = []
+
         for _ in range(predict_months):
             pred = trained_model.predict(x_input, verbose=0)[0][0]
             predictions.append(pred)
-            new_features = np.append(x_input[0, 1:, :], [[pred] + [0] * (len(feature_cols) - 1)], axis=0)
+            new_features = np.append(x_input[0, 1:, :], [[pred] + [0]*(len(feature_cols)-1)], axis=0)
             x_input = new_features.reshape(1, look_back, len(feature_cols))
-        
-        # Ters ölçeklendirme
+
         inverse_predictions = self.target_scaler.inverse_transform(np.array(predictions).reshape(-1, 1)).flatten()
-        
+
         if not isinstance(df.index, pd.DatetimeIndex):
             df['Date'] = pd.to_datetime(df['Date'])
             df.set_index('Date', inplace=True)
         df.sort_index(inplace=True)
         last_date = df.index[-1]
+
         future_dates = [last_date + pd.DateOffset(months=i + 1) for i in range(predict_months)]
-        future_dates = [date.strftime('%Y-%m-%d %H:%M:%S+00:00') for date in future_dates]
+        future_dates = [date + pd.offsets.MonthEnd(0) for date in future_dates]
+        future_dates = [pd.Timestamp(date).tz_localize('UTC').strftime('%Y-%m-%d %H:%M:%S%z') for date in future_dates]
+
         prediction_df = pd.DataFrame({'Date': future_dates, 'Predicted_Usage': inverse_predictions})
         prediction_df.to_csv(self.prediction_csv, index=False)
         logging.info(f"Predictions saved to {self.prediction_csv}")
         return prediction_df
 
     def get_predictions(self, months):
+        """
+        Tahmin CSV dosyasından belirtilen sayıda tahmini döndürür.
+        """
         if not os.path.exists(self.prediction_csv):
             raise FileNotFoundError(f"Prediction CSV for {self.consumption_type} not found")
         prediction_df = pd.read_csv(self.prediction_csv)
         return prediction_df.head(months)
 
     def detect_anomalies(self, threshold=0.05):
+        """
+        Tahmin hatalarına dayanarak anomalileri tespit eder ve kaydeder.
+        """
         try:
             logging.info("Anomaly detection started.")
 
-            # Model ve target scaler dosyalarının varlığını kontrol et
             if not os.path.exists(self.model_filename):
                 raise FileNotFoundError(f"Model file for {self.consumption_type} not found")
             if not os.path.exists(self.target_scaler_filename):
@@ -241,27 +363,22 @@ class ConsumptionModel:
 
             logging.info("Model and target scaler files exist.")
 
-            # Veriyi al ve hazırla (Scaler'ları yükle)
             df = self.fetch_data()
             if df.empty:
                 raise ValueError(f"No data available for anomaly detection for {self.consumption_type}.")
 
             logging.info(f"Fetched data for anomaly detection. Data shape: {df.shape}")
 
-            # Veriyi hazırla (Scaler'ları yükle)
             scaled_features, scaled_target, feature_cols = self.prepare_data(df, fit_scaler=False)
             logging.info(f"scaled_features shape: {scaled_features.shape}, scaled_target shape: {scaled_target.shape}")
 
-            # Look-back ile veri setini oluştur
-            look_back = 5  # Model eğitimi sırasında kullanılan look_back ile aynı olmalı
+            look_back = 5  
             X, Y = create_dataset(scaled_features, scaled_target, look_back=look_back)
             logging.info(f"X shape: {X.shape}, Y shape: {Y.shape}")
 
-            # Model yükle
             trained_model = load_model(self.model_filename)
             logging.info(f"Trained model loaded from {self.model_filename}")
 
-            # Tahmin yap
             predictions = trained_model.predict(X)
             logging.info(f"Predictions made. Predictions shape: {predictions.shape}, Predictions type: {type(predictions)}")
 
@@ -273,15 +390,17 @@ class ConsumptionModel:
             anomalies = error > threshold
             logging.info(f"Anomalies detected. Total anomalies: {np.sum(anomalies)}")
 
-            # Doğru tarih aralığını oluştur
-            valid_dates = df.index[look_back:look_back + len(anomalies)]  # `anomalies` boyutuyla uyumlu indeksleme
-            anomaly_dates = valid_dates[anomalies]
-            logging.info(f"Anomaly dates extracted. Total anomaly dates: {len(anomaly_dates)}")
+            # Doğru indeks aralığını oluştur
+            # Anomalilerin bulunduğu veri kümesindeki orijinal indeksleri alıyoruz
+            valid_indices = np.arange(look_back, look_back + len(anomalies))
+            anomaly_indices = valid_indices[anomalies]
+            logging.info(f"Anomaly indices extracted. Total anomaly indices: {len(anomaly_indices)}")
 
             # Eğer anomaliler varsa CSV'ye kaydet
-            if len(anomaly_dates) > 0:
+            if len(anomaly_indices) > 0:
+                # Anomaly indices'i 'Date' sütunu olarak kullanıyoruz
                 anomaly_df = pd.DataFrame({
-                    'Date': anomaly_dates.values,  # .values ile numpy array'e çevir
+                    'Date': anomaly_indices,
                     'Anomaly_Error': error[anomalies]
                 })
                 anomaly_df.to_csv(self.anomaly_csv, index=False)
@@ -300,10 +419,10 @@ class ConsumptionModel:
             logging.error(f"Error during anomaly detection: {e}")
             raise
 
+
     def cleanup_old_data(self):
         """
-        Bu metod, mevcut bina ve tüketim türü için daha eski olan tarih dizinlerini siler,
-        sadece en güncel olanını korur.
+        Eski tarih dizinlerini siler, sadece en güncelini korur.
         """
         try:
             logging.info("Cleanup of old data directories started.")

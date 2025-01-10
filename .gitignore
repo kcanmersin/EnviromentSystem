@@ -21,3 +21,4 @@ backend/EnviromentSystem/ss.py
 backend/EnviromentSystem/migrate_building.py
 backend/EnviromentSystem/Gbuilding.txt
 backend/EnviromentSystem/Ebuilding.txt
+*.pyc

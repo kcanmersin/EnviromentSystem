@@ -7,6 +7,10 @@
       "RelativeMoniker": "D:0:0:{2BA05BB4-E7CB-4C94-8388-6EC7F997B32E}|API\\API.csproj|solutionrelative:api\\controllers\\electriccontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
+      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\service\\anomalyservice\\anomalyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\service\\anomalyservice\\anomalyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\service\\predictionservice\\predictionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\service\\predictionservice\\predictionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -286,10 +290,6 @@
       "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\service\\anomalyservice\\anomalyresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\service\\anomalyservice\\anomalyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\service\\anomalyservice\\anomalyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|d:\\code\\enviromentsystem\\backend\\enviromentsystem\\core\\service\\anomalyservice\\ianomalyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{6D2F82D6-D0FE-46A5-B01A-A51C22558427}|Core\\Core.csproj|solutionrelative:core\\service\\anomalyservice\\ianomalyservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -565,37 +565,15 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "UpdateElectricCommand.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricCommand.cs",
-              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricCommand.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricCommand.cs",
-              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricCommand.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-05T13:10:33.467Z",
-              "EditorCaption": ""
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "UpdateElectricRequest.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\UpdateElectricRequest.cs",
-              "RelativeDocumentMoniker": "API\\Contracts\\Electric\\UpdateElectricRequest.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\UpdateElectricRequest.cs",
-              "RelativeToolTip": "API\\Contracts\\Electric\\UpdateElectricRequest.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-05T13:10:15.317Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "CreateElectricResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\CreateElectricResponse.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\Electric\\CreateElectricResponse.cs",
@@ -603,12 +581,11 @@
               "RelativeToolTip": "API\\Contracts\\Electric\\CreateElectricResponse.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-05T13:10:12.683Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-05T13:10:12.683Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "DeleteElectricRequest.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\DeleteElectricRequest.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\Electric\\DeleteElectricRequest.cs",
@@ -616,12 +593,11 @@
               "RelativeToolTip": "API\\Contracts\\Electric\\DeleteElectricRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-05T13:10:07.898Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-05T13:10:07.898Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "ElectricDto.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\ElectricDto.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\Electric\\ElectricDto.cs",
@@ -629,12 +605,11 @@
               "RelativeToolTip": "API\\Contracts\\Electric\\ElectricDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-05T13:10:06.576Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-05T13:10:06.576Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "BuildingController.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\BuildingController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\BuildingController.cs",
@@ -642,8 +617,7 @@
               "RelativeToolTip": "API\\Controllers\\BuildingController.cs",
               "ViewState": "AgIAABUAAAAAAAAAAAAqwBUAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T13:47:27.04Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T13:47:27.04Z"
             },
             {
               "$type": "Document",
@@ -653,14 +627,14 @@
               "RelativeDocumentMoniker": "API\\Controllers\\ElectricController.cs",
               "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\ElectricController.cs",
               "RelativeToolTip": "API\\Controllers\\ElectricController.cs",
-              "ViewState": "AgIAAEMAAAAAAAAAAAAQwGQAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-17T16:37:19.595Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "IPredictionService.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\PredictionService\\IPredictionService.cs",
               "RelativeDocumentMoniker": "Core\\Service\\PredictionService\\IPredictionService.cs",
@@ -668,12 +642,47 @@
               "RelativeToolTip": "Core\\Service\\PredictionService\\IPredictionService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T21:36:55.45Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T21:36:55.45Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
+              "Title": "AnomalyService.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\AnomalyService\\AnomalyService.cs",
+              "RelativeDocumentMoniker": "Core\\Service\\AnomalyService\\AnomalyService.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\AnomalyService\\AnomalyService.cs",
+              "RelativeToolTip": "Core\\Service\\AnomalyService\\AnomalyService.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAswA8AAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-12-08T14:42:44.592Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "UpdateElectricRequest.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\UpdateElectricRequest.cs",
+              "RelativeDocumentMoniker": "API\\Contracts\\Electric\\UpdateElectricRequest.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\UpdateElectricRequest.cs",
+              "RelativeToolTip": "API\\Contracts\\Electric\\UpdateElectricRequest.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T13:10:15.317Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "UpdateElectricCommand.cs",
+              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricCommand.cs",
+              "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricCommand.cs",
+              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricCommand.cs",
+              "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Commands\\UpdateElectric\\UpdateElectricCommand.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-05T13:10:33.467Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "PredictionService.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\PredictionService\\PredictionService.cs",
               "RelativeDocumentMoniker": "Core\\Service\\PredictionService\\PredictionService.cs",
@@ -681,12 +690,11 @@
               "RelativeToolTip": "Core\\Service\\PredictionService\\PredictionService.cs",
               "ViewState": "AgIAABwAAAAAAAAAAAAAwCgAAABvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T21:37:09.272Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T21:37:09.272Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "CreateElectricHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricHandler.cs",
@@ -694,12 +702,11 @@
               "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricHandler.cs",
               "ViewState": "AgIAABsAAAAAAAAAAAAYwCYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T16:07:04.191Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T16:07:04.191Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "CreateElectricCommand.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricCommand.cs",
               "RelativeDocumentMoniker": "Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricCommand.cs",
@@ -707,12 +714,11 @@
               "RelativeToolTip": "Core\\Features\\ElectricFeatures\\Commands\\CreateElectric\\CreateElectricCommand.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T16:07:04.412Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T16:07:04.412Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "SchoolInfoController.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\SchoolInfoController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\SchoolInfoController.cs",
@@ -720,12 +726,11 @@
               "RelativeToolTip": "API\\Controllers\\SchoolInfoController.cs",
               "ViewState": "AgIAAC8AAAAAAAAAAAAIwAYAAAA5AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T16:47:03.479Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T16:47:03.479Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "CreateElectricRequest.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\Electric\\CreateElectricRequest.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\Electric\\CreateElectricRequest.cs",
@@ -733,16 +738,11 @@
               "RelativeToolTip": "API\\Contracts\\Electric\\CreateElectricRequest.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T13:31:55.117Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
+              "WhenOpened": "2024-12-09T13:31:55.117Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "PredictionController.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\PredictionController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\PredictionController.cs",
@@ -750,12 +750,11 @@
               "RelativeToolTip": "API\\Controllers\\PredictionController.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAcwDMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T21:37:27.147Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T21:37:27.147Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "Core.csproj",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Core.csproj",
               "RelativeDocumentMoniker": "Core\\Core.csproj",
@@ -763,12 +762,11 @@
               "RelativeToolTip": "Core\\Core.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-25T13:30:09.696Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-25T13:30:09.696Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "CoreLayerExtensions.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Extensions\\CoreLayerExtensions.cs",
               "RelativeDocumentMoniker": "Core\\Extensions\\CoreLayerExtensions.cs",
@@ -776,12 +774,11 @@
               "RelativeToolTip": "Core\\Extensions\\CoreLayerExtensions.cs",
               "ViewState": "AgIAAB4AAAAAAAAAAAAQwEQAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T15:46:16.606Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T15:46:16.606Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "WaterController.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\WaterController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\WaterController.cs",
@@ -789,12 +786,11 @@
               "RelativeToolTip": "API\\Controllers\\WaterController.cs",
               "ViewState": "AgIAAC4AAAAAAAAAAAA5wFoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:12:42.655Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T19:12:42.655Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "ConsumptionDataDto.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\Extract\\ConsumptionDataDto.cs",
               "RelativeDocumentMoniker": "Core\\Service\\Extract\\ConsumptionDataDto.cs",
@@ -802,12 +798,11 @@
               "RelativeToolTip": "Core\\Service\\Extract\\ConsumptionDataDto.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAqwAIAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T10:43:27.623Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-04T10:43:27.623Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "UserController.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\UserController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\UserController.cs",
@@ -815,12 +810,11 @@
               "RelativeToolTip": "API\\Controllers\\UserController.cs",
               "ViewState": "AgIAAEUAAAAAAAAAAAAAADIAAAAmAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T16:09:57.605Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T16:09:57.605Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "NaturalGas.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\NaturalGas.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Entity\\NaturalGas.cs",
@@ -828,12 +822,11 @@
               "RelativeToolTip": "Core\\Data\\Entity\\NaturalGas.cs",
               "ViewState": "AgIAAAUAAAAAAAAAAAAYwBAAAAA0AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:38:13.172Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T19:38:13.172Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Program.cs",
               "RelativeDocumentMoniker": "API\\Program.cs",
@@ -841,12 +834,11 @@
               "RelativeToolTip": "API\\Program.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAeAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:39:05.994Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T14:39:05.994Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "DateTimeConverter.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\PredictionService\\DateTimeConverter.cs",
               "RelativeDocumentMoniker": "Core\\Service\\PredictionService\\DateTimeConverter.cs",
@@ -854,12 +846,11 @@
               "RelativeToolTip": "Core\\Service\\PredictionService\\DateTimeConverter.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:21:20.534Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T14:21:20.534Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "CampusVehicleEntry.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\CampusVehicleEntry.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Entity\\CampusVehicleEntry.cs",
@@ -867,12 +858,11 @@
               "RelativeToolTip": "Core\\Data\\Entity\\CampusVehicleEntry.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T14:37:47.772Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T14:37:47.772Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "SchoolInfo.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\SchoolInfo.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Entity\\SchoolInfo.cs",
@@ -880,12 +870,11 @@
               "RelativeToolTip": "Core\\Data\\Entity\\SchoolInfo.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAhAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T19:38:17.637Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T19:38:17.637Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "Water.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\Water.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Entity\\Water.cs",
@@ -893,12 +882,11 @@
               "RelativeToolTip": "Core\\Data\\Entity\\Water.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAqAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T18:52:55.664Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T18:52:55.664Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "Paper.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\Paper.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Entity\\Paper.cs",
@@ -906,12 +894,11 @@
               "RelativeToolTip": "Core\\Data\\Entity\\Paper.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T09:49:59.748Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-04T09:49:59.748Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "ConsumptionController.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\ConsumptionController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\ConsumptionController.cs",
@@ -919,12 +906,11 @@
               "RelativeToolTip": "API\\Controllers\\ConsumptionController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAADwvykAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T10:08:01.02Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-04T10:08:01.02Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "NaturalGasConfiguration.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Configuration\\NaturalGasConfiguration.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Configuration\\NaturalGasConfiguration.cs",
@@ -932,12 +918,11 @@
               "RelativeToolTip": "Core\\Data\\Configuration\\NaturalGasConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T10:03:27.975Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-04T10:03:27.975Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "ElectricConfiguration.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Configuration\\ElectricConfiguration.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Configuration\\ElectricConfiguration.cs",
@@ -945,12 +930,11 @@
               "RelativeToolTip": "Core\\Data\\Configuration\\ElectricConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T09:57:28.992Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-04T09:57:28.992Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "ConsumptionService.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\Extract\\ConsumptionService.cs",
               "RelativeDocumentMoniker": "Core\\Service\\Extract\\ConsumptionService.cs",
@@ -958,12 +942,11 @@
               "RelativeToolTip": "Core\\Service\\Extract\\ConsumptionService.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAAwEEAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T10:16:58.838Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-04T10:16:58.838Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "IConsumptionService.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\Extract\\IConsumptionService.cs",
               "RelativeDocumentMoniker": "Core\\Service\\Extract\\IConsumptionService.cs",
@@ -971,12 +954,11 @@
               "RelativeToolTip": "Core\\Service\\Extract\\IConsumptionService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T10:16:29.176Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-04T10:16:29.176Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "CarbonFootprintController.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Controllers\\CarbonFootprintController.cs",
               "RelativeDocumentMoniker": "API\\Controllers\\CarbonFootprintController.cs",
@@ -984,12 +966,11 @@
               "RelativeToolTip": "API\\Controllers\\CarbonFootprintController.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAmwBAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-09T15:15:30.881Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-12-09T15:15:30.881Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "BuildingConfiguration.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Configuration\\BuildingConfiguration.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Configuration\\BuildingConfiguration.cs",
@@ -997,12 +978,11 @@
               "RelativeToolTip": "Core\\Data\\Configuration\\BuildingConfiguration.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-04T09:57:33.745Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-01-04T09:57:33.745Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "Electric.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\Electric.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Entity\\Electric.cs",
@@ -1010,12 +990,11 @@
               "RelativeToolTip": "Core\\Data\\Entity\\Electric.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB8AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-22T18:55:04.602Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-22T18:55:04.602Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "Building.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\Building.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Entity\\Building.cs",
@@ -1023,12 +1002,11 @@
               "RelativeToolTip": "Core\\Data\\Entity\\Building.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABUAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-11-17T15:45:17.214Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-17T15:45:17.214Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "ApplicationDbContext.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\ApplicationDbContext.cs",
               "RelativeDocumentMoniker": "Core\\Data\\ApplicationDbContext.cs",
@@ -1040,7 +1018,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "EntityBase.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\EntityBases\\EntityBase.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Entity\\EntityBases\\EntityBase.cs",
@@ -1052,7 +1030,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "UpdateNaturalGasHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\NaturalGasFeatures\\Commands\\UpdateNaturalGas\\UpdateNaturalGasHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\NaturalGasFeatures\\Commands\\UpdateNaturalGas\\UpdateNaturalGasHandler.cs",
@@ -1064,7 +1042,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "LoggingActionFilter.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Log\\LoggingActionFilter.cs",
               "RelativeDocumentMoniker": "API\\Log\\LoggingActionFilter.cs",
@@ -1076,7 +1054,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "API.csproj",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\API.csproj",
               "RelativeDocumentMoniker": "API\\API.csproj",
@@ -1084,12 +1062,11 @@
               "RelativeToolTip": "API\\API.csproj",
               "ViewState": "AgIAAA8AAAAAAAAAAAAAADQAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2024-11-25T13:30:33.978Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-11-25T13:30:33.978Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "IEntityBase.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Entity\\EntityBases\\IEntityBase.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Entity\\EntityBases\\IEntityBase.cs",
@@ -1101,7 +1078,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "AppUserConfiguration.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Configuration\\AppUserConfiguration.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Configuration\\AppUserConfiguration.cs",
@@ -1113,7 +1090,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "AppRoleConfiguration.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Data\\Configuration\\AppRoleConfiguration.cs",
               "RelativeDocumentMoniker": "Core\\Data\\Configuration\\AppRoleConfiguration.cs",
@@ -1125,7 +1102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "JwtExtensions.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Extensions\\JwtExtensions.cs",
               "RelativeDocumentMoniker": "Core\\Extensions\\JwtExtensions.cs",
@@ -1137,7 +1114,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 47,
+              "DocumentIndex": 48,
               "Title": "GetAllSchoolInfosHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Queries\\GetAllSchoolInfos\\GetAllSchoolInfosHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Queries\\GetAllSchoolInfos\\GetAllSchoolInfosHandler.cs",
@@ -1149,7 +1126,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "readme.txt",
               "DocumentMoniker": "C:\\Users\\KC\\.nuget\\packages\\epplus\\7.5.2\\readme.txt",
               "ToolTip": "C:\\Users\\KC\\.nuget\\packages\\epplus\\7.5.2\\readme.txt",
@@ -1159,7 +1136,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "RequestResponseLoggingMiddleware.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Log\\RequestResponseLoggingMiddleware.cs",
               "RelativeDocumentMoniker": "API\\Log\\RequestResponseLoggingMiddleware.cs",
@@ -1171,7 +1148,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 49,
               "Title": "GetAllSchoolInfosQuery.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Queries\\GetAllSchoolInfos\\GetAllSchoolInfosQuery.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Queries\\GetAllSchoolInfos\\GetAllSchoolInfosQuery.cs",
@@ -1183,7 +1160,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
+              "DocumentIndex": 50,
               "Title": "CarbonFootprintForAllYearsDto.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\CarbonFootprint\\CarbonFootprintForAllYearsDto.cs",
               "RelativeDocumentMoniker": "Core\\Service\\CarbonFootprint\\CarbonFootprintForAllYearsDto.cs",
@@ -1195,7 +1172,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "WeatherForecast.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "API\\WeatherForecast.cs",
@@ -1207,7 +1184,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 50,
+              "DocumentIndex": 51,
               "Title": "CarbonFootprintForYearDto.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\CarbonFootprint\\CarbonFootprintForYearDto.cs",
               "RelativeDocumentMoniker": "Core\\Service\\CarbonFootprint\\CarbonFootprintForYearDto.cs",
@@ -1219,7 +1196,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 51,
+              "DocumentIndex": 52,
               "Title": "UsagePrediction.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\PredictionService\\UsagePrediction.cs",
               "RelativeDocumentMoniker": "Core\\Service\\PredictionService\\UsagePrediction.cs",
@@ -1231,7 +1208,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 52,
+              "DocumentIndex": 53,
               "Title": "AnomalyDateTimeConverter.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\AnomalyService\\AnomalyDateTimeConverter.cs",
               "RelativeDocumentMoniker": "Core\\Service\\AnomalyService\\AnomalyDateTimeConverter.cs",
@@ -1255,7 +1232,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 53,
+              "DocumentIndex": 54,
               "Title": "CreateSchoolInfoHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoHandler.cs",
@@ -1267,7 +1244,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 55,
               "Title": "CreateSchoolInfoCommand.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoCommand.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoCommand.cs",
@@ -1279,7 +1256,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
+              "DocumentIndex": 57,
               "Title": "CarbonFootprintService.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\CarbonFootprint\\CarbonFootprintService.cs",
               "RelativeDocumentMoniker": "Core\\Service\\CarbonFootprint\\CarbonFootprintService.cs",
@@ -1291,7 +1268,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 56,
               "Title": "CreateSchoolInfoRequest.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\API\\Contracts\\SchoolInfo\\CreateSchoolInfoRequest.cs",
               "RelativeDocumentMoniker": "API\\Contracts\\SchoolInfo\\CreateSchoolInfoRequest.cs",
@@ -1303,7 +1280,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 57,
+              "DocumentIndex": 58,
               "Title": "UpdateSchoolInfoHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoHandler.cs",
@@ -1315,7 +1292,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
+              "DocumentIndex": 59,
               "Title": "GetSchoolInfoHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Queries\\GetSchoolInfo\\GetSchoolInfoHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Queries\\GetSchoolInfo\\GetSchoolInfoHandler.cs",
@@ -1327,7 +1304,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 60,
               "Title": "ICarbonFootprintService.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\CarbonFootprint\\ICarbonFootprintService.cs",
               "RelativeDocumentMoniker": "Core\\Service\\CarbonFootprint\\ICarbonFootprintService.cs",
@@ -1339,7 +1316,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 61,
               "Title": "GetSchoolInfoResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Queries\\GetSchoolInfo\\GetSchoolInfoResponse.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Queries\\GetSchoolInfo\\GetSchoolInfoResponse.cs",
@@ -1351,7 +1328,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 62,
               "Title": "GetAllSchoolInfosResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Queries\\GetAllSchoolInfos\\GetAllSchoolInfosResponse.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Queries\\GetAllSchoolInfos\\GetAllSchoolInfosResponse.cs",
@@ -1375,7 +1352,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 63,
               "Title": "UpdateSchoolInfoResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoResponse.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoResponse.cs",
@@ -1387,7 +1364,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 64,
               "Title": "GetSchoolInfoQuery.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Queries\\GetSchoolInfo\\GetSchoolInfoQuery.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Queries\\GetSchoolInfo\\GetSchoolInfoQuery.cs",
@@ -1399,7 +1376,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 65,
               "Title": "UpdateSchoolInfoValidator.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoValidator.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoValidator.cs",
@@ -1411,7 +1388,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 66,
               "Title": "UpdateSchoolInfoCommand.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoCommand.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\UpdateSchoolInfo\\UpdateSchoolInfoCommand.cs",
@@ -1423,7 +1400,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 67,
               "Title": "DeleteSchoolInfoHandler.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\DeleteSchoolInfo\\DeleteSchoolInfoHandler.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\DeleteSchoolInfo\\DeleteSchoolInfoHandler.cs",
@@ -1435,7 +1412,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 68,
               "Title": "DeleteSchoolInfoCommand.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\DeleteSchoolInfo\\DeleteSchoolInfoCommand.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\DeleteSchoolInfo\\DeleteSchoolInfoCommand.cs",
@@ -1447,7 +1424,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 69,
               "Title": "CreateSchoolInfoResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoResponse.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoResponse.cs",
@@ -1459,7 +1436,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 70,
               "Title": "CreateSchoolInfoValidator.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoValidator.cs",
               "RelativeDocumentMoniker": "Core\\Features\\SchoolInfoFeatures\\Commands\\CreateSchoolInfo\\CreateSchoolInfoValidator.cs",
@@ -1471,7 +1448,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 70,
+              "DocumentIndex": 71,
               "Title": "AnomalyResponse.cs",
               "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\AnomalyService\\AnomalyResponse.cs",
               "RelativeDocumentMoniker": "Core\\Service\\AnomalyService\\AnomalyResponse.cs",
@@ -1480,18 +1457,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-12-09T14:25:26.922Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 71,
-              "Title": "AnomalyService.cs",
-              "DocumentMoniker": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\AnomalyService\\AnomalyService.cs",
-              "RelativeDocumentMoniker": "Core\\Service\\AnomalyService\\AnomalyService.cs",
-              "ToolTip": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Service\\AnomalyService\\AnomalyService.cs",
-              "RelativeToolTip": "Core\\Service\\AnomalyService\\AnomalyService.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAQwAoAAAAxAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-12-08T14:42:44.592Z"
             },
             {
               "$type": "Document",

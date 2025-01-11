@@ -1,5 +1,4 @@
 using Core.Extensions;
-using Hangfire.Logging;
 using MediatR;
 using Serilog;
 using Serilog.Events;

@@ -9,7 +9,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace Core.Migrations
 {
     /// <inheritdoc />
-    public partial class XX : Migration
+    public partial class xx : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -78,13 +78,13 @@ namespace Core.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "SchoolInfos",
+                name: "CampusVehicleEntries",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uuid", nullable: false),
-                    NumberOfPeople = table.Column<int>(type: "integer", nullable: false),
-                    Year = table.Column<int>(type: "integer", nullable: false),
-                    Month = table.Column<string>(type: "character varying(15)", maxLength: 15, nullable: false),
+                    CarsManagedByUniversity = table.Column<int>(type: "integer", nullable: false),
+                    CarsEnteringUniversity = table.Column<int>(type: "integer", nullable: false),
+                    MotorcyclesEnteringUniversity = table.Column<int>(type: "integer", nullable: false),
                     CreatedBy = table.Column<string>(type: "text", nullable: true),
                     ModifiedBy = table.Column<string>(type: "text", nullable: true),
                     DeletedBy = table.Column<string>(type: "text", nullable: true),
@@ -95,7 +95,49 @@ namespace Core.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_SchoolInfos", x => x.Id);
+                    table.PrimaryKey("PK_CampusVehicleEntries", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Papers",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uuid", nullable: false),
+                    Date = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    Usage = table.Column<decimal>(type: "numeric(18,2)", nullable: false),
+                    CreatedBy = table.Column<string>(type: "text", nullable: true),
+                    ModifiedBy = table.Column<string>(type: "text", nullable: true),
+                    DeletedBy = table.Column<string>(type: "text", nullable: true),
+                    CreatedDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    ModifiedDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
+                    DeletedDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "boolean", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Papers", x => x.Id);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "Waters",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uuid", nullable: false),
+                    Date = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    InitialMeterValue = table.Column<decimal>(type: "numeric(18,2)", nullable: false),
+                    FinalMeterValue = table.Column<decimal>(type: "numeric(18,2)", nullable: false),
+                    Usage = table.Column<decimal>(type: "numeric(18,2)", nullable: false),
+                    CreatedBy = table.Column<string>(type: "text", nullable: true),
+                    ModifiedBy = table.Column<string>(type: "text", nullable: true),
+                    DeletedBy = table.Column<string>(type: "text", nullable: true),
+                    CreatedDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    ModifiedDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
+                    DeletedDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "boolean", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Waters", x => x.Id);
                 });
 
             migrationBuilder.CreateTable(
@@ -205,7 +247,37 @@ namespace Core.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "NaturalGasUsages",
+                name: "Electrics",
+                columns: table => new
+                {
+                    Id = table.Column<Guid>(type: "uuid", nullable: false),
+                    Date = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    InitialMeterValue = table.Column<decimal>(type: "numeric(18,2)", nullable: false),
+                    FinalMeterValue = table.Column<decimal>(type: "numeric(18,2)", nullable: false),
+                    Usage = table.Column<decimal>(type: "numeric(18,2)", nullable: false),
+                    KWHValue = table.Column<decimal>(type: "numeric(18,2)", nullable: false),
+                    BuildingId = table.Column<Guid>(type: "uuid", nullable: false),
+                    CreatedBy = table.Column<string>(type: "text", nullable: true),
+                    ModifiedBy = table.Column<string>(type: "text", nullable: true),
+                    DeletedBy = table.Column<string>(type: "text", nullable: true),
+                    CreatedDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
+                    ModifiedDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
+                    DeletedDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
+                    IsDeleted = table.Column<bool>(type: "boolean", nullable: false)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Electrics", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Electrics_Buildings_BuildingId",
+                        column: x => x.BuildingId,
+                        principalTable: "Buildings",
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
+                });
+
+            migrationBuilder.CreateTable(
+                name: "NaturalGas",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uuid", nullable: false),
@@ -225,9 +297,9 @@ namespace Core.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_NaturalGasUsages", x => x.Id);
+                    table.PrimaryKey("PK_NaturalGas", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_NaturalGasUsages_Buildings_BuildingId",
+                        name: "FK_NaturalGas_Buildings_BuildingId",
                         column: x => x.BuildingId,
                         principalTable: "Buildings",
                         principalColumn: "Id",
@@ -235,17 +307,13 @@ namespace Core.Migrations
                 });
 
             migrationBuilder.CreateTable(
-                name: "Electrics",
+                name: "SchoolInfos",
                 columns: table => new
                 {
                     Id = table.Column<Guid>(type: "uuid", nullable: false),
-                    Date = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    InitialMeterValue = table.Column<decimal>(type: "numeric(18,2)", nullable: false),
-                    FinalMeterValue = table.Column<decimal>(type: "numeric(18,2)", nullable: false),
-                    Usage = table.Column<decimal>(type: "numeric(18,2)", nullable: false),
-                    KWHValue = table.Column<decimal>(type: "numeric(18,2)", nullable: false),
-                    BuildingId = table.Column<Guid>(type: "uuid", nullable: false),
-                    SchoolInfoId = table.Column<Guid>(type: "uuid", nullable: true),
+                    NumberOfPeople = table.Column<int>(type: "integer", nullable: false),
+                    CampusVehicleEntryId = table.Column<Guid>(type: "uuid", nullable: true),
+                    Year = table.Column<int>(type: "integer", nullable: false),
                     CreatedBy = table.Column<string>(type: "text", nullable: true),
                     ModifiedBy = table.Column<string>(type: "text", nullable: true),
                     DeletedBy = table.Column<string>(type: "text", nullable: true),
@@ -256,72 +324,13 @@ namespace Core.Migrations
                 },
                 constraints: table =>
                 {
-                    table.PrimaryKey("PK_Electrics", x => x.Id);
+                    table.PrimaryKey("PK_SchoolInfos", x => x.Id);
                     table.ForeignKey(
-                        name: "FK_Electrics_Buildings_BuildingId",
-                        column: x => x.BuildingId,
-                        principalTable: "Buildings",
+                        name: "FK_SchoolInfos_CampusVehicleEntries_CampusVehicleEntryId",
+                        column: x => x.CampusVehicleEntryId,
+                        principalTable: "CampusVehicleEntries",
                         principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                    table.ForeignKey(
-                        name: "FK_Electrics_SchoolInfos_SchoolInfoId",
-                        column: x => x.SchoolInfoId,
-                        principalTable: "SchoolInfos",
-                        principalColumn: "Id");
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Papers",
-                columns: table => new
-                {
-                    Id = table.Column<Guid>(type: "uuid", nullable: false),
-                    Consumption = table.Column<decimal>(type: "numeric", nullable: false),
-                    Cost = table.Column<decimal>(type: "numeric", nullable: false),
-                    SchoolInfoId = table.Column<Guid>(type: "uuid", nullable: false),
-                    CreatedBy = table.Column<string>(type: "text", nullable: true),
-                    ModifiedBy = table.Column<string>(type: "text", nullable: true),
-                    DeletedBy = table.Column<string>(type: "text", nullable: true),
-                    CreatedDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    ModifiedDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
-                    DeletedDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
-                    IsDeleted = table.Column<bool>(type: "boolean", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Papers", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Papers_SchoolInfos_SchoolInfoId",
-                        column: x => x.SchoolInfoId,
-                        principalTable: "SchoolInfos",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
-                });
-
-            migrationBuilder.CreateTable(
-                name: "Waters",
-                columns: table => new
-                {
-                    Id = table.Column<Guid>(type: "uuid", nullable: false),
-                    Consumption = table.Column<decimal>(type: "numeric", nullable: false),
-                    Cost = table.Column<decimal>(type: "numeric", nullable: false),
-                    SchoolInfoId = table.Column<Guid>(type: "uuid", nullable: false),
-                    CreatedBy = table.Column<string>(type: "text", nullable: true),
-                    ModifiedBy = table.Column<string>(type: "text", nullable: true),
-                    DeletedBy = table.Column<string>(type: "text", nullable: true),
-                    CreatedDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: false),
-                    ModifiedDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
-                    DeletedDate = table.Column<DateTime>(type: "timestamp with time zone", nullable: true),
-                    IsDeleted = table.Column<bool>(type: "boolean", nullable: false)
-                },
-                constraints: table =>
-                {
-                    table.PrimaryKey("PK_Waters", x => x.Id);
-                    table.ForeignKey(
-                        name: "FK_Waters_SchoolInfos_SchoolInfoId",
-                        column: x => x.SchoolInfoId,
-                        principalTable: "SchoolInfos",
-                        principalColumn: "Id",
-                        onDelete: ReferentialAction.Cascade);
+                        onDelete: ReferentialAction.SetNull);
                 });
 
             migrationBuilder.InsertData(
@@ -329,9 +338,9 @@ namespace Core.Migrations
                 columns: new[] { "Id", "ConcurrencyStamp", "Name", "NormalizedName" },
                 values: new object[,]
                 {
-                    { new Guid("166a4262-32fa-4368-898d-d41e2cb08fb6"), null, "USER", "USER" },
-                    { new Guid("4418aba5-5187-4c26-b0bc-c41ced161e03"), null, "ADMIN", "ADMIN" },
-                    { new Guid("eb9ecb38-c6e9-42d9-9295-ce2c307b0181"), null, "SUPERADMIN", "SUPERADMIN" }
+                    { new Guid("52892b1c-bd00-4973-8774-12e8c8453fc5"), null, "USER", "USER" },
+                    { new Guid("b49c2dc7-1285-4992-b4d7-7da184d1502e"), null, "SUPERADMIN", "SUPERADMIN" },
+                    { new Guid("dbec997d-da77-449d-9b08-82bdf8124e5d"), null, "ADMIN", "ADMIN" }
                 });
 
             migrationBuilder.InsertData(
@@ -339,9 +348,9 @@ namespace Core.Migrations
                 columns: new[] { "Id", "AccessFailedCount", "ConcurrencyStamp", "Email", "EmailConfirmed", "IsConfirmed", "LockoutEnabled", "LockoutEnd", "Name", "NormalizedEmail", "NormalizedUserName", "PasswordHash", "PhoneNumber", "PhoneNumberConfirmed", "SecurityStamp", "Surname", "TwoFactorEnabled", "UserName" },
                 values: new object[,]
                 {
-                    { new Guid("167326c1-11c3-494c-aa9b-9e0e42ee4837"), 0, "473eb3ce-981a-4658-afae-36127e3c306f", "user@example.com", false, true, false, null, "USER", "USER@EXAMPLE.COM", "USER", "AQAAAAIAAYagAAAAELDO86DJGKCQVJVT4EecFwA3Za8B3fO5YGfQRFsOl6aMLfOh93ThDFUujEMuy+gQWg==", null, false, null, "USER", false, "USER" },
-                    { new Guid("82140c4f-784b-4af9-bb73-f52f019f7beb"), 0, "4a910417-eb6c-4ef9-9ff9-dee07497ac07", "superadmin@example.com", false, true, false, null, "SUPERADMIN", "SUPERADMIN@EXAMPLE.COM", "SUPERADMIN", "AQAAAAIAAYagAAAAEIiukV3m/Zw0bAI6oBQekZjCe30a4ma/vxkaCImBuiByJGNbaMhgMjElqmUblcJ0+Q==", null, false, null, "USER", false, "SUPERADMIN" },
-                    { new Guid("83c85d03-cb46-4ebb-b52f-315eaad91ede"), 0, "6c57829f-22fd-4702-a3f2-87a5f4b04ab7", "admin@example.com", false, true, false, null, "ADMIN", "ADMIN@EXAMPLE.COM", "ADMIN", "AQAAAAIAAYagAAAAEFMXqcHmPsKRLpWFLCf8N/JtduPHR27eb/50TxAj3DKk2U2560vyE9+PuLKZysuPTQ==", null, false, null, "USER", false, "ADMIN" }
+                    { new Guid("0636ef7c-33e4-4dab-ae57-29e4e2eb79a7"), 0, "66e1498b-f716-4582-9802-e8bf568d91f1", "admin@example.com", false, true, false, null, "ADMIN", "ADMIN@EXAMPLE.COM", "ADMIN", "AQAAAAIAAYagAAAAELG2DDoGCNEKQMbsMDFWQNhvPYlg2V9HoIPtHp8ptZsx+trIta7AYe1AkQAXq8/Waw==", null, false, null, "USER", false, "ADMIN" },
+                    { new Guid("3ce5f3f4-d48c-4d62-9cb5-11b67796ad62"), 0, "2429cb42-76e1-4aa4-9131-a20229eae32c", "user@example.com", false, true, false, null, "USER", "USER@EXAMPLE.COM", "USER", "AQAAAAIAAYagAAAAEGmexe5gClssvalRm3ZdIIzCZVRaXZULBzRbOe2GzVGxOyhIwm6OLpTQVk77uO/rYw==", null, false, null, "USER", false, "USER" },
+                    { new Guid("93fd8c53-e5b6-499c-bc6a-49585052b522"), 0, "acbe9ec7-3e0d-46e7-8129-358821b2aefd", "superadmin@example.com", false, true, false, null, "SUPERADMIN", "SUPERADMIN@EXAMPLE.COM", "SUPERADMIN", "AQAAAAIAAYagAAAAEIsRGQzcRg8XiFDCQbbM63fmpjxa8cLb/qNlXVoHa0Adq0Gk7YGQJuo7eG4UFpxt/Q==", null, false, null, "USER", false, "SUPERADMIN" }
                 });
 
             migrationBuilder.InsertData(
@@ -349,9 +358,9 @@ namespace Core.Migrations
                 columns: new[] { "RoleId", "UserId" },
                 values: new object[,]
                 {
-                    { new Guid("166a4262-32fa-4368-898d-d41e2cb08fb6"), new Guid("167326c1-11c3-494c-aa9b-9e0e42ee4837") },
-                    { new Guid("eb9ecb38-c6e9-42d9-9295-ce2c307b0181"), new Guid("82140c4f-784b-4af9-bb73-f52f019f7beb") },
-                    { new Guid("4418aba5-5187-4c26-b0bc-c41ced161e03"), new Guid("83c85d03-cb46-4ebb-b52f-315eaad91ede") }
+                    { new Guid("dbec997d-da77-449d-9b08-82bdf8124e5d"), new Guid("0636ef7c-33e4-4dab-ae57-29e4e2eb79a7") },
+                    { new Guid("52892b1c-bd00-4973-8774-12e8c8453fc5"), new Guid("3ce5f3f4-d48c-4d62-9cb5-11b67796ad62") },
+                    { new Guid("b49c2dc7-1285-4992-b4d7-7da184d1502e"), new Guid("93fd8c53-e5b6-499c-bc6a-49585052b522") }
                 });
 
             migrationBuilder.CreateIndex(
@@ -397,24 +406,15 @@ namespace Core.Migrations
                 column: "BuildingId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Electrics_SchoolInfoId",
-                table: "Electrics",
-                column: "SchoolInfoId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_NaturalGasUsages_BuildingId",
-                table: "NaturalGasUsages",
+                name: "IX_NaturalGas_BuildingId",
+                table: "NaturalGas",
                 column: "BuildingId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Papers_SchoolInfoId",
-                table: "Papers",
-                column: "SchoolInfoId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Waters_SchoolInfoId",
-                table: "Waters",
-                column: "SchoolInfoId");
+                name: "IX_SchoolInfos_CampusVehicleEntryId",
+                table: "SchoolInfos",
+                column: "CampusVehicleEntryId",
+                unique: true);
         }
 
         /// <inheritdoc />
@@ -439,10 +439,13 @@ namespace Core.Migrations
                 name: "Electrics");
 
             migrationBuilder.DropTable(
-                name: "NaturalGasUsages");
+                name: "NaturalGas");
 
             migrationBuilder.DropTable(
                 name: "Papers");
+
+            migrationBuilder.DropTable(
+                name: "SchoolInfos");
 
             migrationBuilder.DropTable(
                 name: "Waters");
@@ -457,7 +460,7 @@ namespace Core.Migrations
                 name: "Buildings");
 
             migrationBuilder.DropTable(
-                name: "SchoolInfos");
+                name: "CampusVehicleEntries");
         }
     }
 }

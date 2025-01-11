@@ -64,6 +64,17 @@ namespace Core.Service.Extract
                     })
                     .ToListAsync();
             }
+            else if (consumptionType == "Paper")
+            {
+                data = await _context.Papers
+                    .Select(p => new ConsumptionDataDto
+                    {
+                        Id = p.Id,
+                        Date = p.Date,
+                        Usage = p.Usage
+                    })
+                    .ToListAsync();
+            }
 
             return data;
         }

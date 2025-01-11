@@ -17,7 +17,7 @@ namespace Core.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.8")
+                .HasAnnotation("ProductVersion", "9.0.0")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
@@ -105,7 +105,7 @@ namespace Core.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("CampusVehicleEntry");
+                    b.ToTable("CampusVehicleEntries", (string)null);
                 });
 
             modelBuilder.Entity("Core.Data.Entity.Electric", b =>
@@ -209,7 +209,7 @@ namespace Core.Migrations
 
                     b.HasIndex("BuildingId");
 
-                    b.ToTable("NaturalGasUsages", (string)null);
+                    b.ToTable("NaturalGas", (string)null);
                 });
 
             modelBuilder.Entity("Core.Data.Entity.Paper", b =>
@@ -218,16 +218,13 @@ namespace Core.Migrations
                         .ValueGeneratedOnAdd()
                         .HasColumnType("uuid");
 
-                    b.Property<decimal>("Consumption")
-                        .HasColumnType("numeric");
-
-                    b.Property<decimal>("Cost")
-                        .HasColumnType("numeric");
-
                     b.Property<string>("CreatedBy")
                         .HasColumnType("text");
 
                     b.Property<DateTime>("CreatedDate")
+                        .HasColumnType("timestamp with time zone");
+
+                    b.Property<DateTime>("Date")
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<string>("DeletedBy")
@@ -245,12 +242,10 @@ namespace Core.Migrations
                     b.Property<DateTime?>("ModifiedDate")
                         .HasColumnType("timestamp with time zone");
 
-                    b.Property<Guid>("SchoolInfoId")
-                        .HasColumnType("uuid");
+                    b.Property<decimal>("Usage")
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("SchoolInfoId");
 
                     b.ToTable("Papers", (string)null);
                 });
@@ -330,19 +325,19 @@ namespace Core.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("ac2c246c-b3db-42d3-8daf-e41e7aa2a9ae"),
+                            Id = new Guid("b49c2dc7-1285-4992-b4d7-7da184d1502e"),
                             Name = "SUPERADMIN",
                             NormalizedName = "SUPERADMIN"
                         },
                         new
                         {
-                            Id = new Guid("baf90810-2a87-4478-8e80-9c28161172d3"),
+                            Id = new Guid("dbec997d-da77-449d-9b08-82bdf8124e5d"),
                             Name = "ADMIN",
                             NormalizedName = "ADMIN"
                         },
                         new
                         {
-                            Id = new Guid("988963dd-fe67-4ff4-b962-0e9472f23816"),
+                            Id = new Guid("52892b1c-bd00-4973-8774-12e8c8453fc5"),
                             Name = "USER",
                             NormalizedName = "USER"
                         });
@@ -429,9 +424,9 @@ namespace Core.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("6c7e22e1-4bc2-419c-9c86-73774435f98f"),
+                            Id = new Guid("93fd8c53-e5b6-499c-bc6a-49585052b522"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "688620d7-3b7b-4630-b562-5c28c493ae12",
+                            ConcurrencyStamp = "acbe9ec7-3e0d-46e7-8129-358821b2aefd",
                             Email = "superadmin@example.com",
                             EmailConfirmed = false,
                             IsConfirmed = true,
@@ -439,7 +434,7 @@ namespace Core.Migrations
                             Name = "SUPERADMIN",
                             NormalizedEmail = "SUPERADMIN@EXAMPLE.COM",
                             NormalizedUserName = "SUPERADMIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEBygMmmtBifRrTCaNtlbzSxJOCXpp3sQfZiT094uBNLK+aN50lzW1D2+DD2qOhOnmA==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEIsRGQzcRg8XiFDCQbbM63fmpjxa8cLb/qNlXVoHa0Adq0Gk7YGQJuo7eG4UFpxt/Q==",
                             PhoneNumberConfirmed = false,
                             Surname = "USER",
                             TwoFactorEnabled = false,
@@ -447,9 +442,9 @@ namespace Core.Migrations
                         },
                         new
                         {
-                            Id = new Guid("716d5945-db78-408e-8ef0-6c0cebbadc83"),
+                            Id = new Guid("0636ef7c-33e4-4dab-ae57-29e4e2eb79a7"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "50789197-f509-46a9-a181-8c077236c07f",
+                            ConcurrencyStamp = "66e1498b-f716-4582-9802-e8bf568d91f1",
                             Email = "admin@example.com",
                             EmailConfirmed = false,
                             IsConfirmed = true,
@@ -457,7 +452,7 @@ namespace Core.Migrations
                             Name = "ADMIN",
                             NormalizedEmail = "ADMIN@EXAMPLE.COM",
                             NormalizedUserName = "ADMIN",
-                            PasswordHash = "AQAAAAIAAYagAAAAEPkwZEhIEW0C1p0dqa6mZj2XtCy7dT7rHAdKJdvv0aCy1duRrk/YrIXo8eJ4gnw5ZQ==",
+                            PasswordHash = "AQAAAAIAAYagAAAAELG2DDoGCNEKQMbsMDFWQNhvPYlg2V9HoIPtHp8ptZsx+trIta7AYe1AkQAXq8/Waw==",
                             PhoneNumberConfirmed = false,
                             Surname = "USER",
                             TwoFactorEnabled = false,
@@ -465,9 +460,9 @@ namespace Core.Migrations
                         },
                         new
                         {
-                            Id = new Guid("646dc2b1-7527-414c-919c-e9c6bea2c78d"),
+                            Id = new Guid("3ce5f3f4-d48c-4d62-9cb5-11b67796ad62"),
                             AccessFailedCount = 0,
-                            ConcurrencyStamp = "52cad739-530a-4ecd-883f-54c5826b8479",
+                            ConcurrencyStamp = "2429cb42-76e1-4aa4-9131-a20229eae32c",
                             Email = "user@example.com",
                             EmailConfirmed = false,
                             IsConfirmed = true,
@@ -475,7 +470,7 @@ namespace Core.Migrations
                             Name = "USER",
                             NormalizedEmail = "USER@EXAMPLE.COM",
                             NormalizedUserName = "USER",
-                            PasswordHash = "AQAAAAIAAYagAAAAENTBVK5LnomMb5gmgNmpGDRotdcSW/ONIJYUTlTA2KmhJujkXS7716nR5S8iY2ceEw==",
+                            PasswordHash = "AQAAAAIAAYagAAAAEGmexe5gClssvalRm3ZdIIzCZVRaXZULBzRbOe2GzVGxOyhIwm6OLpTQVk77uO/rYw==",
                             PhoneNumberConfirmed = false,
                             Surname = "USER",
                             TwoFactorEnabled = false,
@@ -505,10 +500,10 @@ namespace Core.Migrations
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<decimal>("FinalMeterValue")
-                        .HasColumnType("numeric");
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<decimal>("InitialMeterValue")
-                        .HasColumnType("numeric");
+                        .HasColumnType("decimal(18,2)");
 
                     b.Property<bool>("IsDeleted")
                         .HasColumnType("boolean");
@@ -520,7 +515,7 @@ namespace Core.Migrations
                         .HasColumnType("timestamp with time zone");
 
                     b.Property<decimal>("Usage")
-                        .HasColumnType("numeric");
+                        .HasColumnType("decimal(18,2)");
 
                     b.HasKey("Id");
 
@@ -613,18 +608,18 @@ namespace Core.Migrations
                     b.HasData(
                         new
                         {
-                            UserId = new Guid("6c7e22e1-4bc2-419c-9c86-73774435f98f"),
-                            RoleId = new Guid("ac2c246c-b3db-42d3-8daf-e41e7aa2a9ae")
+                            UserId = new Guid("93fd8c53-e5b6-499c-bc6a-49585052b522"),
+                            RoleId = new Guid("b49c2dc7-1285-4992-b4d7-7da184d1502e")
                         },
                         new
                         {
-                            UserId = new Guid("716d5945-db78-408e-8ef0-6c0cebbadc83"),
-                            RoleId = new Guid("baf90810-2a87-4478-8e80-9c28161172d3")
+                            UserId = new Guid("0636ef7c-33e4-4dab-ae57-29e4e2eb79a7"),
+                            RoleId = new Guid("dbec997d-da77-449d-9b08-82bdf8124e5d")
                         },
                         new
                         {
-                            UserId = new Guid("646dc2b1-7527-414c-919c-e9c6bea2c78d"),
-                            RoleId = new Guid("988963dd-fe67-4ff4-b962-0e9472f23816")
+                            UserId = new Guid("3ce5f3f4-d48c-4d62-9cb5-11b67796ad62"),
+                            RoleId = new Guid("52892b1c-bd00-4973-8774-12e8c8453fc5")
                         });
                 });
 
@@ -669,23 +664,12 @@ namespace Core.Migrations
                     b.Navigation("Building");
                 });
 
-            modelBuilder.Entity("Core.Data.Entity.Paper", b =>
-                {
-                    b.HasOne("Core.Data.Entity.SchoolInfo", "SchoolInfo")
-                        .WithMany()
-                        .HasForeignKey("SchoolInfoId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("SchoolInfo");
-                });
-
             modelBuilder.Entity("Core.Data.Entity.SchoolInfo", b =>
                 {
                     b.HasOne("Core.Data.Entity.CampusVehicleEntry", "Vehicles")
                         .WithOne()
                         .HasForeignKey("Core.Data.Entity.SchoolInfo", "CampusVehicleEntryId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.SetNull);
 
                     b.Navigation("Vehicles");
                 });

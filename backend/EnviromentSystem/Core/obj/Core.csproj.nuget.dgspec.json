@@ -100,19 +100,19 @@
             },
             "Microsoft.EntityFrameworkCore": {
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[9.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Design": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[9.0.0, )"
             },
             "Microsoft.EntityFrameworkCore.Tools": {
               "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
               "suppressParent": "All",
               "target": "Package",
-              "version": "[8.0.8, )"
+              "version": "[9.0.0, )"
             },
             "Microsoft.IdentityModel.JsonWebTokens": {
               "target": "Package",
@@ -124,7 +124,7 @@
             },
             "Npgsql.EntityFrameworkCore.PostgreSQL": {
               "target": "Package",
-              "version": "[8.0.4, )"
+              "version": "[9.0.0, )"
             },
             "Polly": {
               "target": "Package",
@@ -133,10 +133,6 @@
             "Quartz": {
               "target": "Package",
               "version": "[3.13.0, )"
-            },
-            "RavenDB.Database": {
-              "target": "Package",
-              "version": "[3.5.9, )"
             },
             "Swashbuckle.AspNetCore": {
               "target": "Package",

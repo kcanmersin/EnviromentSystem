@@ -30,12 +30,12 @@ namespace Core.Data.Configuration
                    .HasColumnType("decimal(18,2)");
 
             builder.HasOne(n => n.Building)
-                   .WithMany(b => b.NaturalGasUsages) // Assuming a collection property in Building named NaturalGasUsages
+                   .WithMany(b => b.NaturalGasUsages) 
                    .HasForeignKey(n => n.BuildingId)
                    .OnDelete(DeleteBehavior.Cascade);
 
-            // Table Name
-            builder.ToTable("NaturalGas"); // Specifies the table name in the database
+  
+            builder.ToTable("NaturalGas"); 
         }
     }
 }

@@ -75,6 +75,40 @@ public class ConsumptionController : ControllerBase
 
                 return package.GetAsByteArray();
             }
+            else if (consumptionType.Equals("Paper", StringComparison.OrdinalIgnoreCase))
+            {
+                var allSheet = package.Workbook.Worksheets.Add("Yearly");
+
+                allSheet.Cells[1, 1].Value = "Year";
+                allSheet.Cells[1, 2].Value = "Total Usage";
+
+                var groupedData = data
+                    .GroupBy(d => d.Date.Year)
+                    .Select(g => new
+                    {
+                        Year = g.Key,
+                        TotalUsage = g.Sum(d => d.Usage)
+                    })
+                    .OrderBy(g => g.Year)
+                    .ToList();
+
+                int row = 2;
+                foreach (var item in groupedData)
+                {
+                    allSheet.Cells[row, 1].Value = item.Year;
+                    allSheet.Cells[row, 2].Value = item.TotalUsage;
+                    row++;
+                }
+
+                if (includeGraphs && row > 2)
+                {
+                    string xRange = $"A2:A{row - 1}";
+                    string yRange = $"B2:B{row - 1}";
+                    AddChart(allSheet, xRange, yRange, "Total Usage Per Year", isYear: true);
+                }
+
+                return package.GetAsByteArray();
+            }
 
             var allSheetStandard = package.Workbook.Worksheets.Add("All");
             var groupedDataStandard = data
@@ -86,7 +120,7 @@ public class ConsumptionController : ControllerBase
                     TotalKWH = consumptionType.Equals("Electric", StringComparison.OrdinalIgnoreCase) ? g.Sum(d => d.KWHValue) : 0,
                     TotalSM3 = consumptionType.Equals("NaturalGas", StringComparison.OrdinalIgnoreCase) ? g.Sum(d => d.SM3Value) : 0
                 })
-                .OrderBy(g => g.Period) 
+                .OrderBy(g => g.Period)
                 .ToList();
 
             allSheetStandard.Cells[1, 1].Value = "Period";
@@ -158,7 +192,7 @@ public class ConsumptionController : ControllerBase
         }
     }
 
-    private void AddChart(ExcelWorksheet sheet, string xRange, string yRange, string chartTitle)
+    private void AddChart(ExcelWorksheet sheet, string xRange, string yRange, string chartTitle, bool isYear = false)
     {
         var cells = sheet.Cells[yRange];
         int totalRows = cells.End.Row;
@@ -166,18 +200,24 @@ public class ConsumptionController : ControllerBase
 
         var chart = sheet.Drawings.AddChart("UsageChart_" + chartTitle.Replace(" ", ""), eChartType.Line) as ExcelLineChart;
         chart.Title.Text = chartTitle;
-        chart.SetPosition(totalRows + 2, 0, 0, 0); 
+        chart.SetPosition(totalRows + 2, 0, 0, 0);
         chart.SetSize(800, 400);
 
         chart.Series.Add(sheet.Cells[yRange], sheet.Cells[xRange]);
-        chart.XAxis.Title.Text = "Date";
+        chart.XAxis.Title.Text = isYear ? "Year" : "Date";
         chart.YAxis.Title.Text = "Usage";
 
-        var xAxis = chart.XAxis as ExcelChartAxisStandard;
-        xAxis.Format = "yyyy-mm-dd";
-        xAxis.MajorTickMark = eAxisTickMark.None;
-        xAxis.MinorTickMark = eAxisTickMark.None;
-
+        if (isYear)
+        {
+            chart.XAxis.Format = "0"; 
+        }
+        else
+        {
+            var xAxis = chart.XAxis as ExcelChartAxisStandard;
+            xAxis.Format = "yyyy-MM-dd";
+            xAxis.MajorTickMark = eAxisTickMark.None;
+            xAxis.MinorTickMark = eAxisTickMark.None;
+        }
 
         chart.Legend.Position = eLegendPosition.Bottom;
     }

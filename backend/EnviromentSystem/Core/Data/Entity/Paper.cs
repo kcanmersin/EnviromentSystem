@@ -7,14 +7,9 @@ namespace Core.Data.Entity
     public class Paper : EntityBase
     {
         [Required]
-        public decimal Consumption { get; set; } 
+        public DateTime Date { get; set; }
         [Required]
-        public decimal Cost { get; set; }  
+        public decimal Usage { get; set; } 
 
-        [Required]
-        public Guid SchoolInfoId { get; set; }  
-
-        [ForeignKey(nameof(SchoolInfoId))]
-        public SchoolInfo SchoolInfo { get; set; }
     }
 }

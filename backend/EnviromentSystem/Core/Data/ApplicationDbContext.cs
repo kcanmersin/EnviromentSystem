@@ -4,6 +4,7 @@ using Core.Data.Entity.User;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 
 namespace Core.Data
 {
@@ -15,8 +16,15 @@ namespace Core.Data
         public DbSet<Building> Buildings { get; set; }
         public DbSet<SchoolInfo> SchoolInfos { get; set; }
         public DbSet<NaturalGas> NaturalGasUsages { get; set; }
+        public DbSet<CampusVehicleEntry> CampusVehicleEntries { get; set; }
 
         public ApplicationDbContext(DbContextOptions<ApplicationDbContext> options) : base(options) { }
+        protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
+        {
+            // Uyarýlarý bastýrmak için
+            optionsBuilder.ConfigureWarnings(warnings =>
+                warnings.Ignore(RelationalEventId.PendingModelChangesWarning));
+        }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
@@ -25,16 +33,10 @@ namespace Core.Data
             modelBuilder.ApplyConfiguration(new NaturalGasConfiguration());
             modelBuilder.ApplyConfiguration(new AppUserConfiguration());
             modelBuilder.ApplyConfiguration(new AppRoleConfiguration());
-
-            modelBuilder.Entity<SchoolInfo>()
-           .HasOne(s => s.Vehicles)
-           .WithOne()
-           .HasForeignKey<SchoolInfo>(s => s.CampusVehicleEntryId)
-           .OnDelete(DeleteBehavior.Cascade);
-            modelBuilder.Entity<Water>().ToTable("Waters");
-            modelBuilder.Entity<Paper>().ToTable("Papers");
-            modelBuilder.Entity<SchoolInfo>().ToTable("SchoolInfos");
-            modelBuilder.Entity<NaturalGas>().ToTable("NaturalGasUsages");
+            modelBuilder.ApplyConfiguration(new CampusVehicleEntryConfiguration());
+            modelBuilder.ApplyConfiguration(new PaperConfiguration());
+            modelBuilder.ApplyConfiguration(new SchoolInfoConfiguration());
+            modelBuilder.ApplyConfiguration(new WaterConfiguration());
 
             SeedData(modelBuilder);
 

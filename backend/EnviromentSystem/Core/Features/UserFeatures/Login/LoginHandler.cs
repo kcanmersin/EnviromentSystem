@@ -44,6 +44,7 @@ namespace Core.Features.UserFeatures.Login
             }
 
             var roles = await _userManager.GetRolesAsync(user);
+            var primaryRole = roles.FirstOrDefault() ?? string.Empty;
 
             var token = _jwtService.GenerateToken(user.Email, user.Id, roles);
 
@@ -52,7 +53,8 @@ namespace Core.Features.UserFeatures.Login
                 Token = token,
                 Email = user.Email,
                 Name = user.Name,
-                Surname = user.Surname
+                Surname = user.Surname,
+                Role = primaryRole
             });
         }
 

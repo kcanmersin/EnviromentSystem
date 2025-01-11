@@ -26,7 +26,7 @@ namespace API.Controllers
                 Password = request.Password,
                 Name = request.Name,
                 Surname = request.Surname,
-                Roles = request.Roles 
+                Roles = request.Roles
             };
 
             var result = await _mediator.Send(command);
@@ -62,7 +62,8 @@ namespace API.Controllers
                 Token = result.Value.Token,
                 Email = result.Value.Email,
                 Name = result.Value.Name,
-                Surname = result.Value.Surname
+                Surname = result.Value.Surname,
+                Role = result.Value.Role
             });
         }
     }

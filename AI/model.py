@@ -221,7 +221,6 @@ class ConsumptionModel:
         model.add(Flatten())
         model.add(Dense(50, activation='relu'))
         model.add(Dropout(0.2))
-        # Negatif tahminleri engellemek için 'softplus' (ya da 'relu') kullanabilirsiniz.
         model.add(Dense(1, activation='softplus'))
 
         model.compile(optimizer='adam', loss='mse')

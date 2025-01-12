@@ -39,6 +39,16 @@ namespace Core.Service.PredictionService
 
             var responseContent = await response.Content.ReadAsStringAsync();
 
+            // Check if the response contains the message "No anomalies detected."
+            if (responseContent.Contains("No anomalies detected"))
+            {
+                return new AnomalyResponse
+                {
+                    Anomalies = new List<Anomaly>() // Return an empty list if no anomalies are detected
+                };
+            }
+
+
             var options = new JsonSerializerOptions
             {
                 Converters = { new AnomalyDateTimeConverter() }

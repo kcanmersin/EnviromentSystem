@@ -319,6 +319,7 @@ class ConsumptionModel:
         for _ in range(predict_months):
             pred = trained_model.predict(x_input, verbose=0)[0][0]
             predictions.append(pred)
+            # Update input by shifting and adding the new prediction
             new_features = np.append(x_input[0, 1:, :], [[pred] + [0]*(len(feature_cols)-1)], axis=0)
             x_input = new_features.reshape(1, look_back, len(feature_cols))
 
@@ -330,15 +331,23 @@ class ConsumptionModel:
         df.sort_index(inplace=True)
         last_date = df.index[-1]
 
-        future_dates = [last_date + pd.DateOffset(months=i + 1) for i in range(predict_months)]
-        future_dates = [date + pd.offsets.MonthEnd(0) for date in future_dates]
-        future_dates = [pd.Timestamp(date).tz_localize('UTC').strftime('%Y-%m-%d %H:%M:%S%z') for date in future_dates]
+        # Generate future dates
+        future_dates_raw = [last_date + pd.DateOffset(months=i + 1) for i in range(predict_months)]
+        future_dates = []
+        for date in future_dates_raw:
+            ts = pd.Timestamp(date)
+            if ts.tzinfo is None:
+                # If naive, localize to UTC
+                ts = ts.tz_localize('UTC')
+            else:
+                # If aware, convert to UTC
+                ts = ts.tz_convert('UTC')
+            future_dates.append(ts.strftime('%Y-%m-%d %H:%M:%S%z'))
 
         prediction_df = pd.DataFrame({'Date': future_dates, 'Predicted_Usage': inverse_predictions})
         prediction_df.to_csv(self.prediction_csv, index=False)
         logging.info(f"Predictions saved to {self.prediction_csv}")
         return prediction_df
-
     def get_predictions(self, months):
         """
         Tahmin CSV dosyasından belirtilen sayıda tahmini döndürür.
@@ -395,11 +404,14 @@ class ConsumptionModel:
             anomaly_indices = valid_indices[anomalies]
             logging.info(f"Anomaly indices extracted. Total anomaly indices: {len(anomaly_indices)}")
 
+            # Map anomaly indices to actual dates
+            anomaly_dates = pd.to_datetime(df.iloc[anomaly_indices]['Date']).dt.strftime('%Y-%m-%d %H:%M:%S+00:00')
+
             # Eğer anomaliler varsa CSV'ye kaydet
             if len(anomaly_indices) > 0:
                 # Anomaly indices'i 'Date' sütunu olarak kullanıyoruz
                 anomaly_df = pd.DataFrame({
-                    'Date': anomaly_indices,
+                    'Date': anomaly_dates,
                     'Anomaly_Error': error[anomalies]
                 })
                 anomaly_df.to_csv(self.anomaly_csv, index=False)

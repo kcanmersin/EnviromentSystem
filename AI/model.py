@@ -444,7 +444,7 @@ class ConsumptionModel:
 
         if len(anomaly_indices) > 0:
             anomaly_df = pd.DataFrame({
-                'DateIndex': anomaly_indices,
+                'Date': anomaly_indices,
                 'Anomaly_Error': error[anomalies]
             })
             # 1) Anomalileri temp klasörüne kaydet

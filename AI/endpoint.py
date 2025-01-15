@@ -38,11 +38,12 @@ def train_model_endpoint():
         
         logging.info("Model eğitiliyor")
         model.train_model(scaled_features, scaled_target, feature_cols, threshold=threshold)
-        
+        final_anomaly_path = os.path.join(model.final_base_path, "anomalies.csv")
+        anomalies_detected = os.path.exists(final_anomaly_path)
         logging.info("Tahminler ve anomaliler kaydediliyor")
         return jsonify({
             "message": f"Model for {consumption_type} trained and saved.",
-            "anomalies_detected": os.path.exists(model.anomaly_csv)
+            "anomalies_detected": anomalies_detected
         })
     except Exception as e:
         logging.error(f"Hata oluştu: {str(e)}")

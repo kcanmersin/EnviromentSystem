@@ -1,3 +1,4 @@
+import decimal
 import os
 import pandas as pd
 import numpy as np
@@ -100,7 +101,8 @@ def feature_engineering(data, features_to_add):
 
     # Fill missing values for new columns
     for col in data.columns:
-        if 'lag' in col or 'diff' in col or 'rolling_mean' in col or 'rolling_std' in col or 'rolling_max' in col or 'rolling_min' in col:
+        if ('lag' in col or 'diff' in col or 'rolling_mean' in col or
+                'rolling_std' in col or 'rolling_max' in col or 'rolling_min' in col):
             data[col] = data[col].fillna(method='bfill').fillna(method='ffill')
         elif col == 'growth_rate' or col == 'z_score':
             data[col] = data[col].fillna(0)
@@ -108,7 +110,6 @@ def feature_engineering(data, features_to_add):
             data[col] = data[col].fillna(method='ffill').fillna(method='bfill')
 
     return data
-
 
 def create_dataset(data, target, look_back=5):
     """
@@ -128,19 +129,22 @@ class ConsumptionModel:
         self.consumption_type = consumption_type.lower()
         self.building_id = building_id
         self.building_name = Building.get_name(building_id) if building_id else "all"
-        self.date_folder = datetime.now().strftime('%Y-%m-%d')
-        self.file_base_path = os.path.join(
-            "Consumptions",
-            self.consumption_type.capitalize(),
-            self.building_name,
-            self.date_folder
-        )
-        os.makedirs(self.file_base_path, exist_ok=True)
-        self.feature_scaler_filename = os.path.join(self.file_base_path, "feature_scaler.save")
-        self.target_scaler_filename = os.path.join(self.file_base_path, "target_scaler.save")
-        self.model_filename = os.path.join(self.file_base_path, "model.keras")
-        self.prediction_csv = os.path.join(self.file_base_path, "predictions.csv")
-        self.anomaly_csv = os.path.join(self.file_base_path, "anomalies.csv")
+
+        # "temp" ve "final" klasörleri için yollar
+        self.base_path = os.path.join("Consumptions", self.consumption_type.capitalize(), self.building_name)
+        self.temp_base_path = os.path.join(self.base_path, "temp")
+        self.final_base_path = os.path.join(self.base_path, "final")
+        
+        # Klasörleri oluştur
+        os.makedirs(self.temp_base_path, exist_ok=True)
+        os.makedirs(self.final_base_path, exist_ok=True)
+
+        # Dosya yolları (varsayılan olarak temp'e yaz)
+        self.feature_scaler_filename = os.path.join(self.temp_base_path, "feature_scaler.save")
+        self.target_scaler_filename = os.path.join(self.temp_base_path, "target_scaler.save")
+        self.model_filename = os.path.join(self.temp_base_path, "model.keras")
+        self.prediction_csv = os.path.join(self.temp_base_path, "predictions.csv")
+        self.anomaly_csv = os.path.join(self.temp_base_path, "anomalies.csv")
 
     def fetch_data(self):
         """
@@ -165,47 +169,56 @@ class ConsumptionModel:
         df['Date'] = pd.to_datetime(df['Date'])
         df['Year'] = df['Date'].dt.year
         df['Month'] = df['Date'].dt.month
+
         df_grouped = df.groupby(['Year', 'Month'], as_index=False).agg({'Usage': 'sum'})
         df_grouped['Date'] = pd.to_datetime(df_grouped[['Year', 'Month']].assign(Day=1))
         df_grouped.set_index('Date', inplace=True)
         df_grouped.drop(columns=['Year', 'Month'], inplace=True)
 
         # Ek özellikler tanımlanıyor
-        # features_to_add = [
-        #     'year', 'month', 'lag_1', 'lag_3', 'lag_6'
-
-        # ]
         features_to_add = [
             'year', 'month', 'lag_1', 'lag_3', 'lag_6',
-            'diff_1', 'diff_3', 'rolling_mean_3', 'rolling_mean_6','month_sin_cos','z_score'
+            'diff_1', 'diff_3', 'rolling_mean_3', 'rolling_mean_6',
+            'month_sin_cos', 'z_score'
         ]
         df_grouped = feature_engineering(df_grouped, features_to_add)
         data = df_grouped.dropna()
-        #log data  head and id 
+
         logging.info(f"Data ID: {self.building_id}")
         logging.info(f"Data head: {data.head()}")
-        
+
         feature_cols = [col for col in data.columns if col != 'Usage']
 
-        if isinstance(data['Usage'], list):
-            data['Usage'] = np.array(data['Usage'])
-
         if fit_scaler:
-            # Ölçekleyicileri fit edip kaydet
+            # Ölçekleyicileri fit edip kaydet (temp klasörüne)
             self.feature_scaler = MinMaxScaler(feature_range=(0, 1))
             self.target_scaler = MinMaxScaler(feature_range=(0, 1))
+
             scaled_features = self.feature_scaler.fit_transform(data[feature_cols].values)
             scaled_target = self.target_scaler.fit_transform(data['Usage'].values.reshape(-1, 1))
+
             dump(self.feature_scaler, self.feature_scaler_filename)
             dump(self.target_scaler, self.target_scaler_filename)
+
             logging.info(f"Scalers fitted and saved to {self.feature_scaler_filename} and {self.target_scaler_filename}")
         else:
-            # Ölçekleyicileri yükleyip dönüştür
-            self.feature_scaler = load(self.feature_scaler_filename)
-            self.target_scaler = load(self.target_scaler_filename)
+            # Eğer tekrar tahmin/anomali için kullanacaksak final klasöründeki scaler'ı kullanmaya çalışıyoruz
+            final_feature_scaler_path = os.path.join(self.final_base_path, "feature_scaler.save")
+            final_target_scaler_path = os.path.join(self.final_base_path, "target_scaler.save")
+
+            if os.path.exists(final_feature_scaler_path) and os.path.exists(final_target_scaler_path):
+                # final'daki scaler'lar yüklensin
+                self.feature_scaler = load(final_feature_scaler_path)
+                self.target_scaler = load(final_target_scaler_path)
+                logging.info("Scalers loaded from final folder.")
+            else:
+                # Aksi halde temp'deki en güncel scaler'ları yükle
+                self.feature_scaler = load(self.feature_scaler_filename)
+                self.target_scaler = load(self.target_scaler_filename)
+                logging.info("Scalers loaded from temp folder.")
+
             scaled_features = self.feature_scaler.transform(data[feature_cols].values)
             scaled_target = self.target_scaler.transform(data['Usage'].values.reshape(-1, 1))
-            logging.info(f"Scalers loaded from {self.feature_scaler_filename} and {self.target_scaler_filename}")
 
         return scaled_features, scaled_target, feature_cols
 
@@ -216,6 +229,7 @@ class ConsumptionModel:
         X, Y = create_dataset(scaled_features, scaled_target, look_back)
         model = Sequential()
         model.add(Input(shape=(look_back, X.shape[2])))
+
         model.add(Conv1D(filters=64, kernel_size=2, activation='relu'))
         model.add(MaxPooling1D(pool_size=2))
         model.add(Flatten())
@@ -230,16 +244,16 @@ class ConsumptionModel:
         ]
         model.fit(X, Y, epochs=100, batch_size=16, callbacks=callbacks, verbose=1)
 
+        # Modeli temp klasörüne kaydediyoruz
         model.save(self.model_filename)
         logging.info(f"Electric model saved to {self.model_filename}")
-
-
 
     def train_water_model(self, scaled_features, scaled_target, feature_cols, look_back=5):
         X, Y = create_dataset(scaled_features, scaled_target, look_back)
 
         model = Sequential()
         model.add(Input(shape=(look_back, X.shape[2])))
+
         model.add(Conv1D(filters=32, kernel_size=2, activation='relu'))
         model.add(MaxPooling1D(pool_size=2))
         model.add(Flatten())
@@ -249,9 +263,9 @@ class ConsumptionModel:
 
         model.compile(optimizer='adam', loss='mse')
         callbacks = [
-                EarlyStopping(monitor='loss', patience=15, restore_best_weights=True),
-                ReduceLROnPlateau(monitor='loss', factor=0.2, patience=7, min_lr=0.0001)
-            ]
+            EarlyStopping(monitor='loss', patience=15, restore_best_weights=True),
+            ReduceLROnPlateau(monitor='loss', factor=0.2, patience=7, min_lr=0.0001)
+        ]
         model.fit(X, Y, epochs=150, batch_size=32, callbacks=callbacks, verbose=1)
 
         model.save(self.model_filename)
@@ -262,6 +276,7 @@ class ConsumptionModel:
 
         model = Sequential()
         model.add(Input(shape=(look_back, X.shape[2])))
+
         model.add(Conv1D(filters=128, kernel_size=2, activation='relu'))
         model.add(MaxPooling1D(pool_size=2))
         model.add(Flatten())
@@ -292,38 +307,79 @@ class ConsumptionModel:
         else:
             raise ValueError("Invalid consumption type for training.")
         
+        # Eğitim sonrası tahmin yap
         self.predict_and_save_csv(predict_months=12, look_back=look_back)
         
+        # Anomali tespiti yap
         self.detect_anomalies(threshold)
+
+        # Tüm dosyaları temp'ten final'e taşı
+        self.move_temp_to_final()
+
+    def move_temp_to_final(self):
+        """
+        Eğitim bittikten sonra temp klasöründeki güncel model, scaler ve CSV dosyalarını final klasörüne taşır.
+        """
+        for filename in os.listdir(self.temp_base_path):
+            src = os.path.join(self.temp_base_path, filename)
+            dst = os.path.join(self.final_base_path, filename)
+            try:
+                shutil.move(src, dst)
+                logging.info(f"Moved {filename} from temp to final folder.")
+            except Exception as e:
+                logging.error(f"Failed to move {filename} to final folder: {e}")
 
     def predict_and_save_csv(self, predict_months=12, look_back=5):
         """
-        Gelecek aylar için tüketim tahminleri yapar ve bunları CSV dosyasına kaydeder.
+        Gelecek aylar için tüketim tahminleri yapar ve bunları CSV dosyasına (temp'e) kaydeder.
         """
-        if not os.path.exists(self.model_filename):
-            raise FileNotFoundError(f"Model file for {self.consumption_type} not found")
-        if not os.path.exists(self.feature_scaler_filename):
-            raise FileNotFoundError(f"Feature scaler file for {self.consumption_type} not found")
-        if not os.path.exists(self.target_scaler_filename):
-            raise FileNotFoundError(f"Target scaler file for {self.consumption_type} not found")
+        # final veya temp'teki model dosyalarına bakılarak yüklenir
+        model_path = os.path.join(self.final_base_path, "model.keras")
+        if not os.path.exists(model_path):
+            model_path = self.model_filename  # temp'teki model
+
+        if not os.path.exists(model_path):
+            raise FileNotFoundError(f"Model file for {self.consumption_type} not found in temp or final folder")
+
+        # Aynı mantıkla scaler'ları da final veya temp'ten yükleyelim
+        feature_scaler_path = os.path.join(self.final_base_path, "feature_scaler.save")
+        target_scaler_path = os.path.join(self.final_base_path, "target_scaler.save")
+
+        if not os.path.exists(feature_scaler_path):
+            feature_scaler_path = self.feature_scaler_filename
+        if not os.path.exists(target_scaler_path):
+            target_scaler_path = self.target_scaler_filename
 
         df = self.fetch_data()
         if df.empty:
             raise ValueError(f"No data available for prediction for {self.consumption_type}.")
 
+        # Model ve scaler objelerini yükle
+        trained_model = load_model(model_path)
+        loaded_feature_scaler = load(feature_scaler_path)
+        loaded_target_scaler = load(target_scaler_path)
+
+        # Veri hazırla (fit_scaler=False; tekrar ölçekleyiciler fit edilmesin)
         scaled_features, _, feature_cols = self.prepare_data(df, fit_scaler=False)
+
         x_input = scaled_features[-look_back:].reshape(1, look_back, len(feature_cols))
-        trained_model = load_model(self.model_filename)
         predictions = []
 
         for _ in range(predict_months):
             pred = trained_model.predict(x_input, verbose=0)[0][0]
             predictions.append(pred)
-            # Update input by shifting and adding the new prediction
-            new_features = np.append(x_input[0, 1:, :], [[pred] + [0]*(len(feature_cols)-1)], axis=0)
+            # Yeni tahmini, girdi dizisine ekle
+            new_features = np.append(
+                x_input[0, 1:, :], 
+                [[pred] + [0]*(len(feature_cols)-1)],
+                axis=0
+            )
             x_input = new_features.reshape(1, look_back, len(feature_cols))
 
-        inverse_predictions = self.target_scaler.inverse_transform(np.array(predictions).reshape(-1, 1)).flatten()
+        # Ters dönüşüm
+        inverse_predictions = loaded_target_scaler.inverse_transform(
+            np.array(predictions).reshape(-1, 1)
+        ).flatten()
 
         if not isinstance(df.index, pd.DatetimeIndex):
             df['Date'] = pd.to_datetime(df['Date'])
@@ -331,16 +387,14 @@ class ConsumptionModel:
         df.sort_index(inplace=True)
         last_date = df.index[-1]
 
-        # Generate future dates
+        # Gelecek ayların tarihlerini oluştur
         future_dates_raw = [last_date + pd.DateOffset(months=i + 1) for i in range(predict_months)]
         future_dates = []
         for date in future_dates_raw:
             ts = pd.Timestamp(date)
             if ts.tzinfo is None:
-                # If naive, localize to UTC
                 ts = ts.tz_localize('UTC')
             else:
-                # If aware, convert to UTC
                 ts = ts.tz_convert('UTC')
             future_dates.append(ts.strftime('%Y-%m-%d %H:%M:%S%z'))
 
@@ -348,126 +402,89 @@ class ConsumptionModel:
         prediction_df.to_csv(self.prediction_csv, index=False)
         logging.info(f"Predictions saved to {self.prediction_csv}")
         return prediction_df
-    def get_predictions(self, months):
-        """
-        Tahmin CSV dosyasından belirtilen sayıda tahmini döndürür.
-        """
-        if not os.path.exists(self.prediction_csv):
-            raise FileNotFoundError(f"Prediction CSV for {self.consumption_type} not found")
-        prediction_df = pd.read_csv(self.prediction_csv)
-        return prediction_df.head(months)
 
     def detect_anomalies(self, threshold=0.05):
         """
-        Tahmin hatalarına dayanarak anomalileri tespit eder ve kaydeder.
+        Tahmin hatalarına dayanarak anomalileri tespit eder ve önce temp'e kaydeder.
+        Ardından temp'deki anomalies.csv dosyasını final klasörüne taşır (eskisini silerek).
         """
-        try:
-            logging.info("Anomaly detection started.")
+        logging.info("Anomaly detection started.")
 
-            if not os.path.exists(self.model_filename):
-                raise FileNotFoundError(f"Model file for {self.consumption_type} not found")
-            if not os.path.exists(self.target_scaler_filename):
-                raise FileNotFoundError(f"Target scaler file for {self.consumption_type} not found")
+        # Model yolu (önce final'de arıyoruz, yoksa temp'teki)
+        model_path = os.path.join(self.final_base_path, "model.keras")
+        if not os.path.exists(model_path):
+            model_path = self.model_filename  # temp'teki model
 
-            logging.info("Model and target scaler files exist.")
+        if not os.path.exists(model_path):
+            raise FileNotFoundError(f"Model file for {self.consumption_type} not found in temp or final folder")
 
-            df = self.fetch_data()
-            if df.empty:
-                raise ValueError(f"No data available for anomaly detection for {self.consumption_type}.")
+        # Target scaler yolu (önce final'de arıyoruz, yoksa temp'teki)
+        target_scaler_path = os.path.join(self.final_base_path, "target_scaler.save")
+        if not os.path.exists(target_scaler_path):
+            target_scaler_path = self.target_scaler_filename
 
-            logging.info(f"Fetched data for anomaly detection. Data shape: {df.shape}")
+        df = self.fetch_data()
+        if df.empty:
+            raise ValueError(f"No data available for anomaly detection for {self.consumption_type}.")
 
-            scaled_features, scaled_target, feature_cols = self.prepare_data(df, fit_scaler=False)
-            logging.info(f"scaled_features shape: {scaled_features.shape}, scaled_target shape: {scaled_target.shape}")
+        # Ölçeklenmiş verileri tekrar yükle (fit_scaler=False)
+        scaled_features, scaled_target, feature_cols = self.prepare_data(df, fit_scaler=False)
 
-            look_back = 5  
-            X, Y = create_dataset(scaled_features, scaled_target, look_back=look_back)
-            logging.info(f"X shape: {X.shape}, Y shape: {Y.shape}")
+        look_back = 5
+        X, Y = create_dataset(scaled_features, scaled_target, look_back=look_back)
 
-            trained_model = load_model(self.model_filename)
-            logging.info(f"Trained model loaded from {self.model_filename}")
+        trained_model = load_model(model_path)
+        predictions = trained_model.predict(X)
+        error = np.abs(predictions.flatten() - Y.flatten())
 
-            predictions = trained_model.predict(X)
-            logging.info(f"Predictions made. Predictions shape: {predictions.shape}, Predictions type: {type(predictions)}")
+        # threshold üstü hataları anomali kabul et
+        anomalies = error > threshold
+        valid_indices = np.arange(look_back, look_back + len(anomalies))
+        anomaly_indices = valid_indices[anomalies]
 
-            # Hata hesapla
-            error = np.abs(predictions.flatten() - Y.flatten())
-            logging.info(f"Error calculated. Error shape: {error.shape}")
+        if len(anomaly_indices) > 0:
+            anomaly_df = pd.DataFrame({
+                'DateIndex': anomaly_indices,
+                'Anomaly_Error': error[anomalies]
+            })
+            # 1) Anomalileri temp klasörüne kaydet
+            anomaly_df.to_csv(self.anomaly_csv, index=False)
+            logging.info(f"Anomaly data saved to {self.anomaly_csv}")
 
-            # Anomalileri belirle
-            anomalies = error > threshold
-            logging.info(f"Anomalies detected. Total anomalies: {np.sum(anomalies)}")
+            # 2) Ardından anomalies.csv'yi temp'ten final'e taşı (varsa eskisini silerek)
+            self._move_anomalies_temp_to_final()
+            return anomaly_df
+        else:
+            logging.info("No anomalies detected.")
+            return pd.DataFrame()
 
-            # Doğru indeks aralığını oluştur
-            # Anomalilerin bulunduğu veri kümesindeki orijinal indeksleri alıyoruz
-            valid_indices = np.arange(look_back, look_back + len(anomalies))
-            anomaly_indices = valid_indices[anomalies]
-            logging.info(f"Anomaly indices extracted. Total anomaly indices: {len(anomaly_indices)}")
-
-            # Map anomaly indices to actual dates
-            anomaly_dates = pd.to_datetime(df.iloc[anomaly_indices]['Date']).dt.strftime('%Y-%m-%d %H:%M:%S+00:00')
-
-            # Eğer anomaliler varsa CSV'ye kaydet
-            if len(anomaly_indices) > 0:
-                # Anomaly indices'i 'Date' sütunu olarak kullanıyoruz
-                anomaly_df = pd.DataFrame({
-                    'Date': anomaly_dates,
-                    'Anomaly_Error': error[anomalies]
-                })
-                anomaly_df.to_csv(self.anomaly_csv, index=False)
-                logging.info(f"Anomaly data saved to {self.anomaly_csv}")
-
-                # Eski veri dizinlerini temizle
-                self.cleanup_old_data()
-                
-                return anomaly_df
-            else:
-                logging.info("No anomalies detected.")
-                # Eski veri dizinlerini temizle
-                self.cleanup_old_data()
-                return pd.DataFrame()
-        except Exception as e:
-            logging.error(f"Error during anomaly detection: {e}")
-            raise
-
-
-    def cleanup_old_data(self):
+    def _move_anomalies_temp_to_final(self):
         """
-        Eski tarih dizinlerini siler, sadece en güncelini korur.
+        temp klasöründeki anomalies.csv dosyasını final klasörüne taşır.
+        Eğer final klasöründe anomalies.csv varsa, önce onu siler.
         """
-        try:
-            logging.info("Cleanup of old data directories started.")
+        temp_anomaly_path = self.anomaly_csv  # temp/…/anomalies.csv
+        final_anomaly_path = os.path.join(self.final_base_path, "anomalies.csv")
 
-            # Parent directory: Consumptions/{ConsumptionType}/{BuildingName}/
-            parent_dir = os.path.dirname(self.file_base_path)
-            all_dirs = [d for d in os.listdir(parent_dir) if os.path.isdir(os.path.join(parent_dir, d))]
+        # Eğer final klasöründe anomalies.csv varsa sil
+        if os.path.exists(final_anomaly_path):
+            os.remove(final_anomaly_path)
 
-            date_dirs = []
-            for d in all_dirs:
-                try:
-                    date = datetime.strptime(d, '%Y-%m-%d')
-                    date_dirs.append((date, d))
-                except ValueError:
-                    # Tarih formatında olmayan dizinleri atla
-                    pass
+        # Eğer temp'teki anomalies.csv varsa taşı
+        if os.path.exists(temp_anomaly_path):
+            shutil.move(temp_anomaly_path, final_anomaly_path)
+            logging.info(f"Moved anomalies.csv from {temp_anomaly_path} to {final_anomaly_path}")
+        else:
+            logging.warning(f"No anomalies.csv found in temp folder to move.")
 
-            # Tarihe göre sırala
-            date_dirs.sort(key=lambda x: x[0])
+    def get_predictions(self, months=12):
+        prediction_csv_path = os.path.join(self.final_base_path, "predictions.csv")
+        if os.path.exists(prediction_csv_path):
+            logging.info(f"Prediction CSV found in final folder: {prediction_csv_path}")
+            prediction_df = pd.read_csv(prediction_csv_path)
 
-            # En güncel dizini koru, diğerlerini sil
-            if len(date_dirs) > 1:
-                dirs_to_delete = [d for (date, d) in date_dirs[:-1]]
-                for d in dirs_to_delete:
-                    dir_path = os.path.join(parent_dir, d)
-                    try:
-                        shutil.rmtree(dir_path)
-                        logging.info(f"Deleted old directory: {dir_path}")
-                    except Exception as e:
-                        logging.error(f"Failed to delete directory {dir_path}: {e}")
-            else:
-                logging.info("No old directories to delete.")
-
-            logging.info("Cleanup of old data directories completed.")
-        except Exception as e:
-            logging.error(f"Error during cleanup of old data directories: {e}")
-            raise
+            # İstenen sayıda tahmini (ilk `months` satır) döndür
+            return prediction_df.head(months)
+        else:
+            logging.warning(f"No prediction CSV found in final folder: {self.final_base_path}")
+            return pd.DataFrame()  # Boş DataFrame döner

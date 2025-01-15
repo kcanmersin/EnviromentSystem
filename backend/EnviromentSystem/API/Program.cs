@@ -58,9 +58,9 @@ builder.Services.AddMemoryCache();
 
 builder.Services.AddCors(options =>
 {
-    options.AddPolicy("AllowAllOrigins", builder =>
+    options.AddPolicy("AllowSpecificOrigin", builder =>
     {
-        builder.AllowAnyOrigin()
+        builder.WithOrigins("http://localhost:3000")
                .AllowAnyMethod()
                .AllowAnyHeader();
     });
@@ -76,7 +76,7 @@ if (app.Environment.IsDevelopment())
 }
 
 app.UseAuthorization();
-
+app.UseCors("AllowSpecificOrigin");  // Apply the CORS policy
 app.MapControllers();
 app.UseResponseCaching();
 

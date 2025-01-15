@@ -442,9 +442,12 @@ class ConsumptionModel:
         valid_indices = np.arange(look_back, look_back + len(anomalies))
         anomaly_indices = valid_indices[anomalies]
 
+        # Map anomaly indices to actual dates
+        anomaly_dates = pd.to_datetime(df.iloc[anomaly_indices]['Date']).dt.strftime('%Y-%m-%d %H:%M:%S+00:00')
+
         if len(anomaly_indices) > 0:
             anomaly_df = pd.DataFrame({
-                'Date': anomaly_indices,
+                'Date': anomaly_dates,
                 'Anomaly_Error': error[anomalies]
             })
             # 1) Anomalileri temp klasörüne kaydet

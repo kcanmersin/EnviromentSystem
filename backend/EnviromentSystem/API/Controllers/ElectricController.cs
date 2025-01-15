@@ -6,6 +6,7 @@ using Core.Features.ElectricFeatures.Commands.DeleteElectric;
 using Core.Features.ElectricFeatures.Queries.GetAllElectrics;
 using Core.Features.ElectricFeatures.Queries.GetElectricById;
 using API.Contracts.Electric;
+using Core.Features.ElectricFeatures.Queries.GetAllElectricGroupBy;
 
 namespace API.Controllers
 {
@@ -88,5 +89,28 @@ namespace API.Controllers
 
             return result.IsSuccess ? Ok(result.Value) : BadRequest(new { Error = result.Error.Message });
         }
+
+        [HttpGet("group-by")]
+        [ResponseCache(Duration = 300, Location = ResponseCacheLocation.Client, NoStore = false)]
+        public async Task<IActionResult> GetAllGroupBy(
+    [FromQuery] Guid? buildingId = null,
+    [FromQuery] DateTime? startDate = null,
+    [FromQuery] DateTime? endDate = null)
+        {
+            var query = new GetAllElectricGroupByQuery
+            {
+                BuildingId = buildingId,
+                StartDate = startDate,
+                EndDate = endDate
+            };
+
+            var result = await _mediator.Send(query);
+
+            return result.IsSuccess ? Ok(result.Value) : BadRequest(new { Error = result.Error.Message });
+        }
+
+
+
+
     }
 }

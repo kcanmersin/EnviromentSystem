@@ -7,6 +7,7 @@ using Core.Features.NaturalGasFeatures.Commands.DeleteNaturalGas;
 using Core.Features.NaturalGasFeatures.Commands.UpdateNaturalGas;
 using Core.Features.NaturalGasFeatures.Queries.GetAllNaturalGas;
 using Core.Features.NaturalGasFeatures.Queries.GetNaturalGasById;
+using Core.Features.NaturalGasFeatures.Queries.GetAllNaturalGasGroupBy;
 
 namespace API.Controllers
 {
@@ -70,7 +71,24 @@ namespace API.Controllers
 
             return Ok(result.Value);
         }
+        [HttpGet("group-by")]
+        [ResponseCache(Duration = 300, Location = ResponseCacheLocation.Client, NoStore = false)]
+        public async Task<IActionResult> GetAllGroupBy(
+    [FromQuery] Guid? buildingId = null,
+    [FromQuery] DateTime? startDate = null,
+    [FromQuery] DateTime? endDate = null)
+        {
+            var query = new GetAllNaturalGasGroupByQuery
+            {
+                BuildingId = buildingId,
+                StartDate = startDate,
+                EndDate = endDate
+            };
 
+            var result = await _mediator.Send(query);
+
+            return result.IsSuccess ? Ok(result.Value) : BadRequest(new { Error = result.Error.Message });
+        }
         [HttpGet]
         [ResponseCache(Duration = 300, Location = ResponseCacheLocation.Client, NoStore = false)]
         public async Task<IActionResult> GetAll(

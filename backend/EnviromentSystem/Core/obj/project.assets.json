@@ -6682,11 +6682,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Core.csproj",
+      "projectUniqueName": "D:\\code\\grad\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Core.csproj",
       "projectName": "Core",
-      "projectPath": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Core.csproj",
+      "projectPath": "D:\\code\\grad\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\Core.csproj",
       "packagesPath": "C:\\Users\\KC\\.nuget\\packages\\",
-      "outputPath": "D:\\code\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\obj\\",
+      "outputPath": "D:\\code\\grad\\EnviromentSystem\\backend\\EnviromentSystem\\Core\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

@@ -53,21 +53,27 @@ const AppHeader = () => {
         </CHeaderToggler>
         <CHeaderNav className="d-none d-md-flex">
           <CNavItem>
-            <CNavLink to="/elektrik" as={NavLink}>
-              Elektrik
+            <CNavLink to="/electricity" as={NavLink}>
+              Electricity
             </CNavLink>
           </CNavItem>
           <CNavItem>
-            <CNavLink to="/su-tuketim" as={NavLink}>
-              Su
+            <CNavLink to="/water-consumption" as={NavLink}>
+              Water 
             </CNavLink>
           </CNavItem>
           <CNavItem>
-            <CNavLink to="/dogalgaz-tuketim" as={NavLink}>
-              Doğalgaz
+            <CNavLink to="/natural-gas-consumption" as={NavLink}>
+              Natural Gas
+            </CNavLink>
+          </CNavItem>
+          <CNavItem>
+            <CNavLink to="/paper-consumption" as={NavLink}>
+              Paper 
             </CNavLink>
           </CNavItem>
         </CHeaderNav>
+
         <CHeaderNav className="ms-auto">
         </CHeaderNav>
         <CHeaderNav>
@@ -118,7 +124,7 @@ const AppHeader = () => {
           <li className="nav-item py-1">
             <div className="vr h-100 mx-2 text-body text-opacity-75"></div>
           </li>
-          <LogoutButton />   
+          <LogoutButton />
           {/* <AppHeaderDropdown /> */}
         </CHeaderNav>
       </CContainer>

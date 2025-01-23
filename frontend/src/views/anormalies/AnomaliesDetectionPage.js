@@ -28,14 +28,15 @@ const AnomaliesDetectionPage = () => {
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState(null);
 
+
     const fetchBuildings = async () => {
         try {
             const response = await axios.get("http://localhost:5154/api/Building");
             const filteredBuildings = response.data.buildings
                 .filter((building) =>
                     consumptionType === 'electric'
-                        ? building.e_MeterCode !== null
-                        : building.g_MeterCode !== null
+                        ? building.e_MeterCode !== null && !bannedElectricBuildingIds.includes(building.id.toString())
+                        : building.g_MeterCode !== null && !bannedNaturalGasBuildingIds.includes(building.id.toString())
                 )
                 .map((building) => ({
                     id: building.id,
@@ -91,6 +92,41 @@ const AnomaliesDetectionPage = () => {
         }
     };
 
+    const fetchAllBuildingsConsumptionData = async () => {
+        try {
+            const endpoint = `http://localhost:5154/api/${consumptionType === "electric" ? "Electric" : "NaturalGas"}/group-by`;
+            const response = await axios.get(endpoint);
+
+            if (response.status === 200 && response.data) {
+                const dataKey = consumptionType === "electric" ? "groupedElectrics" : "groupedNaturalGas";
+                const formattedData = response.data[dataKey].map((item) => ({
+                    date: `${item.year}-${String(item.month).padStart(2, "0")}`,
+                    usage: item.totalUsage,
+                }));
+                console.log("formattedData", formattedData);
+                setData(formattedData);
+            }
+        } catch (error) {
+            console.error("Error fetching all buildings data:", error);
+        }
+    };
+
+
+    const fetchAllBuildingsAnomalies = async () => {
+        const baseUrl = "http://localhost:5154/api";
+        const params = { consumptionType, threshold };
+        try {
+            const endpoint = `${baseUrl}/Anomaly/get-anomaly`;
+            const response = await axios.post(endpoint, null, { params });
+
+            if (response.status === 200 && response.data) {
+                const fetchedAnomalies = response.data.anomalies?.anomalies || [];
+                setAnomalies(fetchedAnomalies);
+            }
+        } catch (error) {
+            console.error("Error fetching anomalies:", error);
+        }
+    };
 
     const fetchAnomalies = async () => {
         // Skip buildingId for water, require it for electric/naturalgas
@@ -114,8 +150,7 @@ const AnomaliesDetectionPage = () => {
             const fetchedAnomalies = response.data.anomalies?.anomalies || [];
             setAnomalies(fetchedAnomalies);
         } catch (error) {
-            if(error.response?.data?.error)
-            {
+            if (error.response?.data?.error) {
                 setAnomalies([]);
                 console.log('No anomalies detected.');
                 return;
@@ -132,6 +167,24 @@ const AnomaliesDetectionPage = () => {
         }
     };
 
+    const bannedNaturalGasBuildingIds =
+        [
+            "28af3bc3-5d69-44bc-8c54-edc81b499cb3",
+            "d478aa01-2b35-4ada-a66a-0e2adb3b4f13",
+            "e10e6c56-a7c7-4be2-85cb-1b405503444e",
+            "1d4f5742-2bfd-4e58-aef0-4949c3ccdcdf",
+            "0d95ff15-1a97-44dc-a5ed-63599fc85fe7",
+            "5a17ab06-7e72-4268-aae5-bc85918e2e8b",
+        ];
+
+    const bannedElectricBuildingIds =
+        [
+            "58580e73-4e84-47b4-a6ac-8ceb8b39aebf",
+            "12afae21-2e92-4078-aefe-ccd2f6a1382a",
+            "ea31af1c-374e-4ed1-9bfc-af63695dcf49",
+            "d96f869c-8066-4b8f-9a34-9420519a206a",
+        ]
+
 
     useEffect(() => {
         if (consumptionType === 'water') {
@@ -144,15 +197,23 @@ const AnomaliesDetectionPage = () => {
     }, [consumptionType]);
 
     useEffect(() => {
-        if (barChartSelectedBuilding) {
+        if (barChartSelectedBuilding?.value === "All Buildings") {
+            fetchAllBuildingsConsumptionData();
+            fetchAllBuildingsAnomalies();
+        } else if (barChartSelectedBuilding) {
             fetchData();
             fetchAnomalies();
         }
     }, [barChartSelectedBuilding, consumptionType]);
 
 
+
     useEffect(() => {
-        if (barChartSelectedBuilding || consumptionType === 'water') {
+        if (barChartSelectedBuilding?.value === "All Buildings") {
+            fetchAllBuildingsConsumptionData();
+            fetchAllBuildingsAnomalies();
+        }
+        else if (barChartSelectedBuilding || consumptionType === 'water') {
             fetchAnomalies();
         }
     }, [threshold]);
@@ -193,21 +254,22 @@ const AnomaliesDetectionPage = () => {
                         <CFormSelect
                             value={barChartSelectedBuilding?.value || ''}
                             onChange={(e) => {
-                                const selectedBuilding = buildings.find(
-                                    (b) => b.value === e.target.value
-                                );
-                                setBarChartSelectedBuilding(selectedBuilding);
+                                if (e.target.value === "All Buildings") {
+                                    setBarChartSelectedBuilding({ value: "All Buildings" });
+                                } else {
+                                    const selectedBuilding = buildings.find(b => b.value === e.target.value);
+                                    setBarChartSelectedBuilding(selectedBuilding);
+                                }
                             }}
                         >
-                            <option value="" disabled>
-                                Select a building
-                            </option>
+                            <option value="All Buildings">All Buildings</option>
                             {buildings.map((building) => (
                                 <option key={building.id} value={building.value}>
                                     {building.label}
                                 </option>
                             ))}
                         </CFormSelect>
+
                     </CCol>
                 )}
 
@@ -251,7 +313,8 @@ const AnomaliesDetectionPage = () => {
                                             pointHoverRadius: 7,
                                             data: data.map((item) => {
                                                 const isAnomaly = anomalies.some(
-                                                    (anomaly) => anomaly.date.slice(0, 10) === item.date.slice(0, 10)
+                                                    (anomaly) => anomaly.date.slice(0, 7) === item.date.slice(0, 7)
+
                                                 );
                                                 return isAnomaly ? item.usage : null;
                                             }),
@@ -285,7 +348,7 @@ const AnomaliesDetectionPage = () => {
                         </CCardBody>
                     </CCard>
 
-                    { anomalies.length > 0 ?
+                    {anomalies.length > 0 ?
                         (<CCard>
                             <CCardHeader>Anomalies</CCardHeader>
                             <CCardBody>
@@ -300,12 +363,12 @@ const AnomaliesDetectionPage = () => {
                                     <CTableBody>
                                         {anomalies.map((item, index) => {
                                             const matchingUsage = data.find(
-                                                (usageItem) => usageItem.date.slice(0, 10) === item.date.slice(0, 10)
+                                                (usageItem) => usageItem.date.slice(0, 7) === item.date.slice(0, 7)
                                             );
 
                                             return (
                                                 <CTableRow key={index} color='danger'>
-                                                    <CTableDataCell>{item.date?.slice(0, 10)}</CTableDataCell>
+                                                    <CTableDataCell>{item.date?.slice(0, 7)}</CTableDataCell>
                                                     <CTableDataCell>
                                                         {matchingUsage ? matchingUsage.usage : 'N/A'}
                                                     </CTableDataCell>
@@ -320,16 +383,16 @@ const AnomaliesDetectionPage = () => {
                                     </CTableBody>
                                 </CTable>
                             </CCardBody>
-                        </CCard> )
-                        : 
+                        </CCard>)
+                        :
                         (<CCard>
                             <CCardHeader>Anomalies</CCardHeader>
                             <CCardBody>
                                 <p>No anomalies detected.</p>
                             </CCardBody>
                         </CCard>)
-                        
-                        }
+
+                    }
 
                 </>
             )}

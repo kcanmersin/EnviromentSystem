@@ -76,6 +76,11 @@ const ConsumptionInputPage = () => {
       isValid = false;
     }
 
+    if(date > new Date().toISOString().split('T')[0]) {
+      errors.date = 'Date cannot be in the future';
+      isValid = false;
+    }
+
     setValidationErrors(errors);
     return isValid;
   };
@@ -115,11 +120,12 @@ const ConsumptionInputPage = () => {
       // Send training request for overall consumption type
       axios.post(`${baseUrl}api/Prediction/train`, null, {
         params: {
-        consumptionType: selectedDataType.toLowerCase(),
+          consumptionType: selectedDataType.toLowerCase(),
         },
       }).then(() => {
         console.log('Model training started for consumption type');
-      }).catch((err) => {
+      }).catch((error) => {
+
         console.error('Error starting training for consumption type:', err);
       });
 
@@ -135,8 +141,15 @@ const ConsumptionInputPage = () => {
         });
       }
     } catch (error) {
-      console.error('Error submitting form:', error);
+      if (error.response?.data?.error === 'A record for this building and month already exists.' || error.response?.data?.error === 'A record for this month already exists.') {
 
+        const errors = {};
+        errors.date = 'A record for month already exists.';
+        setValidationErrors(errors);
+      }
+      else {
+        console.error('Error submitting form:', error);
+      }
     }
   };
 

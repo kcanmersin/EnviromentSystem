@@ -19,9 +19,10 @@ import {
     CModalBody,
     CModalFooter,
     CFormFeedback,
+
 } from '@coreui/react';
 import CIcon from '@coreui/icons-react';
-import { cilTrash } from '@coreui/icons';
+import { cilTrash, cilPencil } from '@coreui/icons';
 
 const DeleteRecordPage = () => {
     const [selectedDataType, setSelectedDataType] = useState('Electric');
@@ -31,9 +32,10 @@ const DeleteRecordPage = () => {
     const [buildingId, setBuildingId] = useState('');
     const [records, setRecords] = useState([]);
     const [modalVisible, setModalVisible] = useState(false);
+    const [editModalVisible, setEditModalVisible] = useState(false);
+    const [recordToEdit, setRecordToEdit] = useState(null);
     const [recordToDelete, setRecordToDelete] = useState(null);
     const [validated, setValidated] = useState(false);
-
     const [validationErrors, setValidationErrors] = useState({});
 
     const baseUrl = 'http://localhost:5154/';
@@ -159,14 +161,115 @@ const DeleteRecordPage = () => {
             setRecords(records.filter((record) => record.id !== recordToDelete));
             setModalVisible(false);
             setRecordToDelete(null);
+            
+            axios.post(`${baseUrl}api/Prediction/train`, null, {
+                params: {
+                  consumptionType: selectedDataType.toLowerCase(),
+                },
+              }).then(() => {
+                console.log('Model training started for consumption type');
+              }).catch((err) => {
+                console.error('Error starting training for consumption type:', err);
+              });
+        
+              // If buildingId is available, send training request for the specific building
+              if (recordToDelete.buildingId) {
+                axios.post(`${baseUrl}api/Prediction/train`, {
+                  consumptionType: selectedDataType.toLowerCase(),
+                  buildingId: recordToDelete.buildingId,
+                }).then(() => {
+                  console.log('Model training started for specific building');
+                }).catch((err) => {
+                  console.error('Error starting training for specific building:', err);
+                });
+              }
         } catch (error) {
             console.error('Error deleting record:', error);
         }
     };
 
+        // Handle Edit Button Click
+        const handleEditClick = (record) => {
+            setRecordToEdit({ ...record });
+            setEditModalVisible(true);
+        };
+    
+        // Validate Edit Form
+        const validateForm = () => {
+            const errors = {};
+            let isValid = true;
+    
+            if (recordToEdit.initialMeterValue < 0) {
+                errors.initialMeterValue = 'Initial Meter Value must be >= 0';
+                isValid = false;
+            }
+            if (recordToEdit.finalMeterValue < 0) {
+                errors.finalMeterValue = 'Final Meter Value must be >= 0';
+                isValid = false;
+            }
+            if (Number(recordToEdit.finalMeterValue) < Number(recordToEdit.initialMeterValue)) {
+                errors.finalMeterValue = 'Final Meter Value must be >= Initial Meter Value';
+                isValid = false;
+            }
+            if (!recordToEdit.date) {
+                errors.date = 'Date is required';
+                isValid = false;
+            }
+    
+            setValidationErrors(errors);
+            return isValid;
+        };
+    
+        // Submit Edit Form
+        const handleEditSubmit = async () => {
+            if (!validateForm()) return;
+    
+            try {
+
+                recordToEdit.usage = recordToEdit.finalMeterValue - recordToEdit.initialMeterValue;
+                if (selectedDataType === 'Electric') {
+                    recordToEdit.kwhValue = recordToEdit.usage;
+                } else if (selectedDataType === 'NaturalGas') {
+                    recordToEdit.sM3Value = recordToEdit.usage;
+                }
+                const utcDate = new Date(recordToEdit.date).toISOString();
+                recordToEdit.date = utcDate;
+
+                await axios.put(`${baseUrl}${endpoint}/${recordToEdit.id}`, recordToEdit);
+                setRecords(records.map((record) =>
+                    record.id === recordToEdit.id ? recordToEdit : record
+                ));
+                setEditModalVisible(false);
+
+                axios.post(`${baseUrl}api/Prediction/train`, null, {
+                    params: {
+                      consumptionType: selectedDataType.toLowerCase(),
+                    },
+                  }).then(() => {
+                    console.log('Model training started for consumption type');
+                  }).catch((err) => {
+                    console.error('Error starting training for consumption type:', err);
+                  });
+            
+                  // If buildingId is available, send training request for the specific building
+                  if (recordToEdit.buildingId) {
+                    axios.post(`${baseUrl}api/Prediction/train`, {
+                      consumptionType: selectedDataType.toLowerCase(),
+                      buildingId: recordToEdit.buildingId,
+                    }).then(() => {
+                      console.log('Model training started for specific building');
+                    }).catch((err) => {
+                      console.error('Error starting training for specific building:', err);
+                    });
+                  }
+            } catch (error) {
+                console.error('Error updating record:', error);
+            }
+        };
+
     return (
         <div>
-            <h2>Delete Records</h2>
+            <h2>Record Management</h2>
 
             {/* Filter Form */}
             <CCard className="mb-4">
@@ -261,58 +364,100 @@ const DeleteRecordPage = () => {
             </CCard>
 
             {/* Records Table */}
-            {records.length > 0 && (
-                <CCard>
-                    <CCardHeader>Records</CCardHeader>
-                    <CCardBody>
-                        <CTable>
-                            <thead>
-                                <tr>
-                                    <CTableHeaderCell>Date</CTableHeaderCell>
-                                    <CTableHeaderCell>Initial Meter Value</CTableHeaderCell>
-                                    <CTableHeaderCell>Final Meter Value</CTableHeaderCell>
-                                    <CTableHeaderCell>Usage</CTableHeaderCell>
-                                    <CTableHeaderCell>Actions</CTableHeaderCell>
-                                </tr>
-                            </thead>
-                            <CTableBody>
-                                {records.map((record) => (
-                                    <CTableRow key={record.id}>
-                                        <CTableDataCell>{record.date}</CTableDataCell>
-                                        <CTableDataCell>{record.initialMeterValue}</CTableDataCell>
-                                        <CTableDataCell>{record.finalMeterValue}</CTableDataCell>
-                                        <CTableDataCell>{record.usage}</CTableDataCell>
-                                        <CTableDataCell>
-                                            <CButton
-                                                color="danger"
-                                                variant="outline"
-                                                onClick={() => {
-                                                    setRecordToDelete(record.id);
-                                                    setModalVisible(true);
-                                                }}
-                                            >
-                                                <CIcon icon={cilTrash} />
-                                            </CButton>
-                                        </CTableDataCell>
-                                    </CTableRow>
-                                ))}
-                            </CTableBody>
-                        </CTable>
-                    </CCardBody>
-                </CCard>
-            )}
+            {/* Records Table */}
+            <CCard>
+                <CCardHeader>Records</CCardHeader>
+                <CCardBody>
+                    <CTable>
+                        <thead>
+                            <tr>
+                                <CTableHeaderCell>Date</CTableHeaderCell>
+                                <CTableHeaderCell>Initial Meter Value</CTableHeaderCell>
+                                <CTableHeaderCell>Final Meter Value</CTableHeaderCell>
+                                <CTableHeaderCell>Usage</CTableHeaderCell>
+                                <CTableHeaderCell>Actions</CTableHeaderCell>
+                            </tr>
+                        </thead>
+                        <CTableBody>
+                            {records.map((record) => (
+                                <CTableRow key={record.id}>
+                                    <CTableDataCell>{record.date}</CTableDataCell>
+                                    <CTableDataCell>{record.initialMeterValue}</CTableDataCell>
+                                    <CTableDataCell>{record.finalMeterValue}</CTableDataCell>
+                                    <CTableDataCell>{record.usage}</CTableDataCell>
+                                    <CTableDataCell>
+                                        <CButton
+                                            color="warning"
+                                            variant="outline"
+                                            onClick={() => handleEditClick(record)}
+                                            style={{ marginRight: '8px' }}
+                                        >
+                                            <CIcon icon={cilPencil} />
+                                        </CButton>
+                                        <CButton
+                                            color="danger"
+                                            variant="outline"
+                                            onClick={() => {
+                                                setRecordToDelete(record.id);
+                                                setModalVisible(true);
+                                            }}
+                                        >
+                                            <CIcon icon={cilTrash} />
+                                        </CButton>
+                                    </CTableDataCell>
+                                </CTableRow>
+                            ))}
+                        </CTableBody>
+                    </CTable>
+                </CCardBody>
+            </CCard>
 
             {/* Delete Confirmation Modal */}
             <CModal visible={modalVisible} onClose={() => setModalVisible(false)}>
                 <CModalHeader>Confirm Deletion</CModalHeader>
                 <CModalBody>Are you sure you want to delete this record?</CModalBody>
                 <CModalFooter>
-                    <CButton color="secondary" onClick={() => setModalVisible(false)}>
-                        Cancel
-                    </CButton>
-                    <CButton color="danger" onClick={deleteRecord}>
-                        Delete
-                    </CButton>
+                    <CButton color="secondary" onClick={() => setModalVisible(false)}>Cancel</CButton>
+                    <CButton color="danger" onClick={deleteRecord}>Delete</CButton>
+                </CModalFooter>
+            </CModal>
+
+            {/* Edit Modal */}
+            <CModal visible={editModalVisible} onClose={() => setEditModalVisible(false)}>
+                <CModalHeader>Edit Record</CModalHeader>
+                <CModalBody>
+                    <CForm>
+                        <CFormInput
+                            type="date"
+                            label="Date"
+                            value={recordToEdit?.date || ''}
+                            onChange={(e) => setRecordToEdit({ ...recordToEdit, date: e.target.value })}
+                            invalid={!!validationErrors.date}
+                        />
+                        <CFormFeedback invalid>{validationErrors.date}</CFormFeedback>
+
+                        <CFormInput
+                            type="number"
+                            label="Initial Meter Value"
+                            value={recordToEdit?.initialMeterValue || ''}
+                            onChange={(e) => setRecordToEdit({ ...recordToEdit, initialMeterValue: e.target.value })}
+                            invalid={!!validationErrors.initialMeterValue}
+                        />
+                        <CFormFeedback invalid>{validationErrors.initialMeterValue}</CFormFeedback>
+
+                        <CFormInput
+                            type="number"
+                            label="Final Meter Value"
+                            value={recordToEdit?.finalMeterValue || ''}
+                            onChange={(e) => setRecordToEdit({ ...recordToEdit, finalMeterValue: e.target.value })}
+                            invalid={!!validationErrors.finalMeterValue}
+                        />
+                        <CFormFeedback invalid>{validationErrors.finalMeterValue}</CFormFeedback>
+                    </CForm>
+                </CModalBody>
+                <CModalFooter>
+                    <CButton color="secondary" onClick={() => setEditModalVisible(false)}>Cancel</CButton>
+                    <CButton color="success" onClick={handleEditSubmit}>Save Changes</CButton>
                 </CModalFooter>
             </CModal>
         </div>

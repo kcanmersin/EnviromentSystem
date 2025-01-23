@@ -24,53 +24,54 @@ import { CNavGroup, CNavItem, CNavTitle } from '@coreui/react'
 const user = JSON.parse(localStorage.getItem('user'));
 const isAdmin = user?.role === 'ADMIN';
 console.log(isAdmin + user?.role)
+
 const _nav = [
   {
     component: CNavItem,
-    name: 'Elektrik',
-    to: '/elektrik',
+    name: 'Electricity',
+    to: '/electricity',
     icon: <CIcon icon={cilLightbulb} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
-    name: 'Doğalgaz',
-    to: '/dogalgaz-tuketim',
+    name: 'Natural Gas ',
+    to: '/natural-gas-consumption',
     icon: <CIcon icon={cilFire} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
-    name: 'Su Tüketim',
-    to: '/su-tuketim',
+    name: 'Water ',
+    to: '/water-consumption',
     icon: <CIcon icon={cilDrop} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
-    name: 'Kagıt Tüketim',
-    to: '/kagit-tuketim',
+    name: 'Paper ',
+    to: '/paper-consumption',
     icon: <CIcon icon={cilDescription} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
-    name: 'Tüketim Veri Girişi',
-    to: '/tüketim-veri-girisi',
+    name: 'Consumption Data Entry',
+    to: '/consumption-data-entry',
     icon: <CIcon icon={cilDataTransferDown} customClassName="nav-icon" />,
   },
+  // {
+  //   component: CNavItem,
+  //   name: 'Dashboard',
+  //   to: '/dashboard',
+  //   icon: <CIcon icon={cilSpeedometer} customClassName="nav-icon" />,
+  // },
   {
     component: CNavItem,
-    name: 'Dashboard',
-    to: '/dashboard',
-    icon: <CIcon icon={cilSpeedometer} customClassName="nav-icon" />,
-  },
-  {
-    component: CNavItem,
-    name: 'Karbon Ayak İzi',
-    to: '/karbon-ayakizi',
+    name: 'Carbon Footprint',
+    to: '/carbon-footprint',
     icon: <CIcon icon={cilChartPie} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
-    name: 'Okul Bilgi Formu',
-    to: '/okul-bilgi-formu',
+    name: 'School Information Form',
+    to: '/school-info-form',
     icon: <CIcon icon={cilPencil} customClassName="nav-icon" />,
   },
   {
@@ -81,27 +82,33 @@ const _nav = [
   },
   {
     component: CNavItem,
-    name: 'Tahmin Sonuc',
-    to: '/tahmin-sonuc',
+    name: 'Prediction Results',
+    to: '/prediction-results',
     icon: <CIcon icon={cilPuzzle} customClassName="nav-icon" />,
   },
   {
     component: CNavItem,
-    name: 'Kayıt Silme',
-    to: '/kayıt-silme',
+    name: 'Record Management',
+    to: '/record-managment',
     icon: <CIcon icon={cilTrash} customClassName="nav-icon" />,
+  },
+  {
+    component: CNavItem,
+    name: 'School Info Table',
+    to: '/school-info-table',
+    icon: <CIcon icon={cilChartPie} customClassName="nav-icon" />,
   },
   ...(isAdmin
     ? [
       {
         component: CNavItem,
-        name: 'Kulanıcı Oluştur',
-        to: '/kulanicilar-olustur',
+        name: 'User Management',
+        to: '/user-management',
         icon: <CIcon icon={cilUserPlus} customClassName="nav-icon" />,
       },
     ]
     : []),
-
 ]
+
 
 export default _nav

@@ -11,23 +11,18 @@ using Microsoft.AspNetCore.Builder;
 using Core.Service.PredictionService;
 using Core.Features.CarbonFootprint;
 using Core.Service.Extract;
-
 namespace Core.Extensions
 {
     public static class CoreLayerExtensions
     {
         public static IServiceCollection LoadCoreLayerExtension(this IServiceCollection services, IConfiguration configuration)
         {
-            var postgresUri = Environment.GetEnvironmentVariable("Enviroment_ConnectionString")
-                              ?? configuration.GetConnectionString("DefaultConnection");
+            var connectionString = Environment.GetEnvironmentVariable("DB_CONNECTION_STRING")
+                                    ?? configuration.GetConnectionString("DefaultConnection");
 
-            var defaultConnectionString = ConvertPostgresUriToConnectionString(postgresUri);
-
-            // Add ApplicationDbContext
             services.AddDbContext<ApplicationDbContext>(options =>
-                options.UseNpgsql(defaultConnectionString));
+                options.UseNpgsql(connectionString));
 
-            // Add JWT Authentication
             services.AddJwtAuthentication(configuration);
 
             // Add Identity
@@ -47,10 +42,9 @@ namespace Core.Extensions
             })
             .AddEntityFrameworkStores<ApplicationDbContext>()
             .AddDefaultTokenProviders();
+
             //add carbonfootprintservice scoped
             services.AddScoped<ICarbonFootprintService, CarbonFootprintService>();
-
-
 
             // Add MediatR and FluentValidation
             services.AddMediatR(Assembly.GetExecutingAssembly());
@@ -77,15 +71,7 @@ namespace Core.Extensions
             return services;
         }
 
-        private static string ConvertPostgresUriToConnectionString(string postgresUri)
-        {
-            var uri = new Uri(postgresUri);
-            var userInfo = uri.UserInfo.Split(':');
-            var username = userInfo[0];
-            var password = userInfo[1];
-
-            return $"Host={uri.Host};Port={uri.Port};Username={username};Password={password};Database={uri.AbsolutePath.TrimStart('/')};SSL Mode=Require;Trust Server Certificate=true";
-        }
+     
 
         public static IApplicationBuilder UseCoreLayerRecurringJobs(this IApplicationBuilder app)
         {

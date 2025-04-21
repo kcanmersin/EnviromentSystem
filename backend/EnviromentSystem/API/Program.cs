@@ -5,7 +5,8 @@ using Serilog.Events;
 using Serilog.Filters;
 using Serilog.Filters.Expressions;
 using System.Reflection;
-
+using DotNetEnv;
+Env.Load();
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Host.UseSerilog((context, services, configuration) =>
